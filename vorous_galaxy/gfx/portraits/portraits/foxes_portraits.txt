@@ -1,0 +1,285 @@
+portraits = {
+	#female
+	fox_F_1 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/foxes/orangefoxfemale.dds" }
+	fox_F_2 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/foxes/orangefoxfemale2.dds" }
+	fox_F_3 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/foxes/whitefoxfemale.dds" }
+	fox_F_4 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/foxes/whitefoxfemale2.dds" }
+	fox_F_5 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/foxes/fennecfoxfemale.dds" }
+	fox_F_6 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/foxes/fennecfoxfemale2.dds" }
+	fox_F_7 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/foxes/foxfemale7.dds" }
+	fox_F_8 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/foxes/foxfemale8.dds" }
+	fox_F_9 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/foxes/foxfemale9.dds" }
+	fox_F_10 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/foxes/foxfemale10.dds" }
+	fox_F_11 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/foxes/foxfemale11.dds" }
+	fox_F_12 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/foxes/foxfemale12.dds" }
+	
+	#male
+	fox_M_1 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/foxes/fennecfoxmale.dds" }
+	fox_M_2 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/foxes/fennecfoxmale2.dds" }
+	fox_M_3 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/foxes/orangefoxmale.dds" }
+	fox_M_4 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/foxes/whitefoxmale.dds" }
+	fox_M_5 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/foxes/orangefoxmale2.dds" }
+	fox_M_6 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/foxes/whitefoxmale2.dds" }
+	fox_M_7 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/foxes/foxmale7.dds" }
+	fox_M_8 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/foxes/foxmale8.dds" }
+	fox_M_9 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/foxes/foxmale9.dds" }
+	fox_M_10 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/foxes/foxmale10.dds" }
+	fox_M_11 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/foxes/foxmale11.dds" }
+	fox_M_12 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/foxes/foxmale12.dds" }
+	}
+
+portrait_groups = {
+	foxes = {
+		default = fox_F_1
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = male
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+
+fox_M_1
+fox_M_2
+fox_M_3
+fox_M_4
+fox_M_5
+fox_M_6
+fox_M_7
+fox_M_8
+fox_M_9
+fox_M_10
+fox_M_11
+fox_M_12
+
+				}
+			}
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = female
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+
+fox_F_1
+fox_F_2
+fox_F_3
+fox_F_4
+fox_F_5
+fox_F_6
+fox_F_7
+fox_F_8
+fox_F_9
+fox_F_10
+fox_F_11
+fox_F_12
+
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+fox_M_1
+fox_M_2
+fox_M_3
+fox_M_4
+fox_M_5
+fox_M_6
+fox_M_7
+fox_M_8
+fox_M_9
+fox_M_10
+fox_M_11
+fox_M_12
+
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+fox_F_1
+fox_F_2
+fox_F_3
+fox_F_4
+fox_F_5
+fox_F_6
+fox_F_7
+fox_F_8
+fox_F_9
+fox_F_10
+fox_F_11
+fox_F_12
+
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+fox_M_1
+fox_M_2
+fox_M_3
+fox_M_4
+fox_M_5
+fox_M_6
+fox_M_7
+fox_M_8
+fox_M_9
+fox_M_10
+fox_M_11
+fox_M_12
+
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+fox_F_1
+fox_F_2
+fox_F_3
+fox_F_4
+fox_F_5
+fox_F_6
+fox_F_7
+fox_F_8
+fox_F_9
+fox_F_10
+fox_F_11
+fox_F_12
+
+				}
+			}
+		}
+
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+
+fox_F_1
+fox_F_2
+fox_F_3
+fox_F_4
+fox_F_5
+fox_F_6
+fox_F_7
+fox_F_8
+fox_F_9
+fox_F_10
+fox_F_11
+fox_F_12
+
+				}
+			}
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+
+fox_M_1
+fox_M_2
+fox_M_3
+fox_M_4
+fox_M_5
+fox_M_6
+fox_M_7
+fox_M_8
+fox_M_9
+fox_M_10
+fox_M_11
+fox_M_12
+
+				}
+			}
+		}
+
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+
+fox_F_1
+fox_F_2
+fox_F_3
+fox_F_4
+fox_F_5
+fox_F_6
+fox_F_7
+fox_F_8
+fox_F_9
+fox_F_10
+fox_F_11
+fox_F_12
+
+				}
+			}
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+
+fox_M_1
+fox_M_2
+fox_M_3
+fox_M_4
+fox_M_5
+fox_M_6
+fox_M_7
+fox_M_8
+fox_M_9
+fox_M_10
+fox_M_11
+fox_M_12
+
+				}
+			}
+		}
+	}
+}

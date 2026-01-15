@@ -1,0 +1,271 @@
+portraits = {
+	#female
+	kobold_F_1 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/kobolds/female/kobfemale1.dds" }
+	kobold_F_2 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/kobolds/female/kobfemale2.dds" }
+	kobold_F_3 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/kobolds/female/kobfemale3.dds" }
+	kobold_F_4 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/kobolds/female/kobfemale4.dds" }
+	kobold_F_5 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/kobolds/female/kobfemale5.dds" }
+	kobold_F_6 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/kobolds/female/kobfemale6.dds" }
+	kobold_F_7 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/kobolds/female/kobfemale7.dds" }
+	kobold_F_8 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/kobolds/female/kobfemale8.dds" }
+	kobold_F_9 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/kobolds/female/kobfemale9.dds" }
+	kobold_F_10 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/kobolds/female/kobfemale10.dds" }
+	kobold_F_11 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/kobolds/female/kobfemale11.dds" }
+	kobold_F_12 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/kobolds/female/kobfemale12.dds" }
+	#male
+	kobold_M_1 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/kobolds/male/kobmale1.dds" }
+	kobold_M_2 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/kobolds/male/kobmale2.dds" }
+	kobold_M_3 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/kobolds/male/kobmale3.dds" }
+	kobold_M_4 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/kobolds/male/kobmale4.dds" }
+	kobold_M_5 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/kobolds/male/kobmale5.dds" }
+	kobold_M_6 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/kobolds/male/kobmale6.dds" }
+	kobold_M_7 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/kobolds/male/kobmale7.dds" }
+	kobold_M_8 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/kobolds/male/kobmale8.dds" }
+	kobold_M_9 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/kobolds/male/kobmale9.dds" }
+	kobold_M_10 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/kobolds/male/kobmale10.dds" }
+	kobold_M_11 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/kobolds/male/kobmale11.dds" }
+	kobold_M_12 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/kobolds/male/kobmale12.dds" }
+	kobold_M_13 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/kobolds/male/kobmale13.dds" }
+	
+	}
+
+portrait_groups = {
+	kobolds = {
+		default = kobold_F_1
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = male
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+kobold_M_1
+kobold_M_2
+kobold_M_3
+kobold_M_4
+kobold_M_5
+kobold_M_6
+kobold_M_7
+kobold_M_8
+kobold_M_9
+kobold_M_10
+kobold_M_11
+kobold_M_12
+kobold_M_13 
+				}
+			}
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = female
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+kobold_F_1
+kobold_F_2
+kobold_F_3
+kobold_F_4
+kobold_F_5
+kobold_F_6
+kobold_F_7
+kobold_F_8
+kobold_F_9
+kobold_F_10
+kobold_F_11
+kobold_F_12
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+kobold_M_1
+kobold_M_2
+kobold_M_3
+kobold_M_4
+kobold_M_5
+kobold_M_6
+kobold_M_7
+kobold_M_8
+kobold_M_9
+kobold_M_10
+kobold_M_11
+kobold_M_12
+kobold_M_13 
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+kobold_F_1
+kobold_F_2
+kobold_F_3
+kobold_F_4
+kobold_F_5
+kobold_F_6
+kobold_F_7
+kobold_F_8
+kobold_F_9
+kobold_F_10
+kobold_F_11
+kobold_F_12
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+kobold_M_1
+kobold_M_2
+kobold_M_3
+kobold_M_4
+kobold_M_5
+kobold_M_6
+kobold_M_7
+kobold_M_8
+kobold_M_9
+kobold_M_10
+kobold_M_11
+kobold_M_12
+kobold_M_13 
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+kobold_F_1
+kobold_F_2
+kobold_F_3
+kobold_F_4
+kobold_F_5
+kobold_F_6
+kobold_F_7
+kobold_F_8
+kobold_F_9
+kobold_F_10
+kobold_F_11
+kobold_F_12
+				}
+			}
+		}
+
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+kobold_F_1
+kobold_F_2
+kobold_F_3
+kobold_F_4
+kobold_F_5
+kobold_F_6
+kobold_F_7
+kobold_F_8
+kobold_F_9
+kobold_F_10
+kobold_F_11
+kobold_F_12
+				}
+			}
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+kobold_M_1
+kobold_M_2
+kobold_M_3
+kobold_M_4
+kobold_M_5
+kobold_M_6
+kobold_M_7
+kobold_M_8
+kobold_M_9
+kobold_M_10
+kobold_M_11
+kobold_M_12
+kobold_M_13 
+				}
+			}
+		}
+
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+kobold_F_1
+kobold_F_2
+kobold_F_3
+kobold_F_4
+kobold_F_5
+kobold_F_6
+kobold_F_7
+kobold_F_8
+kobold_F_9
+kobold_F_10
+kobold_F_11
+kobold_F_12 
+				}
+			}
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+kobold_M_1
+kobold_M_2
+kobold_M_3
+kobold_M_4
+kobold_M_5
+kobold_M_6
+kobold_M_7
+kobold_M_8
+kobold_M_9
+kobold_M_10
+kobold_M_11
+kobold_M_12
+kobold_M_13 
+				}
+			}
+		}
+	}
+}

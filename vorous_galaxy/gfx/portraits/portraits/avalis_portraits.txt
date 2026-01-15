@@ -1,0 +1,265 @@
+portraits = {
+	#male
+	avalis_M_1 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/avalis/avalimale1.dds" }
+	avalis_M_2 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/avalis/avalimale2.dds" }
+	avalis_M_3 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/avalis/avalimale3.dds" }
+	avalis_M_4 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/avalis/avalimale4.dds" }
+	avalis_M_5 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/avalis/avalimale5.dds" }
+	avalis_M_6 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/avalis/avalimale6.dds" }
+	avalis_M_7 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/avalis/avalimale7.dds" }
+	avalis_M_8 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/avalis/avalimale8.dds" }
+	avalis_M_9 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/avalis/avalimale9.dds" }
+	avalis_M_10 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/avalis/avalimale10.dds" }
+	avalis_M_11 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/avalis/avalimale11.dds" }
+	avalis_M_12 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/avalis/avalimale12.dds" }
+	#female
+	avalis_F_1 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/avalis/avalifem1.dds" }
+	avalis_F_2 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/avalis/avalifem2.dds" }
+	avalis_F_3 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/avalis/avalifem3.dds" }
+	avalis_F_4 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/avalis/avalifem4.dds" }
+	avalis_F_5 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/avalis/avalifem5.dds" }
+	avalis_F_6 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/avalis/avalifem6.dds" }
+	avalis_F_7 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/avalis/avalifem7.dds" }
+	avalis_F_8 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/avalis/avalifem8.dds" }
+	avalis_F_9 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/avalis/avalifem9.dds" }
+	avalis_F_10 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/avalis/avalifem10.dds" }
+	avalis_F_11 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/avalis/avalifem11.dds" }
+	avalis_F_12 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/avalis/avalifem12.dds" }
+	
+	}
+
+portrait_groups = {
+	avali = {
+		default = avalis_F_1
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = male
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+avalis_M_1
+avalis_M_2
+avalis_M_3
+avalis_M_4
+avalis_M_5
+avalis_M_6
+avalis_M_7
+avalis_M_8
+avalis_M_9
+avalis_M_10
+avalis_M_11
+avalis_M_12 
+				}
+			}
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = female
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+avalis_F_1
+avalis_F_2
+avalis_F_3
+avalis_F_4
+avalis_F_5
+avalis_F_6
+avalis_F_7
+avalis_F_8
+avalis_F_9
+avalis_F_10
+avalis_F_11
+avalis_F_12
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+avalis_M_1
+avalis_M_2
+avalis_M_3
+avalis_M_4
+avalis_M_5
+avalis_M_6
+avalis_M_7
+avalis_M_8
+avalis_M_9
+avalis_M_10
+avalis_M_11
+avalis_M_12 
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+avalis_F_1
+avalis_F_2
+avalis_F_3
+avalis_F_4
+avalis_F_5
+avalis_F_6
+avalis_F_7
+avalis_F_8
+avalis_F_9
+avalis_F_10
+avalis_F_11
+avalis_F_12
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+avalis_M_1
+avalis_M_2
+avalis_M_3
+avalis_M_4
+avalis_M_5
+avalis_M_6
+avalis_M_7
+avalis_M_8
+avalis_M_9
+avalis_M_10
+avalis_M_11
+avalis_M_12 
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+avalis_F_1
+avalis_F_2
+avalis_F_3
+avalis_F_4
+avalis_F_5
+avalis_F_6
+avalis_F_7
+avalis_F_8
+avalis_F_9
+avalis_F_10
+avalis_F_11
+avalis_F_12
+				}
+			}
+		}
+
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+avalis_F_1
+avalis_F_2
+avalis_F_3
+avalis_F_4
+avalis_F_5
+avalis_F_6
+avalis_F_7
+avalis_F_8
+avalis_F_9
+avalis_F_10
+avalis_F_11
+avalis_F_12
+				}
+			}
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+avalis_M_1
+avalis_M_2
+avalis_M_3
+avalis_M_4
+avalis_M_5
+avalis_M_6
+avalis_M_7
+avalis_M_8
+avalis_M_9
+avalis_M_10
+avalis_M_11
+avalis_M_12 
+				}
+			}
+		}
+
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+avalis_F_1
+avalis_F_2
+avalis_F_3
+avalis_F_4
+avalis_F_5
+avalis_F_6
+avalis_F_7
+avalis_F_8
+avalis_F_9
+avalis_F_10
+avalis_F_11
+avalis_F_12 
+				}
+			}
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+avalis_M_1
+avalis_M_2
+avalis_M_3
+avalis_M_4
+avalis_M_5
+avalis_M_6
+avalis_M_7
+avalis_M_8
+avalis_M_9
+avalis_M_10
+avalis_M_11
+avalis_M_12 
+				}
+			}
+		}
+	}
+}

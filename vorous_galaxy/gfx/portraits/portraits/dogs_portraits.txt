@@ -1,0 +1,274 @@
+portraits = {
+	#female
+	dog_F_1 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/dogs/dogfemale.dds"	}
+	dog_F_2 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/dogs/doggoldfemale.dds" }
+	dog_F_3 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/dogs/doggsfemale.dds" }
+	dog_F_4 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/dogs/doggsfemale2.dds" }
+	dog_F_5 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/dogs/doggoldfemale2.dds" }
+	dog_F_6 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/dogs/doghuskyfemale.dds" }
+	dog_F_7 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/dogs/doghuskyfemale2.dds" }
+	dog_F_8 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/dogs/dogdalmationfemale.dds" }
+	dog_F_9 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/dogs/dogdalmationfemale2.dds" }
+	dog_F_10 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/dogs/dogblfemale.dds" }
+	dog_F_11 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/dogs/dogblfemale2.dds" }
+	dog_F_12 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/dogs/dogfemale12.dds" }
+	#male
+	dog_M_1 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/dogs/doggoldmale.dds" }
+	dog_M_2 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/dogs/doggsmale.dds" }
+	dog_M_3 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/dogs/doghuskymale.dds" }
+	dog_M_4 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/dogs/doggoldmale2.dds" }
+	dog_M_5 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/dogs/doggsmale2.dds" }
+	dog_M_6 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/dogs/doghuskymale2.dds" }
+	dog_M_7 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/dogs/dogmale.dds" }
+	dog_M_8 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/dogs/dogmaledalmation.dds" }
+	dog_M_9 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/dogs/dogmaledalmation2.dds" }
+	dog_M_10 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/dogs/dogblmale.dds" }
+	dog_M_11 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/dogs/dogblmale2.dds" }
+	dog_M_12 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/dogs/dogmale12.dds" }	
+	}
+
+portrait_groups = {
+	dogs = {
+		default = dog_F_1
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = male
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+
+dog_M_1
+dog_M_2
+dog_M_3
+dog_M_4
+dog_M_5
+dog_M_6
+dog_M_7
+dog_M_8
+dog_M_9
+dog_M_10
+dog_M_11
+dog_M_12
+				}
+			}
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = female
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+
+dog_F_1
+dog_F_2
+dog_F_3
+dog_F_4
+dog_F_5
+dog_F_6
+dog_F_7
+dog_F_8
+dog_F_9
+dog_F_10
+dog_F_11
+dog_F_12
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+dog_M_1
+dog_M_2
+dog_M_3
+dog_M_4
+dog_M_5
+dog_M_6
+dog_M_7
+dog_M_8
+dog_M_9
+dog_M_10
+dog_M_11
+dog_M_12
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+dog_F_1
+dog_F_2
+dog_F_3
+dog_F_4
+dog_F_5
+dog_F_6
+dog_F_7
+dog_F_8
+dog_F_9
+dog_F_10
+dog_F_11
+dog_F_12
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+dog_M_1
+dog_M_2
+dog_M_3
+dog_M_4
+dog_M_5
+dog_M_6
+dog_M_7
+dog_M_8
+dog_M_9
+dog_M_10
+dog_M_11
+dog_M_12
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+dog_F_1
+dog_F_2
+dog_F_3
+dog_F_4
+dog_F_5
+dog_F_6
+dog_F_7
+dog_F_8
+dog_F_9
+dog_F_10
+dog_F_11
+dog_F_12
+				}
+			}
+		}
+
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+
+dog_F_1
+dog_F_2
+dog_F_3
+dog_F_4
+dog_F_5
+dog_F_6
+dog_F_7
+dog_F_8
+dog_F_9
+dog_F_10
+dog_F_11
+dog_F_12
+				}
+			}
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+
+dog_M_1
+dog_M_2
+dog_M_3
+dog_M_4
+dog_M_5
+dog_M_6
+dog_M_7
+dog_M_8
+dog_M_9
+dog_M_10
+dog_M_11
+dog_M_12
+				}
+			}
+		}
+
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+
+dog_F_1
+dog_F_2
+dog_F_3
+dog_F_4
+dog_F_5
+dog_F_6
+dog_F_7
+dog_F_8
+dog_F_9
+dog_F_10
+dog_F_11
+dog_F_12
+				}
+			}
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+
+dog_M_1
+dog_M_2
+dog_M_3
+dog_M_4
+dog_M_5
+dog_M_6
+dog_M_7
+dog_M_8
+dog_M_9
+dog_M_10
+dog_M_11
+dog_M_12
+				}
+			}
+		}
+	}
+}
