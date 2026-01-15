@@ -1,0 +1,12 @@
+portraits = {
+	
+	paragon_dolores = {
+		entity = "dolores_paragon_entity"
+		clothes_selector = "no_texture"
+		attachment_selector = "no_texture"
+
+		character_textures = {
+					"gfx/models/portraits/paragons/dolores_paragon_texture.dds"
+		}
+	}
+}

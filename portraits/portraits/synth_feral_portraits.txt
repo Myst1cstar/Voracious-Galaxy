@@ -1,0 +1,266 @@
+portraits = {
+	#female
+	synth_feral_F_1 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/synths_feral/female/femferalsynth1.dds" }
+	synth_feral_F_2 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/synths_feral/female/femferalsynth2.dds" }
+	synth_feral_F_3 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/synths_feral/female/femferalsynth3.dds" }
+	synth_feral_F_4 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/synths_feral/female/femferalsynth4.dds" }
+	synth_feral_F_5 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/synths_feral/female/femferalsynth5.dds" }
+	synth_feral_F_6 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/synths_feral/female/femferalsynth6.dds" }
+	synth_feral_F_7 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/synths_feral/female/femferalsynth7.dds" }
+	synth_feral_F_8 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/synths_feral/female/femferalsynth8.dds" }
+	synth_feral_F_9 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/synths_feral/female/femferalsynth9.dds" }
+	synth_feral_F_10 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/synths_feral/female/femferalsynth10.dds" }
+	synth_feral_F_11 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/synths_feral/female/femferalsynth11.dds" }
+	synth_feral_F_12 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/synths_feral/female/femferalsynth12.dds" }
+	
+	#male
+	synth_feral_M_1 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/synths_feral/male/maleferalsynth1.dds" }
+	synth_feral_M_2 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/synths_feral/male/maleferalsynth2.dds" }
+	synth_feral_M_3 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/synths_feral/male/maleferalsynth3.dds" }
+	synth_feral_M_4 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/synths_feral/male/maleferalsynth4.dds" }
+	synth_feral_M_5 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/synths_feral/male/maleferalsynth5.dds" }
+	synth_feral_M_6 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/synths_feral/male/maleferalsynth6.dds" }
+	synth_feral_M_7 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/synths_feral/male/maleferalsynth7.dds" }
+	synth_feral_M_8 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/synths_feral/male/maleferalsynth8.dds" }
+	synth_feral_M_9 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/synths_feral/male/maleferalsynth9.dds" }
+	synth_feral_M_10 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/synths_feral/male/maleferalsynth10.dds" }
+	synth_feral_M_11 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/synths_feral/male/maleferalsynth11.dds" }
+	synth_feral_M_12 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/synths_feral/male/maleferalsynth12.dds" }
+	
+} ##If it breaks again, call a tech-priest because I am too atheist to apease the code spirit. - OTTO
+
+portrait_groups = {
+	synth_feral = {
+		default = synth_feral_F_1
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = male
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+synth_feral_M_1
+synth_feral_M_2
+synth_feral_M_3
+synth_feral_M_4
+synth_feral_M_5
+synth_feral_M_6
+synth_feral_M_7
+synth_feral_M_8
+synth_feral_M_9
+synth_feral_M_10
+synth_feral_M_11
+synth_feral_M_12 
+				}
+			}
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = female
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+synth_feral_F_1
+synth_feral_F_2
+synth_feral_F_3
+synth_feral_F_4
+synth_feral_F_5
+synth_feral_F_6
+synth_feral_F_7
+synth_feral_F_8
+synth_feral_F_9
+synth_feral_F_10
+synth_feral_F_11
+synth_feral_F_12
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+synth_feral_M_1
+synth_feral_M_2
+synth_feral_M_3
+synth_feral_M_4
+synth_feral_M_5
+synth_feral_M_6
+synth_feral_M_7
+synth_feral_M_8
+synth_feral_M_9
+synth_feral_M_10
+synth_feral_M_11
+synth_feral_M_12 
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+synth_feral_F_1
+synth_feral_F_2
+synth_feral_F_3
+synth_feral_F_4
+synth_feral_F_5
+synth_feral_F_6
+synth_feral_F_7
+synth_feral_F_8
+synth_feral_F_9
+synth_feral_F_10
+synth_feral_F_11
+synth_feral_F_12
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+synth_feral_M_1
+synth_feral_M_2
+synth_feral_M_3
+synth_feral_M_4
+synth_feral_M_5
+synth_feral_M_6
+synth_feral_M_7
+synth_feral_M_8
+synth_feral_M_9
+synth_feral_M_10
+synth_feral_M_11
+synth_feral_M_12 
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+synth_feral_F_1
+synth_feral_F_2
+synth_feral_F_3
+synth_feral_F_4
+synth_feral_F_5
+synth_feral_F_6
+synth_feral_F_7
+synth_feral_F_8
+synth_feral_F_9
+synth_feral_F_10
+synth_feral_F_11
+synth_feral_F_12
+				}
+			}
+		}
+
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+synth_feral_F_1
+synth_feral_F_2
+synth_feral_F_3
+synth_feral_F_4
+synth_feral_F_5
+synth_feral_F_6
+synth_feral_F_7
+synth_feral_F_8
+synth_feral_F_9
+synth_feral_F_10
+synth_feral_F_11
+synth_feral_F_12
+				}
+			}
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+synth_feral_M_1
+synth_feral_M_2
+synth_feral_M_3
+synth_feral_M_4
+synth_feral_M_5
+synth_feral_M_6
+synth_feral_M_7
+synth_feral_M_8
+synth_feral_M_9
+synth_feral_M_10
+synth_feral_M_11
+synth_feral_M_12 
+				}
+			}
+		}
+
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+synth_feral_F_1
+synth_feral_F_2
+synth_feral_F_3
+synth_feral_F_4
+synth_feral_F_5
+synth_feral_F_6
+synth_feral_F_7
+synth_feral_F_8
+synth_feral_F_9
+synth_feral_F_10
+synth_feral_F_11
+synth_feral_F_12 
+				}
+			}
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+synth_feral_M_1
+synth_feral_M_2
+synth_feral_M_3
+synth_feral_M_4
+synth_feral_M_5
+synth_feral_M_6
+synth_feral_M_7
+synth_feral_M_8
+synth_feral_M_9
+synth_feral_M_10
+synth_feral_M_11
+synth_feral_M_12 
+				}
+			}
+		}
+	}
+}

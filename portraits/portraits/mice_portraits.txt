@@ -1,0 +1,265 @@
+portraits = {
+	#female
+	mouse_F_1 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/mice/female/femalemouse1.dds" }
+	mouse_F_2 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/mice/female/femalemouse2.dds" }
+	mouse_F_3 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/mice/female/femalemouse3.dds" }
+	mouse_F_4 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/mice/female/femalemouse4.dds" }
+	mouse_F_5 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/mice/female/femalemouse5.dds" }
+	mouse_F_6 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/mice/female/femalemouse6.dds" }
+	mouse_F_7 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/mice/female/femalemouse7.dds" }
+	mouse_F_8 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/mice/female/femalemouse8.dds" }
+	mouse_F_9 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/mice/female/femalemouse9.dds" }
+	mouse_F_10 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/mice/female/femalemouse10.dds" }
+	mouse_F_11 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/mice/female/femalemouse11.dds" }
+	mouse_F_12 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/mice/female/femalemouse12.dds" }
+	#male
+	mouse_M_1 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/mice/male/malemouse1.dds" }
+	mouse_M_2 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/mice/male/malemouse2.dds" }
+	mouse_M_3 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/mice/male/malemouse3.dds" }
+	mouse_M_4 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/mice/male/malemouse4.dds" }
+	mouse_M_5 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/mice/male/malemouse5.dds" }
+	mouse_M_6 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/mice/male/malemouse6.dds" }
+	mouse_M_7 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/mice/male/malemouse7.dds" }
+	mouse_M_8 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/mice/male/malemouse8.dds" }
+	mouse_M_9 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/mice/male/malemouse9.dds" }
+	mouse_M_10 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/mice/male/malemouse10.dds" }
+	mouse_M_11 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/mice/male/malemouse11.dds" }
+	mouse_M_12 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/mice/male/malemouse12.dds" }
+	
+	}
+
+portrait_groups = {
+	mice = {
+		default = mouse_F_1
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = male
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+mouse_M_1
+mouse_M_2
+mouse_M_3
+mouse_M_4
+mouse_M_5
+mouse_M_6
+mouse_M_7
+mouse_M_8
+mouse_M_9
+mouse_M_10
+mouse_M_11
+mouse_M_12 
+				}
+			}
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = female
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+mouse_F_1
+mouse_F_2
+mouse_F_3
+mouse_F_4
+mouse_F_5
+mouse_F_6
+mouse_F_7
+mouse_F_8
+mouse_F_9
+mouse_F_10
+mouse_F_11
+mouse_F_12
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+mouse_M_1
+mouse_M_2
+mouse_M_3
+mouse_M_4
+mouse_M_5
+mouse_M_6
+mouse_M_7
+mouse_M_8
+mouse_M_9
+mouse_M_10
+mouse_M_11
+mouse_M_12 
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+mouse_F_1
+mouse_F_2
+mouse_F_3
+mouse_F_4
+mouse_F_5
+mouse_F_6
+mouse_F_7
+mouse_F_8
+mouse_F_9
+mouse_F_10
+mouse_F_11
+mouse_F_12
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+mouse_M_1
+mouse_M_2
+mouse_M_3
+mouse_M_4
+mouse_M_5
+mouse_M_6
+mouse_M_7
+mouse_M_8
+mouse_M_9
+mouse_M_10
+mouse_M_11
+mouse_M_12 
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+mouse_F_1
+mouse_F_2
+mouse_F_3
+mouse_F_4
+mouse_F_5
+mouse_F_6
+mouse_F_7
+mouse_F_8
+mouse_F_9
+mouse_F_10
+mouse_F_11
+mouse_F_12
+				}
+			}
+		}
+
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+mouse_F_1
+mouse_F_2
+mouse_F_3
+mouse_F_4
+mouse_F_5
+mouse_F_6
+mouse_F_7
+mouse_F_8
+mouse_F_9
+mouse_F_10
+mouse_F_11
+mouse_F_12
+				}
+			}
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+mouse_M_1
+mouse_M_2
+mouse_M_3
+mouse_M_4
+mouse_M_5
+mouse_M_6
+mouse_M_7
+mouse_M_8
+mouse_M_9
+mouse_M_10
+mouse_M_11
+mouse_M_12 
+				}
+			}
+		}
+
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+mouse_F_1
+mouse_F_2
+mouse_F_3
+mouse_F_4
+mouse_F_5
+mouse_F_6
+mouse_F_7
+mouse_F_8
+mouse_F_9
+mouse_F_10
+mouse_F_11
+mouse_F_12 
+				}
+			}
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+mouse_M_1
+mouse_M_2
+mouse_M_3
+mouse_M_4
+mouse_M_5
+mouse_M_6
+mouse_M_7
+mouse_M_8
+mouse_M_9
+mouse_M_10
+mouse_M_11
+mouse_M_12 
+				}
+			}
+		}
+	}
+}

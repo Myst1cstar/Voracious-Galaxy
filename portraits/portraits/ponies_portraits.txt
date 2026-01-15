@@ -1,0 +1,265 @@
+portraits = {
+	#female
+	pony_F_1 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/ponies/female/femanthropony1.dds" }
+	pony_F_2 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/ponies/female/femanthropony2.dds" }
+	pony_F_3 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/ponies/female/femanthropony3.dds" }
+	pony_F_4 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/ponies/female/femanthropony4.dds" }
+	pony_F_5 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/ponies/female/femanthropony5.dds" }
+	pony_F_6 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/ponies/female/femanthropony6.dds" }
+	pony_F_7 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/ponies/female/femanthropony7.dds" }
+	pony_F_8 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/ponies/female/femanthropony8.dds" }
+	pony_F_9 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/ponies/female/femanthropony9.dds" }
+	pony_F_10 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/ponies/female/femanthropony10.dds" }
+	pony_F_11 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/ponies/female/femanthropony11.dds" }
+	pony_F_12 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/ponies/female/femanthropony12.dds" }
+	#male
+	pony_M_1 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/ponies/male/anthroponymale1.dds" }
+	pony_M_2 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/ponies/male/anthroponymale2.dds" }
+	pony_M_3 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/ponies/male/anthroponymale3.dds" }
+	pony_M_4 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/ponies/male/anthroponymale4.dds" }
+	pony_M_5 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/ponies/male/anthroponymale5.dds" }
+	pony_M_6 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/ponies/male/anthroponymale6.dds" }
+	pony_M_7 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/ponies/male/anthroponymale7.dds" }
+	pony_M_8 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/ponies/male/anthroponymale8.dds" }
+	pony_M_9 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/ponies/male/anthroponymale9.dds" }
+	pony_M_10 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/ponies/male/anthroponymale10.dds" }
+	pony_M_11 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/ponies/male/anthroponymale11.dds" }
+	pony_m_12 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/ponies/male/anthroponymale12.dds" }
+	
+	}
+
+portrait_groups = {
+	ponies = {
+		default = pony_F_1
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = male
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+pony_M_1
+pony_M_2
+pony_M_3
+pony_M_4
+pony_M_5
+pony_M_6
+pony_M_7
+pony_M_8
+pony_M_9
+pony_M_10
+pony_M_11
+pony_M_12 
+				}
+			}
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = female
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+pony_F_1
+pony_F_2
+pony_F_3
+pony_F_4
+pony_F_5
+pony_F_6
+pony_F_7
+pony_F_8
+pony_F_9
+pony_F_10
+pony_F_11
+pony_F_12
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+pony_M_1
+pony_M_2
+pony_M_3
+pony_M_4
+pony_M_5
+pony_M_6
+pony_M_7
+pony_M_8
+pony_M_9
+pony_M_10
+pony_M_11
+pony_M_12 
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+pony_F_1
+pony_F_2
+pony_F_3
+pony_F_4
+pony_F_5
+pony_F_6
+pony_F_7
+pony_F_8
+pony_F_9
+pony_F_10
+pony_F_11
+pony_F_12
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+pony_M_1
+pony_M_2
+pony_M_3
+pony_M_4
+pony_M_5
+pony_M_6
+pony_M_7
+pony_M_8
+pony_M_9
+pony_M_10
+pony_M_11
+pony_M_12 
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+pony_F_1
+pony_F_2
+pony_F_3
+pony_F_4
+pony_F_5
+pony_F_6
+pony_F_7
+pony_F_8
+pony_F_9
+pony_F_10
+pony_F_11
+pony_F_12
+				}
+			}
+		}
+
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+pony_F_1
+pony_F_2
+pony_F_3
+pony_F_4
+pony_F_5
+pony_F_6
+pony_F_7
+pony_F_8
+pony_F_9
+pony_F_10
+pony_F_11
+pony_F_12
+				}
+			}
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+pony_M_1
+pony_M_2
+pony_M_3
+pony_M_4
+pony_M_5
+pony_M_6
+pony_M_7
+pony_M_8
+pony_M_9
+pony_M_10
+pony_M_11
+pony_M_12 
+				}
+			}
+		}
+
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+pony_F_1
+pony_F_2
+pony_F_3
+pony_F_4
+pony_F_5
+pony_F_6
+pony_F_7
+pony_F_8
+pony_F_9
+pony_F_10
+pony_F_11
+pony_F_12 
+				}
+			}
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+pony_M_1
+pony_M_2
+pony_M_3
+pony_M_4
+pony_M_5
+pony_M_6
+pony_M_7
+pony_M_8
+pony_M_9
+pony_M_10
+pony_M_11
+pony_M_12 
+				}
+			}
+		}
+	}
+}

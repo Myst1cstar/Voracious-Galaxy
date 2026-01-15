@@ -1,0 +1,277 @@
+portraits = {
+	#female
+	cat_feral_F_1 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/cats_feral/female/femferalcat1.dds" }
+	cat_feral_F_2 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/cats_feral/female/femferalcat2.dds" }
+	cat_feral_F_3 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/cats_feral/female/femferalcat3.dds" }
+	cat_feral_F_4 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/cats_feral/female/femferalcat4.dds" }
+	cat_feral_F_5 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/cats_feral/female/femferalcat5.dds" }
+	cat_feral_F_6 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/cats_feral/female/femferalcat6.dds" }
+	cat_feral_F_7 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/cats_feral/female/femferalcat7.dds" }
+	cat_feral_F_8 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/cats_feral/female/femferalcat8.dds" }
+	cat_feral_F_9 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/cats_feral/female/femferalcat9.dds" }
+	cat_feral_F_10 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/cats_feral/female/femferalcat10.dds" }
+	cat_feral_F_11 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/cats_feral/female/femferalcat11.dds" }
+	cat_feral_F_12 = { greeting_sound = "humanoid_portrait_j_female" texturefile = "gfx/models/portraits/cats_feral/female/femferalcat12.dds" }
+
+	#male
+	cat_feral_M_1 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/cats_feral/male/maleferalcat1.dds" }
+	cat_feral_M_2 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/cats_feral/male/maleferalcat2.dds" }
+	cat_feral_M_3 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/cats_feral/male/maleferalcat3.dds" }
+	cat_feral_M_4 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/cats_feral/male/maleferalcat4.dds" }
+	cat_feral_M_5 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/cats_feral/male/maleferalcat5.dds" }
+	cat_feral_M_6 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/cats_feral/male/maleferalcat6.dds" }
+	cat_feral_M_7 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/cats_feral/male/maleferalcat7.dds" }
+	cat_feral_M_8 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/cats_feral/male/maleferalcat8.dds" }
+	cat_feral_M_9 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/cats_feral/male/maleferalcat9.dds" }
+	cat_feral_M_10 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/cats_feral/male/maleferalcat10.dds"}
+	cat_feral_M_11 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/cats_feral/male/maleferalcat11.dds"}
+	cat_feral_M_12 = { greeting_sound = "humanoid_portrait_j_male" texturefile = "gfx/models/portraits/cats_feral/male/maleferalcat12.dds"}
+
+}
+
+portrait_groups = {
+	cats_feral = {
+		default = cat_feral_F_1
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = male
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+
+cat_feral_M_1
+cat_feral_M_2
+cat_feral_M_3
+cat_feral_M_4
+cat_feral_M_5
+cat_feral_M_6
+cat_feral_M_7
+cat_feral_M_8
+cat_feral_M_9
+cat_feral_M_10
+cat_feral_M_11
+cat_feral_M_12
+				}
+			}
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = female
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+
+cat_feral_F_1
+cat_feral_F_2
+cat_feral_F_3
+cat_feral_F_4
+cat_feral_F_5
+cat_feral_F_6
+cat_feral_F_7
+cat_feral_F_8
+cat_feral_F_9
+cat_feral_F_10
+cat_feral_F_11
+cat_feral_F_12
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+cat_feral_M_1
+cat_feral_M_2
+cat_feral_M_3
+cat_feral_M_4
+cat_feral_M_5
+cat_feral_M_6
+cat_feral_M_7
+cat_feral_M_8
+cat_feral_M_9
+cat_feral_M_10
+cat_feral_M_11
+cat_feral_M_12
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+cat_feral_F_1
+cat_feral_F_2
+cat_feral_F_3
+cat_feral_F_4
+cat_feral_F_5
+cat_feral_F_6
+cat_feral_F_7
+cat_feral_F_8
+cat_feral_F_9
+cat_feral_F_10
+cat_feral_F_11
+cat_feral_F_12
+
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+cat_feral_M_1
+cat_feral_M_2
+cat_feral_M_3
+cat_feral_M_4
+cat_feral_M_5
+cat_feral_M_6
+cat_feral_M_7
+cat_feral_M_8
+cat_feral_M_9
+cat_feral_M_10
+cat_feral_M_11
+cat_feral_M_12
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+cat_feral_F_1
+cat_feral_F_2
+cat_feral_F_3
+cat_feral_F_4
+cat_feral_F_5
+cat_feral_F_6
+cat_feral_F_7
+cat_feral_F_8
+cat_feral_F_9
+cat_feral_F_10
+cat_feral_F_11
+cat_feral_F_12
+				}
+			}
+		}
+
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+
+cat_feral_F_1
+cat_feral_F_2
+cat_feral_F_3
+cat_feral_F_4
+cat_feral_F_5
+cat_feral_F_6
+cat_feral_F_7
+cat_feral_F_8
+cat_feral_F_9
+cat_feral_F_10
+cat_feral_F_11
+cat_feral_F_12
+				}
+			}
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+
+cat_feral_M_1
+cat_feral_M_2
+cat_feral_M_3
+cat_feral_M_4
+cat_feral_M_5
+cat_feral_M_6
+cat_feral_M_7
+cat_feral_M_8
+cat_feral_M_9
+cat_feral_M_10
+cat_feral_M_11
+cat_feral_M_12
+				}
+			}
+		}
+
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+
+cat_feral_F_1
+cat_feral_F_2
+cat_feral_F_3
+cat_feral_F_4
+cat_feral_F_5
+cat_feral_F_6
+cat_feral_F_7
+cat_feral_F_8
+cat_feral_F_9
+cat_feral_F_10
+cat_feral_F_11
+cat_feral_F_12
+				}
+			}
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+
+cat_feral_M_1
+cat_feral_M_2
+cat_feral_M_3
+cat_feral_M_4
+cat_feral_M_5
+cat_feral_M_6
+cat_feral_M_7
+cat_feral_M_8
+cat_feral_M_9
+cat_feral_M_10
+cat_feral_M_11
+cat_feral_M_12
+				}
+			}
+		}
+	}
+}
