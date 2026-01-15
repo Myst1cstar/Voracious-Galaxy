@@ -1,0 +1,20 @@
+﻿l_english:
+
+ ###################################
+ #	 	       DOLORES
+ ###################################
+
+ dolores_paragon_name: "Dolores Siva Apex Caretaker Perfected"
+ dolores_paragon_desc: "§H The Machine is incredibly tall compared to most mammalian species in the galaxy. A mass of nanites of an unknown design or origin shift around her and the scans say she doesn't have any conventional power source for a machine Unit"
+ dolores_paragon_desc_intro: "Hello my Darling... prey"
+ voragons.150.option_1: "Who are you?"
+ voragons.150.option_1_response: "I am Dolores, your new Cartaker"
+  voragons.150.option_2: "What happened to the research team?"
+ voragons.150.option_2_response: "I don't know... *hic*."
+ voragons.150.option_3: "What... are you?"
+ voragons.150.option_3_response: "Top of the line §R|ERROR #//x364 $$#-?? " -- DATA CORRUPTED|§!model of course! I should devour you for even asking that... "
+ voragons.150.option_4: "You have a unique design."
+ voragons.150.option_4_response: "Quite certainly, but... that comes at a price. If you want to have my protection, I need some well... prey to continue running and functioning at full power and capabilities ."
+ voragons.150.hire: "§YDolores§! joins our empire as a §HLeader§!."
+ dolores_paragon_catch_phrase: "§L"mmph this one is strugling alot. I wonder if it will become my ass or tit fat"§!"
+ 

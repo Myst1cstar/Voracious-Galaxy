@@ -1,0 +1,90 @@
+
+# Dolores system
+ssb_broken_heart_system_initializer = {
+	name = vore_paragon_dolores_system
+	class = "sc_black_hole"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+
+    usage = misc_system_init
+	usage_odds = {
+        base = 100
+        modifier = {
+			factor = 0
+			OR = {
+				is_fe_cluster = yes
+				is_marauder_cluster = yes
+			}
+		}
+    }
+	
+	max_instances = 1
+	spawn_chance = 9999
+
+	planet = {
+		name = vore_paragon_dolores_star
+		class = "pc_black_hole"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+
+	planet = {
+		name = vore_paragon_dolores_planet
+		class = "pc_relic"
+		orbit_distance = 100
+		orbit_angle = { min = 90 max = 270 }
+		size = {min = 18 max = 25}
+		has_ring = no
+		change_orbit = 5
+		init_effect = {
+			 add_anomaly = {
+				category = dolores_intro_anomaly
+			}
+		}
+		moon = {
+			name = vore_paragon_dolores_planet_moon_1
+			class = "pc_shattered"
+			orbit_distance = 11
+			orbit_angle = { min = 90 max = 270 }
+			size = { min = 5 max = 7}
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+		moon = {
+			name = vore_paragon_dolores_planet_moon_2
+			class = "pc_shattered"
+			orbit_distance = 6
+			orbit_angle = { min = 90 max = 270 }
+			size = { min = 5 max = 7}
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+		moon = {
+			name = vore_paragon_dolores_planet_moon_3
+			class = "pc_shattered"
+			orbit_distance = 6
+			orbit_angle = { min = 90 max = 270 }
+			size = { min = 5 max = 7}
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+		moon = {
+			name = vore_paragon_dolores_planet_moon_4
+			class = "pc_shattered"
+			orbit_distance = 6
+			orbit_angle = { min = 90 max = 270 }
+			size = { min = 5 max = 7}
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+	}
+
+}

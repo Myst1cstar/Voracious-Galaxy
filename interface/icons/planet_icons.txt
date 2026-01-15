@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_text_job_enforcer"
+		textureFile = "gfx/interface/icons/jobs/job_enforcer.dds"
+	}	
+}

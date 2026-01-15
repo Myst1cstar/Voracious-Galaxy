@@ -1,0 +1,40 @@
+
+paragon_dolores_digsite = {
+	desc = paragon_dolores_digsite.desc
+	picture = GFX_evt_alien_ruins
+	stages = 3
+	max_instances = 1
+
+	visible = {
+		default_site_visible_trigger = yes
+	}
+	
+	weight = 0
+
+	allow = {
+		is_ship_class = shipclass_science_ship
+		exists = leader
+	}
+	
+	stage = {
+		difficulty = 6
+		event = voragons.110
+		icon = GFX_archaeology_runes_B1
+	}
+
+	stage = {
+		difficulty = 8
+		event = voragons.115
+		icon = GFX_archaeology_runes_B6
+	}
+
+	stage = {
+		difficulty = 9
+		event = voragons.120
+		icon = GFX_archaeology_runes_B5
+	}
+
+	on_roll_failed = {
+		from = { standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events } }
+	}
+}

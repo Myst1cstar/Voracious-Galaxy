@@ -1,0 +1,128 @@
+﻿l_english:
+
+ ##############################################
+ #                  INSULTS
+ ##############################################
+
+ #Insult pred to normal (lethal)
+ VORE_INSULT_01: "You know... I bet your kind goes well with gravy."
+ VORE_INSULT_02: "Don't worry, we have a place for [owner.GetSpeciesNamePlural] in our society. You wouldn't mind melting down in our stomachs, would you?"
+ VORE_INSULT_03: "Our [from.GetSpeciesMouthName] fill with saliva just thinking about you, [owner.GetSpeciesNamePlural]. We can't wait to devour each and every last one."
+ VORE_INSULT_04: "Once we finish feasting on you, the only thing [owner.GetSpeciesNamePlural] will be remembered for was how fattening you were."
+ VORE_INSULT_05: "*...uuuurp* Oh, I'm sorry, was just finishing your ambassador. Don't worry, we're coming for the rest of you next."
+ VORE_INSULT_06: "Oh, your [owner.GetSpeciesSpawnNamePlural] look so adorable... I bet a slow roast will make their flesh fall from the bone."
+ VORE_INSULT_07: "Ah, you replied just in time! We would love to test just how good of a belly bulge a [owner.GetSpeciesName] makes. "
+ VORE_INSULT_08: "[owner.GetSpeciesName] how about a cultural exchange? We get your culture, you get to see the insides of our stomachs!"
+ VORE_INSULT_09: "We're looking for some help: one of our most prominent cooks is writing a book on [owner.GetSpeciesAdj] dishes - a dozen of your citizens should do the job!"
+ VORE_INSULT_10: "I wonder if you would beg while we stuff our [from.GetSpeciesMouthName] with you."
+
+ #Insult pred to lithoid
+ VORE_INSULT_11: "Ah, [owner.GetSpeciesName]. Just in time for the start of my all rock diet."
+ VORE_INSULT_12: "Forget about salt; with [owner.GetSpeciesName] in this galaxy, our [from.GetSpeciesSpawnNamePlural] will not need to care for generations."
+ VORE_INSULT_13: "I wonder... If you tumbled around in us for a few weeks, would your kind come out polished?"
+ VORE_INSULT_14: "The only reason we left you alone is 'cause [owner.GetSpeciesSpawnNamePlural] are bad for our [from.GetSpeciesMouthName]."
+ VORE_INSULT_15: "Beware, just because [owner.GetSpeciesNamePlural] are tough doesn't mean our acid won't do its job."
+ VORE_INSULT_16: "You know, there's not much different between cracking oysters and geodes..."
+ VORE_INSULT_17: "You might want to know that we invented a new exercise: swallowing several [owner.GetSpeciesSpawnNamePlural] is a great substitute for weights!"
+ VORE_INSULT_18: "Could you do an acid wash or two? The recent [from.GetSpeciesAdj] enriched diet has become really popular!"
+ VORE_INSULT_19: "Hello, [owner.GetSpeciesNamePlural]. Could you send us another ambassador? The last one was used to test wheter a [from.GetSpeciesNamePlural] body or industrial crusher was faster."
+ VORE_INSULT_20: "We never knew mineral supplements could be gotten wholesale untill we met you, [owner.GetSpeciesNamePlural]."
+
+ #Insult pred to necroid
+ VORE_INSULT_21: "We have eaten roadkill that was fresher than you, [owner.GetSpeciesNamePlural]"
+ VORE_INSULT_22: "Urgh, just looking at you makes me throw up my lunch, [owner.GetSpeciesName]. Don't mkae me have to catch it again."
+ VORE_INSULT_23: "Your stench can be frelt from behind the screen, [owner.GetSpeciesNamePlural]."
+ VORE_INSULT_24: "The sight of you would make even the hungriest [from.GetSpeciesName] reconsider their intent."
+ VORE_INSULT_25: "How long would we need to use antibiotics after gulping you, [owner.GetSpeciesNamePlural]?"
+ VORE_INSULT_26: "[owner.GetSpeciesNamePlural], we're opening a composting facility and all of you are invited!"
+ VORE_INSULT_27: "We'd rather have tapeworms over [owner.GetSpeciesNamePlural] inside us: it would do significantly less harm."
+ VORE_INSULT_28: "How much would there be left of an [from.GetSpeciesName] if we put them in a decontamination chamber?"
+ VORE_INSULT_29: "Dear [owner.GetSpeciesNamePlural], we wish you a fast recovery - and better palatability."
+ VORE_INSULT_30: "We hope you fight better than you taste, [owner.GetSpeciesNamePlural]."
+
+ #Insult pred to corp
+ VORE_INSULT_31: "[owner.GetSpeciesNamePlural], how about you merge our assets with us? We'd love to make use of your corp... and your fat." # corp to corp exclusive
+ VORE_INSULT_32: "Oh, come on, [owner.GetSpeciesNamePlural]! You don't need to care about your stocks and charts from inside our stomachs!"
+ VORE_INSULT_33: "You know, [owner.GetSpeciesNamePlural], we don't need a monetary incentive to stuff ourselves with you."
+ VORE_INSULT_34: "I wonder, would all that money protect you from our acid?"
+ VORE_INSULT_35: "We want to propose a new trade deal: we get the [owner.GetSpeciesNamePlural] people and you provide us lunch."
+ VORE_INSULT_36: "How much do we need to pay for the [owner.GetSpeciesNamePlural] to finally relocate to our bellies?"
+ VORE_INSULT_37: "We are hosting a business summit. If you want to come, just get into the nearest [from.GetSpeciesAdj] [from.GetSpeciesMouthName]."
+ VORE_INSULT_38: "The moment we get hand on your stocks, you [owner.GetSpeciesNamePlural] might want to update your VoredIn."
+ VORE_INSULT_39: "We have a new species job posting you might be interested in, [owner.GetSpeciesNamePlural]: Belly filler, no previous experience necessary!"
+ VORE_INSULT_40: "Once we're done with the hostile takeover, you will still be stitting at your desks.. as fat, cushioning our asses." # corp to corp exclusive
+
+ #Insult pred to pred
+ VORE_INSULT_41: "Your prey might as well be willingly letting them catch you with how bad hunters you are, [owner.GetSpeciesNamePlural]!"
+ VORE_INSULT_42: "You call yourself predators, yet we have seen Tiyanki scarier than you."
+ VORE_INSULT_43: "Once we start hunting the same prey, you will grow hungry, [owner.GetSpeciesNamePlural]!"
+ VORE_INSULT_44: "I wonder, if [owner.GetSpeciesName] and [from.GetSpeciesName] were to hunt each other, how long would it take [from.GetSpeciesName] to digest you?"
+ VORE_INSULT_45: "Should [owner.GetSpeciesName] ever dissapear, there would still be the same amount of prey."
+ VORE_INSULT_46: "You should be jailed. Thankfully, there is an empty cell just behind my [from.GetSpeciesMouthName]."
+ VORE_INSULT_47: "Why don't you come over here, [owner.GetSpeciesNamePlural]? Our stomach are free to show you exactly what a propper predator can do."
+ VORE_INSULT_48: "We're ready to give any [owner.GetSpeciesName] lessons on how to be a proper predator. Of course, they will be rather in depth..."
+ VORE_INSULT_49: "You know, some of your prey came to us, [owner.GetSpeciesName]. Seems we're better at some things than you."
+ VORE_INSULT_50: "How many times will we have to prove we are better, [owner.GetSpeciesName]? We're running out of volounteers with emoty stomachs for your ambassadors. "
+
+ #Insult pred to normal (safe)
+ VORE_INSULT_51: "Why don't you just relax in our bellies while we sort out all the goverment stuff, [owner.GetSpeciesNamePlural]?"
+ VORE_INSULT_52: "All that governing seems tiring, [owner.GetSpeciesName]. Why don't you relax within our embrace?"
+ VORE_INSULT_53: "Dear [owner.GetSpeciesName], why don't you just slip into our [from.GetSpeciesMouthName]s?"
+ VORE_INSULT_54: "Can you send another ambassador? The last one still does not want to leave my stomach."
+ VORE_INSULT_55: "Once you land in our [from.GetSpeciesMouthName]s, we will not let go."
+ VORE_INSULT_56: "Have you considered to let go? Our bellies would love you inside them."
+ VORE_INSULT_57: "Once we conquer you, our stomach will treat you fairly."
+ VORE_INSULT_58: "We cannot wait to stuff ourselves with you."
+ VORE_INSULT_59: "Well, [owner.GetSpeciesName], why cannot you submit to our form?"
+ VORE_INSULT_60: "We can picture you within us, [owner.GetSpeciesName], and the need is evergrowing."
+
+ #Insult pred anal
+ VORE_INSULT_ANAL_01: "You are headed for great things, [owner.GetSpeciesNamePlural] - straight between our asscheeks."
+ VORE_INSULT_ANAL_02: "Dear [owner.GetSpeciesNamePlural], we cannot wait untill all of you experience the inside of our colons first hamd."
+ VORE_INSULT_ANAL_03: "The very idea of you slowly sliding into my asshole makes me quiver. When will [owner.GetSpeciesNamePlural] accept that is your fate?"
+ VORE_INSULT_ANAL_04: "We are getting bored, [owner.GetSpeciesNamePlural] - our assholes cannot wait for you to fill them!"
+ VORE_INSULT_ANAL_05: "I wonder, would it take longer for your kind to go in our asses, or for you to come out."
+ VORE_INSULT_ANAL_06: "How many [owner.GetSpeciesNamePlural] can fit in a single [from.GetSpeciesAdj] ass? Well, why don't we find out? "
+ VORE_INSULT_ANAL_07: "Did you know that [owner.GetSpeciesName] shaped plugs have become really popular?"
+ VORE_INSULT_ANAL_08: "Seeing you, my ass is becoming impatient."
+ VORE_INSULT_ANAL_09: "Do the [owner.GetSpeciesNamePlural] like going in our asses face first? Because we sure do."
+ VORE_INSULT_ANAL_10: "The day you submit between our cheeks will be when you will finally learn your place, [owner.GetSpeciesNamePlural]!"
+
+ #Insult pred unbirthing (mctf)
+ VORE_INSULT_UNBIRTHING_01: "Dear [owner.GetSpeciesNamePlural], why don't you spend some time in our females? It would make you learn what means to be a [from.GetSpeciesMouthName] really quickly!"
+ VORE_INSULT_UNBIRTHING_02: "There is a quirk of our biology you might not know about. Why don't you find a [from.GetSpeciesAdj] female and get aquainted with it? It might take a couple of months, though."
+ VORE_INSULT_UNBIRTHING_03: "[owner.GetSpeciesNamePlural], why don't you submit to us? Either way, after we're done with you, your new forms will not remember your shmae."
+ VORE_INSULT_UNBIRTHING_04: ""
+ VORE_INSULT_UNBIRTHING_05: ""
+ VORE_INSULT_UNBIRTHING_06: ""
+ VORE_INSULT_UNBIRTHING_07: ""
+ VORE_INSULT_UNBIRTHING_08: ""
+ VORE_INSULT_UNBIRTHING_09: ""
+ VORE_INSULT_UNBIRTHING_10: ""
+
+ #Insult pred unbirthing (reg vore)
+ VORE_INSULT_UNBIRTHING_11: ""
+ VORE_INSULT_UNBIRTHING_12: ""
+ VORE_INSULT_UNBIRTHING_13: ""
+ VORE_INSULT_UNBIRTHING_14: ""
+ VORE_INSULT_UNBIRTHING_15: ""
+ VORE_INSULT_UNBIRTHING_16: ""
+ VORE_INSULT_UNBIRTHING_17: ""
+ VORE_INSULT_UNBIRTHING_18: ""
+ VORE_INSULT_UNBIRTHING_19: ""
+ VORE_INSULT_UNBIRTHING_20: ""
+
+ #Insult pred to robot unbirthing
+ VORE_INSULT_UNBIRTHING_21: "You will make for fine vibrators, [owner.GetSpeciesNamePlural]."
+
+ #Insult pred cock vore
+ VORE_INSULT_COCKVORE_01: ""
+ VORE_INSULT_COCKVORE_02: ""
+ VORE_INSULT_COCKVORE_03: ""
+ VORE_INSULT_COCKVORE_04: ""
+ VORE_INSULT_COCKVORE_05: ""
+ VORE_INSULT_COCKVORE_06: ""
+ VORE_INSULT_COCKVORE_07: ""
+ VORE_INSULT_COCKVORE_08: ""
+ VORE_INSULT_COCKVORE_09: ""
+ VORE_INSULT_COCKVORE_10: ""

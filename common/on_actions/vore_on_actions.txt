@@ -1,0 +1,48 @@
+on_press_begin = {
+	events = {
+		vore_primer.1
+	}
+}
+
+on_bi_yearly_pulse_country = {
+    events = {
+        vore_mce.1
+    }
+}
+
+on_yearly_pulse-country = {
+    events = {
+        vore_primer.1112
+    }
+}
+
+on_colonized = {
+    events = {
+        vore_mce.2
+    }
+}
+
+on_system_survey_ship = {
+    events = {
+        vore_mce.3
+    }
+}
+
+on_planet_attackers_win = {
+    events = {
+        vore_mce.4
+    }
+}
+
+on_survey_planet = {
+    events = {
+        vore_mce.5
+    }
+}
+
+on_entering_system_fleet = {
+    events = {
+        vore_mce.6
+        vore_exploration.100
+    }
+}

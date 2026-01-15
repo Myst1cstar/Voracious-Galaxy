@@ -1,0 +1,63 @@
+﻿l_english:
+ 
+
+ ##############################################
+ #           EMPIRE MODIFIERS
+ ##############################################
+
+ vored_scientist_found: "Scientist remains recently found."
+
+ ##############################################
+ #           PLANET MODIFIERS
+ ##############################################
+
+ war_against_vore: "War on vore"
+ war_against_vore_name: "§TEnables additional hazzard pay for our law enforcement.\nPop happiness: §R -5%§!\nEnforcer £job_enforcer£ upkeep: §R -2§!£energy£§!\n\n§gAsk Regan how that one played out.§!"
+
+ vore_loosey_goosey_vore_1_safe: "Some degeneracy"
+ vore_loosey_goosey_vore_1_safe_DESC: "§TPopulus of the planet regularly ignores what would otherwise be considered inproper in our empire. \n\nPop happiness: §G+5%§!\nPlanet production: §R-5%§!§!"
+ vore_loosey_goosey_vore_2_safe: "Degeneracy normalised"
+ vore_loosey_goosey_vore_2_safe_DESC: "§TPopulus of this planet regularly engages in sexual gratification through vore.\n\nPop happiness: §G+15%§!\nPlanet production: §R-10%§!\nUnity £unity£ production: §G+15%§!§!"
+ vore_loosey_goosey_vore_3_safe: "Widespread degeneracy"
+ vore_loosey_goosey_vore_3_safe_DESC: "§TThere is not a single citizen of this planet that does not engage in vore.\n\nPop happiness: §G+25§!\nPlanet production: §R-15%§!\nUnity £unity£ production: §G+30%§!§!"
+ vore_loosey_goosey_vore_1_lethal: "Some predation"
+ vore_loosey_goosey_vore_1_lethal_DESC: "§TPredation is practiced on the outskirst of societal norms, but most of the populance ignores it.\n\nPop happiness: §G+5%§!\nPop Growth: §R-10%§!\nSoldier jobs: +1§!"
+ vore_loosey_goosey_vore_2_lethal: "Predation normalised"
+ vore_loosey_goosey_vore_2_lethal_DESC: "§TPredation is common in all layers of the culture\n\nPop happiness: §G+15%§!\nPop Growth: §R-20%§!\nUnity £unity£ production: §G+50%§!\nSoldier jobs: §G+2§!\nCriminal jobs:§R+2§!§!"
+ vore_loosey_goosey_vore_3_lethal: "Widespread predation"
+ vore_loosey_goosey_vore_3_lethal_DESC: "§TDue to this planet, predation is the single highest crime in our empire. No one is safe and many elites employ PMC's.\n\nop happiness: §G+25%§!\nPop Growth: §R-30%§!\nUnity £unity£ production: §G+100%§!\nSoldier jobs: §G+5§!\nCriminal jobs:§R+3§!§!"
+ 
+ ####################
+ # Static Modifiers #
+ ####################
+ 
+ # Decisions# 
+ 
+ vore_at_horizon_gate: "Sub-G Parks"
+ vore_at_horizon_gate_DESC: ""
+ 
+ ##########
+ # Civics #
+ ##########
+ 
+ civic_vore_apex_predator: "Apex Predator"
+ civic_vore_apex_predator_DESC: "Does not work trying to fix"
+ civic_tooltip_vore_apex_predator_effects: "- £pops£ Consumer goods upkeep decreased by §G30%§!\n- $MOD_ARMY_DAMAGE_MULT$: §G+50%§!"
+ 
+###########
+# Origins #
+###########
+
+# Hivemind #
+
+ origin_vore_predatory_hive: "Predatory Hive"
+ origin_vore_predatory_hive_DESC: ""
+ origin_tooltip_vore_predatory_hive_effects: ""
+ 
+ origin_vore_peaceful_hive: "Peaceful Hive"
+ origin_vore_peaceful_hive_DESC: ""
+ origin_tooltip_vore_peaceful_hive_effects: ""
+ 
+ ##############################################
+ #               MISCELLANEOUS
+ ##############################################

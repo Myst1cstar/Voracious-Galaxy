@@ -1,0 +1,218 @@
+namespace = vore_exploration
+
+
+#missing scientist
+ship_event = {
+    id = vore_exploration.15
+    fire_only_once = yes
+    is_triggered_only = yes
+    picture = GFX_evt_ship_in_orbit
+    title = vore_exploration.15.name
+
+    trigger = {
+        owner = {
+            has_country_flag = vore_enabled
+            has_global_flag = anal_vore_enabled
+        }
+        leader = {
+            gender = female
+        }
+    }
+
+    immediate = {
+        change_variable = {which = vore_event_incrementer value = 1}
+    }
+
+    desc = vore_exploration.15.desc
+
+    option = {
+        name = vore_exploration.15.panic
+
+        trigger = {
+            owner = {
+                has_country_flag = is_lethal_vore_country
+            }
+        }
+        hidden_effect = {
+            random_list = {
+                35 = { ship_event = { id = vore_exploration.25 days = 15 random = 30} }
+                50 = { ship_event = { id = vore_exploration.27 days = 15 random = 30} }
+                15 = { ship_event = { id = vore_exploration.26 days = 15 random = 5} }
+            }
+        }
+    }
+
+    option = {
+        name = vore_exploration.15.panic
+        trigger = {
+            NOT = {
+                owner = {
+                    has_country_flag = is_lethal_vore_country
+                }
+            }
+        }
+        hidden_effect = {
+            random_list = {
+                50 = { ship_event = { id = vore_exploration.25 days = 15 random = 30} }
+                50 = { ship_event = { id = vore_exploration.26 days = 15 random = 5} }
+            }
+        }
+    }
+}
+
+ship_event = {
+    id = vore_exploration.26
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    picture = GFX_evt_ship_in_orbit
+    title = vore_exploration.26.name
+    desc = vore_exploration.26.desc
+
+    option = {
+        name = vore_exploration.26.hush
+        trigger = {
+            owner = {
+                resource_stockpile_compare = { resource = influence value >= 100 }
+            }
+        }
+    owner = {
+        add_resource = { influence = -100}
+    }
+    }
+
+    option = {
+        name = vore_exploration.26.reveal
+        owner = {
+			add_modifier = {
+				modifier = vored_scientist_found
+				days = 6480
+			}
+		}
+    }
+}
+
+ship_event = {
+    id = vore_exploration.27 
+    fire_only_once = yes
+    is_triggered_only = yes
+    picture = "GFX_vore_skeleton_found"
+
+    title = vore_exploration.27.name
+    desc = vore_exploration.27.desc
+
+    option = {
+        name = vore_exploration.27.reveal
+
+        owner = {
+			add_modifier = {
+				modifier = vored_scientist_found
+				days = 6480
+			}
+		}
+    }
+}
+
+ship_event = {
+    id = vore_exploration.25
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    picture = GFX_vore_scientist_accident_anal
+    title = vore_exploration.25.name
+
+    desc = {
+        trigger = {
+            check_variable_arithmetic = {
+                which = vore_event_incrementer
+                modulo = 2
+                value = 0
+            }
+        }
+        text = vore_exploration.25.desc_1
+    }
+
+    desc = {
+        trigger = {
+            check_variable_arithmetic = {
+                which = vore_event_incrementer
+                modulo = 2
+                value = 1
+            }
+        }
+        text = vore_exploration.25.desc_2
+    }
+
+    option = {
+        name = vore_exploration.25.done
+    }
+}
+
+
+# Predatory fauna
+ship_event = {
+    id = vore_exploration.50
+    is_triggered_only = yes
+
+    trigger = {
+        owner = {
+            has_country_flag = vore_is_prey
+            has_country_flag = is_lethal_vore_country
+        }
+        FromFrom = { any_deposit = { is_deposit_type = d_dangerous_wildlife_blocker}}
+        OR ={
+            FromFrom = { planet = { is_planet_class = pc_continental}}
+            FromFrom = { planet = { is_planet_class = pc_tropical} }
+        }
+    }
+
+    immediate = {
+        change_variable = {which = vore_event_incrementer value = 1}
+    }
+
+    picture = GFX_vore_predatory_fauna 
+    title = vore_exploration.50.name
+    desc = vore_exploration.50.desc
+
+    option = {
+        name = vore_exploration.50.name_a
+        
+        Root.leader = {
+            kill_leader = {show_notification = no}
+        }
+        
+    }
+}
+
+#entering Broken Heart
+fleet_event = {
+    id = vore_exploration.100
+    is_triggered_only = yes
+
+    trigger = {
+        NOT = {
+            owner = {
+                has_country_flag =  visited_broken_heart
+            }
+        }
+        root = {
+            from = {
+                star = {
+                    has_star_flag = is_system_broken_heart
+                }
+            }
+        }
+    }
+    
+    picture = GFX_evt_ship_in_orbit
+    title = vore_exploration.100.name
+    desc = vore_exploration.100.desc
+
+    option = {
+        name = ACKNOWLEDGED
+
+        owner = {
+            set_country_flag = visited_broken_heart   
+        }
+    }
+}

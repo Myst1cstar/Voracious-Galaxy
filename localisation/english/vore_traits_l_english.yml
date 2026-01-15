@@ -1,0 +1,43 @@
+﻿l_english:
+
+ ##############################################
+ #               SPECIES TRAITS
+ ##############################################
+
+ #Lethal Vore
+
+ trait_vore_lethal: "Lethal Vorarephilia"
+ trait_vore_lethal_desc: "This species has developed increadibly efficient digestion processes, allowing them to consume still living creatures without much harm to themselves. This has resulted in an immensly competative and hostile culture."
+ trait_vore_lethal_effects: "§gOnly the strongest survive.§! \nPop growth speed: §R-0.20%§! \nLeader lifespan: §R-20§! \nLeader experience gain: §G+120%§! \n§gOverpopulation solution§! \nPop food and goods upkeep §G-0.1§! \n§gFailure is not an option§! \nWorker pop production: §G+10%§!"
+
+ #Non-lethal Vore
+
+ trait_vore_safe: "Non-Lethal Vorarephilia"
+ trait_vore_safe_desc: "This species has developed an ability to control their digestion to the point they can keep foreign things in their bodies for incredibly long times. Appropriately, several fetishes have developed due to this feature."
+ trait_vore_safe_effects: "§gVore Sex.§! \nPop growth speed: §R-5%§! \nPop food usage: §R-10%§! \n§gConstant satisfaction.§! \nPop amenities production: §G+15%§!  \n§gReally tight living.§! \nPop housing usage: §G-10%§! "
+
+ #Prey species
+ trait_vore_prey: "Prey species"
+ trait_vore_prey_desc: "This species has evolved from a line of prey animals and have barely wrestled control of their homeworld from predators. As such, they naturally attract predators, despite their technological and societal progress."
+ trait_vore_prey_effects: "§g''What or flight?''§! \nGround army damage: §R-90%§! \n§gSurvival through quantity.§! \nPop growth speed: §G+25%§! \nPop food upkeep: §R+20%§!" 
+
+ #Internal Contaiment Units
+ trait_vore_internal_containment_units: "Internal Contaiment Units"
+ trait_vore_internal_containment_units_desc: "Whether through intentional design or design error, these robots feature a sizable storage capacity within their chassies, creating a perfect opportunity for ''containment''..."
+ trait_vore_internal_containment_units_effects: "§gDesign complications§! \nAssembly reduction: §R -5%§! \nAmmenities usage: §R +10%§! \n§gExtra capacity§! \nJob production: §G+10%§!"
+
+ #Emergency Biofuel Generators
+ trait_vore_emergency_biofuel_generators: "Emergency Biofuel Generators"
+ trait_vore_emergency_biofuel_generators_desc: "Whether macro, micro or nano collectors, these units are capable to collect and use biomass to porcure power when away from their designated supply."
+ trait_vore_emergency_biofuel_generators_effects: "§gLower power draw§! \nPop power upkeep: §G -25%§! \n§gHigher system maintenance§! \nAmmenity usage: §R +10%§!"
+
+##############################################
+#                 LEADER TRAITS
+##############################################
+
+ #Gorger
+ leader_trait_vore_gorger: "Gorger"
+ leader_trait_vore_gorger_desc: "While many of our officers partake in eating poorly-performing underlings, this one  has done this to such an extent that we have to divert significant resource to maintain their unhealthy choices."
+
+ leader_trait_vore_extensive_gorger: "Extensive Gorger"
+ leader_trait_vore_extensive_gorger_desc: "This leader has well and truly gone overboard in voration of their subordinates, so much so that they are now unable to eat regular food."

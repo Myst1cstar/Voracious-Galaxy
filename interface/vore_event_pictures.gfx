@@ -1,0 +1,160 @@
+spriteTypes = {
+
+	# PRIMER
+	spriteType = {
+		name = "GFX_vore_primer"
+		texturefile = "gfx/event_pictures/vore_primer_image.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_vore_primer_2"
+		texturefile = "gfx/event_pictures/vore_primer_image_2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	# MISSING SCIENTIST
+	spriteType = {
+		name = "GFX_vore_prey_running"
+		texturefile = "gfx/event_pictures/vore_prey_running.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_vore_scientist_accident_anal"
+		texturefile = "gfx/event_pictures/vore_scientist_accident_anal.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_vore_skeleton_found"
+		texturefile = "gfx/event_pictures/vore_skeleton_found.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	# CONSPICUOUS COCKPULATION
+
+	spriteType = {
+		name = "GFX_vore_conspicuous_cockpulation"
+		texturefile = "gfx/event_pictures/vore_conspicuous_cockpulation.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	# VORE - VHAT IS IT GOOD FOR?
+	spriteType = {
+		name = "GFX_vore_what_is_it_good_for"
+		texturefile = "gfx/event_pictures/vore_what_is_it_good_for.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	#GORGER
+	spriteType = {
+		name = "GFX_vore_gorger"
+		texturefile = "gfx/event_pictures/vore_gorger.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	#PREDATORY FAUNA
+	spriteType = {
+		name = "GFX_vore_predatory_fauna"
+		texturefile = "gfx/event_pictures/vore_predatory_fauna.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	# FAR, UNGOVERNED, FRONTIER
+
+	#ORAL
+	spriteType = {
+		name = "GFX_vore_fuf_oral_wg"
+		texturefile = "gfx/event_pictures/vore_fuf_oral_wg.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_vore_fuf_oral_lethal"
+		texturefile = "gfx/event_pictures/vore_fuf_oral_lethal.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_vore_fuf_oral_safe"
+		texturefile = "gfx/event_pictures/vore_fuf_oral_safe.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	#ANAL
+	spriteType = {
+		name = "GFX_vore_fuf_anal_lethal"
+		texturefile = "gfx/event_pictures/vore_fuf_anal_lethal.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_vore_fuf_anal_safe"
+		texturefile = "gfx/event_pictures/vore_fuf_anal_safe.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	#COCK VORE
+	spriteType = {
+		name = "GFX_vore_fuf_cock_lethal"
+		texturefile = "gfx/event_pictures/vore_fuf_cock_lethal.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_vore_fuf_cock_safe"
+		texturefile = "gfx/event_pictures/vore_fuf_cock_safe.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	#UNBIRTHING
+	spriteType = {
+		name = "GFX_vore_fuf_pussy_lethal"
+		texturefile = "gfx/event_pictures/vore_fuf_pussy_lethal.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_vore_fuf_pussy_safe"
+		texturefile = "gfx/event_pictures/vore_fuf_pussy_safe.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	#LOW
+	spriteType = {
+		name = "GFX_vore_fuf_vorny_low"
+		texturefile = "gfx/event_pictures/vore_fuf_vorny_low.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	#MEDIUM
+	spriteType = {
+		name = "GFX_vore_fuf_vorny_med"
+		texturefile = "gfx/event_pictures/vore_fuf_vorny_med.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	#NO VIDEO FEED FROM VANILLA - DIGSITES DO NOT SUPPORT PICTURE_EVENT_DATA
+	spriteType = {
+		name = "no_video_feed_event_version"
+		texturefile =  "gfx/event_pictures/no_video_feed_event_version.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}

@@ -1,0 +1,55 @@
+﻿l_english:
+
+ ######################
+ #      GREETINGS
+ ######################
+
+ VORE_HOSTILE_GREETING_01: "We are here willingly, unlike our prey."
+ VORE_HOSTILE_GREETING_02: "Don't worry, the digestion isn't painful... or, at least no one complained about it."
+ VORE_HOSTILE_GREETING_03: "Have you ever wondered how it feels to be digested?"
+ VORE_HOSTILE_GREETING_04: "We can't wait to taste you... your coulture."
+ VORE_HOSTILE_GREETING_05: "You know, if you climbed into my maw, it would save us both a lot of time."
+ VORE_HOSTILE_GREETING_06: "*BWARP* Another successful negotiation... why don't we have one as well?" 
+ VORE_HOSTILE_GREETING_07: "Ah, it's a lunch time~ Let's see what species we can conquer next..."
+ VORE_HOSTILE_GREETING_08: "Oh, it seems I've eaten a credit chip, why don't you climb into me and get it?"
+ #VORE_HOSTILE_GREETING_09: ""
+ #VORE_HOSTILE_GREETING_10: ""
+
+ #VORE_HOSTILE_GREETING_11: ""
+ #VORE_HOSTILE_GREETING_12: ""
+ #VORE_HOSTILE_GREETING_13: ""
+ #VORE_HOSTILE_GREETING_14: ""
+ #VORE_HOSTILE_GREETING_15: ""
+ #VORE_HOSTILE_GREETING_16: ""
+ #VORE_HOSTILE_GREETING_17: ""
+ #VORE_HOSTILE_GREETING_18: ""
+ #VORE_HOSTILE_GREETING_19: ""
+ #VORE_HOSTILE_GREETING_20: ""
+
+ #VORE_HOSTILE_GREETING_08: ""
+ #VORE_HOSTILE_GREETING_08: ""
+ #VORE_HOSTILE_GREETING_08: ""
+ #VORE_HOSTILE_GREETING_08: ""
+ #VORE_HOSTILE_GREETING_08: ""
+ #VORE_HOSTILE_GREETING_08: ""
+ #VORE_HOSTILE_GREETING_08: ""
+ #VORE_HOSTILE_GREETING_08: ""
+ #VORE_HOSTILE_GREETING_08: ""
+ #VORE_HOSTILE_GREETING_08: ""
+
+ VORE_NEUTRAL_GREETING_01: "*Gulp*... Ah, apologies. I prefer my lunch extra rare."
+ VORE_NEUTRAL_GREETING_02: "*URP~* Oh, don't worry, it's not one of you."
+ VORE_NEUTRAL_GREETING_03: "Visitors? *GURP* What visitors?"
+ VORE_NEUTRAL_GREETING_04: "Ah, that hit the spot... oh, [from.GetSpeciesName], you're here? "
+ VORE_NEUTRAL_GREETING_05: "...urgh, why do you KEEP MOVING? Huh? No, I wasn't taling to you/"
+ VORE_NEUTRAL_GREETING_06: "Gah, when will they finally pass... OH! Hello..."
+ VORE_NEUTRAL_GREETING_07: "*BHWRPP* Oh, you didn't hear that, did you?"  
+ VORE_NEUTRAL_GREETING_08: ""
+
+ VORE_FRIENDLY_GREETING_01: "Oh, [from.GetSpeciesName]! We were just planning to invite your ambassador to a dinner. Does your kind prefer their prey willing or not?"
+ VORE_FRIENDLY_GREETING_02: "Greetings, friends. The sight of you calms our stomachs."
+ VORE_FRIENDLY_GREETING_03: "What are the chances, [from.GetSpeciesName]? You called just after the lunch. Seems that next time we'll have to leave some."
+ VORE_FRIENDLY_GREETING_04: "Hah! The sight of you could cure any heartburn, [from.GetSpeciesName]."
+ VORE_FRIENDLY_GREETING_05: "Greetings, [from.GetSpeciesName]! Do you need us to... remove... someone?"
+ VORE_FRIENDLY_GREETING_06: "[from.GetSpeciesName], you're a delight for sore stomachs."
+ VORE_FRIENDLY_GREETING_07: "Wellcome, friends. Don't worry, we're full."  
