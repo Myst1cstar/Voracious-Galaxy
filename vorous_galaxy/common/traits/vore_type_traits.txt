@@ -1,0 +1,156 @@
+
+
+##############################################
+#                ORGANIC TRAITS
+##############################################
+
+#Lethal vorarephilia
+trait_vore_lethal = {
+    cost = 0
+    randomized = yes
+    allowed_archetypes = {BIOLOGICAL LITHOID}
+
+    species_potential_add = {
+      always = no
+    }
+
+    species_possible_remove = {
+      always = no
+    }
+
+   custom_tooltip = trait_vore_lethal_effects
+    opposites = {"trait_vore_safe" "trait_vore_prey"}
+    modifier = {
+		# Only the strongest survive
+		leader_lifespan_add = -20   #
+		species_leader_exp_gain = 1.20  #
+    #Overpopulation solution
+    planet_pops_upkeep_mult = -0.1
+    #No failure allowed
+    planet_jobs_worker_produces_mult = 0.1    #
+	}
+
+  modifier = {
+    logistic_growth_mult = -0.1
+  }
+	
+	slave_cost = {
+		energy = -50
+	}
+}
+
+#Non-lethal vorarephilia
+trait_vore_safe = {
+    cost = 0
+    randomized = yes
+    allowed_archetypes = {BIOLOGICAL LITHOID}
+
+    species_potential_add = {
+      always = no
+    }
+
+    species_possible_remove = {
+      always = no
+    }
+
+    custom_tooltip = trait_vore_safe_effects
+    opposites = {"trait_vore_lethal" "trait_vore_prey"}
+    modifier = {
+		#Vore sex
+		planet_pops_food_upkeep_mult = +0.1
+    #Constant satisfaction
+    pop_job_amenities_mult = 0.15
+    #Really tight living
+    pop_housing_usage_add = -0.1
+	}
+
+  modifier = {
+    logistic_growth_mult = -0.05
+  }
+	
+	slave_cost = {
+		energy = +50
+	}
+}
+
+# Prey species
+trait_vore_prey = {
+  cost = 0
+  randomized = yes
+  allowed_archetypes = {BIOLOGICAL LITHOID}
+
+  species_potential_add = {
+		always = no
+	}
+
+  species_possible_remove = {
+    always = no
+  }
+
+  custom_tooltip = trait_vore_prey_effects
+  opposites = {"trait_vore_lethal" "trait_vore_safe"}
+  modifier = {
+    army_attack_damage_mult = -0.90
+    planet_pops_food_upkeep_mult = +0.20
+  }
+  
+  modifier = {
+    logistic_growth_mult = 0.25
+  }
+
+  slave_cost = {
+		energy = +150
+	}
+}
+
+##############################################
+#                MACHINE TRAITS
+##############################################
+
+#Internal Contaiment Units
+trait_vore_internal_containment_units = {
+  cost = 0
+  randomized = yes
+  allowed_archetypes = { ROBOT MACHINE }
+
+  species_potential_add = {
+		always = yes
+	}
+
+  species_possible_remove = {
+    always = no
+  }
+
+  opposites = { "trait_vore_emergency_biofuel_generators" }
+  custom_tooltip = trait_vore_internal_containment_units_effects
+  modifier = {
+    planet_pop_assembly_reduction = 0.05                      # was too lazy to makes it change between hive and not - OTTO 27.03.25
+    pop_amenities_usage_add = 0.1
+    planet_jobs_worker_produces_mult = 0.1
+    planet_jobs_specialist_produces_mult = 0.1
+    planet_jobs_simple_drone_produces_mult = 0.1
+    planet_jobs_complex_drone_produces_mult = 0.1
+  }
+}
+
+#Emergency Biofuel Generators
+trait_vore_emergency_biofuel_generators = {
+  cost = 0
+  randomized = yes
+  allowed_archetypes = { ROBOT MACHINE }
+
+  species_potential_add = {
+		always = yes
+	}
+
+  species_possible_remove = {
+    always = no
+  }
+                                #we should probably add something a bit different - OTTO (03.04.25)
+  opposites = { "trait_vore_internal_containment_units" }
+  custom_tooltip = trait_vore_emergency_biofuel_generators_effects
+  modifier = {
+    pop_amenities_usage_mult = 0.1
+    planet_pops_robotics_energy_upkeep_mult = 0.25
+  }
+}

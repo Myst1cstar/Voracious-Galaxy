@@ -1,0 +1,144 @@
+
+#this is just a random system "cluster", mostly as a test of a tool, but I kind of felt like it was nice enough to add to the mod - (OTTO 02.05.2025)
+ssb_siigismund_system_initializer = {
+	name = vore_system_siigismund
+	class = "sc_t"
+	usage = misc_system_init
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+
+	usage_odds = {
+        base = 100
+        modifier = {
+			factor = 0
+			OR = {
+				is_fe_cluster = yes
+				is_marauder_cluster = yes
+			}
+		}
+    }
+	
+	max_instances = 1
+	spawn_chance = 9999
+
+	usage = custom_empire
+	init_effect = {}
+
+	planet = {
+		name = "vore_star_name_siigismund"
+		class = "pc_t_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 26
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 12
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		moon = {
+			class = "pc_molten"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 5
+		}
+	}
+	planet = {
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = yes
+		change_orbit = 5
+	}
+	planet = {
+		name = "vore_asteroid_1_name_siigismund"
+		class = "pc_asteroid"
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = 5
+		has_ring = no
+	}
+	planet = {
+		name = "vore_asteroid_2_name_siigismund"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 10
+		has_ring = no
+	}
+	planet = {
+		name = "vore_asteroid_3_name_siigismund"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 6
+		has_ring = no
+	}
+
+	neighbor_system = {
+		distance = { min = 10 max = 35 }
+		initializer = "ssb_saarti_system_initializer"
+	}
+}
+ssb_saarti_system_initializer = {
+	name = "vore_system_saarti"
+	class = "sc_black_hole"
+	init_effect = {}
+
+	planet = {
+		name = "vore_star_name_saarti"
+		class = pc_black_hole
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+
+	planet = {
+		name = "vore_planet_1_name_saarti"
+		class = "pc_frozen"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 14
+		has_ring = no
+		modifiers = none
+	}
+	planet = {
+		name = "vore_planet_2_name_saarti"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 10
+		has_ring = yes
+		change_orbit = 5
+	}
+	planet = {
+		name = "vore_planet_3_name_saarti"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 30
+		change_orbit = 5
+		has_ring = no
+		moon = {
+			name = "vore_planet_3_moon_name_saarti"
+			class = "pc_barren_cold"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 12
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+	}
+
+}

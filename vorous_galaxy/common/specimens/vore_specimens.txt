@@ -1,0 +1,14 @@
+pan_galactic_gargle_blaster = { #I shall not explain myself, this is required - (Otto)
+	icon = "GFX_specimen_uranium_glassware"
+	type = aesthetic_wonder
+
+	inline_script = {
+		script = "grand_archive/set_specimen_rarity"
+		RARITY = exceptional
+	}
+	triggered_country_modifier = {
+		mult = value:aesthetic_wonder_specimens_modifiers_mult
+		planet_amenities_add = 15
+		planet_stability_add = -1
+	}
+}

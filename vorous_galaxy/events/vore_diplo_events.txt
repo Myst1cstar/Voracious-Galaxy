@@ -1,0 +1,168 @@
+namespace = vore_diplo
+
+##############################
+#		PEACEFUL EVENTS
+##############################
+
+country_event = {
+	id = vore_diplo.40
+	is_triggered_only = yes
+
+	picture = GFX_vore_conspicuous_cockpulation
+	title = vore_diplo.40.name
+	desc = vore_diplo.40.desc
+
+	trigger = {
+		is_ai = no
+		owner = {
+			has_country_flag = vore_enabled
+			has_global_flag = cock_vore_enabled
+		}
+		NOT = {
+			owner = {
+				has_country_flag = is_lethal_vore_country
+			}
+		}
+	}
+
+	immediate = {
+		random_country = {
+			limit = {					
+				is_ai = yes
+				is_country_type = default
+				is_homicidal = no
+				has_embassy = prev
+				NOR = {
+					is_at_war_with = prev
+					is_country = prev
+				}
+			}
+			save_event_target_as = embassy_owner
+		}
+	}
+	
+	option = {
+		name = vore_diplo.40.name_a
+
+		hidden_effect = {
+			random_list = {
+				33 = {
+					event_target:embassy_owner = {
+						add_opinion_modifier = {
+							who = root
+							modifier = opinion_poor_apology
+						}
+					}	
+				}
+				34 = {
+
+				}
+				33 = {
+					event_target:embassy_owner = {
+						add_opinion_modifier = {
+							who = root
+							modifier = opinion_decent_apology
+						}
+					}	
+				}
+			}
+		}
+
+		custom_tooltip = "vore_diplo.40.desc_a"
+	}
+
+	option = {
+		name = vore_diplo.40.name_b
+		
+
+		add_resource = { influence = 25 }
+
+		hidden_effect = {
+			event_target:embassy_owner = {
+				add_opinion_modifier = {
+					who = root
+					modifier = opinion_protecting_their_diplomat
+				}
+			}
+		}
+
+		custom_tooltip = "vore_diplo.40.desc_b"
+	}
+
+	option = {
+		name = vore_diplo.40.name_c
+		
+
+		trigger = {
+			owner ={
+				has_ethic = ethic_fanatic_spiritualist
+			}
+		}
+
+		add_resource = { unity = 25000 }
+
+		hidden_effect = {
+			event_target:embassy_owner = {
+				add_opinion_modifier = {
+					who = root
+					modifier = opinion_actually_insane
+				}
+			}
+		}
+
+		custom_tooltip = "vore_diplo.40.desc_c"
+	}
+}
+
+
+
+
+##############################
+#		PLANET ASSAULT				- 	war is just an extension of diplomacy and this is definitely not just added here because I don't want to have another event file (OTTO)
+##############################
+
+country_event = {
+	id = vore_diplo.50 
+	is_triggered_only = yes
+
+	picture = GFX_vore_what_is_it_good_for
+	title = vore_diplo.50.name
+	desc = vore_diplo.50.desc
+
+
+	trigger = {
+			This = {
+				is_ai = no
+				has_country_flag = is_lethal_vore_country
+			}
+	}
+
+	option = {
+		name = vore_diplo.50.name_a
+
+		FromFrom = {
+			kill_single_pop = yes
+		}
+	}
+
+	option = {
+		name = vore_diplo.50.name_b
+
+		owner = {
+			add_resource = { influence = 25 }
+		}
+
+		FromFrom = {
+			kill_single_pop = yes
+		}
+
+		exclusive_trigger = {
+			owner = {
+				OR = {
+					has_ethic = ethic_fanatic_militarist
+					has_ethic = ethic_militarist
+				}
+			}
+		}
+	}
+}

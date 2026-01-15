@@ -1,0 +1,772 @@
+namespace =  vore_vorny_colonists
+
+#############################################
+#   FAR, UNGOVERNED, FRONTIER EVENT CHAIN
+#############################################
+planet_event = {
+    id = vore_vorny_colonists.1
+    fire_only_once = yes
+    is_triggered_only = yes
+    picture = GFX_vore_prey_running
+    title = vore_vorny_colonists.1.name
+
+    pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+		is_occupied_flag = no
+	}
+
+    trigger = {
+        owner = {
+            is_vore_empire = yes
+        }
+        NOR = {
+            is_planet_class = pc_habitat
+            has_planet_flag = colony_event
+            years_passed > 50
+        }
+        is_artificial = no
+    }
+
+    immediate = {
+        set_planet_flag = colony_event
+        set_variable = {which = loosey_goosey_vore value = 1}
+        change_variable = {which = vore_event_incrementer value = 1}
+    }
+
+    #has to be dynamic to comply with the two vore sets
+    desc = {
+        trigger = {
+            owner = {
+                has_country_flag = is_lethal_vore_country
+            }
+        }
+        text = vore_vorny_colonists.1.desc_unsafe
+    }
+    desc = {
+        trigger = {
+            NOR = {
+                owner = {
+                    has_country_flag = is_lethal_vore_country
+                }
+            }
+        }
+        text = vore_vorny_colonists.1.desc_safe
+    }
+
+    option = {
+        name = vore_vorny_colonists.1.negative_growth_response
+        planet = {
+			add_modifier = {
+				modifier = war_against_vore
+			}
+		}
+        hidden_effect = {
+            random_list = {
+                15 = {planet_event = {id = vore_vorny_colonists.2 days = 1200 random = 100}}
+                15 = {planet_event = {id = vore_vorny_colonists.3 days = 1200 random = 100}}
+                15 = {planet_event = {id = vore_vorny_colonists.4 days = 1200 random = 100}}
+                15 = {planet_event = {id = vore_vorny_colonists.5 days = 1200 random = 100}}
+                40 = {planet_event = {id = vore_vorny_colonists.6 days = 1200 random = 100}}
+            }
+        }
+    }
+    option = {
+        name = vore_vorny_colonists.1.neutral_growth_response
+
+        hidden_effect = {
+            random_list = {
+                20 = {planet_event = {id = vore_vorny_colonists.2 days = 1200 random = 100}}
+                20 = {planet_event = {id = vore_vorny_colonists.3 days = 1200 random = 100}}
+                20 = {planet_event = {id = vore_vorny_colonists.4 days = 1200 random = 100}}
+                20 = {planet_event = {id = vore_vorny_colonists.5 days = 1200 random = 100}}
+                20 = {planet_event = {id = vore_vorny_colonists.6 days = 1200 random = 100}}
+            }
+        }
+    }
+    option = {
+        name = vore_vorny_colonists.1.positive_growth_response
+
+        owner = {
+            add_resource = {influence = 50}
+        }
+        hidden_effect = {
+            random_list = {
+                25 = {planet_event = {id = vore_vorny_colonists.2 days = 1200 random = 100}}
+                25 = {planet_event = {id = vore_vorny_colonists.3 days = 1200 random = 100}}
+                25 = {planet_event = {id = vore_vorny_colonists.4 days = 1200 random = 100}}
+                25 = {planet_event = {id = vore_vorny_colonists.5 days = 1200 random = 100}}
+            }
+        }
+    }
+}
+
+planet_event = {
+    id = vore_vorny_colonists.2
+    is_triggered_only = yes
+
+    title = vore_vorny_colonists.2.name
+
+    picture = {
+        picture = GFX_vore_fuf_oral_wg
+        trigger = {
+            owner = {
+                has_country_flag = is_lethal_vore_country
+                has_global_flag = weight_gain_vore_enabled
+            }
+        }
+    }
+    picture = {
+        picture = GFX_vore_fuf_oral_lethal
+        trigger = {
+            owner = {
+                has_country_flag = is_lethal_vore_country
+               NOT = { has_global_flag = weight_gain_vore_enabled}
+            }
+        }
+    }
+    picture = {
+        picture = GFX_vore_fuf_oral_safe
+        trigger = {
+            owner = {
+                NOT = {has_country_flag = is_lethal_vore_country}
+            }
+        }
+    }
+
+    immediate = {
+        change_variable = {which = loosey_goosey_vore value = 1}
+    }
+
+    desc = {
+        trigger = {
+            owner = {
+                has_country_flag = is_lethal_vore_country
+                has_global_flag = weight_gain_vore_enabled
+            }
+        }
+        text = vore_vorny_colonists.2.desc_unsafe_wg
+    }    
+    desc = {
+        trigger = {
+            owner = {
+                has_country_flag = is_lethal_vore_country
+                NOT = {has_global_flag = weight_gain_vore_enabled}
+            }
+        }
+        text = vore_vorny_colonists.2.desc_unsafe
+    }
+    desc = {
+        trigger = {
+            NOR = {
+                owner = {
+                    has_country_flag = is_lethal_vore_country
+                }
+            }
+        }
+        text = vore_vorny_colonists.2.desc_safe
+    }
+
+    option = {
+        name = vore_vorny_colonists.1.ok
+        custom_tooltip = vore_vorny_colonists.1.ok_desc
+
+        exclusive_trigger = {
+            check_variable = {which = loosey_goosey_vore value <= 4}
+        }
+
+        if = {
+            limit = {
+                owner = {
+                    has_country_flag = is_lethal_vore_country
+                }
+            }
+            planet = {
+                kill_single_pop = yes
+            }
+        }
+
+        hidden_effect = {
+            change_variable = {which = vore_event_incrementer value = 1}
+            random_list = {
+                15 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.2 days = 1200 random = 100}}
+                20 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.3 days = 1200 random = 100}}
+                20 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.4 days = 1200 random = 100}}
+                20 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.5 days = 1200 random = 100}}
+                65 = {planet_event = {id = vore_vorny_colonists.6 days = 1200 random = 100}}
+            }
+        }
+    }
+
+    option = {
+        name = vore_vorny_colonists.1.ok
+        custom_tooltip = vore_vorny_colonists.1.ok_desc
+
+        if = {
+            limit = {
+                owner = {
+                    has_country_flag = is_lethal_vore_country
+                }
+            }
+            planet = {
+                kill_single_pop = yes
+            }
+        }
+
+        hidden_effect = {
+            planet_event = {id = vore_vorny_colonists.6 days = 90 random = 90}
+        }
+    }
+}
+
+planet_event = {
+    id = vore_vorny_colonists.3
+    is_triggered_only = yes
+
+    title = vore_vorny_colonists.3.name
+
+    picture = {
+        picture = GFX_vore_fuf_anal_lethal
+        trigger = {
+            owner = {
+                has_country_flag = is_lethal_vore_country
+            }
+        }
+    }
+    picture = {
+        picture = GFX_vore_fuf_oral_safe
+        trigger = {
+            owner = {
+                NOT = {has_country_flag = is_lethal_vore_country}
+            }
+        }
+    }
+
+    immediate = {
+        change_variable = {which = loosey_goosey_vore value = 1}
+    }
+
+    desc = {
+        trigger = {
+            owner = {
+                has_country_flag = is_lethal_vore_country
+            }
+        }
+        text = vore_vorny_colonists.3.desc_unsafe
+    }
+    desc = {
+        trigger = {
+            NOR = {
+                owner = {
+                    has_country_flag = is_lethal_vore_country
+                }
+            }
+        }
+        text = vore_vorny_colonists.3.desc_safe
+    }
+
+    option = {
+        name = vore_vorny_colonists.1.ok
+        custom_tooltip = vore_vorny_colonists.1.ok_desc
+
+        exclusive_trigger = {
+            check_variable = {which = loosey_goosey_vore value <= 4}
+        }
+
+        if = {
+            limit = {
+                owner = {
+                    has_country_flag = is_lethal_vore_country
+                }
+            }
+            planet = {
+                kill_single_pop = yes
+            }
+        }
+
+        hidden_effect = {
+            change_variable = {which = vore_event_incrementer value = 1}
+            random_list = {
+                20 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.2 days = 1200 random = 100}}
+                15 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.3 days = 1200 random = 100}}
+                20 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.4 days = 1200 random = 100}}
+                20 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.5 days = 1200 random = 100}}
+                65 = {planet_event = {id = vore_vorny_colonists.6 days = 1200 random = 100}}
+            }
+        }
+    }
+
+    option = {
+        name = vore_vorny_colonists.1.ok
+        custom_tooltip = vore_vorny_colonists.1.ok_desc
+
+        if = {
+            limit = {
+                owner = {
+                    has_country_flag = is_lethal_vore_country
+                }
+            }
+            planet = {
+                kill_single_pop = yes
+            }
+        }
+
+        hidden_effect = {
+            planet_event = {id = vore_vorny_colonists.6 days = 90 random = 90}
+        }
+    }
+}
+
+# cock vore 
+planet_event = {
+    id = vore_vorny_colonists.4
+    is_triggered_only = yes
+    title = vore_vorny_colonists.4.name
+
+    picture = {
+        picture = GFX_vore_fuf_cock_lethal
+        trigger = {
+            owner = {
+                has_country_flag = is_lethal_vore_country
+            }
+        }
+    }
+    picture = {
+        picture = GFX_vore_fuf_cock_safe
+        trigger = {
+            owner = {
+                NOT = {has_country_flag = is_lethal_vore_country}
+            }
+        }
+    }
+
+    immediate = {
+        change_variable = {which = loosey_goosey_vore value = 1}
+    }
+
+    desc = {
+        trigger = {
+            owner = {
+                has_country_flag = is_lethal_vore_country
+                check_variable = { which = vore_event_incrementer value = 0 }
+            }
+        }
+        text = vore_vorny_colonists.4.desc_unsafe_1
+    }
+    desc = {
+        trigger = {
+            owner = {
+                has_country_flag = is_lethal_vore_country
+                check_variable = { which = vore_event_incrementer value = 1 }
+            }
+        }
+        text = vore_vorny_colonists.4.desc_unsafe_2
+    }
+    desc = {
+        trigger = {
+            owner = {
+                has_country_flag = is_lethal_vore_country
+                check_variable = { which = vore_event_incrementer value = 2 }
+            }
+        }
+        text = vore_vorny_colonists.4.desc_unsafe_3
+    }
+    desc = {
+        trigger = {
+            owner = {
+                has_country_flag = is_lethal_vore_country
+                check_variable = { which = vore_event_incrementer value = 3 }
+            }
+        }
+        text = vore_vorny_colonists.4.desc_unsafe_4
+    }
+    desc = {
+        trigger = {
+            owner = {
+                has_country_flag = is_lethal_vore_country
+                check_variable = { which = vore_event_incrementer value = 4 }
+            }
+        }
+        text = vore_vorny_colonists.4.desc_unsafe_5
+    }
+
+    desc = {
+        trigger = {
+            NOR = {
+                owner = {
+                    has_country_flag = is_lethal_vore_country
+                }
+            }
+        }
+        text = vore_vorny_colonists.4.desc_safe
+    }
+
+    option = {
+        name = vore_vorny_colonists.4.censure
+        custom_tooltip =  vore_vorny_colonists.4.censure_desc
+
+        trigger = {
+            owner = {
+                OR = {
+                    has_ethic = "ethic_authoritarian"
+                    has_ethic = "ethic_fanatic_authoritarian"
+                    has_ethic = "ethic_militarist"
+                    has_ethic = "ethic_fanatic_militarist"
+                }
+            }
+            check_variable = { which = vore_event_incrementer value = 2 }
+        }
+        allow = {
+            owner = {
+                resource_stockpile_compare = { resource = unity value = 900 }
+            }
+        }
+
+        owner = {
+            add_resource = { unity = -900 }
+            add_resource = { influence = 80 }
+        }
+        planet = {
+            kill_single_pop = yes
+        }
+
+        hidden_effect = {
+            change_variable = {which = vore_event_incrementer value = 1}
+            random_list = {
+                20 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.2 days = 1100 random = 100}}
+                20 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.3 days = 1100 random = 100}}
+                10 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.4 days = 1100 random = 100}}
+                20 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.5 days = 1100 random = 100}}
+            }
+        }
+    }
+
+    option = {
+        name = vore_vorny_colonists.1.ok
+        custom_tooltip = vore_vorny_colonists.1.ok_desc
+
+        if = {
+            limit = {
+                owner = {
+                    has_country_flag = is_lethal_vore_country
+                }
+            }
+            planet = {
+                kill_single_pop = yes
+            }
+        }
+
+        hidden_effect = {
+            change_variable = {which = vore_event_incrementer value = 1}
+            random_list = {
+                20 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.2 days = 1200 random = 100}}
+                20 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.3 days = 1200 random = 100}}
+                15 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.4 days = 1200 random = 100}}
+                20 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.5 days = 1200 random = 100}}
+                65 = {planet_event = {id = vore_vorny_colonists.6 days = 1200 random = 100}}
+            }
+        }
+    }
+
+
+
+    option = {
+        name = vore_vorny_colonists.1.ok
+        custom_tooltip = vore_vorny_colonists.1.ok_desc
+
+        exclusive_trigger = {
+            check_variable = {which = loosey_goosey_vore value > 4}
+        }
+
+        if = {
+            limit = {
+                owner = {
+                    has_country_flag = is_lethal_vore_country
+                }
+            }
+            planet = {
+                kill_single_pop = yes
+            }
+        }
+
+        hidden_effect = {
+            planet_event = {id = vore_vorny_colonists.6 days = 90 random = 90}
+        }
+    }
+}
+
+planet_event = {
+    id = vore_vorny_colonists.5
+    is_triggered_only = yes
+    title = vore_vorny_colonists.5.name
+
+    picture = {
+        picture = GFX_vore_fuf_pussy_lethal
+        trigger = {
+            owner = {
+                has_country_flag = is_lethal_vore_country
+            }
+        }
+    }
+    picture = {
+        picture = GFX_vore_fuf_pussy_safe
+        trigger = {
+            owner = {
+                NOT = {has_country_flag = is_lethal_vore_country}
+            }
+        }
+    }
+
+    immediate = {
+        change_variable = {which = loosey_goosey_vore value = 1}
+    }
+
+    desc = {
+        trigger = {
+            owner = {
+                has_country_flag = is_lethal_vore_country
+            }
+        }
+        text = vore_vorny_colonists.5.desc_unsafe
+    }
+    desc = {
+        trigger = {
+            NOR = {
+                owner = {
+                    has_country_flag = is_lethal_vore_country
+                }
+            }
+        }
+        text = vore_vorny_colonists.5.desc_safe
+    }
+
+    option = {
+        name = vore_vorny_colonists.1.ok
+        custom_tooltip = vore_vorny_colonists.1.ok_desc
+
+        exclusive_trigger = {
+            check_variable = {which = loosey_goosey_vore value <= 4}
+        }
+
+        if = {
+            limit = {
+                owner = {
+                    has_country_flag = is_lethal_vore_country
+                }
+            }
+            planet = {
+                kill_single_pop = yes
+            }
+        }
+
+        hidden_effect = {
+            change_variable = {which = vore_event_incrementer value = 1}
+            random_list = {
+                20 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.2 days = 1200 random = 100}}
+                20 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.3 days = 1200 random = 100}}
+                20 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.4 days = 1200 random = 100}}
+                15 = {modifier = { factor = loosey_goosey_vore} planet_event = {id = vore_vorny_colonists.5 days = 1200 random = 100}}
+                65 = {planet_event = {id = vore_vorny_colonists.6 days = 1200 random = 100}}
+            }
+        }
+    }
+
+    option = {
+        name = vore_vorny_colonists.1.ok
+        custom_tooltip = vore_vorny_colonists.1.ok_desc
+
+        if = {
+            limit = {
+                owner = {
+                    has_country_flag = is_lethal_vore_country
+                }
+            }
+            planet = {
+                kill_single_pop = yes
+            }
+        }
+
+        hidden_effect = {
+            planet_event = {id = vore_vorny_colonists.6 days = 90 random = 90}
+        }
+    }
+}
+
+planet_event = {
+    id = vore_vorny_colonists.6
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        planet = {
+			remove_modifier = war_against_vore
+		}
+        if = { 
+            limit = {
+                check_variable = {which = loosey_goosey_vore value <= 2}
+            }
+            planet_event = {id = vore_vorny_colonists.7 days = 5 }
+        }
+        else_if = {
+            limit = {
+                check_variable = {which = loosey_goosey_vore value <= 4}
+            }
+            planet_event = {id = vore_vorny_colonists.8 days = 5}
+        }
+        else = {
+            planet = {
+                add_planet_devastation = 30
+            }
+            planet_event = {id = vore_vorny_colonists.9 days = 5}
+        }
+    }
+}
+
+planet_event = {
+    id = vore_vorny_colonists.7
+    is_triggered_only = yes
+    title = vore_vorny_colonists.7.name
+
+    picture = GFX_vore_fuf_vorny_low
+    desc = vore_vorny_colonists.7.desc
+
+    option = {
+        name = vore_vorny_colonists.10.ok
+
+        if = {
+            limit = {
+                owner = {
+                    has_country_flag = is_lethal_vore_country
+                }
+            }
+            planet = {
+                add_modifier = {
+                    modifier = vore_loosey_goosey_vore_1_lethal
+                }
+            }
+        }
+        else = {
+            planet = {
+                add_modifier = {
+                    modifier = vore_loosey_goosey_vore_1_safe
+                }
+            }
+        }
+        
+    }
+
+}
+
+planet_event = {
+    id = vore_vorny_colonists.8
+    is_triggered_only = yes
+    title = vore_vorny_colonists.8.name
+
+    picture = GFX_vore_fuf_vorny_med
+    desc = vore_vorny_colonists.8.desc
+
+
+    option = {
+        name = vore_vorny_colonists.10.ok    
+            if = {
+                limit = {
+                    owner = {
+                        has_country_flag = is_lethal_vore_country
+                    }
+                }
+                planet = {
+                    add_modifier = { modifier = vore_loosey_goosey_vore_2_lethal }
+                }
+            }
+            else = {
+                planet = {
+                    add_modifier = { modifier = vore_loosey_goosey_vore_2_safe }
+            }
+        }    
+     }
+}
+
+planet_event = {
+    id = vore_vorny_colonists.9
+    is_triggered_only = yes
+    title = vore_vorny_colonists.9.name
+
+    picture = GFX_evt_burning_settlement
+    desc = vore_vorny_colonists.9.desc
+
+    option = {
+        name = vore_vorny_colonists.9.name_a
+
+        custom_tooltip = vore_vorny_colonists.9.desc_a
+
+        if = {
+            limit = {
+                owner = {
+                    has_country_flag = is_lethal_vore_country
+                }
+            }
+            planet = {
+                add_modifier = {  modifier = vore_loosey_goosey_vore_3_lethal }
+            }
+        }
+        else = {
+            planet = {
+                add_modifier = { modifier = vore_loosey_goosey_vore_3_safe }
+            }
+        }
+
+    }
+    option = {
+        name = vore_vorny_colonists.9.name_b
+
+        custom_tooltip = vore_vorny_colonists.9.desc_b
+
+        enable_special_project = {
+            name = "vore_establish_martial_law"
+            location = root
+            owner = root.owner
+        }
+    }
+    
+}
+
+planet_event = {
+    id = vore_vorny_colonists.10
+    is_triggered_only = yes
+
+    picture = GFX_evt_burning_city
+    location = from
+
+    title = vore_vorny_colonists.10.name
+    desc = vore_vorny_colonists.10.desc
+
+    immediate = {
+        planet = {
+            add_planet_devastation = 15
+        }
+    }
+
+    option = {
+        name = vore_vorny_colonists.10.ok
+
+        if = {
+            limit = {
+                planet.owner = {
+                    has_country_flag = is_lethal_vore_country
+                }
+            }
+            planet = {
+                add_modifier = { modifier = vore_loosey_goosey_vore_3_lethal }
+            }
+        }
+        else = {
+            planet = {
+                add_modifier = { modifier = vore_loosey_goosey_vore_3_safe }
+            }
+        }
+        
+    }
+
+}

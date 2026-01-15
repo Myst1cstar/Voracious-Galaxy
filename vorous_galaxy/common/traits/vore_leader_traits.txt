@@ -1,0 +1,46 @@
+##############################################
+#      			GENERAL TRAITS
+##############################################
+
+# Gorger
+leader_trait_vore_gorger = {
+	inline_script = {
+		script = trait/icon_negative
+		CLASS = leader
+		ICON = "GFX_vore_trait_leader_gorger"
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+
+	leader_potential_add = {
+		trait_is_crisis_faction_check = no
+	}
+
+	triggered_self_modifier = {
+		potential = {
+			is_immortal = no
+		}
+		leader_lifespan_add = -10
+	}
+
+	self_modifier = {
+		species_leader_exp_gain = 0.05
+	}
+	inline_script = {
+		script = paragon/leader_resource_upkeep
+		RESOURCE = energy
+		AMOUNT = 15
+	}
+
+
+	leader_class = all
+	selectable_weight = {
+		weight = 0
+	}
+
+	force_councilor_trait = yes		# fuck rulers in particular
+
+	initial = no
+	randomized = no
+}

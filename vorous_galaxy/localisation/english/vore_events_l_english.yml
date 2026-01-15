@@ -1,0 +1,230 @@
+﻿l_english:
+
+ ##############################################
+ #         PRIMER / GAME START
+ ##############################################
+
+ vore_primer.10.name: "Voracious Galaxy initialiser"
+ vore_primer.10.desc: "§TThank you for using the Voracious Galaxy mod! \n If you do not wish to see certain types of vore, please select it now."
+
+ vore_primer.10.oral_disable.name: "§G Oral vore enabled"
+ vore_primer.10.oral_enable.name: "§ROral vore disabled"
+
+ vore_primer.10.anal_disable.name: "§GAnal vore enabled"
+ vore_primer.10.anal_enable.name: "§RAnal vore disabled"
+
+ vore_primer.10.cock_disable.name: "§GCock vore enabled"
+ vore_primer.10.cock_enable.name: "§RCock vore disabled"
+
+ vore_primer.10.unbirthing_disable.name: "§GUnbirthing enabled"
+ vore_primer.10.unbirthing_enable.name: "§RUnbirthing disabled"
+
+# Do not change the order to be like above, there is a reason for this, because these start off disabled (easier to follow the logic)
+ vore_primer.10.prey_safe.name: "§cPrey - non-lethal vore§!"            # unneeded as of now - Otto (04.04.25)
+ vore_primer.10.prey_lethal.name: "§PPrey - lethal vore"
+
+ vore_primer.10.ok.name: "Start the game"
+
+ vore_primer.10.sub_menu_kinks: "§SAdditional options§!"
+ vore_primer.10.sub_menu_options: "§gMod Options§!"
+
+ #Sub-menu
+
+ vore_primer.20.name: "Voracious Galaxy initialiser - Sub-menu"
+ vore_primer.20.desc: "§THere you may find fetish options that we do not plan to add much to or otherwise do not expect you would necessarily want on."
+
+ vore_primer.20.return: "Return"
+
+ vore_primer.20.disposal_enable.name: "§RDisposal disabled§!"   
+ vore_primer.20.disposal_disable.name: "§GDisposal enabled"
+
+ vore_primer.20.hard_vore_enable.name: "§RHard vore disabled"
+ vore_primer.20.hard_vore_disable.name: "§GHard vore enabled"
+
+ vore_primer.20.graphic_digestion_enable.name: "§RGraphic digestion disabled"
+ vore_primer.20.graphic_digestion_disable.name: "§GGraphic digestion disabled"
+
+ vore_primer.20.soul_vore_enable.name: "§RSoul vore disabled"
+ vore_primer.20.soul_vore_disable.name: "§GSoul vore disable"
+
+ vore_primer.20.weight_gain_enable.name: "§RWeight gain disabled"
+ vore_primer.20.weight_gain_disable.name: "§GWeight gain enabled"
+
+ vore_primer.20.attribute_theft_enable.name: "§RAttirbute theft disabled"
+ vore_primer.20.attribute_theft_disable.name: "§GAttribute theft disabled"
+
+ vore_primer.20.sentient_fat_enable.name: "§RSentient fat diabled"
+ vore_primer.20.sentient_fat_disable.name: "§GSentient fat enabled"
+
+ vore_primer.20.fuck_me_up: "§MEnable all - fuck me up!"
+ vore_primer.20.fuck_me_up.tooltip: "§RThis will enable all options in the sub-menu.§!\n\n§gPan-Galactic Gargle-Blaster included!§!"
+
+ vore_primer.20.event_weight.0.name: "§BStandard event chance§!"
+ vore_primer.20.event_weight.0.tooltip: "Vore events have the intended chance of appearing in your game."
+ vore_primer.20.event_weight.1.name: "§BIncreased event chance§!"
+ vore_primer.20.event_weight.1.tooltip: "Vore events have a higher chance of appearing in your game."
+ vore_primer.20.event_weight.2.name: "§BMajorly increased event chance§!"
+ vore_primer.20.event_weight.2.tooltip: "Vore events are about twice as likely to appear in your game."
+
+ ##############################################
+ #                LEADER 
+ ##############################################
+
+  vore_leader_event.10.name: "A growing concern"
+  vore_leader_event.10.desc: "§TIt would seem that, as of lately, one of our officials - §K[gorger_to_be.GetName]§!, to be precise - [gorger_to_be.GetHasHave] been gaining quite a reputation as of late. \nWhile for many-a-citizen of our empire it is common to see bulging bellies that often kick with struggle from within, [gorger_to_be.GetName] [gorger_to_be.GetHasHave] taken it to a new level, with several assistants being devoured on the daily. \n\n Should this continue, we  fear that it could negatively impact their health - and the goverment budget."
+  vore_leader_event.10.acknowledged: "§TUnderstood, monitor the situation."
+
+ ##############################################
+ #                COLONIES
+ ##############################################
+
+ # Far, ungoverned, frontier
+ vore_vorny_colonists.1.name: "Far, Ungoverned, Frontier"
+ vore_vorny_colonists.1.desc_unsafe: "§TA troubling development has arisen on the colony of §K[Root.GetName]§!.\nIt would seem that the colony has been outside of our full jurisdiction for an immense amount of time, leading to a rather lax enforcement of [Root.owner.GetAdj] law. The number of serial pred reports are growing every day and are being called in across the entire colony.\n\nGoing at night or to less populated areas has become so dangerous in borders on suicidal ideation, with registry of missing persons already numbering in the hundreds of thousands. \n\n We have to do something about this."
+ vore_vorny_colonists.1.desc_safe: "§TA troubling development has arisen on the colony of §K[Root.GetName]§!.\nIt would seem that the colony has been outside of our full jurisdiction for an immense amount of time, leading to a rather lax enforcement of [Root.owner.GetAdj] law. Public displays of vore are growing common in every major settlment across the planetand many of our citizens are disregarding their duties to partake in more carnal instincts. \n\nShould this continue, the colony's output will suffer. We have to do something about this."
+ vore_vorny_colonists.1.negative_growth_response: "Issue extra pay to our enforcers."
+ vore_vorny_colonists.1.neutral_growth_response: "There is little we can do."
+ vore_vorny_colonists.1.positive_growth_response: "Such is nature: let the strong eat the weak!"
+
+ vore_vorny_colonists.1.ok: "Troubling indeed"
+ vore_vorny_colonists.1.ok_desc: "§gWe can only hope the situation changes."
+
+ vore_vorny_colonists.4.censure: "Censor the network!"
+ vore_vorny_colonists.4.censure_desc: "§gWe shall do our best to hide this from public."
+
+ vore_vorny_colonists.2.name: "Far, Ungoverned, Frontier - troubling report"
+ vore_vorny_colonists.2.desc_unsafe_wg: "§TThere has been another report coming from §K[Root.GetName]§!.\n\nA more high profile case, where yet another pred went on a mass predation, stuffing themself with over a dozen citizens - some of which prpeds themselves - before they were able to be caught.\n\nAccording to the enforcers present, the rumbling and churning was heard even from the outside of the warehouse they were using as a hideout. Once the doors were breached, the pred still managed to grab one of the enforcers, stuffing them into tehir gullet whilst at the same time managing to trap two others with their fat blob of a belly.\n\nWhile this case resulted in a capture, more and more people are going missing and our law enforcement is at the fritz.§!"
+ vore_vorny_colonists.2.desc_unsafe: "§TThere has been another report coming from §K[Root.GetName]§!.\n\nA more high profile case, where yet another pred went on a mass predation, stuffing themself with over a dozen citizens - some of which prpeds themselves - before they were able to be caught. The raid on their home was executed swiftly and efficiently, with several possesions of their victims found within their home. \n\nWhile this case resulted in a capture, more and more people are going missing and our law enforcement is at the fritz.§!"
+ vore_vorny_colonists.2.desc_safe: "§TThere has been another report coming from §K[Root.GetName]§!.\n\nA citizen was found in their home; immobile from a bellty that visibly contained several other people. When questioned, the individual seemed to be in a constant state of bliss, seldom often drooling cum - no doubt produced by the equally pleased prey.\n\nWhile this particular individual has been sent to rehabilitation, moresuch cases are appearing and our law enforcement is at the fritz.§!"
+
+ vore_vorny_colonists.3.name: "Far, Ungoverned, Frontier - concerning development"
+ vore_vorny_colonists.3.desc_unsafe: "§TAnother report has come from §K[Root.GetName]§!.\n\nThere has been another mass predation event;  a pred has been found, their ass described in the report as 'a small dump truck' pulling in another victim as the enforcers commited the raid. The sight of it triggering something in one of the enforcers present, promting them to join in the act as they preyed upon several of their colleagues. Both are still on the run .\n\nThis is only a small glimpse into the growing number of cases happening all over the colony§!"
+ vore_vorny_colonists.3.desc_safe: "§TAnother report has come from §K[Root.GetName]§!. The number of our colonists electing to spend their days arousing their partner and themselves by spending time in their colons has increadsed significantly.\nThe sight of our citizens walking in public as their asses leaked the sperm of their 'entrapped' partners has become common and our enforcers do not even bother dealing with it anymore. This is only a small glimpse into the growing number of cases happening all across the colony.§!"
+
+ vore_vorny_colonists.4.name: "Far, Ungoverned, Frontier - high-priority report"
+ vore_vorny_colonists.4.desc_unsafe_1: "§TYet another report has come from our colony of §K[Root.GetName]§!.\n\nThere was a rampage in one of the city centres as a gang of preds had run amock in the main bulevard of the colony capital, sucking in as many fleeing bystanders into their manhoods as possible, not even waiting for their previous catch to dissolve into already leaking cum.\nBy the time our enforcers responded, the gang had already fled, their thick trails of spunk ending in a massive pool of what remained of the victims.\n\nSuch events are becoming more and more of a common sight. We do not know how much more our law enforcement can handle.§!"
+ vore_vorny_colonists.4.desc_unsafe_2: "§TOur judiciary system on §K[Root.GetName]§! has given us another grim reoirt: a court hearing regarding one of our citizens consuming another has gone astray\nThe indipvidual in question was brought to the stand, their torso still showing signs of the deed: bulging belly sloshing slightly with every unsure step. The ruling was heading efficiently - that is, untill the judge himself, by all accounts a rather burly indidividual, left his station, closed the gap between himself and the perpetrator and removed his judiciary gown; leaving his thick and erect dick in the open.\nThe accused was, according to the account, swollowed by the shaft in the matter of moments, the bloated stomach proving to be the only, albeit temporary, stockade. Court guards dealt away with any of the onlookers.\nOur systems are falling apart, we have to do something."
+ vore_vorny_colonists.4.desc_unsafe_3: "§TThe situation on §K[Root.GetName]§! has reached a point where even the distance from the capital is not stopping our largest broadcasting networks from reporting on the matter.\nThe latest segment included a rather graphic recording of the reporter tyring to run away from another of our citizens that was completely naked, their dick and balls engorged past what in normal for our biology; leaving a thick trail of cum as they closed in.\nThe camera drone was disabled by the amount of... 'genetic material' expulsed by the individual after the reporter was swallowed by their genitalia."
+ vore_vorny_colonists.4.desc_unsafe_4: "§TThe situation on §K[Root.GetName]§! is gettign worse: a couple of weeks ago, a string of missing persons has been traced to a single apartment complex where they were residing in.\nOur enforcers breached the individual apartments and have found victims, fully processed into cum; their bones floating in giant condoms stretched thin by the amount of the slightly transparent while liquid.\nThe perpetrator - cutodian of this complex - has been found in the process of disposing of their latest victim as our enforcers moved in. Reports state the perp trailed cum all the way to the custody."
+ vore_vorny_colonists.4.desc_unsafe_5: "§TThe news coming from §K[Root.GetName]§! are dire!\nSeveral streets had to be blocked off after a recent event, severity of which forces us to declare it a terrorist attack.\nA mob of males of our species - some twenty on record - had conspired to act out; consuming passing civilinas, some swallowed piecemeal as they vanished behind the closing glans of the perpetrators. The sound of churning and lustful moans echoed long after our enforcers arrived on the scene.\nWe lost many individuals and the streets ran white throughout the night. "
+ vore_vorny_colonists.4.desc_safe: "§TYet another report has come from our colony of §K[Root.GetName]§!.\n\nA new trend has arisen; colonists have started appearing in public while carying their partners within their engrorged shafts,letting their erections stand in open as they conversed with their 'trapped' partners or otherwise carried their manhoods in such a manner as to be on the eye level.\n\nThis strange happening is just one of many. We do not know how much more our law enforcement can handle.§!" #(...)in such a manner(...) - if it sounds too victorian, please change - OTTO
+
+ vore_vorny_colonists.5.name: "Far, Ungoverned, Frontier - strange development"
+ vore_vorny_colonists.5.desc_unsafe: "§TMore news has reached us regarding the situation on §K[Root.GetName]§!.\n\nSeveral arrests have been made as it was found that a group of §K[Root.Owner.Species.GetName]§! females have got rid of their spouses due to a list of different motives. What is concerning is that all of them have had the same modus operandi - the scene from the court looked like our law enforcers were escorting a group of expecting mothers whose water broke.\n\nThe situation is growing untenable. We do not know how long this can continue.§!"
+ vore_vorny_colonists.5.desc_safe: "§TMore news has reached us regarding the situation on §K[Root.GetName]§!.\n\nMasses of workers have dissapeared. At the same time, there has been an statistically impossible rise of gravid 'mothers' whose partners have taken to spend their days in the uteruses of their lovers.\n\nLong term effects of such acts are unknown and the situation on [Root.GetName] is growing untenable. We do not know how long this can continue."
+
+ #event 6 is a logic decider to cut down on the amount of code
+
+ vore_vorny_colonists.7.name: "Far, Ungoverned, Frontier - an outcome"
+ vore_vorny_colonists.7.desc: "§TWhile some aspects of the recent unrests have stayed, we have managed to put the colony of §K[Root.GetName]§! under control."
+
+ vore_vorny_colonists.8.name: "Far, Ungoverned, Frontier - status quo"
+ vore_vorny_colonists.8.desc: "§TWhile our law enforcement has managed to quell most problematic elements on §K[Root.GetName]§!, the populance has remained in a high state of unrest which we do not believe will go anytime soon.§!"
+
+ vore_vorny_colonists.9.name: "Far, Ungoverned, Frontier - emergency"
+ vore_vorny_colonists.9.desc: "§RIt is bad.§! §TIf we do not act as soon as possible, the situation on §K[Root.GetName]§! could permanently stay as dangerous for our citizens as it currently is. We have to act now."
+ vore_vorny_colonists.9.name_a: "We can only wait to see how this plays out"
+ vore_vorny_colonists.9.desc_a: "§gThings cannot get worse, right?§!"
+ vore_vorny_colonists.9.name_b: "Call in the troops: establis martial law"
+ vore_vorny_colonists.9.desc_b: "§RWe are running out of options: this time force must suffice.§!"
+
+ vore_vorny_colonists.10.name: "Far, Ungoverned, Frontier - loss"
+ vore_vorny_colonists.10.desc: "§TWe have failed to establish order on the colony of §K[Root.GetName]§!. There is little hope of returning it to a more civilised state. §!"
+  vore_vorny_colonists.10.ok: "If that is the only outcome..."
+
+ ##############################################
+ #                COLONY ASSAULT
+ ##############################################
+
+ # Vore - what is it good for?
+ vore_diplo.50.name: "Vore - what is it good for?"
+ vore_diplo.50.desc: "§TDuring the recent invasion of §K[FromFromFrom.GetName]§!, several battalions have disobeyed their superiors. As the victory drew near, they broke away from the chain of command, rushing after retreating [From.From.species.GetNamePlural] with primal hunger. Not a single one lasted longer than a couple moments as our troops greedily swallowed their prey whole, paying little thought to the armour either party wore. \n\nWhile we would normaly disregard such actions and issue some minor punishment, this time turned out different. The AWOL soldiers were clearly not satisfied with their spoils, as a large group has been found within one of the population centres far away from any conflict zones, treating the civilians as an open buffet. One such centre has been picked clen."
+ vore_diplo.50.name_a: "§TThis requires more than a 'minor' punishment."
+ vore_diplo.50.name_b: "§TSuch disobedience requires corporal punishment!"
+ 
+ ##############################################
+ #                EXPLORATION
+ ##############################################
+
+ #"missing" scientist
+ vore_exploration.15.name: "Missing crew member"
+ vore_exploration.15.desc: "§TAfter the recent survey undertaken by §K[Root.GetName]§!§T, the science crew has noticed a discrepancy in the crew manifest - one of the scientists sent during the recent surveys has not reported in the last 24 hours. \nThe science expedition has already sent the team back to check on the last known location before the disappearance, hoping to find them there. If the search goes well, they will be found, but the clock is ticking."
+ vore_exploration.15.panic: "§TThen let us hope news will be good."
+
+ vore_exploration.25.name: "Crew member found"
+ vore_exploration.25.desc_1: "§TAfter a prolonged search, the team had returned empty-handed. The message about the loss of a member of the mission was even transmitted to science division. \nMere minutes later, science officer §K[Leader.GetName]§!§T had arrived in the ship's medical bay - shivering and clearly distraught - with a notable dark spot on the crotch region of her labcoat. Moaning through her sentences, she admitted that there was something lodged in her ass as another orgasm hit her: the stain growing as lazy streams of liquid slowly oozed from the other side of the fabric and pooling on the floor, much to her embarrassment. \n\nThe medical personnel has found the missing crew member, unconscious, lodged deep within [Leader.GetName]'s colon. After several hours, they have awakened in the medical bay. It would seem that the lead science officer was not looking where she was sitting and accidentally trapped their coworker. The crew member has expressed that they would not be against a similar situation happening again, with the lead science officer  echoing a similar sentiment."
+ vore_exploration.25.desc_2: "§TAfter a prolonged search, the team had returned empty-handed. The message about the loss of a member of the mission was even transmitted to science division. Then, we received another message.\nIt was from §K[Leader.GetName]§!, who - extremely erratically and anxiously -started explaining the situation: she and the mmissing researcher had an agreement, one regarding the survey after which they dissapeared. Apparently, the researcher had lost the bet and as a punishment had to act as a living buttplug for [Leader.GetName]. They were unsure whether to notify the crew over the nature of the issue.\nThe researcher, still in [Leader.GetName]'s, reassued us that they were very much still alive, but would like to... continue their bet to completion."
+ vore_exploration.25.done: "§TWell, at least that has been settled..."
+
+ vore_exploration.26.name: "Missing crew member..."
+ vore_exploration.26.desc: "§TThe news are... bad. We do not know where the missing expedition member is. Judging by last issued equipment (which is not in the ship's inventory), they have suffocated several days ago at the very best, not accounting for caloric or hydrational intake. \n\nThey are gone. Forever."
+ vore_exploration.26.hush: "§TWe cannot let our citizens know."
+ vore_exploration.26.reveal: "§TWery well, they shall be remembered."
+
+ vore_exploration.27.name: "Crew member found..."
+ vore_exploration.27.desc: "§TWe have recieved a priority message from §K[Root.GetName]§!. \n§TThe crew has found the missing crewmember -or, to be blunt, their remains. A skeleton has been found inside one of the unused compartments. Bone matter analasys has confirmed it is the late crew member. Furthermore, the skeleton was completely covered in a thin layer of dried cum, which has 99.85% match with the DNA profile of lead science officer §K[Leader.GetName]§!§T \n\nFurther investigation into the substances found on the skeleton reveal that the victim was trapped in the officer's anal cavity for an unknow amount of time prior to the disposal. Unfortunately, it seems that the rest of the crew aboard the ship is afraid to confront [Leader.GetName] for fear of reprisal. The damage has already been done, and considering officer's skills, it would be a giant loss for our exploration programme to loose her."
+ vore_exploration.27.reveal: "§TUnfortunate, but unsurprising."
+
+ # Predatory fauna
+ vore_exploration.50.name: "Predatory fauna"
+ vore_exploration.50.desc: "§TWe have lost contact wit hthe science vessel §K[Root.GetName]§!. Last transmission from it was a relay from the planet of §K[FromFrom.GetName]§!: it's rather disturbing. \n\n The camera footage begins with the entire research expedition, headed by officer §K[Root.Leader.GetName]§!, wading through the thick jungle-like foliage of the planet before screams are heard. Suddenly, large blots of colour flashed across the view, jumping between dense greenery, scientists picked off one by one as more beasts joined the fray. \nFinally, the same fate befalls our proverbial eyes on the ground - maws, teeth... and finally the esophagus are all recorder, the cameraman falling in front of the camera lens, both swimming in an accidic pool as the the poor researcher began dissolving; their protective suit lasting only a couple of moments as the acid claimed first their fles, then organs, then bones. \n\nThe camera continued to transmit for 15 more minutes."
+ vore_exploration.50.name_a: "§TTerrible, terrible news."
+
+ #Entering Broken Heart
+ vore_exploration.100.name: "An unusual system"
+ vore_exploration.100.desc: "§TThe system dubbed §K[Root.From.GetName]§!, a cold and desolate place that seems to barely miss the horizon of the massive singularity making up most of it - seems to harbour signs of habitation. \nWe should attempt to learn what happened here."
+
+ ##############################################
+ #                DIPLOMACY
+ ##############################################
+
+ #Conspicpous copulation
+ vore_diplo.40.name: "Conspicuous Cockpulation"
+ vore_exploration.26.desc: "§TThe news are... bad. We do not know where the missing expedition member is. Judging by last issued equipment (which is not in the ship's inventory), they have suffocated several days ago at the very best, not accounting for caloric or hydrational intake. \n\nThey are gone. Forever."
+ vore_exploration.26.hush: "§TWe cannot let our citizens know."
+ vore_exploration.26.reveal: "§TWery well, they shall be remembered."
+
+ vore_diplo.40.desc: "§T[ruler.GetRulerTitle], we have recieved a communique from our embassy in §K[embassy_owner.GetName]§!. \n\nSeveral days ago, one of our delegates had been declared missing along with another official from [embassy_owner.GetName]. While alarming on its own, it was fine compared to how they were found: after a prolonged search both were found in one of the unused offices, our diplomat propped against the dusty desk, legs splayed and [root.species.GetHandNamePlural] holding their massive manhood - displayed to all as it half enveloped the other missing delegate: thin layer of cum covering the poor sod as it wasn't fully certain whether they were being swallowed by or pushed out of the massive pillar of meat that greedily encircled them. \n\nTo call this just an 'embarrassment' would be bordering on a lie with how poorly the diploimatic corps from [embassy_owner.GetName] have reacted to this development. Something should be done about the current situation."
+ vore_diplo.40.name_a: "§TForce the diplomat to issue a public statement."
+ vore_diplo.40.desc_a: "§g We can only hope they take it well."
+ vore_diplo.40.name_b: "§TThey were doing what was natural."
+ vore_diplo.40.desc_b: "§g It is imperative we take the stand on the side of our citizens and their needs."
+ vore_diplo.40.name_c: "§TAll shall partake in our sacrament!"
+ vore_diplo.40.desc_c: "§TWhile our citizens shall apreciate the sentiment, §R[embassy_owner.GetName] will not be happy with our reaction§!."
+
+ # Predatory fauna
+ vore_exploration.50.name: "Predatory fauna"
+ vore_exploration.50.desc: "§TWe have lost contact with the science vessel §K[Root.GetName]§!. Last transmission from it was a relay from the planet: it's rather disturbing. \n\n The camera footage begins with the entire research expedition wading through the thick jungle-like foliage of the planet before screams are heard. Suddenly, large blots of colour flashed across the view, jumping between dense greenery, scientists picked off one by one as more beasts joined the fray. \nFinally, the same fate befalls our proverbial eyes on the ground - maws, teeth... and finally the esophagus are all recorder, the cameraman falling in front of the camera lens, both swimming in an accidic pool as the the poor researcher began dissolving; their protective suit lasting only a couple of moments as the acid claimed first their fles, then organs, then bones. \n\nThe camera continued to transim for 15 more minutes."
+ vore_exploration.50.name_a: "§TTerrible, terrible news."
+
+
+ ##############################################
+ #                PARAGONS
+ ##############################################
+
+ voragons.10.name: "A strange bunker"
+ voragons.10.desc: "The secondary examination of §K[FromFrom.GetName]§!'s anomaly has revealed very little: the creators of this mistery made good work to hide whatever is contained below the rock - entropy only made it harder. We have found no vents, no external cables, or anything that would let us stimulate the black box in front of us... that is, not counting the set of hydraulic bunker doors that hadn't closed properly. With a significant material and materiel efforts, we believe the secrets of this place can be cracked open."
+ voragons.10.accept: "Understood, we will send an expedition."
+ voragons.10.decline: "Planet's full of ruins, disregard it."
+
+ voragons.110.name: "Making progress"
+ voragons.110.desc: "Upon clearing the debris, our team was shocked to find that much of the facility was intact. We were able to locate the central computer which appeared to be in emergency sleep cycle. Our researcher §K[From.Leader.GetName]§! has noted that providing additional power could wake the machine from its slumber."
+ voragons.110.proceed: "Additional budget granted."
+
+ voragons.115.name: "The machine."
+ voragons.115.desc: "The forward team has sent reports: mainframe booted up, sigils of its creator appearing on screens thought long dead- the facility is active, once more. While we are in the process of translating the data, it seems that the entire bunker came alive, machines reportedly restarting their fabrication cycles, their purpouse as of yet unknown. The entire team is awaiting to see the end result. "
+ voragons.115.proceed: "Alea iacta..."
+
+ voragons.120.name: "...est"
+ voragons.120.desc: "Several messages have came from since the last progress report from §K[Root.GetName]§!, most regarding either an assembly or reassembly of a bipedal robotic shell within the ancient complex. Alarmingly, the last report has arrived completely corrupted - coinciding with our loss of contact with forvard team. The relayed camera recording of the complex stayed in audio only mode for 15 seconds before turning off as well: the recording consists of screams by the members of the forward team. "
+ voragons.120.proceed: "Put all remaining teams on high alert!"
+
+
+
+
+
+
+
+
+ ############## MISC
+ vore_random.10.desc: "PLACEHOLDER"

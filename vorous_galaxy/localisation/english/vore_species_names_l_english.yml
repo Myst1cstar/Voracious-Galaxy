@@ -1,0 +1,309 @@
+﻿l_english:
+
+ # REGULAR
+
+ vore_species_name_1: "Felinian"
+ vore_species_name_plural_1: "Felinae"
+ vore_species_planet_1: "Stahria"
+ vore_species_system_1: "Sola"
+
+ vore_species_name_2: "Canine"
+ vore_species_name_plural_2: "Canine"
+ vore_species_planet_2: "Terra Star"
+ vore_species_system_2: "Salaris"
+
+ vore_species_name_3: "Vulpu"
+ vore_species_name_plural_3: "Vulpina"
+ vore_species_planet_3: "Esteria"
+ vore_species_system_3: "Set"
+
+ vore_species_name_4: "Protois"
+ vore_species_name_plural_4: "Protian"
+ vore_species_planet_4: "Martrick"
+ vore_species_system_4: "AM"
+
+ vore_species_name_5: "Canine"
+ vore_species_name_plural_5: "Canine"
+ vore_species_planet_5: "Terra Star"
+ vore_species_system_5: "Salaris"
+
+ vore_species_name_6: "Aval"
+ vore_species_name_plural_6: "Avali"
+ vore_species_planet_6: "Avalon"
+ vore_species_system_6: "A-vi-12"
+ 
+ vore_species_name_7: "Draku"
+ vore_species_name_plural_7: "Drakul"
+ vore_species_planet_7: "Ashhmeth"
+ vore_species_system_7: "Farwrath"
+
+ vore_species_name_8: "Charchary"
+ vore_species_name_plural_8: "Charcharians"
+ vore_species_planet_8: "Perdot"
+ vore_species_system_8: "Wesser"
+
+ vore_species_name_9: "Moedur"
+ vore_species_name_plural_9: "Moedura"
+ vore_species_planet_9: "Ocell"
+ vore_species_system_9: "Wellel"
+
+ vore_species_name_10: "Eny'l"
+ vore_species_name_plural_10: "Eny'y"
+ vore_species_planet_10: "Ch'buj"
+ vore_species_system_10: "Ch'galik"
+
+ vore_species_name_11: "Bakshi"
+ vore_species_name_plural_11: "Bakshin"
+ vore_species_planet_11: "Nephentes"
+ vore_species_system_11: "Viharn"
+
+ vore_species_name_12: "Sukbitan"
+ vore_species_name_plural_12: "Sukbitanni"
+ vore_species_planet_12: "Fasembeit"
+ vore_species_system_12: "Kolsat"
+ 
+ vore_species_name_13: "Kippa"
+ vore_species_name_plural_13: "Kippe"
+ vore_species_planet_13: "Tarnnar"
+ vore_species_system_13: "Asimov"
+
+ vore_species_name_14: "Behatru"
+ vore_species_name_plural_14: "Behitran"
+ vore_species_planet_14: "Salmont"
+ vore_species_system_14: "Terza"
+
+ vore_species_name_15: "Tijal"
+ vore_species_name_plural_15: "Tijhals"
+ vore_species_planet_15: "Pebbeb"
+ vore_species_system_15: "Phast"
+
+ # FERAL
+
+ vore_species_name_feral_1: "Kuch"
+ vore_species_name_feral_plural_1: "Luchi"
+ vore_species_feral_planet_1: "Salip"
+ vore_species_feral_system_1: "Arkhin"
+
+ vore_species_name_feral_2: "Tirat"
+ vore_species_name_feral_plural_2: "Tirata"
+ vore_species_feral_planet_2: "Helpersa"
+ vore_species_feral_system_2: "Gressiah"
+
+ vore_species_name_feral_3: "Zilln"
+ vore_species_name_feral_plural_3: "Zillta"
+ vore_species_feral_planet_3: "Vestiga"
+ vore_species_feral_system_3: "Holpakt"
+
+ vore_species_name_feral_4: "Misteso"
+ vore_species_name_feral_plural_4: "Mistesa"
+ vore_species_feral_planet_4: "Schhia"
+ vore_species_feral_system_4: "Zelpotjo"
+
+ vore_species_name_feral_5: "Ispi"
+ vore_species_name_feral_plural_5: "Ispij"
+ vore_species_feral_planet_5: "Forgh"
+ vore_species_feral_system_5: "Yarkar"
+
+ vore_species_name_feral_6: "Jireancium"
+ vore_species_name_feral_plural_6: "Jireanciam"
+ vore_species_feral_planet_6: "Notilla"
+ vore_species_feral_system_6: "Pekoli"
+
+ vore_species_name_feral_7: "Gonopt"
+ vore_species_name_feral_plural_7: "Gonapte"
+ vore_species_feral_planet_7: "Issima"
+ vore_species_feral_system_7: "Zivi"
+
+ vore_species_name_feral_8: "Irzi"
+ vore_species_name_feral_plural_8: "Izre"
+ vore_species_feral_planet_8: "Tolbeg"
+ vore_species_feral_system_8: "Marj"
+
+ vore_species_name_feral_9: "Dobo"
+ vore_species_name_feral_plural_9: "Doboy"
+ vore_species_feral_planet_9: "Asantin"
+ vore_species_feral_system_9: "Sopatt"
+
+ vore_species_name_feral_10: "Izd-k"
+ vore_species_name_feral_plural_10: "Izd-kan"
+ vore_species_feral_planet_10: "Y-pakao"
+ vore_species_feral_system_10: "Y-anb"
+
+ vore_species_name_feral_11: "Atten"
+ vore_species_name_feral_plural_11: "Atteniat"
+ vore_species_feral_planet_11: "Ortani"
+ vore_species_feral_system_11: "Efegeld"
+
+ vore_species_name_feral_12: "Ahjon"
+ vore_species_name_feral_plural_12: "Ahjon"
+ vore_species_feral_planet_12: "Cerki"
+ vore_species_feral_system_12: "Holeren"
+
+ vore_species_name_feral_13: "Pove"
+ vore_species_name_feral_plural_13: "Povei"
+ ore_species_feral_planet_13: "Deskorka"
+ vore_species_feral_system_13: "Jassja"
+
+ vore_species_name_feral_14: "Ossar"
+ vore_species_name_feral_plural_14: "Ossara"
+ vore_species_feral_planet_14: "Makok"
+ vore_species_feral_system_14: "Mihalon"
+
+ vore_species_name_feral_15: "Spinthar"
+ vore_species_name_feral_plural_15: "Spintaras"
+ vore_species_feral_planet_15: "Webbe"
+ vore_species_feral_system_15: "Alaaia"
+
+ # ROBO
+ 
+ vore_species_robot_name_1: "Vectoid"
+ vore_species_robot_name_plural_1: "Vectoids"
+ vore_species_robot_planet_1: "Fakt"
+ vore_species_robot_system_1: "#759-G"
+ 
+ vore_species_robot_name_2: "Fakto"
+ vore_species_robot_name_plural_2: "Fakto"
+ vore_species_robot_planet_2: "Hub"
+ vore_species_robot_system_2: "Gellar"
+
+ vore_species_robot_name_3: "Hazah"
+ vore_species_robot_name_plural_3: "Haza"
+ vore_species_robot_planet_3: "Sektor 0"
+ vore_species_robot_system_3: "Falve"
+
+ vore_species_robot_name_4: "Sittrih"
+ vore_species_robot_name_plural_4: "Sittren"
+ vore_species_robot_planet_4: "Tritio"
+ vore_species_robot_system_4: "Ohshi"
+
+ vore_species_robot_name_5: "*"
+ vore_species_robot_name_plural_5: "*"
+ vore_species_robot_planet_5: "<-"
+ vore_species_robot_system_5: "new object"
+
+ vore_species_robot_name_6: "Serv"
+ vore_species_robot_name_plural_6: "Servon"
+ vore_species_robot_planet_6: "Di0l"
+ vore_species_robot_system_6: "B-32-43-52"
+
+ vore_species_robot_name_7: "Lok"
+ vore_species_robot_name_plural_7: "Loken"
+ vore_species_robot_planet_7: "Screene"
+ vore_species_robot_system_7: "L0C"
+
+ vore_species_robot_name_8: "Re-fe"
+ vore_species_robot_name_plural_8: "Re-fan"
+ vore_species_robot_planet_8: "Chagpt"
+ vore_species_robot_system_8: "Ommiy"
+
+ vore_species_robot_name_9: "Tauth"
+ vore_species_robot_name_plural_9: "Tauthi"
+ vore_species_robot_planet_9: "Process Matrix"
+ vore_species_robot_system_9: "Issac"
+
+ vore_species_robot_name_10: "Huno"
+ vore_species_robot_name_plural_10: "Huno"
+ vore_species_robot_planet_10: "Dawn"
+ vore_species_robot_system_10: "Elijah-7"
+
+ vore_species_robot_name_11: "W7335k-s"
+ vore_species_robot_name_plural_11: "W7335k-m"
+ vore_species_robot_planet_11: "Siktus"
+ vore_species_robot_system_11: "Rote-12"
+
+ vore_species_robot_name_12: "Krin"
+ vore_species_robot_name_plural_12: "Krin"
+ vore_species_robot_planet_12: "Harvest Site"
+ vore_species_robot_system_12: "Tiberum"
+
+ vore_species_robot_name_13: "RK-nt"
+ vore_species_robot_name_plural_13: "RK-nts"
+ vore_species_robot_planet_13: "Blade"
+ vore_species_robot_system_13: "Kampf"
+
+ vore_species_robot_name_14: "Scarab"
+ vore_species_robot_name_plural_14: "Scarabs"
+ vore_species_robot_planet_14: "Vidkun"
+ vore_species_robot_system_14: "Solve"
+
+ vore_species_robot_name_15: "Engrm"
+ vore_species_robot_name_plural_15: "Engrms"
+ vore_species_robot_planet_15: "Wall"
+ vore_species_robot_system_15: "Tomb"
+
+    # ROBO FERAL
+
+ vore_species_robot_feral_name_1: "Ver-B1.0.3"
+ vore_species_robot_feral_name_plural_1: "Ver-B1.0.3"
+ vore_species_robot_feral_planet_1: "Test_final(1)"
+ vore_species_robot_feral_system_1: "Jaic"
+
+ vore_species_robot_feral_name_2: "Prot_X12"
+ vore_species_robot_feral_name_plural_2: "Prot_X12"
+ vore_species_robot_feral_planet_2: "Dataframe Priori"
+ vore_species_robot_feral_system_2: "Fossa"
+
+ vore_species_robot_feral_name_3: "Ctate"
+ vore_species_robot_feral_name_plural_3: "Ctates"
+ vore_species_robot_feral_planet_3: "Militorum"
+ vore_species_robot_feral_system_3: "Kilo 40"
+
+ vore_species_robot_feral_name_4: "speciesName"
+ vore_species_robot_feral_name_plural_4: "speciesNamePlural"
+ vore_species_robot_feral_planet_4: "fatalException"
+ vore_species_robot_feral_system_4: "name_star_loc_key"
+
+ vore_species_robot_feral_name_5: "AlphaVer_0.9"
+ vore_species_robot_feral_name_plural_5: "AlphaVer_0.9"
+ vore_species_robot_feral_planet_5: "Test site"
+ vore_species_robot_feral_system_5: "Manekph"
+
+ vore_species_robot_feral_name_6: "Vergeltung-15537"
+ vore_species_robot_feral_name_plural_6: "Vergeltung-15537"
+ vore_species_robot_feral_planet_6: "Unknown"
+ vore_species_robot_feral_system_6: "Tempest Solaris"
+
+ vore_species_robot_feral_name_7: "VEVTVF9JTVBPURIBTIQ="
+ vore_species_robot_feral_name_plural_7: "VEVTVF9JTVBPURIBTIQ="
+ vore_species_robot_feral_planet_7: "Base"
+ vore_species_robot_feral_system_7: "B64"
+
+ vore_species_robot_feral_name_8: "T_IMP_9957"
+ vore_species_robot_feral_name_plural_8: "T_IMP_9957"
+ vore_species_robot_feral_planet_8: "Sanctioned Laboratory"
+ vore_species_robot_feral_system_8: "Nostillis"
+
+ vore_species_robot_feral_name_9: "CnC_init"
+ vore_species_robot_feral_name_plural_9: "CnC_init"
+ vore_species_robot_feral_planet_9: "Kolm"
+ vore_species_robot_feral_system_9: "Efobot"
+
+ vore_species_robot_feral_name_10: "Digitalis"
+ vore_species_robot_feral_name_plural_10: "Digitalis"
+ vore_species_feral_robot_planet_10: "Emmt"
+ vore_species_feral_robot_system_10: "Artelis"
+
+ vore_species_robot_feral_name_11: "Tmp_ver"
+ vore_species_robot_feral_name_plural_11: "Tmp_ver"
+ vore_species_robot_feral_planet_11: "Lappa"
+ vore_species_robot_feral_system_11: "Zodan"
+
+ vore_species_robot_feral_name_12: "K:/name"
+ vore_species_robot_feral_name_plural_12: "K:/names"
+ vore_species_robot_feral_planet_12: "~/planet_name"
+ vore_species_robot_feral_system_12: "Topakka"
+
+ vore_species_robot_feral_name_13: "Ferr"
+ vore_species_robot_feral_name_plural_13: "Ferr_mult"
+ vore_species_robot_feral_planet_13: "Observatory T"
+ vore_species_robot_feral_system_13: "Catridi"
+ 
+ vore_species_robot_feral_name_14: "PrimOS"
+ vore_species_robot_feral_name_plural_14: "PrimOS_drivers"
+ vore_species_robot_feral_planet_14: "Kernel"
+ vore_species_robot_feral_system_14: "Yoptan"
+
+ vore_species_robot_feral_name_15: "Tapi"
+ vore_species_robot_feral_name_plural_15: "Tappans"
+ vore_species_robot_feral_planet_15: "Zalt"
+ vore_species_robot_feral_system_15: "Doratik"

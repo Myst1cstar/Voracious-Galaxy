@@ -1,0 +1,36 @@
+namespace = vore_leader_event
+
+##############################################
+#				NEGATIVE TRAIT
+##############################################
+
+# Gorger
+country_event = {
+	id = vore_leader_event.10
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_ethic = "ethic_gestalt_consciousness"
+
+		}
+	}
+
+	immediate = {
+		random_owned_leader = {
+			save_event_target_as = gorger_to_be
+		}
+		}
+
+	picture = "GFX_vore_gorger"
+	title = vore_leader_event.10.name
+	desc = vore_leader_event.10.desc
+
+	option = {
+		name = vore_leader_event.10.acknowledged
+
+		event_target:gorger_to_be = {
+			add_trait = leader_trait_vore_gorger
+		}
+	}
+}

@@ -1,0 +1,144 @@
+VORE = {
+	archetype = BIOLOGICAL
+
+	leader_age_min = 21
+	leader_age_max = 80
+
+	possible = { 
+		authority = { 
+			NOT = {
+				 value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+	
+	graphical_culture = humanoid_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+	
+	resources = {}
+
+}
+
+VORE_FERAL = {
+	archetype = BIOLOGICAL
+
+	leader_age_min = 21
+	leader_age_max = 80
+
+	possible = { 
+		authority = { 
+			NOT = {
+				 value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+	
+	graphical_culture = humanoid_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+	
+	
+	resources = {}
+
+}
+
+# should allow all types of machine empires but bio hives
+# I don't actually know if this is correct, fix if not - OTTO
+
+
+
+VORE_MACHINE = {
+	archetype = MACHINE
+	playable = {
+		OR = {
+			host_has_dlc = "Synthetic Dawn Story Pack"
+			has_machine_age_dlc = yes
+		}
+	}
+
+	possible = {
+		OR = {
+			AND = {
+				host_has_dlc = "The Machine Age"
+				authority = {
+					NOT = { value = auth_hive_mind }
+				}
+			}
+			authority = {
+				OR = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_USE_MACHINE_INTELLIGENCE }
+			}
+		}
+	}
+
+	trait = trait_machine_unit
+	gender = yes
+	use_climate_preference = no
+	leader_age_min = 1
+	leader_age_max = 125
+
+	graphical_culture = ai_01
+	move_pop_sound_effect = "robot_pops_move"
+
+	resources = {}
+
+	random_weight = {
+		base = 1
+	}
+	ethics_to_prefer = {
+		ethic_gestalt_consciousness
+	}
+	preferred_ethics_weight = {
+		base = 6.5 #about 50% of machine empires would spawn as gestalt consciousness vs any type of individualistic
+	}
+}
+
+VORE_MACHINE_FERAL = {
+	archetype = MACHINE
+
+	playable = {
+		OR = {
+			host_has_dlc = "Synthetic Dawn Story Pack"
+			has_machine_age_dlc = yes
+		}
+	}
+
+	trait = trait_machine_unit
+	gender = yes
+	use_climate_preference = no
+	leader_age_min = 1
+	leader_age_max = 125
+
+	graphical_culture = ai_01
+	move_pop_sound_effect = "robot_pops_move"
+
+	resources = {}
+
+	random_weight = {
+		base = 1
+	}
+	ethics_to_prefer = {
+		ethic_gestalt_consciousness
+	}
+	preferred_ethics_weight = {
+		base = 6.5 #about 50% of machine empires would spawn as gestalt consciousness vs any type of individualistic
+	}
+}
+
+PRE_VORE = {
+	archetype = PRESAPIENT
+
+	playable = {
+		always = no
+	}
+	randomized = no
+
+	graphical_culture = mammalian_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+	uplifted_into = "VORE"
+}
+
+PRE_VORE_FERAL = {
+	archetype = PRESAPIENT
+
+	playable = {
+		always = no
+	}
+	randomized = no
+
+	graphical_culture = mammalian_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+	uplifted_into = "VORE_FERAL"
+}

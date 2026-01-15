@@ -1,0 +1,45 @@
+############################
+# (Pery) (name) SPECIALIST #
+############################
+
+(name)_1_modifier = {
+	main_perk = yes
+	subject_modifier ={
+		
+	}
+	
+(name)_1_penalties = {
+	main_perk = yes
+	subject_modifier = {
+	
+	}
+
+(name)_1_overlord_modifier = {
+	icon = "img"
+	overlord_modifier = {
+	
+	}
+	
+(name)_2_modifier = {
+	main_perk = yes
+	subject_modifier ={
+		
+	}
+	
+(name)_2_penalties = {
+	main_perk = yes
+	subject_modifier = {
+	
+	}
+	
+(name)_3_modifier = {
+	main_perk = yes
+	subject_modifier ={
+		
+	}
+	
+(name)_3_penalties = {
+	main_perk = yes
+	subject_modifier = {
+	
+	}

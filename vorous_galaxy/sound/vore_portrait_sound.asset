@@ -1,0 +1,22 @@
+sound = { name = "ms_rob_1" file = "vore_paragon_sounds_dolores/ms_rob_1.wav" }
+sound = { name = "ms_rob_2" file = "vore_paragon_sounds_dolores/ms_rob_2.wav" }
+sound = { name = "ms_rob_3" file = "vore_paragon_sounds_dolores/ms_rob_3.wav" }
+
+
+
+soundeffect = {
+    name = dolores_paragon_sound_effects
+    volume = 0.1
+    sounds = {
+        sound = ms_rob_1
+        sound = ms_rob_2
+        sound = ms_rob_3
+    }
+}
+
+category = {
+    name = category_dolores_paragon
+    soundeffects = {
+        dolores_paragon_sound_effects
+    }
+}

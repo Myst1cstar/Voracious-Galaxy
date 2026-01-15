@@ -1,0 +1,72 @@
+# Should 00_ break other mods in future, we can downgrade it to a lower step - OTTO (14.03.25) [REMOVED]
+# changed the lists to be for the mod only. Small issue with that is that the game will generate about twice as many presapients but fuck it - OTTO (14.03.25) [REMOVED]
+# fixed
+
+### PRE-SAPIENT / UPLIFTING EFFECTS
+
+spawn_presapient_species_randomizer_effect = {
+	random_list = {
+		1 = { create_generic_presapient_species = { UPLIFT_TO = MAM } }
+		1 = { create_generic_presapient_species = { UPLIFT_TO = REP } }
+		1 = { create_generic_presapient_species = { UPLIFT_TO = AVI } }
+		1 = { create_generic_presapient_species = { UPLIFT_TO = ART } }
+		1 = { create_generic_presapient_species = { UPLIFT_TO = MOL } }
+		1 = { create_generic_presapient_species = { UPLIFT_TO = FUN } }
+		1 = {
+			modifier = { factor = 0 has_plantoids = no }
+			create_generic_presapient_species = { UPLIFT_TO = PLANT }
+		}
+		1 = {
+			modifier = { factor = 0 has_lithoids = no }
+			create_generic_presapient_species = { UPLIFT_TO = LITHOID }
+		}
+		#1 = {
+		#	modifier = { factor = 0 has_necroids = no }
+		#	create_generic_presapient_species = { UPLIFT_TO = NECROID }
+		#}
+		1 = {
+			modifier = { factor = 0 has_aquatics = no }
+			create_generic_presapient_species = { UPLIFT_TO = AQUATIC }
+		}
+		1 = {
+			modifier = { factor = 0 has_toxoids = no }
+			create_generic_presapient_species = { UPLIFT_TO = TOX }
+		}
+		4 = { create_generic_presapient_species = { UPLIFT_TO = VORE } }
+		4 = { create_generic_presapient_species = { UPLIFT_TO = VORE_FERAL } }
+	}
+}
+
+#Homeworld for Genesis Guides
+spawn_presapient_species_randomizer_homeworld_effect = {
+	random_list = {
+		1 = { create_generic_presapient_species_homeworld = { UPLIFT_TO = MAM } }
+		1 = { create_generic_presapient_species_homeworld = { UPLIFT_TO = REP } }
+		1 = { create_generic_presapient_species_homeworld = { UPLIFT_TO = AVI } }
+		1 = { create_generic_presapient_species_homeworld = { UPLIFT_TO = ART } }
+		1 = { create_generic_presapient_species_homeworld = { UPLIFT_TO = MOL } }
+		1 = { create_generic_presapient_species_homeworld = { UPLIFT_TO = FUN } }
+		1 = {
+			modifier = { factor = 0 has_plantoids = no }
+			create_generic_presapient_species_homeworld = { UPLIFT_TO = PLANT }
+		}
+		1 = {
+			modifier = { factor = 0 has_lithoids = no }
+			create_generic_presapient_species_homeworld = { UPLIFT_TO = LITHOID }
+		}
+		#1 = {
+		#	modifier = { factor = 0 has_necroids = no }
+		#	create_generic_presapient_species = { UPLIFT_TO = NECROID }
+		#}
+		1 = {
+			modifier = { factor = 0 has_aquatics = no }
+			create_generic_presapient_species_homeworld = { UPLIFT_TO = AQUATIC }
+		}
+		1 = {
+			modifier = { factor = 0 has_toxoids = no }
+			create_generic_presapient_species_homeworld = { UPLIFT_TO = TOX }
+		}
+		4  = { create_generic_presapient_species_homeworld= { UPLIFT_TO = VORE } }
+		4 = { create_generic_presapient_species_homeworld = { UPLIFT_TO = VORE_FERAL } }
+	}
+}

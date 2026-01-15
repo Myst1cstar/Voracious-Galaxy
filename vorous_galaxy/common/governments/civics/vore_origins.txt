@@ -1,0 +1,58 @@
+######################
+###     Origin     ###
+######################
+
+# Predatory Hive
+
+origin_vore_predatory_hive = {	
+	is_origin = yes
+	icon = ""
+	picture = 
+	
+	playable = {
+		host_has_dlc = "Utopia"
+	}
+	
+	potential = {
+		authority = { value = auth_hive_mind }
+	}
+	random_weight = {
+		base = 1
+	}
+	
+	description = "origin_tooltip_vore_predatory_hive_effects"
+	
+	modifier = {
+			
+			
+			
+		}
+}
+	
+
+# Peaceful Hive
+
+origin_vore_peaceful_hive = {
+	is_origin = yes
+	icon = ""
+	picture =
+	
+	playable = {
+		host_has_dlc = "Utopia"
+	}
+	
+	potential = {
+		authority = { value = auth_hive_mind }
+	}
+	random_weight = {
+		base = 1
+	}
+	
+	description = origin_tooltip_vore_peaceful_hive_effects
+	
+	modifier = {
+		
+		
+		}
+}
+	

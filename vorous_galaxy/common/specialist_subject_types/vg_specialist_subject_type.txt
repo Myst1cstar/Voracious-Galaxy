@@ -1,0 +1,42 @@
+@level_2_xp_cost = 1200 # 10 years at 100 Loyalty.
+@level_3_xp_cost = 3600 # 30 years at 100 Loyalty.
+
+@specialist_base_conversion_time = 30
+
+# If you add any new types or change the keys of the existing ones, make sure to change the level-up message_types for them and their loc keys
+
+specialist_(name) = {
+	icon = "image"
+	icon_large = "image_large"
+	preferred_ethic = ethic_
+	base_conversion_time = @specialist_base_conversion_time
+	
+	on_progress_complete = {
+	}
+	
+	levels = {
+		# Level 1
+		{
+			experience_needed_for_next_level = @level_2_xp_cost
+			perks = {
+				(name)_1_modifier
+				(name)_1_penalties
+				(name)_1_overlord_modifier
+			}
+		}
+		#Level 2
+		{
+			experience_needed_for_next_level = @level_3_xp_cost
+			perks = {
+			(name)_2_modifier
+			(name)_2_penalties
+		}
+		#Level 3
+		{
+			perks = {
+				(name)_3_modifier
+				(name)_3_penalties
+			}
+		}
+	}
+}

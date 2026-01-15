@@ -1,0 +1,50 @@
+######################
+###     Civics     ###
+######################
+
+# Apex Predator
+civic_vore_apex_predator = {
+	description = "civic_tooltip_vore_apex_predator_effects"
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_xenophobe
+				value = ethic_xenophobe
+				value = ethic_fanatic_xenophobe
+			}
+		}
+		origin = {
+			NOR = {
+				value = origin_syncretic_evolution
+				value = origin_common_ground
+				value = origin_hegemon
+				value = origin_scion
+				value = origin_necrophage
+				value = origin_imperial_fiefdom
+				value = origin_broken_shackles
+			}
+		}
+		}
+	random_weight = { base = @civic_default_random_weight }
+	ai_weight = {
+		base = @ai_civic_default_base_weight
+			modifier = {
+			factor = @ai_civic_personality_mismatch_factor
+			OR = {
+				has_ai_personality = erudite_explorers
+				has_ai_personality = democratic_crusaders
+				has_ai_personality = peaceful_traders
+			}
+		}
+		}
+	modifier = {
+			army_damage_mult = 0.5
+			planet_pops_consumer_goods_upkeep_mult = -0.30
+			
+			
+		}
+}
+

@@ -1,0 +1,16 @@
+
+
+# Dolores
+dolores_intro_anomaly = {
+	desc = dolores_intro_anomaly_desc
+	picture = GFX_evt_relic_world
+	max_once = yes
+	level = 9
+	should_ai_use = yes
+	
+	spawn_chance = {
+		base = 0		# prescripted system event
+	}
+
+	on_success = voragons.10
+}

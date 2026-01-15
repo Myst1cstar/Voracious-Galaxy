@@ -1,0 +1,122 @@
+namespace = vore_random
+
+##############################
+#		FLEET EVENTS
+##############################
+
+fleet_event = {
+	id = vore_random.10
+	is_triggered_only = yes
+	hide_window = yes
+
+	title = vore_random.10.name
+	desc = vore_random.10.desc
+	show_sound = event_sensor_ping
+	#picture =
+
+	location = fromfrom
+	
+	immediate = { # I WILL COME TO THIS LATER, I DO NOT WANT TO TOUCH THIS WITHOUT BEING ABLE TO DO SOME STUFF I AM NOT TOUCHING UNTILL AFTER NEW YEAR
+				  #	I forgot
+		change_variable = {which = vore_event_incrementer value = 1}
+		random_list = {
+			50 = {}
+		}
+	}
+}
+
+
+#############################################
+#      RANDOM BUILDING COUNTRY EVENTS
+#############################################
+
+country_event = {
+	id = vore_random.100
+	is_triggered_only = yes
+
+	title = vore_random.100.name
+	desc = vore_random.100.desc
+
+	#picture = 
+
+	trigger = {
+		owner = {
+			has_country_flag = is_lethal_vore_country
+			has_country_flag = has_military_academy
+		}
+	}
+
+	immediate = {
+		change_variable = {which = vore_event_incrementer value = 1}
+	}
+
+	option = {
+		name = vore_random.100.option_1
+		trigger = {
+			owner = {
+				has_civic = civic_citizen_service
+			}
+		}
+		owner = {
+			add_modifier = {
+				modifier = vore_military_academy_boost
+				days = 3600
+			}
+			add_resource = {
+				unity = 7500
+			}
+		}
+	}
+	option = {
+		name = vore_random.100.option_1
+		trigger = {
+			owner = {
+				OR = {
+					has_ethic = ethic_fanatic_militarist
+					has_ethic = ethic_militarist
+				}
+			}
+		}
+		owner = {
+			add_modifier = {
+				modifier = vore_military_academy_boost
+				days = 3600
+			}
+			add_modifier = {
+				modifier = vore_military_academy_boost_military
+				days = 1800
+			}
+		}
+	}
+	option = {
+		name = vore_random.100.option_1
+		trigger = {
+			owner = {
+				OR = {
+					has_ethic = ethic_pacifist
+					has_ethic = ethic_fanatic_pacifist
+				}
+			}
+		}
+		owner = {
+			add_modifier = {
+				modifier = vore_military_academy_boost
+				days = 3600
+			}
+			add_modifier = {
+				modifier = vore_military_academy_boost_pacifist
+				days = 1800
+			}
+		}
+	}
+	option = {
+		name = vore_random.100.option_1
+		default_hide_option = yes
+		owner = {
+			add_modifier = {
+				modifier = vore_military_academy_boost
+				days = 3600
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+##############################
+#		NON PRED
+##############################
+
+decision_subg_parks = {
+    owned_planets_only = yes
+    sound = event_administrative_work
+
+    prerequisites = {
+        "tech_vore_advanced_ecoconstruction"
+    }
+    
+    #icon =
+    
+    enactment_time = 200
+
+    resources = {
+        category = decisions
+        cost = {
+            alloys = 150
+            energy = 50
+            trade = 750
+            influence = 25
+        }
+    }
+
+    potential = {
+        owner = { is_regular_empire = yes }
+		NOT = {has_modifier = vore_at_horizon_gate }
+    }
+
+    effect = {
+		add_modifier = { modifier = "vore_at_horizon_gate" }
+        
+    }
+
+    ai_weight = {
+        weight = 15
+    }
+}

@@ -1,0 +1,1331 @@
+##############################
+#		DIPLOMATIC OPITONS
+##############################
+
+
+action_insult = {
+	##############################
+	#		LETHAL- normal
+	##############################
+	
+	#Insult pred to normal
+	propose = {
+		VORE_INSULT_01 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_02 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_03 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_04 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_05 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_06 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_07 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_08 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_09 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_10 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+
+	#Insult pred to lithoid
+	propose = {
+		VORE_INSULT_11 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_lithoid = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_11 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_lithoid = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_11 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_lithoid = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_12 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_lithoid = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_13 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_lithoid = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_14 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_lithoid = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_15 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_lithoid = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_16 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_lithoid = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_17 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_lithoid = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_18 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_lithoid = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_19 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_lithoid = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_20 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_lithoid = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+
+	#Insult pred to necroid
+	propose = {
+		VORE_INSULT_21 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_species_class = NECROID
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_22 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_species_class = NECROID
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_23 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_species_class = NECROID
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_24 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_species_class = NECROID
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_25 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_species_class = NECROID
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_26 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_species_class = NECROID
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_27 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_species_class = NECROID
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_28 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_species_class = NECROID
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_29 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_species_class = NECROID
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_30 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_species_class = NECROID
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_megacorp = yes
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+
+	#Insult pred to corp
+	propose = {
+		VORE_INSULT_31 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_megacorp = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_megacorp = yes
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_32 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_megacorp = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_33 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_megacorp = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_34 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_megacorp = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_35 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_megacorp = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_36 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_megacorp = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_37 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_megacorp = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_38 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_megacorp = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_39 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_megacorp = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_40 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_megacorp = yes
+				NOT = { 
+					OR = {
+						is_lethal_vore_empire = yes
+						is_lithoid = yes
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_megacorp = yes
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+
+	#Insult pred to pred
+	propose = {
+		VORE_INSULT_41 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_lethal_vore_empire = yes
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_42 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_lethal_vore_empire = yes
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					has_encountered_tiyanki = yes
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_43 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_lethal_vore_empire = yes
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_44 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_lethal_vore_empire = yes
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_45 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_lethal_vore_empire = yes
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_lethal_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_46 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_vore_empire = yes
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_47 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_vore_empire = yes
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_48 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_vore_empire = yes
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_49 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_vore_empire = yes
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_50 = {
+			weight = { weight = 50 }
+			trigger = {
+				is_vore_empire = yes
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+
+	#Insult pred to normal (safe)
+	propose = {
+		VORE_INSULT_51 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_52 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_53 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_54 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_55 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_56 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_57 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_58 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_59 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_60 = {
+			weight = { weight = 50 }
+			trigger = {
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}	
+				FROM = {
+					is_vore_empire = yes	
+				}
+			}
+		}
+	}
+
+	##############################
+	# 			ANAL
+	##############################
+
+	propose = {
+		VORE_INSULT_ANAL_01 = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = {
+					is_vore_empire = yes
+					has_global_flag = anal_vore_enabled
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_ANAL_02 = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = {
+					is_vore_empire = yes
+					has_global_flag = anal_vore_enabled
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_ANAL_03 = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = {
+					is_vore_empire = yes
+					has_global_flag = anal_vore_enabled
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_ANAL_04 = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = {
+					is_vore_empire = yes
+					has_global_flag = anal_vore_enabled
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_ANAL_05 = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = {
+					is_lethal_vore_empire = yes
+					has_global_flag = anal_vore_enabled
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_ANAL_06 = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = {
+					is_vore_empire = yes
+					has_global_flag = anal_vore_enabled
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_ANAL_07 = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = {
+					is_vore_empire = yes
+					has_global_flag = anal_vore_enabled
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_ANAL_08 = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = {
+					is_vore_empire = yes
+					has_global_flag = anal_vore_enabled
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_ANAL_09 = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = {
+					is_vore_empire = yes
+					has_global_flag = anal_vore_enabled
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_ANAL_10 = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = {
+					is_vore_empire = yes
+					has_global_flag = anal_vore_enabled
+				}
+			}
+		}
+	}
+
+
+	##############################
+	#		UNBIRTHING
+	##############################
+
+	#Insult pred unbirthing (mctf)
+	propose = {
+		VORE_INSULT_UNBIRTHING_01 = {
+			weight = { weight = 50 }
+			trigger = {	
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}
+				FROM = {
+					has_global_flag = vag_vore_enabled
+					is_vore_empire = yes
+				}
+			}
+		}
+	}
+	propose = {
+		VORE_INSULT_UNBIRTHING_02 = {
+			weight = { weight = 50 }
+			trigger = {	
+				NOT = { 
+					OR = {
+						is_species_class = ROBOT
+						is_species_class = NECROID
+					}
+				}
+				FROM = {
+					has_global_flag = vag_vore_enabled
+					is_vore_empire = yes
+				}
+			}
+		}
+	}
+
+	#Insult pred unbirthing (reg vore)
+
+	#Insult pred to robot unbirthing
+	propose = {
+		VORE_INSULT_UNBIRTHING_21 = {
+			weight = { weight = 50 }
+			trigger = {	
+				is_species_class = ROBOT
+				FROM = {
+					has_global_flag = vag_vore_enabled
+					is_vore_empire = yes
+				}
+			}
+		}
+	}
+
+	##############################
+	#		COCK VORE
+	##############################
+
+	#Insult pred cock vore
+}
