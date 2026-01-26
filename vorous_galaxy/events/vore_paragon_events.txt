@@ -1,0 +1,210 @@
+namespace = voragons
+
+###################################
+#	 DIGSITE INITIALISER EVENTS
+###################################
+
+ship_event = {
+	id = voragons.10
+	title = voragons.10.name
+	desc = voragons.10.desc
+	picture = GFX_evt_errant_cube
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = voragons.10.accept
+		
+		from = {
+			create_archaeological_site = paragon_dolores_digsite
+		}
+	}
+
+	option = {
+		name = voragons.10.decline
+		
+		owner = {
+			add_resource = {
+				unity = 15000
+			}
+		}
+	}
+}
+
+fleet_event = {
+	id = voragons.110
+	title = voragons.110.name
+	desc = voragons.110.desc
+	show_sound = event_dig_site
+	picture = GFX_evt_crusher_droid
+
+	archaeology = yes
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = voragons.110.proceed
+
+		allow = {
+            owner = {
+                resource_stockpile_compare = { resource = energy value >= 1000 }
+            }
+        }
+    owner = {
+        add_resource = { energy  = -1000}
+    }
+	}
+}
+
+fleet_event = {
+	id = voragons.115
+	title = voragons.115.name
+	desc = voragons.115.desc
+	show_sound = event_dig_site
+	picture = GFX_evt_sapient_AI
+
+	archaeology = yes
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = voragons.115.proceed
+		small_artifact_reward = yes
+	}
+}
+	
+fleet_event = {
+	id = voragons.120
+	title = voragons.120.name
+	desc = voragons.120.desc
+	picture = no_video_feed_event_version
+	show_sound = event_dig_site
+
+	archaeology = yes
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+	
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = voragons.120.proceed
+
+		root = {
+			leader = {
+				kill_leader = {
+					class = scientist show_notification = no
+				}
+			}
+		}
+
+		owner = {
+			country_event = { id = voragons.150 days = 15 }
+		}
+	}
+}
+
+
+###################################
+#	 		DOLORES
+###################################
+
+country_event = {
+	id = voragons.150
+	title = "dolores_paragon_name"
+	desc = "dolores_paragon_desc_intro"
+	show_sound = dolores_paragon_sound_effects
+	is_triggered_only = yes
+	
+	picture = GFX_leader_recruitment_bg_renowned
+	auto_opens = yes
+
+	event_window_type = leader_recruit
+	
+	immediate = {
+		change_variable = {which = vore_event_incrementer value = 1}
+		ethic_leader_creator = {
+			SPECIES_CLASS = MACHINE
+			LEADER_PORTRAIT = dolores
+			CLASS = commander
+			TIER = leader_tier_legendary
+			NAME = dolores_paragon_name
+			LEVEL = 10
+			GENDER = Female
+			IMMORTAL = yes
+			HIDEAGE = yes
+			ETHIC = militarist
+			DESC = dolores_paragon_desc
+			CATCH_PHRASE = dolores_paragon_catch_phrase
+		}
+
+		event_target:admiral_dolores = {
+			set_leader_flag = immune_to_negative_traits
+		}
+	}
+
+	picture_event_data = {
+		portrait = event_target:ethic_leader
+		room = ethic_spaceship_room
+	}
+
+	option = {
+		name = DISMISS
+		tag = dismiss_leader
+		hidden_effect = {
+			ethic_leader_kill_effect = yes
+		}
+			
+	}
+	option = {
+		name = voragons.150.option_1
+		response_text = voragons.150.option_1_response
+		is_dialog_only = yes
+	}
+	option = {
+		name = voragons.150.option_2
+		response_text = voragons.150.option_2_response
+		is_dialog_only = yes
+	}
+	option = {
+		name = voragons.150.option_3
+		response_text = voragons.150.option_3_response
+		is_dialog_only = yes
+	}
+	option = {
+		name = voragons.150.option_4
+		response_text = voragons.150.option_4_response
+		is_dialog_only = yes
+	}
+
+	option = {
+		name = HIRE
+		tag = hire_leader
+		custom_tooltip = voragons.150.hire
+		hidden_effect = {
+			ethic_leader_hire_effect = {
+				GLOBAL_EVENT_TARGET = admiral_dolores
+			
+			}
+		}
+	}
+}
