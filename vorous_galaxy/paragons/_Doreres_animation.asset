@@ -1,0 +1,19 @@
+animation = {
+	name = "Doreres_idle1_animation"
+	file = "Doreres_idle1.anim"
+}
+
+animation = {
+	name = "Doreres_idle2_animation"
+	file = "Doreres_idle2.anim"
+}
+
+animation = {
+	name = "Doreres_b_idle1_animation"
+	file = "Doreres_b_idle1.anim"
+}
+
+animation = {
+	name = "Doreres_b_idle2_animation"
+	file = "Doreres_b_idle2.anim"
+}

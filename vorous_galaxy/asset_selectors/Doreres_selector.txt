@@ -1,0 +1,3 @@
+Doreres_b = {
+    default = "gfx/models/portraits/paragons/Doreres_b2_tex.dds"
+}
