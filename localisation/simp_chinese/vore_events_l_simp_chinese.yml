@@ -1,0 +1,246 @@
+﻿l_simp_chinese:
+
+ ##############################################
+ #         入门 / 游戏开始
+ ##############################################
+
+ vore_primer.10.name: "贪婪星系 初始化"
+ vore_primer.10.desc: "§T感谢使用贪婪星系Mod！\n如果你不希望看到某些类型的吞噬内容，请现在进行选择。"
+
+ vore_primer.10.oral_disable.name: "§G 口腔吞噬 启用"
+ vore_primer.10.oral_enable.name: "§R口腔吞噬 禁用"
+
+ vore_primer.10.anal_disable.name: "§G 肛门吞噬 启用"
+ vore_primer.10.anal_enable.name: "§R肛门吞噬 禁用"
+
+ vore_primer.10.cock_disable.name: "§G 阴茎吞噬 启用"
+ vore_primer.10.cock_enable.name: "§R阴茎吞噬 禁用"
+
+ vore_primer.10.unbirthing_disable.name: "§G 逆生产 启用"
+ vore_primer.10.unbirthing_enable.name: "§R逆生产 禁用"
+
+# 不要像上面那样更改顺序，这样做是有原因的，因为这些选项一开始是禁用的（逻辑上更容易理解）
+ vore_primer.10.prey_safe.name: "§c猎物 - 非致命吞噬§!"            # 目前不需要 - Otto (25年4月4日)
+ vore_primer.10.prey_lethal.name: "§P猎物 - 致命吞噬"
+
+ vore_primer.10.ok.name: "开始游戏"
+
+ vore_primer.10.sub_menu_kinks: "§S附加选项§!"
+ vore_primer.10.sub_menu_options: "§g模组选项§!"
+
+ #子菜单
+
+ vore_primer.20.name: "贪婪星系 初始化 - 子菜单"
+ vore_primer.20.desc: "§T这里有一些我们暂未计划大量添加，或认为你可能未必想开启的恋物选项。"
+
+ vore_primer.20.return: "返回"
+
+ vore_primer.20.disposal_enable.name: "§R排泄 禁用§!"   
+ vore_primer.20.disposal_disable.name: "§G排泄 启用"
+
+ vore_primer.20.hard_vore_enable.name: "§R硬核吞噬 禁用"
+ vore_primer.20.hard_vore_disable.name: "§G硬核吞噬 启用"
+
+ vore_primer.20.graphic_digestion_enable.name: "§R详细消化 禁用"
+ vore_primer.20.graphic_digestion_disable.name: "§G详细消化 禁用"
+
+ vore_primer.20.soul_vore_enable.name: "§R灵魂吞噬 禁用"
+ vore_primer.20.soul_vore_disable.name: "§G灵魂吞噬 禁用"
+
+ vore_primer.20.weight_gain_enable.name: "§R体重增长 禁用"
+ vore_primer.20.weight_gain_disable.name: "§G体重增长 启用"
+
+ vore_primer.20.attribute_theft_enable.name: "§R属性窃取 禁用"
+ vore_primer.20.attribute_theft_disable.name: "§G属性窃取 禁用"
+
+ vore_primer.20.sentient_fat_enable.name: "§R知觉脂肪 禁用"
+ vore_primer.20.sentient_fat_disable.name: "§G知觉脂肪 启用"
+
+ vore_primer.20.fuck_me_up: "§M启用所有 - 放马过来吧！"
+ vore_primer.20.fuck_me_up.tooltip: "§R这将启用子菜单中的所有选项。§!\n\n§g包含泛银河系含漱爆破液！§!"
+
+ vore_primer.20.event_weight.0.name: "§B标准事件几率§!"
+ vore_primer.20.event_weight.0.tooltip: "吞噬事件将以预期几率在你的游戏中出现。"
+ vore_primer.20.event_weight.1.name: "§B提高事件几率§!"
+ vore_primer.20.event_weight.1.tooltip: "吞噬事件将以更高几率在你的游戏中出现。"
+ vore_primer.20.event_weight.2.name: "§B大幅提高事件几率§!"
+ vore_primer.20.event_weight.2.tooltip: "吞噬事件在你的游戏中出现的几率大约翻倍。"
+
+ ##############################################
+ #               领袖
+ ##############################################
+
+vore_leader_event.10.name: "日益增长的担忧"
+vore_leader_event.10.desc: "§T看起来，最近我们的一位官员——确切地说是 §K[gorger_to_be.GetName]§!——[gorger_to_be.GetHasHave]最近声名鹊起。\n虽然对于我们帝国的许多公民来说，看到鼓胀的腹部时常因内部的挣扎而踢动是司空见惯的事，但 [gorger_to_be.GetName] 却将其提升到了一个新的高度，每天都有几名助手被吞噬。\n\n如果这种情况持续下去，我们担心这可能会对他们的健康——以及政府预算——产生负面影响。"
+vore_leader_event.10.acknowledged: "§T明白了，监控事态发展。"
+# 升级事件
+vore_leader_event.20.name: "等级提升 1"
+vore_leader_event.20.desc: "[from.GetName] 1->2"
+vore_leader_event.21.name: "等级提升 2"
+vore_leader_event.21.desc: "[from.GetName] 2->3"
+vore_leader_event.22.name: "等级提升 3"
+vore_leader_event.22.desc: "[from.GetName] 3->4"
+vore_leader_event.23.name: "等级提升 4"
+vore_leader_event.23.desc: "[from.GetName] 4->5"
+vore_leader_event.30.name: "等级提升 1"
+vore_leader_event.30.desc: "[from.GetName] 1->2"
+vore_leader_event.31.name: "等级提升 2"
+vore_leader_event.31.desc: "[from.GetName] 2->3"
+vore_leader_event.32.name: "等级提升 3"
+vore_leader_event.32.desc: "[from.GetName] 3->4"
+vore_leader_event.33.name: "等级提升 4"
+vore_leader_event.33.desc: "[from.GetName] 4->5"
+vore_leader_event.40.name: "等级提升 1"
+vore_leader_event.40.desc: "[from.GetName] 1->2"
+vore_leader_event.41.name: "等级提升 2"
+vore_leader_event.41.desc: "[from.GetName] 2->3"
+vore_leader_event.42.name: "等级提升 3"
+vore_leader_event.42.desc: "[from.GetName] 3->4"
+vore_leader_event.43.name: "等级提升 4"
+vore_leader_event.43.desc: "[from.GetName] 4->5"
+
+
+
+ ##############################################
+ #               殖民地
+ ##############################################
+
+ # 遥远、无序、边境
+ vore_vorny_colonists.1.name: "遥远、无序、边境"
+ vore_vorny_colonists.1.desc_unsafe: "§T§K[Root.GetName]§! 殖民地出现了一个令人不安的事态发展。\n看起来，该殖民地在很长时间内一直处于我们的完全管辖之外，导致 [Root.owner.GetAdj] 法律的执行非常松懈。关于连环捕食者的报告与日俱增，并且遍布整个殖民地。\n\n夜间出行或前往人口稀少的地区已经变得非常危险，几乎等同于自杀念头，失踪人员登记数已达数十万。\n\n我们必须对此采取行动。"
+ vore_vorny_colonists.1.desc_safe: "§T§K[Root.GetName]§! 殖民地出现了一个令人不安的事态发展。\n看起来，该殖民地在很长时间内一直处于我们的完全管辖之外，导致 [Root.owner.GetAdj] 法律的执行非常松懈。在星球上的每个主要定居点，公开的吞噬行为越来越普遍，我们的许多公民正忽视自己的职责，沉溺于更原始的欲望。\n\n如果这种情况持续下去，殖民地的产出将受到影响。我们必须对此采取行动。"
+ vore_vorny_colonists.1.negative_growth_response: "向我们的执法者发放额外薪酬。"
+ vore_vorny_colonists.1.neutral_growth_response: "我们无能为力。"
+ vore_vorny_colonists.1.positive_growth_response: "这就是自然法则：让强者吃掉弱者！"
+
+ vore_vorny_colonists.1.ok: "确实令人不安"
+ vore_vorny_colonists.1.ok_desc: "§g我们只能希望情况有所改变。"
+
+ vore_vorny_colonists.4.censure: "审查网络！"
+ vore_vorny_colonists.4.censure_desc: "§g我们将尽最大努力向公众隐瞒此事。"
+
+ vore_vorny_colonists.2.name: "遥远、无序、边境 - 令人不安的报告"
+ vore_vorny_colonists.2.desc_unsafe_wg: "§T又有一份来自 §K[Root.GetName]§! 的报告。\n\n一个更为引人注目的案件：又一名捕食者进行了大规模捕食，在被抓获前，他们吞食了十几名公民——其中一些本身就是捕食者——把自己撑得满满的。\n\n据在场的执法者称，即使在他们用作藏身处的仓库外，也能听到内部的隆隆声和翻搅声。当大门被攻破时，该捕食者仍然成功抓住了一名执法者，将其塞入自己的食道，同时用其肥胖鼓胀的腹部困住了另外两人。\n\n虽然此案最终抓获了犯人，但越来越多的人正在失踪，我们的执法部门也处于崩溃边缘。§!"
+ vore_vorny_colonists.2.desc_unsafe: "§T又有一份来自 §K[Root.GetName]§! 的报告。\n\n一个更为引人注目的案件：又一名捕食者进行了大规模捕食，在被抓获前，他们吞食了十几名公民——其中一些本身就是捕食者。对其住所的突袭执行得迅速而高效，在其家中发现了受害者的一些物品。\n\n虽然此案最终抓获了犯人，但越来越多的人正在失踪，我们的执法部门也处于崩溃边缘。§!"
+ vore_vorny_colonists.2.desc_safe: "§T又有一份来自 §K[Root.GetName]§! 的报告。\n\n一名公民被发现死在自己家中；因其腹部明显装着另外几个人而无法动弹。当被询问时，该个体似乎处于一种持续的极乐状态，嘴角时常流下精液——无疑是由同样感到愉悦的猎物产生的。\n\n虽然这个特别的个体已被送去改造，但更多此类案件正在出现，我们的执法部门也处于崩溃边缘。§!"
+
+ vore_vorny_colonists.3.name: "遥远、无序、边境 - 令人担忧的事态发展"
+ vore_vorny_colonists.3.desc_unsafe: "§T另一份报告来自 §K[Root.GetName]§!。\n\n又发生了一起大规模捕食事件：一名捕食者被发现，报告中将其臀部描述为“小型自卸卡车”，当执法者进行突袭时，它正将另一名受害者吸入体内。这一幕触发了在场一名执法者的某种冲动，促使他们加入其中，捕食了自己的几名同事。两人目前仍在逃。\n\n这只是整个殖民地上发生的越来越多案件中的冰山一角。§!"
+ vore_vorny_colonists.3.desc_safe: "§T另一份报告来自 §K[Root.GetName]§!。选择通过待在伴侣的结肠里来互相挑逗、获得快感的殖民者数量显著增加。\n我们的公民在公共场合行走时，他们的肛门滴落着“被困”伴侣的精液已成为常见景象，我们的执法者甚至懒得再处理了。这只是整个殖民地上发生的越来越多案件中的冰山一角。§!"
+
+ vore_vorny_colonists.4.name: "遥远、无序、边境 - 优先报告"
+ vore_vorny_colonists.4.desc_unsafe_1: "§T又有一份报告来自我们的殖民地 §K[Root.GetName]§!。\n\n一群捕食者在殖民地首都的主要大道上肆虐，尽可能地吸入更多逃跑的旁观者进入他们的阴茎，甚至不等之前的猎物溶解成泄漏的精液。\n当我们的执法者响应时，该团伙已经逃之夭夭，他们留下的浓稠精液痕迹汇成了一个巨大的水池，里面是受害者的残余物。\n\n此类事件正变得越来越常见。我们不知道执法部门还能承受多久。§!"
+ vore_vorny_colonists.4.desc_unsafe_2: "§T我们在 §K[Root.GetName]§! 上的司法系统给我们带来了另一份 grim 报告：一场关于一名公民吞噬另一名公民的法庭听证会出了岔子。\n涉案个体被带上被告席，其躯干仍显示出吞噬的痕迹：鼓胀的腹部随着每一个不确定的步伐轻轻晃动。审判原本进行得很顺利——直到法官本人，一个据各方面描述都相当魁梧的个体，离开法官席，走到被告面前，脱下了他的法官袍；露出了他粗壮直立的阴茎。\n据记载，被告在瞬间就被那根阴茎吞没，鼓胀的胃部成了唯一，尽管是临时的，牢笼。法庭警卫处理了任何围观者。\n我们的系统正在崩溃，我们必须采取行动。"
+ vore_vorny_colonists.4.desc_unsafe_3: "§T§K[Root.GetName]§! 上的局势已经发展到，即使距离首都很远，也无法阻止我们最大的广播网络报道此事。\n最新的片段包括一段相当露骨的录像：一名记者试图逃离我们另一名完全赤裸的公民，后者的阴茎和睾丸肿胀得超出了我们生物学的正常范围；当他逼近时，身后留下了一道浓稠的精液痕迹。\n在该个体排出大量“……遗传物质”将记者吞入其生殖器后，摄像无人机被这些物质瘫痪了。"
+ vore_vorny_colonists.4.desc_unsafe_4: "§T§K[Root.GetName]§! 上的局势正在恶化：几周前，一系列失踪人员被追踪到他们居住的一个公寓大楼。\n我们的执法者闯入了各个公寓，发现了受害者——已完全被处理成精液；他们的骨骼漂浮在巨大的避孕套中，避孕套被略微透明的白色液体撑得极薄。\n肇事者——该大楼的管理员——在执法人员行动时正在处理其最新的受害者。报告称，肇事者在被押送 custody 的路上一直滴着精液。"
+ vore_vorny_colonists.4.desc_unsafe_5: "§T来自 §K[Root.GetName]§! 的消息十分严峻！\n最近一次事件后，几条街道被迫封锁，其严重性迫使我们将其宣布为恐怖袭击。\n一群我们物种的男性——记录在案的大约有二十人——合谋采取行动；吞噬路过的平民，一些受害者被一块块地吞下，消失在被捕食者闭合的龟头后面。即使在我们执法人员到达现场很久之后，翻搅声和充满欲望的呻吟声仍在回荡。\n我们失去了许多个体，整晚街道都流淌着白色的液体。"
+ vore_vorny_colonists.4.desc_safe: "§T又有一份报告来自我们的殖民地 §K[Root.GetName]§!。\n\n一种新的趋势出现了；殖民者开始出现在公共场合，将他们的伴侣携带在自己肿胀的阴茎内，让他们的勃起公开暴露，同时与“被困”的伴侣交谈，或者以其他方式将他们的阴茎托举到视线水平。\n\n这种奇怪的现象只是众多事件中的一个。我们不知道执法部门还能承受多久。§!"
+
+ vore_vorny_colonists.5.name: "遥远、无序、边境 - 奇怪的事态发展"
+ vore_vorny_colonists.5.desc_unsafe: "§T关于 §K[Root.GetName]§! 的局势，我们收到了更多消息。\n\n已有多人被捕，因为发现一群 §K[Root.Owner.Species.GetName]§! 女性因各种动机除掉了她们的配偶。令人担忧的是，她们所有人的作案手法都如出一辙——法庭上的场景看起来就像我们的执法者护送着一群羊水已破的孕妇。\n\n局势正变得难以维持。我们不知道这种情况还能持续多久。§!"
+ vore_vorny_colonists.5.desc_safe: "§T关于 §K[Root.GetName]§! 的局势，我们收到了更多消息。\n\n大量工人失踪。与此同时，怀孕的“母亲”数量出现了统计上不可能的激增，她们的伴侣选择花时间待在爱人的子宫里。\n\n此类行为的长期影响未知，[Root.GetName] 上的局势正变得难以维持。我们不知道这种情况还能持续多久。"
+
+ #事件6是逻辑决策器，用于减少代码量
+
+ vore_vorny_colonists.7.name: "遥远、无序、边境 - 一个结果"
+ vore_vorny_colonists.7.desc: "§T虽然最近骚乱的某些方面仍然存在，但我们已成功控制了 §K[Root.GetName]§! 殖民地。"
+
+ vore_vorny_colonists.8.name: "遥远、无序、边境 - 维持现状"
+ vore_vorny_colonists.8.desc: "§T虽然我们的执法部门成功平息了 §K[Root.GetName]§! 上的大多数问题分子，但民众仍然处于高度不安的状态，我们认为这种状态短期内不会消失。§!"
+
+ vore_vorny_colonists.9.name: "遥远、无序、边境 - 紧急状态"
+ vore_vorny_colonists.9.desc: "§R情况很糟糕。§! §T如果我们不尽快采取行动，§K[Root.GetName]§! 上的局势可能会永久性地像现在这样对我们的公民构成危险。我们必须立即行动。"
+ vore_vorny_colonists.9.name_a: "我们只能坐观其变"
+ vore_vorny_colonists.9.desc_a: "§g情况不会更糟了，对吧？§!"
+ vore_vorny_colonists.9.name_b: "召集部队：实施戒严"
+ vore_vorny_colonists.9.desc_b: "§R我们快别无选择了：这次必须动用武力。§!"
+
+ vore_vorny_colonists.10.name: "遥远、无序、边境 - 损失"
+ vore_vorny_colonists.10.desc: "§T我们未能在 §K[Root.GetName]§! 殖民地建立秩序。将其恢复到一个更文明的状态希望渺茫。§!"
+ vore_vorny_colonists.10.ok: "如果这就是唯一的结果……"
+
+ ##############################################
+ #               殖民地攻击
+ ##############################################
+
+ # 吞噬 - 有什么用？
+ vore_diplo.50.name: "吞噬 - 有什么用？"
+ vore_diplo.50.desc: "§T在最近入侵 §K[FromFromFrom.GetName]§! 的过程中，几个营违抗了上级命令。随着胜利临近，他们脱离了指挥链，带着原始的饥饿感冲向撤退的 [From.From.species.GetNamePlural]。没有一个能撑过几秒钟，我们的部队贪婪地将他们的猎物整个吞下，对任何一方穿戴的盔甲毫不在意。\n\n虽然我们通常会无视这种行为并给予一些轻微惩罚，但这次情况不同。擅离职守的士兵们显然对他们的战利品不满意，因为一大群人被发现出现在远离任何冲突区的一个居民中心，把平民当作开放的自助餐。其中一个中心已被彻底清空。"
+ vore_diplo.50.name_a: "§T这需要的不仅仅是‘轻微’惩罚。"
+ vore_diplo.50.name_b: "§T这种违抗命令的行为需要体罚！"
+
+ ##############################################
+ #               探索
+ ##############################################
+
+ #“失踪”的科学家
+ vore_exploration.15.name: "失踪的船员"
+ vore_exploration.15.desc: "§T在 §K[Root.GetName]§!§T 最近进行的调查之后，科学团队注意到船员名单中存在差异——一名在最近调查期间派出的科学家已有24小时没有报告。\n科学考察队已派人返回失踪前的最后已知位置，希望能找到他们。如果搜索顺利，他们将被找到，但时间紧迫。"
+ vore_exploration.15.panic: "§T那我们就希望是好消息吧。"
+
+ vore_exploration.25.name: "找到船员"
+ vore_exploration.25.desc_1: "§T经过长时间的搜索，搜索队空手而归。关于任务成员失踪的消息甚至已传回科学部。\n仅仅几分钟后，科学官 §K[Leader.GetName]§!§T 就来到了飞船的医疗舱——她颤抖着，明显心烦意乱——她的白大褂胯部区域有一块显眼的暗色污渍。她呻吟着说出几句话，承认有什么东西卡在了她的肛门里，接着又一次高潮袭来：污渍逐渐扩大，懒洋洋的液体细流从布料的另一侧渗出，滴落在地板上，让她非常尴尬。\n\n医务人员发现了失踪的船员，他们失去了知觉，深深地嵌在 [Leader.GetName] 的结肠内。几小时后，他们在医疗舱醒来。看来是首席科学官没注意坐的地方，意外困住了他们的同事。这位船员表示，并不介意类似情况再次发生，首席科学官也表达了相似的观点。"
+ vore_exploration.25.desc_2: "§T经过长时间的搜索，搜索队空手而归。关于任务成员失踪的消息甚至已传回科学部。然后，我们收到了另一条消息。\n消息来自 §K[Leader.GetName]§!，她极其慌乱和焦虑地开始解释情况：她和失踪的研究员有一个约定，关于他们失踪后进行的调查。显然，研究员打赌输了，作为惩罚，必须充当 [Leader.GetName] 的活体肛塞。他们不确定是否应该就此事通知船员。\n仍在 [Leader.GetName] 体内的研究员向我们保证他们还活得好好的，但希望……继续完成他们的赌约。"
+ vore_exploration.25.done: "§T好吧，至少这件事解决了……"
+
+ vore_exploration.26.name: "失踪的船员……"
+ vore_exploration.26.desc: "§T消息……很糟糕。我们不知道失踪的探险队员在哪里。从最后发放的设备（不在飞船库存中）判断，他们充其量在几天前就已经窒息了，更不用说热量和水分的摄入了。\n\n他们走了。永远地走了。"
+ vore_exploration.26.hush: "§T我们不能让我们的公民知道。"
+ vore_exploration.26.reveal: "§T好吧，他们会被铭记。"
+
+ vore_exploration.27.name: "找到船员……"
+ vore_exploration.27.desc: "§T我们收到了一条来自 §K[Root.GetName]§! 的优先消息。\n§T船员们找到了失踪的船员——或者直说吧，找到了他们的遗骸。在一个未使用的隔间里发现了一具骨架。骨骼物质分析证实，这正是已故的船员。此外，骨架上完全覆盖着一层薄薄的干涸精液，与首席科学官 §K[Leader.GetName]§!§T 的DNA图谱有99.85%的匹配度。\n\n对骨架上发现的物质的进一步调查显示，受害者在被处理前，曾在该官员的肛腔内被困了未知的一段时间。不幸的是，船上的其他船员似乎害怕与 [Leader.GetName] 对质，担心遭到报复。损害已经造成，考虑到该官员的技能，失去她对我们的探索计划将是一个巨大的损失。"
+ vore_exploration.27.reveal: "§T不幸，但意料之中。"
+
+ # 捕食性动物群
+ vore_exploration.50.name: "捕食性动物群"
+ vore_exploration.50.desc: "§T我们与科学船 §K[Root.GetName]§! 失去了联系。它最后发出的信号是从 §K[FromFrom.GetName]§! 星球转发的：相当令人不安。\n\n 录像片段开始于整个研究探险队，由官员 §K[Root.Leader.GetName]§! 率领，艰难地穿过星球上茂密的丛林般的植被，然后听到了尖叫声。突然，大片色彩闪过视野，在茂密的绿色植物间跳跃，科学家们被一个接一个地叼走，越来越多的野兽加入了混战。\n最后，相同的命运降临到我们在地上的视觉代表身上——血盆大口、利齿……最终是食道都被记录下来，摄像师倒在镜头前，两者都浸泡在酸性池中，可怜的研究员开始溶解；他们的防护服只坚持了片刻，酸液先夺去了他们的血肉，然后是器官，然后是骨骼。\n\n摄像机继续传输了15分钟。"
+ vore_exploration.50.name_a: "§T非常非常糟糕的消息。"
+
+ #进入 Broken Heart
+ vore_exploration.100.name: "一个不寻常的星系"
+ vore_exploration.100.desc: "§T被命名为 §K[Root.From.GetName]§! 的星系，一个寒冷而荒凉的地方，似乎勉强躲过了构成其大部分的巨大奇点的视界——似乎有居住的迹象。\n我们应该试着了解这里发生了什么。"
+
+ ##############################################
+ #               外交
+ ##############################################
+
+ #引人注目的交媾
+ vore_diplo.40.name: "引人注目的阴茎交媾"
+ # 注意：下一行事件描述引用了错误的ID (vore_exploration.26.desc)，这里保留原结构，但内容按原英文事件描述翻译，假设目标为 vore_diplo.40.desc
+ # vore_exploration.26.desc: "§T消息……很糟糕。..." # 注释掉，因为下面有正确的 vore_diplo.40.desc
+ vore_diplo.40.desc: "§T[ruler.GetRulerTitle]，我们收到了来自我们驻 §K[embassy_owner.GetName]§! 大使馆的通讯。\n\n几天前，我们的一名代表与 [embassy_owner.GetName] 的另一名官员一起失踪了。虽然这本身令人担忧，但与找到他们的方式相比还算好：经过长时间的搜索，两人被发现于一间废弃的办公室里，我们的外交官撑在一张布满灰尘的桌子上，双腿叉开，[root.species.GetHandNamePlural] 抓着自己巨大的阴茎——完全暴露在所有人面前，半包裹着另一名失踪的代表：一层薄薄的精液覆盖着那个可怜的家伙，不完全确定他是正在被贪婪地环绕着他的巨大肉柱吞下，还是被推出来。\n\n鉴于 [embassy_owner.GetName] 的外交使团对此事的反应如此之差，称这仅仅是“尴尬”近乎谎言。应该对当前局势采取一些措施。"
+ vore_diplo.40.name_a: "§T强迫该外交官发表公开声明。"
+ vore_diplo.40.desc_a: "§g 我们只能希望他们能接受。"
+ vore_diplo.40.name_b: "§T他们只是在做自然而然的事。"
+ vore_diplo.40.desc_b: "§g 我们必须站在我们公民及其需求的一边。"
+ vore_diplo.40.name_c: "§T所有人都应参与我们的圣礼！"
+ vore_diplo.40.desc_c: "§T虽然我们的公民会欣赏这种情感，但§R [embassy_owner.GetName] 不会对我们的反应感到高兴§!。"
+
+ # 捕食性动物群 (重复条目，已在上方翻译，此处保留原结构但为避免重复，注释掉或保留，通常游戏文件中只有一个生效。保留但翻译一下以防万一)
+ # vore_exploration.50.name: "捕食性动物群"
+ # vore_exploration.50.desc: "§T我们与科学船 §K[Root.GetName]§! 失去了联系..."
+
+ ##############################################
+ #               典范
+ ##############################################
+
+ voragons.10.name: "一个奇怪的掩体"
+ voragons.10.desc: "对 §K[FromFrom.GetName]§! 异常的二次检查揭示的信息很少：这个谜团的制造者很好地隐藏了岩石下的一切——熵只让事情变得更难。我们没有发现通风口、外部电缆或任何能让我们刺激面前黑匣子的东西……除了那组未能完全关闭的液压掩体门。通过大量的物资和人力投入，我们相信这个地方的秘密可以被打开。"
+ voragons.10.accept: "明白了，我们会派出一支探险队。"
+ voragons.10.decline: "这个星球上满是废墟，忽略它。"
+
+ voragons.110.name: "取得进展"
+ voragons.110.desc: "清除废墟后，我们的团队震惊地发现设施的大部分完好无损。我们找到了中央计算机，它似乎处于紧急休眠周期。我们的研究员 §K[From.Leader.GetName]§! 指出，提供额外的电力可以使机器从沉睡中唤醒。"
+ voragons.110.proceed: "已批准额外预算。"
+
+ voragons.115.name: "那台机器。"
+ voragons.115.desc: "前线团队发回了报告：主机已启动，其创造者的标志出现在被认为早已死寂的屏幕上——设施再次激活了。在翻译数据的过程中，似乎整个掩体都活了过来，机器据报道重新开始了它们的制造循环，其目的尚不清楚。整个团队都在等待看到最终结果。"
+ voragons.115.proceed: "木已成舟……"
+
+ voragons.120.name: "……舟"
+ voragons.120.desc: "自上次从 §K[Root.GetName]§! 收到进展报告以来，已收到几条消息，大部分关于古代综合体内一个双足机器人外壳的组装或重组。令人担忧的是，最后一份报告已完全损坏——这与我们与前线团队失去联系同时发生。综合体的中继摄像机录像在关闭前也仅以音频模式持续了15秒：录像内容包括前线团队成员的尖叫声。"
+ voragons.120.proceed: "让所有剩余团队进入高度戒备！"
+
+ ############## 杂项
+ vore_random.10.desc: "占位符"

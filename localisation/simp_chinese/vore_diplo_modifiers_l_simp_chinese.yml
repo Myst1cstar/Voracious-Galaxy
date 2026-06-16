@@ -1,0 +1,14 @@
+﻿l_simp_chinese:
+ 
+ ##############################################
+ #           DIPLOMACY MODIFIERS
+ ##############################################
+
+ triggered_opinion_vorarephobia_lethal: "Scareed of being eaten."
+ triggered_opinion_vorarephobia_safe: "A walking fetish." 
+
+ opinion_poor_apology: "Received a poor apology"
+ opinion_protecting_their_diplomat: "Angry at out diplomatic incident"
+ opinion_actually_insane: "These infidels consider our views insane"
+ opinion_decent_apology: "Received a decent apology"
+ 

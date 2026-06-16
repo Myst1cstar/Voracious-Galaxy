@@ -1,0 +1,40 @@
+l_simp_chinese:
+# 注意：此文件为翻译后的内容，保留了原始键名，仅翻译了右侧的英文文本。
+# 部分游戏内特殊符号（如 §H, §!, £pop, [Root.GetName] 等）已保留原样。
+
+###############
+# Vore 事件 #
+###############
+
+unbirther.2.name: "[Root.Capital.GetName] 上的重生仪式"
+unbirther.2.desc: "自从[Root.GetAdj]占领了[Root.Capital.GetName]，将[unbirth_species.GetNamePlural]转化为[Root.GetSpeciesNamePlural]的过程就一直笼罩在仪式之中。每十年一次——这个日期即将到来——“纳托菲特”们会聚集在重生殿举行一场特殊的仪式。他们身上究竟发生了什么是只有少数人知道的秘密，但当他们再次出现时，已然是[Root.GetSpeciesNamePlural]。"
+unbirther.2.A: "开始准备吧！"
+unbirther.2.A.tooltip: "年底时，§H[Root.Capital.GetName]§! 上所有的 §H$job_unbirth_apprentice_plural$§! 都将被转化为 §H[Root.GetSpeciesNamePlural]§!。\n\n此仪式每 §H10 年§! 会在每个拥有 §H重生殿§! 的 [Root.GetAdj] 星球上举行一次。"
+MESSAGE_UNBIRTH_POPS_UNBIRTHED_TITLE: "人口被逆生产"
+MESSAGE_UNBIRTH_POPS_UNBIRTHED: "在 $PLANET|Y$ 上的重生仪式中，我们将 $VALUE|Y$ £pops£ 人口转化为了我们的物种。"
+
+vore.2.title: "[Root.GetName] 上贪婪的 [vore_species.GetAdj] 狂乱！"
+vore.2.desc: "[Root.GetName] 上的掠食性 [vore_species.GetNamePlural] 陷入了一场贪婪的狂乱，它们在定居点中 indiscriminately 吞噬该星球 [prey_species.GetName] 人口，造成了混乱！我们的情报官员预测，最初的狂乱会很快平息，但该星球的 [vore_species.GetNamePlural] 在未来一段时间内肯定会继续随意吞食 [prey_species.GetNamePlural]。"
+vore.2.c: "和野兽无异。镇压它们。"
+vore.2.d: "也许我们可以和他们好好谈谈……"
+
+vore.6.title: "[Root.GetName] 上的堕落掠食者！"
+vore.6.desc: "[Root.GetName] 目前正经历着某些具备吞食能力的人群中犯罪活动的激增。虽然他们吞噬该星球上正直公民的行为预计不会造成任何长期损害，但他们利用猎物遗留的资产进行享乐主义放纵，预计将在短期内对平民经济造成严重破坏。"
+
+#################
+# 特使事件
+#################
+
+vore.3.name: "掠食性的 [envoy_source.GetSpeciesAdj] 特使"
+vore.3.desc: "我们的外交官发现，派驻 [Root.Capital.GetName] 的 [envoy_source.GetSpeciesAdj] 特使 [event_envoy.GetName] 一直在吃人！与 [event_envoy.GetName] 共事的我方地方官员撞见这位 [event_envoy.GetSpeciesName] 正在用餐，清楚地看到我们的一名工作人员正滑入 [event_envoy.GetHerHis] 的食道。尽管 [event_envoy.GetName] 为我方人员看到的 shocking 场面道了歉，但 [event_envoy.GetHerHim] 不幸的餐点早已被消化，现在大大丰富了 [event_envoy.GetName] 的 '资产'（体型）。"
+vore.3.A: "不可接受！我们应为被消化的员工获得赔偿！"
+vore.3.B: "[event_envoy.GetFirstName] 是个优秀的掠食者。[event_envoy.GetSheHeCap] 理应享受 [event_envoy.GetHerHis] 的大餐！"
+
+vore.4.name: "掠食性特使"
+vore.4.desc.base: "我方派驻 [From.GetSpeciesName] 的特使 [event_envoy.GetName] 被发现利用空闲时间吃当地的 [From.GetSpeciesNamePlural]。与 [event_envoy.GetFirstName] 共事的 [From.GetSpeciesName] 外交官碰巧撞见 [event_envoy.GetHerHim] 正在进食，一个 [From.GetSpeciesName] 正滑入 [event_envoy.GetHerHis] 的食道！尽管 [event_envoy.GetFirstName] 为其工作人员看到的 shocking 场面道了歉，但 [event_envoy.GetHerHis] 不幸的餐点早已被消化，现在大大丰富了 [event_envoy.GetFirstName] 的 '资产'（体型）。"
+vore.4.desc.pos: "$vore.4.desc.base$\n\n尽管 [event_envoy.GetName] 消化了他们中的一员，[From.GetSpeciesNamePlural] 似乎很好地接受了这一事件。尽管 [From.GetSpeciesNamePlural] 增加了 [event_envoy.GetHerHis] 的 '资产'（体型），我们还是收到了很多关于 [event_envoy.GetFirstName] 掠食技巧的赞美。"
+vore.4.desc.neg: "$vore.4.desc.base$\n\n[From.GetSpeciesNamePlural] 对这一事件相当不满，许多人要求 [event_envoy.GetName] 为消化了他们中的一员而道歉。关于 [event_envoy.GetFirstName] 据称这样做已有一段时间的消息，成为了一个难以消化的新闻——不像他们那些被充分消化、如今正增加 [event_envoy.GetFirstName] 资产（体型）的人民。"
+vore.4.B: "他们味道好吗？"
+
+opinion_envoy_predator_offence: "掠食性特使"
+opinion_envoy_predator_respect: "掠食者式的尊重"

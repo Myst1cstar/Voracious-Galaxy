@@ -43,7 +43,7 @@ prey_slave = {
 }
 
 unbirth_apprentice = {
-	category = specialist
+	category = worker
 	condition_string = NECRO_APPRENTICE_JOB_TRIGGER
 	building_icon = building_chamber_of_elevation_1
 	clothes_texture_index = 3
@@ -67,7 +67,7 @@ unbirth_apprentice = {
 	resources = {
 		category = planet_necro_apprentices
 		produces = {
-			unity = 2
+			unity = 2.5
 		}
 		upkeep = {
 			trigger = {

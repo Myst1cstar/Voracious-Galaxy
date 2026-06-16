@@ -1,11 +1,3 @@
-###################################
-#   DOLORES ARC SYSTEM
-#
-#   The black hole system Dolores is sealed in. Spawns randomly in the
-#   galaxy (max_instances = 1) so she is discoverable in any game.
-#   The Warden's Legacy origin (which placed this system next to the
-#   player's homeworld) has been removed from this branch.
-###################################
 
 # Dolores system
 ssb_broken_heart_system_initializer = {
@@ -31,13 +23,6 @@ ssb_broken_heart_system_initializer = {
 	max_instances = 1
 	spawn_chance = 9999
 
-	# Mark this system so the "delve into the black hole" mechanic can detect it.
-	# vore_exploration.100 fires when a fleet enters a system with this flag and
-	# sets the country flag visited_broken_heart — which gates the Dolores ending.
-	init_effect = {
-		set_star_flag = is_system_broken_heart
-	}
-
 	planet = {
 		name = vore_paragon_dolores_star
 		class = "pc_black_hole"
@@ -46,20 +31,15 @@ ssb_broken_heart_system_initializer = {
 		size = 30
 		has_ring = no
 	}
-
-	# Containment Site — the broken machine world Dolores is sealed inside.
-	# Placed in a wide outer orbit so it sits visually apart from the star.
-	planet = {
-		name = "Containment site-01 alpha"
-		class = pc_machine_broken
-		orbit_distance = 100
-		orbit_angle = 180
-		size = 20
-		init_effect = {
-			set_planet_flag = dolores_containment_planet
-			add_anomaly = { category = dolores_intro_anomaly }
-			create_ambient_object = {
-				type = contingency_2
+	init_effect = {
+		spawn_planet = {
+			class = pc_shattered
+			spawn_beyond_gravity_well = yes
+			orbit_angle_offset = 360
+			size = 20
+			init_effect = {
+				set_name = "The Vault"
+				add_anomaly = { category = dolores_intro_anomaly }
 			}
 		}
 	}

@@ -1,0 +1,29 @@
+﻿l_simp_chinese:
+
+ #典狱长星系
+ vore_warden_system: "R-475"
+ vore_warden_homeworld: "堡垒三号"
+ vore_warden_homeworld_moon: "守卫者"
+
+ #西吉斯蒙德与萨尔蒂
+ vore_system_siigismund: "西吉斯蒙德"
+ vore_star_name_siigismund: "西吉斯蒙德"
+ vore_asteroid_1_name_siigismund: "KPR-195"
+ vore_asteroid_2_name_siigismund: "RR-37k"
+ vore_asteroid_3_name_siigismund: "SR-0004-C"
+
+ vore_system_saarti: "萨尔蒂"
+ vore_star_name_saarti: "萨尔蒂"
+ vore_planet_1_name_saarti: "皮维"
+ vore_planet_2_name_saarti: "皮维"
+ vore_planet_3_name_saarti: "普提"
+ vore_planet_3_moon_name_saarti: "普提一号"
+
+ #多洛雷斯典范星系
+ vore_paragon_dolores_system: "破碎之心"
+ vore_paragon_dolores_star: "破碎之心"
+ vore_paragon_dolores_planet: "守护者综合体"
+ vore_paragon_dolores_planet_moon_1: "保护圣所一号"
+ vore_paragon_dolores_planet_moon_2: "保护圣所二号"
+ vore_paragon_dolores_planet_moon_3: "保护圣所三号"
+ vore_paragon_dolores_planet_moon_4: "保护圣所四号"

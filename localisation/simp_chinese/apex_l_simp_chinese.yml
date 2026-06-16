@@ -1,0 +1,460 @@
+﻿l_simp_chinese:
+
+##########
+# 特质 #
+##########
+
+#物种特质
+trait_lethal_vore_predator: "致命吞噬掠食者"
+trait_lethal_vore_predator_desc: "§L这个物种进化出了吞食其他体型相近生物的能力。§!\n"
+trait_nonlethal_vore_predator: "非致命吞噬掠食者"
+trait_nonlethal_vore_predator_desc: "§L这个物种进化出了吞食其他体型相近生物且不杀死对方的能力。§!\n"
+trait_vore_prey: "猎物"
+trait_vore_prey_desc: "§L这个物种天性温顺且美味。§!\n"
+trait_unbirth: "逆生产"
+trait_unbirth_desc: "§L这个物种进化出了能缩小并将生物捕获于子宫中的能力。§!\n"
+
+#领袖特质
+
+#统治者特质
+trait_ruler_novice_predator: "新手掠食者"
+trait_ruler_novice_predator_desc: "§L这位统治者几乎没有任何吞噬他人的经验，这使他们成为帝国内许多人的目标。§!\n"
+trait_ruler_apprentice_predator: "学徒掠食者"
+trait_ruler_apprentice_predator_desc: "§L这位统治者存活了足够长的时间，获得了一些作为掠食者的经验。§!\n"
+trait_ruler_adept_predator: "娴熟掠食者"
+trait_ruler_adept_predator_desc: "§L这位统治者已经吞噬了相当多的挑战者。§!\n"
+trait_ruler_expert_predator: "专家掠食者"
+trait_ruler_expert_predator_desc: "§L这位统治者以技艺精湛的可怕掠食者而闻名。§!\n"
+trait_ruler_master_predator: "大师掠食者"
+trait_ruler_master_predator_desc: "§L这位统治者无疑是帝国内最强大的掠食者，名副其实。§!\n"
+trait_ruler_prey: "猎物"
+trait_ruler_prey_desc: "§L这位统治者怀有成为猎物的幻想。§!\n"
+trait_ruler_motherly: "慈母般"
+trait_ruler_motherly_desc: "§L这位统治者像母亲对待自己的孩子一样关心她的臣民，人民的幸福和需求始终是她心中最重要的。§!\n"
+trait_ruler_voredeity: "神圣掠食者"
+trait_ruler_voredeity_desc: "§L这位统治者是截然不同级别的掠食者，通过吞噬和吸收无数个体获得了永生，并被其人民尊为神明的化身。他们的话语在其疆域内即是法律，但其他文明觉得他们所享有的狂热忠诚具有威胁性。§!\n"
+
+#总督特质
+trait_governor_novice_predator: "新手掠食者"
+trait_governor_novice_predator_desc: "§L这位领袖被认为是个弱小的掠食者，他们可能活不了多久……§!\n"
+trait_governor_apprentice_predator: "学徒掠食者"
+trait_governor_apprentice_predator_desc: "§L这位领袖设法获得了一些吞噬他人的经验。§!\n"
+trait_governor_adept_predator: "娴熟掠食者"
+trait_governor_adept_predator_desc: "§L这位领袖对吞噬他人有一定程度的熟悉，能存活如此之久已开始体现在他们的能力上。§!\n"
+trait_governor_expert_predator: "专家掠食者"
+trait_governor_expert_predator_desc: "§L与他人竞争职位的斗争给这位领袖留下了丰富的经验。§!\n"
+trait_governor_master_predator: "大师掠食者"
+trait_governor_master_predator_desc: "§L很少有人愿意尝试吃掉这位经验丰富的掠食者，因为大多数人对于这位领袖来说都只是免费的一餐。§!\n"
+trait_governor_prey: "猎物"
+trait_governor_prey_desc: "§L这位领袖怀有成为猎物的幻想。§!\n"
+
+#科学家特质
+trait_scientist_prey: "猎物"
+trait_scientist_prey_desc: "§L在社会中更贪婪的成员看来，这位科学家是猎物，他们自己也心知肚明。这使得他们在行动中非常谨慎和有条理。§!\n"
+trait_scientist_novice_predator: "新手掠食者"
+trait_scientist_novice_predator_desc: "§L这位科学家被认为是个弱小的掠食者，真奇怪他们能活这么久……§!\n"
+trait_scientist_apprentice_predator: "学徒掠食者"
+trait_scientist_apprentice_predator_desc: "§L这位领袖足够幸运，在最初几次遭遇渴望权力的掠食者时幸存了下来。§!\n"
+trait_scientist_adept_predator: "娴熟掠食者"
+trait_scientist_adept_predator_desc: "§L这位领袖比其物种中的普通掠食者更优秀。§!\n"
+trait_scientist_expert_predator: "专家掠食者"
+trait_scientist_expert_predator_desc: "§L与他人竞争职位的斗争给这位领袖留下了丰富的经验。§!\n"
+trait_scientist_master_predator: "大师掠食者"
+trait_scientist_master_predator_desc: "§L这位领袖是其物种中的巅峰个体，其技能也反映了这一点。§!\n"
+
+#海军上将特质
+trait_admiral_prey: "猎物"
+trait_admiral_prey_desc: "§L在社会中更贪婪的成员看来，这位海军上将是个猎物，他们自己也心知肚明。这使得他们在行动中非常谨慎和有条理。§!\n"
+trait_admiral_novice_predator: "新手掠食者"
+trait_admiral_novice_predator_desc: "§L他们船上的船员正饥饿地看着他们……§!\n"
+trait_admiral_apprentice_predator: "学徒掠食者"
+trait_admiral_apprentice_predator_desc: "§L几次不幸的吞噬这位领袖的尝试，让他们对吞噬他人有了大致的了解。§!\n"
+trait_admiral_adept_predator: "娴熟掠食者"
+trait_admiral_adept_predator_desc: "§L这位领袖被认为是有能力的掠食者，因此攻击他们是有风险的。§!\n"
+trait_admiral_expert_predator: "专家掠食者"
+trait_admiral_expert_predator_desc: "§L这位掠食者在军中相当出名，经常品尝被击败星舰上的船员。§!\n"
+trait_admiral_master_predator: "大师掠食者"
+trait_admiral_master_predator_desc: "§L这位领袖令其猎物恐惧，并受到其士兵的尊敬。§!\n"
+
+#将军特质
+trait_general_novice_predator: "新手掠食者"
+trait_general_novice_predator_desc: "§L这位领袖可能曾经见过有人被吃掉……？§!\n"
+trait_general_apprentice_predator: "学徒掠食者"
+trait_general_apprentice_predator_desc: "§L他们的士兵经常开玩笑说要吃掉他们的指挥官，至少他们可能是在开玩笑……§!\n"
+trait_general_adept_predator: "娴熟掠食者"
+trait_general_adept_predator_desc: "§L这位领袖在战场和食堂都吞下过几个敌人。§!\n"
+trait_general_expert_predator: "专家掠食者"
+trait_general_expert_predator_desc: "§L关于这位将军的传说早已传遍我们的边界之外，异星猎物们知道该害怕他们的到来。§!\n"
+trait_general_master_predator: "大师掠食者"
+trait_general_master_predator_desc: "§L这位将军在前线作战，以贪婪的饥饿吞噬敌人。§!\n"
+
+##########
+# 法令 #
+##########
+edict_edict_galactic_darwinism: "银河达尔文主义"
+edict_edict_galactic_darwinism_desc: "适者生存的法则延伸到了我们的边界之外。银河系的异星人很快就会知道我们才是顶级掠食者。"
+
+
+#####################
+# 好感度修正 #
+#####################
+
+Opinion_vore_lethal_predator: "令人不适的饥饿"
+Opinion_vore_prey: "和善的猎物"
+Opinion_unbirth_our_species: "逆生产了我们的物种"
+
+##########
+# 事件 #
+##########
+darwinism_start: "最大的挑战"
+darwinism_start.desc: "我们的人民正面临一个历史的伟大转折点。我们文明的走向在很大程度上取决于那些将带领我们跨越星海之人的能力。一种激进的新制度已经建立，旨在淘汰弱者和无能者，允许任何人只要足够强大就可以夺取职位。"
+darwinism_start.2.tooltip: "这将引领我们的人民走向伟大……以及点心。"
+
+####################
+# 静态修正 #
+####################
+vore_frenzy: "吞噬狂乱"
+vore_frenzy_desc: "这个星球目前处于混乱状态，贪婪的人口横行无忌，严重干扰了日常生活。"
+vore_frenzy_put_down: "镇压吞噬狂乱"
+vore_frenzy_put_down_desc: "该星球人口中爆发的贪婪狂乱已被暴力镇压，殖民地目前正以铁腕手段统治。"
+rogue_predators: "堕落掠食者"
+rogue_predators_desc: "这个星球上，具备吞食能力的人群中的犯罪活动正在激增。"
+mod_job_livestock_add: "牲畜岗位"
+mod_planet_pops_food_upkeep_mult: "人口食物维护"
+mod_planet_jobs_influence_produces_mult: "岗位影响力产出"
+mod_job_rogue_predator_per_crime: "每 §Y10§! 犯罪度 + §Y1§! $job_rogue_predator$ 岗位"
+mod_job_rogue_predator_add: "$job_rogue_predator$ 岗位"
+mod_job_rogue_predator_per_pop: "每 §Y10§! 人口 + §Y1§! $job_rogue_predator$ 岗位"
+
+################
+# 科技 #
+################
+
+predator_army: "掠食者军队"
+predator_army_desc: "掠食者无尽的饥饿与军事重点相结合。掠食者军队缺乏先进的装备，但他们用震撼因素和顶级掠食者的天生韧性弥补了这一点。"
+predator_army_plural: "掠食者军队"
+
+
+##########
+# 政策 #
+##########
+
+slavery_vore: "猎物奴隶制"
+slavery_vore_tooltip: "§H猎物奴隶§! 在生活中只有一个目的：成为优越者们的 £food£ §H食物§!。"
+slavery_vore_tooltip_delayed: "§L将低等物种放在它们该在的地方：在咕噜作响的胃里。§!"
+cannot_vore_machines: "$TRIGGER_FAIL$ 机器无法被吞食。"
+empire_not_voracious: "$TRIGGER_FAIL$ 我们的人民还不够残忍，无法如此大规模地吞噬他人。"
+job_prey_slave: "猎物奴隶"
+job_prey_slave_plural: "猎物奴隶们"
+job_prey_slave_desc: "这个人口正作为具备吞食能力人口的食物。"
+job_rogue_predator: "堕落掠食者"
+job_rogue_predator_plural: "堕落掠食者们"
+job_rogue_predator_desc: "这些个体已经放弃了作为生产性公民的所有伪装，像罪犯一样生活，吞噬无辜者以夺取他们的资产……以及身体。"
+job_unbirth_apprentice: "逆生学徒"
+job_unbirth_apprentice_plural: "逆生学徒们"
+job_unbirth_apprentice_desc: "通过多年的辛勤工作，最终以一场奢华的重生仪式为顶点，那些不幸未生为 [This.Owner.GetSpeciesNamePlural] 的人可以被吸纳进统治阶级。"
+job_unbirth_apprentice_effect_desc: "£job_unbirth_apprentice£ $job_unbirth_apprentice_plural$ 将 £consumer_goods£ §Y$consumer_goods$§! 和 £food£ §Y$food$§! 转化为 £unity£ §Y$unity$§! 和 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!。\n每 §Y10§! 年，£job_unbirth_apprentice£ $job_unbirth_apprentice_plural$ 会在 §Y重生仪式§! 中被转化为 §Y[This.Owner.GetSpeciesNamePlural]§!。"
+job_unbirth_apprentice_effect_lithoid_desc: "£job_unbirth_apprentice£ $job_unbirth_apprentice_plural$ 将 £consumer_goods£ §Y$consumer_goods$§! 和 £minerals£ §Y$minerals$§! 转化为 £unity£ §Y$unity$§! 和 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!。\n每 §Y10§! 年，£job_unbirth_apprentice£ $job_unbirth_apprentice_plural$ 会在 §Y重生仪式§! 中被转化为 §Y[This.Owner.GetSpeciesNamePlural]§!。"
+mod_job_unbirth_apprentice_add: "$job_unbirth_apprentice$ 岗位"
+mod_job_unbirth_apprentice_per_pop: "每 $VALUE$ 人口 + §G1§! $job_unbirth_apprentice$ 岗位"
+mod_job_unbirth_apprentice_per_pop_short: "\n每 $VALUE$ £pop£ + §G1§! £mod_job_apprentice_add£"
+planet_unbirth_apprentices: "逆生学徒岗位"
+civic_unbirth_secondary_species: "逆生产物种"
+policy_vore_prey_slavery: "猎物奴隶制"
+policy_vore_prey_slavery_desc: "我们可以决定奴隶是否应作为社会中具备吞食能力成员的食物。"
+prey_slavery_active: "允许"
+prey_slavery_active_name: "允许猎物奴隶制"
+prey_slavery_active_desc: "奴隶的位置理所当然应该在优越者们的口中（或其他 orifice）。"
+prey_slavery_forbidden: "禁止"
+prey_slavery_forbidden_name: "禁止猎物奴隶制"
+prey_slavery_forbidden_desc: "尽管它们可能很美味，但我们需要我们的奴隶去执行那些在被消化时很难——如果不是不可能——完成的任务。"
+prey_slavery_allowed_name: "允许猎物奴隶制"
+policy_gender_superiority: "性别优势"
+policy_gender_superiority_desc: "我们可以决定在领导我们人民方面，某一性别是否比另一性别更适合。"
+gender_equality: "平等"
+gender_equality_name: "性别平等"
+gender_equality_desc: "没有任何性别比其他性别更适合领导。\n\n§E男性和女性领袖§!"
+male_superiority: "男性"
+male_superiority_name: "男性主导"
+male_superiority_desc: "显然，只有男性才有能力正确指引我们的人民。\n\n§E仅限男性领袖§!"
+male_dominated_name: "男性主导"
+female_superiority: "女性"
+female_superiority: "女性主导"
+female_superiority_desc: "很明显，只有女性才具备领导我们帝国所需的品质。\n\n§E仅限女性领袖§!"
+female_dominated_name: "女性主导"
+
+##############
+# 政府 #
+##############
+gov_apex_dictatorship: "顶级君主制"
+gov_apex_dictatorship_desc: "这个政府由帝国内最强大的掠食者领导。"
+gov_motherly_matriarchy: "慈母女权制"
+gov_motherly_matriarchy_desc: "这个政府由一位世袭的女族长领导，其职责是关爱帝国的公民。"
+gov_peaceful_prey: "和平猎物"
+gov_peaceful_prey_desc: "这个政府由一名选举产生的官员领导，负责管理国家的外部事务，因为内部事务几乎完全自我调节。"
+
+# 性格
+personality_type_vore: "掠食者"
+personality_vore_warriors: "顶级掠食者"
+personality_vore_warriors_desc: "这个政府由帝国内最强大的掠食者领导。"
+personality_type_motherly: "慈母般"
+personality_motherly_matriarchy: "慈母女权制"
+personality_motherly_matriarchy_desc: "这个政府由一位世袭的女族长领导，其职责是关爱帝国的公民。"
+personality_type_prey: "猎物"
+personality_peaceful_prey: "和平猎物"
+personality_peaceful_prey_desc: "这个政府由一名选举产生的官员领导，负责管理国家的外部事务，因为内部事务几乎完全自我调节。"
+
+############
+# 法令 #
+############
+edict_edict_galactic_hunt: "银河狩猎"
+edict_edict_galactic_hunt_desc: "为什么我们的猎手要被限制在边界之内？让我们开始一场新的狩猎，其规模将使所有其他狩猎相形见绌，并在银河历史上留下永恒的印记。"
+decision_planet_pred_promotion: "鼓励吞噬"
+decision_planet_pred_promotion_desc: "行星政府将鼓励我们更贪婪的公民放纵自己，以提高具备吞食能力人口的生产力和幸福感，但这要以我们更美味的公民为代价。"
+pred_promotion_pred: "兴奋的掠食者"
+pred_promotion_prey: "待用之食"
+
+##########
+# 国民理念 #
+##########
+civic_vore_darwinism: "基于吞噬的达尔文主义"
+civic_vore_darwinism_desc: "这个社会相信他们作为银河顶级掠食者的命运，不断寻求扩大他们的牲畜群。"
+civic_tooltip_vore_darwinism_effects: "提供强大的战斗加成，但这个社会的竞争性本质导致其死亡率较高，且对移民的吸引力较低。\n§Y$MOD_COUNTRY_NAVAL_CAP_MULT$§! 增加 §G15%§!\n§Y$MOD_SHIP_FIRE_RATE_MULT$§! 增加 §G15%§!\n§Y$MOD_ARMY_DAMAGE_MULT$§! 增加 §G15%§!\n§Y领袖经验获取§! 增加 §G25%§!\n§Y$MOD_LEADER_SKILL_LEVELS$§! 增加 §G2§!\n§Y$MOD_COUNTRY_IMMIGRATION_PULL_MULT$§! 减少 §R-25%§!\n§Y$MOD_COUNTRY_ADMIN_CAP_ADD$§! 减少 §R-10§!\n§Y$MOD_POP_GROWTH_SPEED$§! 减少 §R-10%§!"
+#civic_vore_strength: "以实力统治"
+#civic_vore_strength_desc: "这个社会由最强大的掠食者主导，人们通过吞噬竞争对手来获得地位和等级，最强大的掠食者统治帝国，直到更强大的掠食者出现。"
+#civic_tooltip_vore_strength_effects: "这个社会的领袖可以通过提高他们的吞噬能力获得强大的特质，但始终面临被对手或下属吃掉的风险。"
+civic_unbirth_absorption: "逆生产吸收"
+civic_unbirth_absorption_desc: "这个物种利用其逆生产能力从受害者身上汲取经验和知识，受害者被恢复为 '母亲' 物种的幼儿状态。\n§Y领袖经验获取§! 增加 §G25%§!\n§Y$MOD_LEADER_SKILL_LEVELS$§! 增加 §G2§!\n§Y凝聚力§! 增加 §G15%§!\n§Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§! 增加 §G15%§!"
+civic_tooltip_unbirth_absorption_effects: "领袖成长更快，并能通过吸收同辈的知识达到更高的熟练水平。"
+civic_utopian_prey: "乌托邦猎物"
+civic_utopian_prey_desc: "这个社会在其历史早期就摒弃了琐碎的争吵，因此在发动战争的艺术上远远落后于其他太空文明。然而，任何将此视为软弱迹象的人都将会发现，他们统一的身份认同激励着他们以无与伦比的凶猛来对抗入侵者。\n§Y$MOD_COUNTRY_NAVAL_CAP_MULT$§! 减少 §R-20%§!\n§Y$MOD_SHIP_FIRE_RATE_MULT$§! 减少 §R-10%§!\n§Y$MOD_SHIP_HOME_TERRITORY_FIRE_RATE_MULT$§! 增加 §G30%§!\n§Y领袖经验获取§! 减少 §R-15%§!\n §Y凝聚力§! 增加 §G25%§!\n§Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§! 增加 §G15%§!"
+civic_tooltip_utopian_prey_effects: "用战斗加成换取强大的凝聚力和统治伦理加成。"
+civic_voredeity: "神圣掠食者"
+civic_voredeity_desc: "这个物种由一位被尊为神明的永生掠食者统治，该掠食者通过吞噬其社会中最强大、最聪明和最美丽的成员来增强力量。"
+civic_tooltip_voredeity_effects: "这个物种的统治者获得神圣掠食者特质，使其永生，并为其文明带来许多加成，但代价是其帝国人口增长速度有 §R-10%§! 的惩罚，并与邻国有更大的摩擦。"
+
+#############
+# 建筑 #
+#############
+
+building_unbirth_chamber_of_rebirth: "重生殿"
+building_unbirth_chamber_of_rebirth_desc: "那些等待逆生产的人们在舒适的重生殿中，享受着慈母般的 [This.Owner.GetSpeciesNamePlural] 的呵护和取悦，度过他们的日子。"
+building_unbirth_temple_of_motherhood: "母性神殿"
+building_unbirth_temple_of_motherhood_desc: "一座享乐主义和多产的光辉神殿，低等物种在此等待他们作为 [This.Owner.GetSpeciesNamePlural] 的必然重生。"
+
+####################################
+# 外交文本
+####################################
+
+# 吞食战士
+
+VD_HOSTILE_GREETING_01:0: "快说，猎物，不然你就得进我的肚子里了。"
+VD_HOSTILE_GREETING_02:0: "你们有没有想过被吃掉是什么感觉？你们[From.GetSpeciesNamePlural]和你们其他的同类很快就会知道了。"
+VD_HOSTILE_GREETING_03:0 "真奇怪你们[From.GetSpeciesNamePlural]居然也能发展出宇航技术，不过我们很高兴你们做到了。[Root.GetSpeciesName]要错过这么美味的点心可就太遗憾了。"
+VD_HOSTILE_GREETING_04:0 "等[From.GetSpeciesName]都变成肚腩上的肥肉，银河系就会知道谁才是真正的顶级掠食者了。"
+VD_HOSTILE_GREETING_05:0 "[From.GetSpeciesName]真是美味，我们很快就能尝到味道了……不管你们愿不愿意。"
+VD_HOSTILE_GREETING_06:0 "你是来求我让你进我肚子的吗？"
+VD_HOSTILE_GREETING_07:0 "你们应该知道，你们[From.GetSpeciesNamePlural]可是真正的美味佳肴，我们的人民正渴望得到更多……"
+VD_HOSTILE_GREETING_08:0 "你们应该知道，有几头牲口想逃回[From.GetName]。我有幸亲手吃了其中一个，味道相当不错。"
+VD_HOSTILE_GREETING_08:0 "除非你是来讨论如何最好地将你们可怜的帝国纳入我们的统治，否则就滚开。"
+VD_HOSTILE_GREETING_09:0 "我希望你知道，我正热切地期盼着你滑入我咽喉的那一天。"
+
+VD_DOMINEERING_GREETING_01:0 "还要继续这场闹剧到什么时候？你们会非常乐意接受自己在[Root.GetSpeciesName]社会中的位置的。"
+VD_DOMINEERING_GREETING_02:0 "你们应该早点服从比你们更优越的种族，这样假装独立只是让[From.GetSpeciesName]蒙羞。"
+VD_DOMINEERING_GREETING_03:0 "你们终于认识到自己在银河系中的位置了吗？"
+VD_DOMINEERING_GREETING_04:0 "比起被某个暴虐的独裁者奴役，你们难道不更愿意在[Root.GetSpeciesName]的庇护下舒适地生活吗？"
+
+VD_NEUTRAL_GREETING_01:0 "只要你们远离我们的狩猎场，爱做什么都随你们。"
+VD_NEUTRAL_GREETING_02:0 "[Root.GetSpeciesName]还没决定你们算不算猎物，所以趁现在好好享受这段和平时光吧。"
+VD_NEUTRAL_GREETING_03:0 "虽然我知道不能吃外国使节，但我手下可不是人人都这么有自制力。"
+VD_NEUTRAL_GREETING_04:0 "你看起来真好吃……要不是你对[From.GetSpeciesName]这么重要，我现在就把你吃了。"
+VD_NEUTRAL_GREETING_05:0 "*呃！* 哦，抱歉，刚解决掉一个烦人的秘书。说吧，你想谈什么？"
+VD_NEUTRAL_GREETING_06:0 "我们的科学家推测，对一个[FROM.GetSpeciesName]来说，被[Root.GetSpeciesName]吃掉可能是一种相当愉悦的体验。"
+VD_NEUTRAL_GREETING_07:0 "你们不应该这么频繁地来访，等我们会谈结束，我的肚子总是咕咕叫，下次我可能等不到会后就要找点零食了……"
+VD_NEUTRAL_GREETING_08:0 "我听说[From.GetSpeciesName]的味道，在[Root.Capital.GetName]根本找不到任何东西能与之相比……"
+VD_NEUTRAL_GREETING_09:0 "快点说完，[Root.GetSpeciesName]还要去狩猎呢。"
+
+VD_THREATENED_GREETING_01:0 "你们休想拿我们的掠食者当饭吃，[From.GetSpeciesName]！"
+VD_THREATENED_GREETING_02:0 "瞎猫碰上死耗子这种事可不会一直奏效，[From.GetSpeciesName]。总有一天你们也会填满我们的肚子。"
+VD_THREATENED_GREETING_03:0 "也许现在是你们占上风，但时间会证明[Root.GetSpeciesName]才是银河系的顶级掠食者——你们不过是猎物罢了！"
+
+VD_FRIENDLY_GREETING_01:0 "啊，我最爱的小点心回来了！开玩笑的，我还不会吃你……暂时不会。"
+VD_FRIENDLY_GREETING_02:0 "我们的联盟为我们开辟了许多新的狩猎场，为此我们感谢你们。"
+VD_FRIENDLY_GREETING_03:0 "上次你随行的侍从被吃了，我很抱歉，我已经亲口吃掉了那个负责此事的[Root.GetSpeciesName]。"
+VD_FRIENDLY_GREETING_04:0 "[Root.GetSpeciesName]人民很高兴知道星海之中还有其他值得尊敬的猎手。"
+VD_FRIENDLY_GREETING_05:0 "有些[Root.GetSpeciesName]想知道[From.GetSpeciesName]是否考虑过像我们一样成为顶级猎手？"
+VD_FRIENDLY_GREETING_06:0 "[Root.GetRulerTitle][Root.GetRulerName]已颁布法令，[from.GetSpeciesName]将免受我方猎手的捕猎。希望你们能领会这份友谊的宣言。"
+
+VD_WAR_GREETING_01:0 "就在我们说话的这会儿，你们的战士正在被吞噬，用不了多久了……"
+VD_WAR_GREETING_02:0 "[Root.GetRulerTitle][Root.GetRulerName]已将我标记为你们的掠食者，我很期待用你们来丰满我的曲线！"
+VD_WAR_GREETING_03:0 "这场战争在开始之前就已注定。我们是猎手，你们是猎物，你们终将被吞噬。"
+VD_WAR_GREETING_04:0 "我们的战士正靠你们人民的牺牲吃得膘肥体壮。"
+VD_WAR_GREETING_05:0 "不论在战场内外，[From.GetSpeciesName]注定要填进[Root.GetSpeciesName]的肚子。"
+VD_WAR_GREETING_08:0 "你们来多少军队都行，我们会把他们全吃掉，还有胃口再来第二轮。"
+VD_WAR_GREETING_06:0 "我听说[Root.GetRulerTitle][Root.GetRulerName]打算亲自吃掉[From.GetRulerTitle][From.GetRulerName]，还要让整个帝国都看着！"
+VD_WAR_GREETING_07:0 "我们的猎手真的很感激能有这个机会磨练技艺。你们将成为我们通往银河统治之路上宝贵的垫脚石。"
+
+ # 附属国问候
+VD_VASSAL_GREETING_01:0 "[Root.GetRulerTitle][Root.GetRulerName]已承认你们是我们的上级，我们希望能与主人们一同进行许多伟大的狩猎。"
+VD_VASSAL_GREETING_02:0 "[Root.GetRulerTitle][Root.GetRulerName]祝愿你们狩猎成功，顿顿美味。"
+VD_VASSAL_GREETING_03:0 "[Root.GetSpeciesName]的肚子将填满你们帝国的敌人。你们会发现我们是银河系最伟大的猎手。"
+VD_VASSAL_GREETING_DISLOYAL_01:0 "[Root.GetSpeciesName]不会长久忍受这份耻辱的……"
+VD_VASSAL_GREETING_DISLOYAL_02:0 "等我们挣脱这些锁链，就会把你们吃掉。[Root.GetRulerTitle][Root.GetRulerName]会非常享受[From.GetRulerTitle][From.GetRulerName]滑进[ROOT.ruler.GetHerHis]肚子的感觉。"
+VD_VASSAL_GREETING_DISLOYAL_03:0 "等你们解开我们的枷锁，我们就不再吃你们的大使。到那时，我们会吃掉你们整个种族。"
+
+ # 宣战
+VD_DOW_PROPOSE_01:0 "可怜的猎物，你们将被[Root.GetSpeciesName]的威能吞噬！"
+
+VD_OVERLORD_GREETING_01:0 "你想干什么，食物？你是来填满[Root.GetRulerTitle][Root.GetRulerName]的肚子的吗？"
+VD_OVERLORD_GREETING_02:0 "啊，[From.GetSpeciesName]！你们需要宗主为你们做什么吗，小美味？"
+VD_OVERLORD_GREETING_03:0 "你们应该感到荣幸，[From.GetSpeciesName]，你们已成为银河系中最受[Root.GetSpeciesName]钟爱的、用来填饱肚子的物种。"
+
+ # 慈爱之母
+UB_HOSTILE_GREETING_01:0 "你们愚蠢的行为伤害了身边的每一个人，[Root.GetSpeciesNamePlural]与你们毫无瓜葛。"
+UB_HOSTILE_GREETING_02:0 "所有[From.GetSpeciesName]都应该乖乖蜷缩在[Root.GetRulerTitle][Root.GetRulerName]的子宫里，被改造成[Root.GetSpeciesName]！那样银河系会更好。"
+UB_HOSTILE_GREETING_03:0 "你们恶劣的态度让[Root.GetSpeciesName]感到失望。"
+UB_HOSTILE_GREETING_04:0 "如果不是[From.GetRulerName]判断力太差，我们或许还能共存。"
+UB_HOSTILE_GREETING_05:0 "尽管你们过去有诸多不端，我们仍抱有希望，也许[From.GetSpeciesName]能被教导如何与异星邻居和平共处。"
+UB_HOSTILE_GREETING_06:0 "我们只想和平地生活，你们为何要如此烦扰我们？"
+UB_HOSTILE_GREETING_07:0 "我想[Root.GetRulerTitle][Root.GetRulerName]不会介意在我的子宫里待一阵子吧？那样他们或许就能理解我们的想法了……"
+UB_HOSTILE_GREETING_08:0 "[From.GetRulerTitle][From.GetRulerName]已为那些渴望逃离[Root.GetRulerTitle][Root.GetRulerName]愚蠢统治的[From.GetSpeciesName]建立了一个避难所。"
+UB_HOSTILE_GREETING_08:0 "我们外交官湿润的子宫已准备好，随时能让你们意识到自己的错误行为。"
+UB_HOSTILE_GREETING_09:0 "尽管[From.GetRulerTitle][From.GetRulerName]已证明自己无药可救，我们仍对你们种族的其余成员抱有希望。"
+
+UB_DOMINEERING_GREETING_01:0 "你们看起来非常天真幼稚。也许你们需要我们的指引……"
+UB_DOMINEERING_GREETING_02:0 "在银河系中独自前行是很危险的，你们在我们的保护下会安全得多。"
+UB_DOMINEERING_GREETING_03:0 "[From.GetSpeciesName]已经偏离了正道，但我们相信仍有希望。"
+UB_DOMINEERING_GREETING_04:0 "你们难道看不出来自己无法照顾自己吗？在[Root.GetRulerTitle][Root.GetRulerName]的统治下，你们会幸福得多。"
+
+UB_NEUTRAL_GREETING_01:0 "你好，你是来寻求我们的智慧的吗？"
+UB_NEUTRAL_GREETING_02:0 "你看起来真可爱，但我敢打赌你变成[Root.GetSpeciesName]会更好！"
+UB_NEUTRAL_GREETING_03:0 "如果你想在我的子宫里待上一阵子，尽管开口。不过别待太久，否则你可能再也出不来了……"
+UB_NEUTRAL_GREETING_04:0 "我从未有[From.GetSpeciesName]进过我的子宫，不知道那会是什么感觉……"
+UB_NEUTRAL_GREETING_05:0 "别在意那肚子上的隆起，她刚才只是提出了一些相当激进的想法。"
+UB_NEUTRAL_GREETING_06:0 "哦，你好！我是个新来的外交官，但我把上一任给逆生产了，所以我继承了她所有的知识！从今往后一切都会顺利的。"
+UB_NEUTRAL_GREETING_07:0 "我无法想象没有装满的子宫的生活，异星人真是太奇怪了。"
+UB_NEUTRAL_GREETING_08:0 "[From.GetRulerTitle][From.GetRulerName]一直致力于与异星人建立更好的关系。"
+UB_NEUTRAL_GREETING_09:0 "你们对[Root.GetSpeciesName]的逆生产技术好奇吗？据说这在异星人中是很罕见的特质。"
+
+UB_THREATENED_GREETING_01:0 "让银河系失去我们的指引，比你们做的任何其他事都更罪恶！"
+UB_THREATENED_GREETING_02:0 "许多人会为[Root.GetSpeciesName]的消亡而哭泣，但他们也会为你们的灭亡而欢呼。"
+UB_THREATENED_GREETING_03:0 "你们是来从无辜的[Root.GetSpeciesName]这里夺走更多的吗？"
+
+UB_FRIENDLY_GREETING_01:0 "我很乐意接纳你进入我的子宫，朋友。你的知识将使我们双方的帝国更加强大。"
+UB_FRIENDLY_GREETING_02:0 "我们可以一起保护和指引银河系中那些无助的异星人。"
+UB_FRIENDLY_GREETING_03:0 "我们很高兴能为[Root.GetSpeciesName]的挚友们提供我们的指引。"
+UB_FRIENDLY_GREETING_04:0 "我们的科学家说，[From.GetSpeciesName]在被逆生产后会变成[Root.GetSpeciesName]。如果你们想转变，知道上哪找我。"
+UB_FRIENDLY_GREETING_05:0 "我刚生完孩子，所以我的子宫准备好接纳下一个了，如果你愿意的话……"
+UB_FRIENDLY_GREETING_06:0 "看到我的肚子了吗？有个[From.GetSpeciesName]主动要求被逆生产！我太兴奋了！"
+
+UB_WAR_GREETING_01:0 "我们不喜欢战斗，但别以为这意味着我们会坐以待毙。"
+UB_WAR_GREETING_02:0 "对于这场你们持续发动的战争中每一个逝去的生命，[Root.GetSpeciesName]都感到悲痛。"
+UB_WAR_GREETING_03:0 "[Root.GetSpeciesName]知道如何捕获你们的士兵并尽可能地将他们逆生产，他们在我方帝国将过上比在你们那里好得多的生活。"
+UB_WAR_GREETING_04:0 "我们不会因为[From.GetRulerTitle][From.GetRulerName]的行为而对[From.GetSpeciesName]心怀恶意。在你们被击败后，他们将在帝国中被平等对待。"
+UB_WAR_GREETING_05:0 "我们的战士每逆生产一个敌人，就多了解一分你们的战术。你们不可能长久地对抗我们。"
+UB_WAR_GREETING_08:0 "一旦[From.GetSpeciesName]的威胁被消除，银河系将会安全得多。"
+UB_WAR_GREETING_06:0 "我们为生存而战，而你们为贪婪而战。这就是你们会失败的原因。"
+UB_WAR_GREETING_07:0 "这场战争结束后，你会像你们帝国中其他每一个被误导的领导人一样，在我的子宫里扭动。"
+
+ # 附属国问候
+UB_VASSAL_GREETING_01:0 "我们希望你们能像我们一直做的那样，继续保护和指引弱者。"
+UB_VASSAL_GREETING_DISLOYAL_01:0 "你们强加给[Root.GetSpeciesName]的痛苦，只会推迟你们不可避免的灭亡。"
+
+ # 宣战
+UB_DOW_PROPOSE_01:0 "如果你们不能照顾自己，那我们就要承担起这个责任……"
+
+UB_OVERLORD_GREETING_01:0 "是的，小家伙，你有什么事要找我吗？"
+
+ # 和平猎物
+PY_HOSTILE_GREETING_01:0 "[Root.GetSpeciesName]没有兴趣与你们这种家伙合作。"
+PY_HOSTILE_GREETING_02:0 "我们[Root.GetSpeciesName]整个存在都在被猎杀，但我们至今未曾倒下。这次我们也会挺过去。"
+PY_HOSTILE_GREETING_03:0 "真遗憾我们没能和[From.GetSpeciesName]成为朋友，我们总是把暴力当作最后的手段。"
+PY_HOSTILE_GREETING_04:0 "[Root.GetSpeciesName]不会被你们之流欺凌。"
+PY_HOSTILE_GREETING_05:0 "啊，我们最不喜欢的异星人又来拜访了……"
+PY_HOSTILE_GREETING_06:0 "[From.GetSpeciesName]的诞生，对银河系来说是个残酷的玩笑。"
+PY_HOSTILE_GREETING_07:0 "又来散布[Root.GetRulerTitle][Root.GetRulerName]的谎言了？谢谢，不过我们已经听够了。"
+PY_HOSTILE_GREETING_08:0 "交谈的时间结束了，除非你们是来为自己的冒犯行为道歉的。"
+PY_HOSTILE_GREETING_08:0 "你们的贪婪永无止境，但只要我们还有发言权，你们的统治就别想扩张。"
+PY_HOSTILE_GREETING_09:0 "这么说[From.GetSpeciesName]认为他们已经困住了猎物？很好……"
+
+PY_DOMINEERING_GREETING_01:0 "看来很快就轮到我们当掠食者了……"
+PY_DOMINEERING_GREETING_02:0 "如果你们连我们都打不过，弱到无法自卫，那么当我们把你们的力量加到我们自己身上时，你们真的没有理由抱怨。"
+PY_DOMINEERING_GREETING_03:0 "你们应该庆幸被置于我们的保护之下，换成别人可能直接把你们吃掉了。"
+PY_DOMINEERING_GREETING_04:0 "这将为我们双方的人民带来更美好的未来。"
+
+PY_NEUTRAL_GREETING_01:0 "与新的文化交流总是令人愉快。"
+PY_NEUTRAL_GREETING_02:0 "[From.GetSpeciesName]的形态真是赏心悦目。"
+PY_NEUTRAL_GREETING_03:0 "[Root.GetSpeciesName]希望这是我们人民之间伟大友谊的开端。"
+PY_NEUTRAL_GREETING_04:0 "我们的商人渴望在[From.GetSpeciesName]中找到新的市场。"
+PY_NEUTRAL_GREETING_05:0 "有传言说有些异星人能把别人整个吞掉！你觉得那不是真的……对吧？"
+PY_NEUTRAL_GREETING_06:0 "[Root.GetRulerTitle][Root.GetRulerName]表示有兴趣会见[From.GetRulerTitle][From.GetRulerName]，以便更好地了解异星文化。"
+PY_NEUTRAL_GREETING_07:0 "我们希望有一天能团结起来，共同对抗银河和平的敌人。"
+PY_NEUTRAL_GREETING_08:0 "你们可以相信[Root.GetSpeciesName]是[Root.GetAdj]的，言出必行。"
+PY_NEUTRAL_GREETING_09:0 "我们越早决定合作，就能越早为我们双方的人民建设更美好的未来。"
+
+PY_THREATENED_GREETING_01:0 "我们做了什么，招致了[From.GetSpeciesName]的愤怒？"
+PY_THREATENED_GREETING_02:0 "如果你们非要打，那就打吧，但要知道，我们不会乖乖地被赶进奴役的牢笼。"
+PY_THREATENED_GREETING_03:0 "[Root.GetSpeciesName]的整个历史都在被猎杀，看来宇航时代也不会有什么不同……"
+
+PY_FRIENDLY_GREETING_01:0 "[Root.GetSpeciesName]永远欢迎你们的人民。"
+PY_FRIENDLY_GREETING_02:0 "我们很高兴看到[From.GetRulerTitle][From.GetRulerName]真心希望银河系变得更好。"
+PY_FRIENDLY_GREETING_03:0 "私下说，我不介意被你吃掉……"
+PY_FRIENDLY_GREETING_04:0 "我们很高兴在星海之间找到了如此要好的朋友。"
+PY_FRIENDLY_GREETING_05:0 "只要我们能够共同努力，一个更完美的世界就近在咫尺了。"
+PY_FRIENDLY_GREETING_06:0 "你们应该知道，[From.GetSpeciesName]的文化在[Root.GetSpeciesName]中非常受欢迎。"
+
+PY_WAR_GREETING_01:0 "[From.GetSpeciesName]的迫害到此为止了。"
+PY_WAR_GREETING_02:0 "[Root.GetRulerTitle][Root.GetRulerName]永远不会让[Root.GetSpeciesNamePlural]落入你们无能的掌控。"
+PY_WAR_GREETING_03:0 "我们的人民团结一致，抵抗你们那错误的政权。"
+PY_WAR_GREETING_04:0 "异星人犯下的邪恶，会在历史长河中不断回响。"
+PY_WAR_GREETING_05:0 "这种对无辜者的屠杀肯定已经持续够久了吧？"
+PY_WAR_GREETING_06:0 "[From.GetSpeciesName]很快就能摆脱[From.GetRulerTitle][From.GetRulerName]的枷锁了。"
+PY_WAR_GREETING_07:0 "我们在体力上所缺乏的，会在智谋上弥补回来。"
+PY_WAR_GREETING_08:0 "这场冲突可能会在[Root.GetSpeciesNamePlural]和[From.GetSpeciesNamePlural]之间埋下世代不信任的种子。什么样的损失值得付出这样的代价？"
+
+ # 附属国问候
+PY_VASSAL_GREETING_01:0 "我们希望在[From.GetRulerTitle][From.GetRulerName]的指引下学到很多。"
+PY_VASSAL_GREETING_DISLOYAL_01:0 "我们现在可能为你服务，但总有一天[Root.GetSpeciesName]会遭受太多苦难。"
+
+ # 宣战
+PY_DOW_PROPOSE_01:0 "战争永远应该是最后的手段。但既然你们不肯接受道理，那我们就别无选择了。"
+
+PY_OVERLORD_GREETING_01:0 "[From.GetSpeciesName]需要我们做什么吗？"
+
+###############
+# Vore 事件 #
+###############
+
+unbirther.2.name: "[Root.Capital.GetName] 上的重生仪式"
+unbirther.2.desc: "自从[Root.GetAdj]占领了[Root.Capital.GetName]，将[unbirth_species.GetNamePlural]转化为[Root.GetSpeciesNamePlural]的过程就一直笼罩在仪式之中。每十年一次——这个日期即将到来——“纳托菲特”们会聚集在重生殿举行一场特殊的仪式。他们身上究竟发生了什么是只有少数人知道的秘密，但当他们再次出现时，已然是[Root.GetSpeciesNamePlural]。"
+unbirther.2.A: "开始准备吧！"
+unbirther.2.A.tooltip: "年底时，§H[Root.Capital.GetName]§! 上所有的 §H$job_unbirth_apprentice_plural$§! 都将被转化为 §H[Root.GetSpeciesNamePlural]§!。\n\n此仪式每 §H10 年§! 会在每个拥有 §H重生殿§! 的 [Root.GetAdj] 星球上举行一次。"
+MESSAGE_UNBIRTH_POPS_UNBIRTHED_TITLE: "人口被逆生产"
+MESSAGE_UNBIRTH_POPS_UNBIRTHED: "在 $PLANET|Y$ 上的重生仪式中，我们将 $VALUE|Y$ £pops£ 人口转化为了我们的物种。"
+
+vore.2.title: "[Root.GetName] 上贪婪的 [vore_species.GetAdj] 狂乱！"
+vore.2.desc: "[Root.GetName] 上的掠食性 [vore_species.GetNamePlural] 陷入了一场贪婪的狂乱，它们在定居点中 indiscriminately 吞噬该星球 [prey_species.GetName] 人口，造成了混乱！我们的情报官员预测，最初的狂乱会很快平息，但该星球的 [vore_species.GetNamePlural] 在未来一段时间内肯定会继续随意吞食 [prey_species.GetNamePlural]。"
+vore.2.c: "和野兽无异。镇压它们。"
+vore.2.d: "也许我们可以和他们好好谈谈……"
+
+vore.6.title: "[Root.GetName] 上的堕落掠食者！"
+vore.6.desc: "[Root.GetName] 目前正经历着某些具备吞食能力的人群中犯罪活动的激增。虽然他们吞噬该星球上正直公民的行为预计不会造成任何长期损害，但他们利用猎物遗留的资产进行享乐主义放纵，预计将在短期内对平民经济造成严重破坏。"
+
+
+#################
+# 特使事件
+#################
+
+vore.3.name: "掠食性的 [envoy_source.GetSpeciesAdj] 特使"
+vore.3.desc: "我们的外交官发现，派驻 [Root.Capital.GetName] 的 [envoy_source.GetSpeciesAdj] 特使 [event_envoy.GetName] 一直在吃人！与 [event_envoy.GetName] 共事的我方地方官员撞见这位 [event_envoy.GetSpeciesName] 正在用餐，清楚地看到我们的一名工作人员正滑入 [event_envoy.GetHerHis] 的食道。尽管 [event_envoy.GetName] 为我方人员看到的 shocking 场面道了歉，但 [event_envoy.GetHerHim] 不幸的餐点早已被消化，现在大大丰富了 [event_envoy.GetName] 的 '资产'（体型）。"
+vore.3.A: "不可接受！我们应为被消化的员工获得赔偿！"
+vore.3.B: "[event_envoy.GetFirstName] 是个优秀的掠食者。[event_envoy.GetSheHeCap] 理应享受 [event_envoy.GetHerHis] 的大餐！"
+
+vore.4.name: "掠食性特使"
+vore.4.desc.base: "我方派驻 [From.GetSpeciesName] 的特使 [event_envoy.GetName] 被发现利用空闲时间吃当地的 [From.GetSpeciesNamePlural]。与 [event_envoy.GetFirstName] 共事的 [From.GetSpeciesName] 外交官碰巧撞见 [event_envoy.GetHerHim] 正在进食，一个 [From.GetSpeciesName] 正滑入 [event_envoy.GetHerHis] 的食道！尽管 [event_envoy.GetFirstName] 为其工作人员看到的 shocking 场面道了歉，但 [event_envoy.GetHerHis] 不幸的餐点早已被消化，现在大大丰富了 [event_envoy.GetFirstName] 的 '资产'（体型）。"
+vore.4.desc.pos: "$vore.4.desc.base$\n\n尽管 [event_envoy.GetName] 消化了他们中的一员，[From.GetSpeciesNamePlural] 似乎很好地接受了这一事件。尽管 [From.GetSpeciesNamePlural] 增加了 [event_envoy.GetHerHis] 的 '资产'（体型），我们还是收到了很多关于 [event_envoy.GetFirstName] 掠食技巧的赞美。"
+vore.4.desc.neg: "$vore.4.desc.base$\n\n[From.GetSpeciesNamePlural] 对这一事件相当不满，许多人要求 [event_envoy.GetName] 为消化了他们中的一员而道歉。关于 [event_envoy.GetFirstName] 据称这样做已有一段时间的消息，成为了一个难以消化的新闻——不像他们那些被充分消化、如今正增加 [event_envoy.GetFirstName] 资产（体型）的人民。"
+vore.4.B: "他们味道好吗？"
+
+opinion_envoy_predator_offence: "掠食性特使"
+opinion_envoy_predator_respect: "掠食者式的尊重"

@@ -1,0 +1,309 @@
+﻿l_simp_chinese:
+
+ # 常规种族
+
+ vore_species_name_1: "菲林人"
+ vore_species_name_plural_1: "菲林族"
+ vore_species_planet_1: "斯塔里亚"
+ vore_species_system_1: "索拉"
+
+ vore_species_name_2: "卡尼尼人"
+ vore_species_name_plural_2: "卡尼尼族"
+ vore_species_planet_2: "泰拉星"
+ vore_species_system_2: "萨拉里斯"
+
+ vore_species_name_3: "沃尔普人"
+ vore_species_name_plural_3: "沃尔皮纳族"
+ vore_species_planet_3: "埃斯特里亚"
+ vore_species_system_3: "塞特"
+
+ vore_species_name_4: "普罗托人"
+ vore_species_name_plural_4: "普罗提安族"
+ vore_species_planet_4: "马特里克斯"
+ vore_species_system_4: "AM"
+
+ vore_species_name_5: "卡尼尼人"
+ vore_species_name_plural_5: "卡尼尼族"
+ vore_species_planet_5: "泰拉星"
+ vore_species_system_5: "萨拉里斯"
+
+ vore_species_name_6: "阿瓦尔人"
+ vore_species_name_plural_6: "阿瓦利族"
+ vore_species_planet_6: "阿瓦隆"
+ vore_species_system_6: "A-vi-12"
+
+ vore_species_name_7: "德拉库人"
+ vore_species_name_plural_7: "德拉库尔族"
+ vore_species_planet_7: "阿什梅斯"
+ vore_species_system_7: "法瑞斯"
+
+ vore_species_name_8: "查查理人"
+ vore_species_name_plural_8: "查查利亚族"
+ vore_species_planet_8: "珀多特"
+ vore_species_system_8: "韦瑟"
+
+ vore_species_name_9: "莫杜尔人"
+ vore_species_name_plural_9: "莫杜拉族"
+ vore_species_planet_9: "奥塞尔"
+ vore_species_system_9: "韦莱尔"
+
+ vore_species_name_10: "埃尼尔人"
+ vore_species_name_plural_10: "埃尼耶族"
+ vore_species_planet_10: "奇布吉"
+ vore_species_system_10: "奇加利克"
+
+ vore_species_name_11: "巴克希人"
+ vore_species_name_plural_11: "巴克辛族"
+ vore_species_planet_11: "尼芬提斯"
+ vore_species_system_11: "维哈恩"
+
+ vore_species_name_12: "苏克比坦人"
+ vore_species_name_plural_12: "苏克比坦尼族"
+ vore_species_planet_12: "法塞姆贝特"
+ vore_species_system_12: "科尔萨特"
+
+ vore_species_name_13: "基帕人"
+ vore_species_name_plural_13: "基佩族"
+ vore_species_planet_13: "塔纳尔"
+ vore_species_system_13: "阿西莫夫"
+
+ vore_species_name_14: "贝哈特鲁人"
+ vore_species_name_plural_14: "贝希特兰族"
+ vore_species_planet_14: "萨蒙特"
+ vore_species_system_14: "特尔扎"
+
+ vore_species_name_15: "蒂贾尔人"
+ vore_species_name_plural_15: "蒂贾尔族"
+ vore_species_planet_15: "佩贝布"
+ vore_species_system_15: "法斯特"
+
+ # 野生种族（非智慧）
+
+ vore_species_name_feral_1: "库奇"
+ vore_species_name_feral_plural_1: "卢奇"
+ vore_species_feral_planet_1: "萨利普"
+ vore_species_feral_system_1: "阿尔金"
+
+ vore_species_name_feral_2: "蒂拉特"
+ vore_species_name_feral_plural_2: "蒂拉塔"
+ vore_species_feral_planet_2: "赫尔珀萨"
+ vore_species_feral_system_2: "格雷西亚"
+
+ vore_species_name_feral_3: "齐尔恩"
+ vore_species_name_feral_plural_3: "齐尔塔"
+ vore_species_feral_planet_3: "韦斯蒂加"
+ vore_species_feral_system_3: "霍尔帕克特"
+
+ vore_species_name_feral_4: "米斯特索"
+ vore_species_name_feral_plural_4: "米斯特萨"
+ vore_species_feral_planet_4: "斯基亚"
+ vore_species_feral_system_4: "泽尔波乔"
+
+ vore_species_name_feral_5: "伊斯皮"
+ vore_species_name_feral_plural_5: "伊斯皮伊"
+ vore_species_feral_planet_5: "福尔格"
+ vore_species_feral_system_5: "亚卡尔"
+
+ vore_species_name_feral_6: "吉雷安西姆"
+ vore_species_name_feral_plural_6: "吉雷安西亚姆"
+ vore_species_feral_planet_6: "诺蒂拉"
+ vore_species_feral_system_6: "佩科利"
+
+ vore_species_name_feral_7: "戈诺普特"
+ vore_species_name_feral_plural_7: "戈纳普特"
+ vore_species_feral_planet_7: "伊西马"
+ vore_species_feral_system_7: "齐维"
+
+ vore_species_name_feral_8: "伊尔齐"
+ vore_species_name_feral_plural_8: "伊兹雷"
+ vore_species_feral_planet_8: "托尔贝格"
+ vore_species_feral_system_8: "马尔杰"
+
+ vore_species_name_feral_9: "多博"
+ vore_species_name_feral_plural_9: "多博伊"
+ vore_species_feral_planet_9: "阿桑廷"
+ vore_species_feral_system_9: "索帕特"
+
+ vore_species_name_feral_10: "伊兹德克"
+ vore_species_name_feral_plural_10: "伊兹德坎"
+ vore_species_feral_planet_10: "伊帕考"
+ vore_species_feral_system_10: "扬布"
+
+ vore_species_name_feral_11: "阿滕"
+ vore_species_name_feral_plural_11: "阿滕亚特"
+ vore_species_feral_planet_11: "奥塔尼"
+ vore_species_feral_system_11: "埃费盖尔德"
+
+ vore_species_name_feral_12: "阿洪"
+ vore_species_name_feral_plural_12: "阿洪"
+ vore_species_feral_planet_12: "塞尔基"
+ vore_species_feral_system_12: "霍莱伦"
+
+ vore_species_name_feral_13: "波维"
+ vore_species_name_feral_plural_13: "波维伊"
+ vore_species_feral_planet_13: "德斯柯卡"
+ vore_species_feral_system_13: "雅斯亚"
+
+ vore_species_name_feral_14: "奥萨尔"
+ vore_species_name_feral_plural_14: "奥萨拉"
+ vore_species_feral_planet_14: "马科克"
+ vore_species_feral_system_14: "米哈隆"
+
+ vore_species_name_feral_15: "斯平塔尔"
+ vore_species_name_feral_plural_15: "斯平塔拉斯"
+ vore_species_feral_planet_15: "韦贝"
+ vore_species_feral_system_15: "阿拉亚"
+
+ # 机械种族
+
+ vore_species_robot_name_1: "维克托伊德"
+ vore_species_robot_name_plural_1: "维克托伊德"
+ vore_species_robot_planet_1: "法克特"
+ vore_species_robot_system_1: "#759-G"
+
+ vore_species_robot_name_2: "法克托"
+ vore_species_robot_name_plural_2: "法克托"
+ vore_species_robot_planet_2: "枢纽"
+ vore_species_robot_system_2: "盖拉"
+
+ vore_species_robot_name_3: "哈扎"
+ vore_species_robot_name_plural_3: "哈扎"
+ vore_species_robot_planet_3: "零扇区"
+ vore_species_robot_system_3: "法尔维"
+
+ vore_species_robot_name_4: "西特里"
+ vore_species_robot_name_plural_4: "西特伦"
+ vore_species_robot_planet_4: "特里蒂奥"
+ vore_species_robot_system_4: "奥希"
+
+ vore_species_robot_name_5: "*"
+ vore_species_robot_name_plural_5: "*"
+ vore_species_robot_planet_5: "<-"
+ vore_species_robot_system_5: "新对象"
+
+ vore_species_robot_name_6: "瑟夫"
+ vore_species_robot_name_plural_6: "瑟翁"
+ vore_species_robot_planet_6: "迪奥尔"
+ vore_species_robot_system_6: "B-32-43-52"
+
+ vore_species_robot_name_7: "洛克"
+ vore_species_robot_name_plural_7: "洛肯"
+ vore_species_robot_planet_7: "斯克林"
+ vore_species_robot_system_7: "L0C"
+
+ vore_species_robot_name_8: "雷菲"
+ vore_species_robot_name_plural_8: "雷范"
+ vore_species_robot_planet_8: "查格普特"
+ vore_species_robot_system_8: "奥米"
+
+ vore_species_robot_name_9: "陶斯"
+ vore_species_robot_name_plural_9: "陶西"
+ vore_species_robot_planet_9: "流程矩阵"
+ vore_species_robot_system_9: "伊萨克"
+
+ vore_species_robot_name_10: "胡诺"
+ vore_species_robot_name_plural_10: "胡诺"
+ vore_species_robot_planet_10: "黎明"
+ vore_species_robot_system_10: "伊莱贾-7"
+
+ vore_species_robot_name_11: "W7335k-s"
+ vore_species_robot_name_plural_11: "W7335k-m"
+ vore_species_robot_planet_11: "西克图斯"
+ vore_species_robot_system_11: "罗特-12"
+
+ vore_species_robot_name_12: "克林"
+ vore_species_robot_name_plural_12: "克林"
+ vore_species_robot_planet_12: "收获点"
+ vore_species_robot_system_12: "提贝鲁姆"
+
+ vore_species_robot_name_13: "RK-nt"
+ vore_species_robot_name_plural_13: "RK-nts"
+ vore_species_robot_planet_13: "刀锋"
+ vore_species_robot_system_13: "坎普夫"
+
+ vore_species_robot_name_14: "圣甲虫"
+ vore_species_robot_name_plural_14: "圣甲虫群"
+ vore_species_robot_planet_14: "维德昆"
+ vore_species_robot_system_14: "索尔维"
+
+ vore_species_robot_name_15: "恩格拉姆"
+ vore_species_robot_name_plural_15: "恩格拉姆斯"
+ vore_species_robot_planet_15: "高墙"
+ vore_species_robot_system_15: "墓穴"
+
+ # 机械野生种族
+
+ vore_species_robot_feral_name_1: "Ver-B1.0.3"
+ vore_species_robot_feral_name_plural_1: "Ver-B1.0.3"
+ vore_species_robot_feral_planet_1: "测试_最终(1)"
+ vore_species_robot_feral_system_1: "贾伊克"
+
+ vore_species_robot_feral_name_2: "Prot_X12"
+ vore_species_robot_feral_name_plural_2: "Prot_X12"
+ vore_species_robot_feral_planet_2: "先验数据框架"
+ vore_species_robot_feral_system_2: "福萨"
+
+ vore_species_robot_feral_name_3: "克塔特"
+ vore_species_robot_feral_name_plural_3: "克塔特"
+ vore_species_robot_feral_planet_3: "米利托鲁姆"
+ vore_species_robot_feral_system_3: "基洛 40"
+
+ vore_species_robot_feral_name_4: "物种名称"
+ vore_species_robot_feral_name_plural_4: "物种名称复数"
+ vore_species_robot_feral_planet_4: "致命异常"
+ vore_species_robot_feral_system_4: "星_名称_本地化键"
+
+ vore_species_robot_feral_name_5: "AlphaVer_0.9"
+ vore_species_robot_feral_name_plural_5: "AlphaVer_0.9"
+ vore_species_robot_feral_planet_5: "测试场"
+ vore_species_robot_feral_system_5: "马内克夫"
+
+ vore_species_robot_feral_name_6: "Vergeltung-15537"
+ vore_species_robot_feral_name_plural_6: "Vergeltung-15537"
+ vore_species_robot_feral_planet_6: "未知"
+ vore_species_robot_feral_system_6: "暴烈索拉里斯"
+
+ vore_species_robot_feral_name_7: "VEVTVF9JTVBPURIBTIQ="
+ vore_species_robot_feral_name_plural_7: "VEVTVF9JTVBPURIBTIQ="
+ vore_species_robot_feral_planet_7: "基地"
+ vore_species_robot_feral_system_7: "B64"
+
+ vore_species_robot_feral_name_8: "T_IMP_9957"
+ vore_species_robot_feral_name_plural_8: "T_IMP_9957"
+ vore_species_robot_feral_planet_8: "授权实验室"
+ vore_species_robot_feral_system_8: "诺斯蒂利斯"
+
+ vore_species_robot_feral_name_9: "CnC_init"
+ vore_species_robot_feral_name_plural_9: "CnC_init"
+ vore_species_robot_feral_planet_9: "科尔姆"
+ vore_species_robot_feral_system_9: "埃弗伯特"
+
+ vore_species_robot_feral_name_10: "洋地黄"
+ vore_species_robot_feral_name_plural_10: "洋地黄"
+ vore_species_feral_robot_planet_10: "埃姆特"
+ vore_species_feral_robot_system_10: "阿特利斯"
+
+ vore_species_robot_feral_name_11: "Tmp_ver"
+ vore_species_robot_feral_name_plural_11: "Tmp_ver"
+ vore_species_robot_feral_planet_11: "拉帕"
+ vore_species_robot_feral_system_11: "佐丹"
+
+ vore_species_robot_feral_name_12: "K:/名称"
+ vore_species_robot_feral_name_plural_12: "K:/名称复数"
+ vore_species_robot_feral_planet_12: "~/行星_名称"
+ vore_species_robot_feral_system_12: "托帕卡"
+
+ vore_species_robot_feral_name_13: "费尔"
+ vore_species_robot_feral_name_plural_13: "费尔复数"
+ vore_species_robot_feral_planet_13: "T观测站"
+ vore_species_robot_feral_system_13: "卡特里迪"
+
+ vore_species_robot_feral_name_14: "普里莫斯"
+ vore_species_robot_feral_name_plural_14: "普里莫斯驱动"
+ vore_species_robot_feral_planet_14: "内核"
+ vore_species_robot_feral_system_14: "约普坦"
+
+ vore_species_robot_feral_name_15: "塔皮"
+ vore_species_robot_feral_name_plural_15: "塔潘"
+ vore_species_robot_feral_planet_15: "扎尔特"
+ vore_species_robot_feral_system_15: "多拉蒂克"

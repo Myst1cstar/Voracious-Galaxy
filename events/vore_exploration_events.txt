@@ -189,17 +189,18 @@ fleet_event = {
     id = vore_exploration.100
     is_triggered_only = yes
 
-    # on_entering_system_fleet: Scope = Fleet (ROOT), From = System (galactic_object).
     trigger = {
         NOT = {
             owner = {
-                has_country_flag = visited_broken_heart
+                has_country_flag =  visited_broken_heart
             }
         }
-        # FROM is the system being entered; has_star_flag is valid on it directly
-        # (`star` is not a valid scope switch in 4.x and threw a scope error).
-        from = {
-            has_star_flag = is_system_broken_heart
+        root = {
+            from = {
+                star = {
+                    has_star_flag = is_system_broken_heart
+                }
+            }
         }
     }
     

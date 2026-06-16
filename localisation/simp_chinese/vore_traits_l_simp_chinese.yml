@@ -1,0 +1,47 @@
+﻿l_simp_chinese:
+
+##############################################
+#                 物种特质
+##############################################
+
+#致命吞噬
+
+trait_vore_lethal: "致命吞噬"
+trait_vore_lethal_desc: "这个物种进化出了极其高效的消化能力，使得它们能够吞食活着的生物而对自己几乎无害。这导致了极端竞争性和敌意的文化。"
+trait_vore_lethal_effects: "§g唯有强者生存。§! \n人口增长速度：§R-0.20%§! \n领袖寿命：§R-20§! \n领袖经验获取：§G+120%§! \n§g人口过剩解决方案§! \n人口食物与消费品维护费：§G-0.1§! \n§g失败不可接受§! \n工人阶层产出：§G+10%§!"
+
+#非致命吞噬
+
+trait_vore_safe: "非致命吞噬"
+trait_vore_safe_desc: "这个物种进化出了控制自身消化的能力，可以将异物在体内保存极长的时间。相应地，这一特性也催生出了多种恋物癖好。"
+trait_vore_safe_effects: "§g吞噬式性爱§! \n人口增长速度：§R-5%§! \n人口食物消耗：§R-10%§! \n§g持续的满足感§! \n人口舒适度产出：§G+15%§! \n§g极度拥挤的生活§! \n人口住房占用：§G-10%§!"
+
+#猎物物种
+
+trait_vore_prey: "猎物物种"
+trait_vore_prey_desc: "这个物种从猎物动物谱系进化而来，勉强从掠食者手中夺回了家园的控制权。因此，尽管它们取得了科技和社会进步，却自然而然地吸引着掠食者。"
+trait_vore_prey_effects: "§g战或逃？§! \n地面部队伤害：§R-90%§! \n§g靠数量生存§! \n人口增长速度：§G+25%§! \n人口食物维护费：§R+20%§!"
+
+#内部收容单元
+
+trait_vore_internal_containment_units: "内部收容单元"
+trait_vore_internal_containment_units_desc: "无论是出于有意设计还是设计失误，这些机器人的机身内部拥有相当大的存储容量，为“收容”创造了绝佳机会……"
+trait_vore_internal_containment_units_effects: "§g设计缺陷§! \n组装速度：§R-5%§! \n舒适度消耗：§R+10%§! \n§g额外容量§! \n岗位产出：§G+10%§!"
+
+#紧急生物燃料发电机
+
+trait_vore_emergency_biofuel_generators: "紧急生物燃料发电机"
+trait_vore_emergency_biofuel_generators_desc: "无论是宏观、微观还是纳米收集器，这些单元能够在远离指定补给时收集并利用生物质来获取能量。"
+trait_vore_emergency_biofuel_generators_effects: "§g更低的能耗§! \n人口能量维护费：§G-25%§! \n§g更高的系统维护需求§! \n舒适度消耗：§R+10%§!"
+
+##############################################
+#                 领袖特质
+##############################################
+
+#贪食者
+
+leader_trait_vore_gorger: "贪食者"
+leader_trait_vore_gorger_desc: "尽管我们的许多军官都会吞食表现不佳的下属，但这位军官做得如此过分，以至于我们不得不调拨大量资源来维持其不健康的嗜好。"
+
+leader_trait_vore_extensive_gorger: "重度贪食者"
+leader_trait_vore_extensive_gorger_desc: "这位领袖在吞食下属方面已经完全失控，以至于现在无法再食用常规食物。"

@@ -1,8 +1,0 @@
-spriteTypes = {
-
-	# GORGER
-	spriteType = {
-		name = "GFX_vore_trait_leader_gorger"
-		texturefile = "gfx/interface/icons/traits/leader_traits/gorger.dds"
-	}
-}
