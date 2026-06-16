@@ -1,0 +1,429 @@
+portraits = {
+	#female
+	dog_F_1 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/dogfemale.dds"	}
+	dog_F_2 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/doggoldfemale.dds" }
+	dog_F_3 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/doggsfemale.dds" }
+	dog_F_4 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/doggsfemale2.dds" }
+	dog_F_5 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/doggoldfemale2.dds" }
+	dog_F_6 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/doghuskyfemale.dds" }
+	dog_F_7 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/doghuskyfemale2.dds" }
+	dog_F_8 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/dogdalmationfemale.dds" }
+	dog_F_9 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/dogdalmationfemale2.dds" }
+	dog_F_10 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/dogblfemale.dds" }
+	dog_F_11 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/dogblfemale2.dds" }
+	dog_F_12 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/dogfemale12.dds" }
+	dog_F_13 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/femdog13.dds" }	
+	dog_F_14 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/femdog14.dds" }	
+	dog_F_15 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/femdog15.dds" }	
+	dog_F_16 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/femdog16.dds" }	
+	dog_F_17 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/femdog17.dds" }	
+	dog_F_18 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/femdog18.dds" }	
+	dog_F_19 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/femdog19.dds" }	
+	dog_F_20 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/femdog20.dds" }	
+	dog_F_21 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/femdog21.dds" }	
+	dog_F_22 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/femdog22.dds" }	
+	dog_F_23 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/femdog23.dds" }	
+	dog_F_24 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/female/femdog24.dds" }	
+	#male
+	dog_M_1 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/doggoldmale.dds" }
+	dog_M_2 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/doggsmale.dds" }
+	dog_M_3 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/doghuskymale.dds" }
+	dog_M_4 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/doggoldmale2.dds" }
+	dog_M_5 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/doggsmale2.dds" }
+	dog_M_6 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/doghuskymale2.dds" }
+	dog_M_7 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/dogmale.dds" }
+	dog_M_8 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/dogmaledalmation.dds" }
+	dog_M_9 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/dogmaledalmation2.dds" }
+	dog_M_10 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/dogblmale.dds" }
+	dog_M_11 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/dogblmale2.dds" }
+	dog_M_12 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/doggmale12.dds" }	
+	dog_M_13 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/maledog13.dds" }	
+	dog_M_14 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/maledog14.dds" }	
+	dog_M_15 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/maledog15.dds" }	
+	dog_M_16 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/maledog16.dds" }	
+	dog_M_17 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/maledog17.dds" }	
+	dog_M_18 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/maledog18.dds" }	
+	dog_M_19 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/maledog19.dds" }	
+	dog_M_20 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/maledog20.dds" }	
+	dog_M_21 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/maledog21.dds" }	
+	dog_M_22 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/maledog22.dds" }	
+	dog_M_23 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/maledog23.dds" }	
+	dog_M_24 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/maledog24.dds" }	
+	dog_M_25 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/dogs/male/maledog25.dds" }	
+	}
+
+portrait_groups = {
+	dogs = {
+		default = dog_F_1
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = male
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+
+dog_M_1
+dog_M_2
+dog_M_3
+dog_M_4
+dog_M_5
+dog_M_6
+dog_M_7
+dog_M_8
+dog_M_9
+dog_M_10
+dog_M_11
+dog_M_12
+dog_M_13
+dog_M_14
+dog_M_15
+dog_M_16
+dog_M_17
+dog_M_18
+dog_M_19
+dog_M_20
+dog_M_21
+dog_M_22
+dog_M_23
+dog_M_24
+dog_M_25
+				}
+			}
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = female
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+
+dog_F_1
+dog_F_2
+dog_F_3
+dog_F_4
+dog_F_5
+dog_F_6
+dog_F_7
+dog_F_8
+dog_F_9
+dog_F_10
+dog_F_11
+dog_F_12
+dog_F_13
+dog_F_14
+dog_F_15
+dog_F_16
+dog_F_17
+dog_F_18
+dog_F_19
+dog_F_20
+dog_F_21
+dog_F_22
+dog_F_23
+dog_F_24
+
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+dog_M_1
+dog_M_2
+dog_M_3
+dog_M_4
+dog_M_5
+dog_M_6
+dog_M_7
+dog_M_8
+dog_M_9
+dog_M_10
+dog_M_11
+dog_M_12
+dog_M_13
+dog_M_14
+dog_M_15
+dog_M_16
+dog_M_17
+dog_M_18
+dog_M_19
+dog_M_20
+dog_M_21
+dog_M_22
+dog_M_23
+dog_M_24
+dog_M_25
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+dog_F_1
+dog_F_2
+dog_F_3
+dog_F_4
+dog_F_5
+dog_F_6
+dog_F_7
+dog_F_8
+dog_F_9
+dog_F_10
+dog_F_11
+dog_F_12
+dog_F_13
+dog_F_14
+dog_F_15
+dog_F_16
+dog_F_17
+dog_F_18
+dog_F_19
+dog_F_20
+dog_F_21
+dog_F_22
+dog_F_23
+dog_F_24
+
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+dog_M_1
+dog_M_2
+dog_M_3
+dog_M_4
+dog_M_5
+dog_M_6
+dog_M_7
+dog_M_8
+dog_M_9
+dog_M_10
+dog_M_11
+dog_M_12
+dog_M_13
+dog_M_14
+dog_M_15
+dog_M_16
+dog_M_17
+dog_M_18
+dog_M_19
+dog_M_20
+dog_M_21
+dog_M_22
+dog_M_23
+dog_M_24
+dog_M_25
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+dog_F_1
+dog_F_2
+dog_F_3
+dog_F_4
+dog_F_5
+dog_F_6
+dog_F_7
+dog_F_8
+dog_F_9
+dog_F_10
+dog_F_11
+dog_F_12
+dog_F_13
+dog_F_14
+dog_F_15
+dog_F_16
+dog_F_17
+dog_F_18
+dog_F_19
+dog_F_20
+dog_F_21
+dog_F_22
+dog_F_23
+dog_F_24
+
+				}
+			}
+		}
+
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+
+dog_F_1
+dog_F_2
+dog_F_3
+dog_F_4
+dog_F_5
+dog_F_6
+dog_F_7
+dog_F_8
+dog_F_9
+dog_F_10
+dog_F_11
+dog_F_12
+dog_F_13
+dog_F_14
+dog_F_15
+dog_F_16
+dog_F_17
+dog_F_18
+dog_F_19
+dog_F_20
+dog_F_21
+dog_F_22
+dog_F_23
+dog_F_24
+
+				}
+			}
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+
+dog_M_1
+dog_M_2
+dog_M_3
+dog_M_4
+dog_M_5
+dog_M_6
+dog_M_7
+dog_M_8
+dog_M_9
+dog_M_10
+dog_M_11
+dog_M_12
+dog_M_13
+dog_M_14
+dog_M_15
+dog_M_16
+dog_M_17
+dog_M_18
+dog_M_19
+dog_M_20
+dog_M_21
+dog_M_22
+dog_M_23
+dog_M_24
+dog_M_25
+				}
+			}
+		}
+
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+
+dog_F_1
+dog_F_2
+dog_F_3
+dog_F_4
+dog_F_5
+dog_F_6
+dog_F_7
+dog_F_8
+dog_F_9
+dog_F_10
+dog_F_11
+dog_F_12
+dog_F_13
+dog_F_14
+dog_F_15
+dog_F_16
+dog_F_17
+dog_F_18
+dog_F_19
+dog_F_20
+dog_F_21
+dog_F_22
+dog_F_23
+dog_F_24
+
+				}
+			}
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+
+dog_M_1
+dog_M_2
+dog_M_3
+dog_M_4
+dog_M_5
+dog_M_6
+dog_M_7
+dog_M_8
+dog_M_9
+dog_M_10
+dog_M_11
+dog_M_12
+dog_M_13
+dog_M_14
+dog_M_15
+dog_M_16
+dog_M_17
+dog_M_18
+dog_M_19
+dog_M_20
+dog_M_21
+dog_M_22
+dog_M_23
+dog_M_24
+dog_M_25
+				}
+			}
+		}
+	}
+}

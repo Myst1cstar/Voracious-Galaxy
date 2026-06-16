@@ -1,0 +1,432 @@
+portraits = {
+	#female
+	cat_F_1= { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femanthrocat1.dds" }
+	cat_F_2 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femanthrocat2.dds" }
+	cat_F_3 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femanthrocat3.dds" }
+	cat_F_4 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femanthrocat4.dds" }
+	cat_F_5 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femanthrocat5.dds" }
+	cat_F_6 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femanthrocat6.dds" }
+	cat_F_7 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femanthrocat7.dds" }
+	cat_F_8 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femanthrocat8.dds" }
+	cat_F_9 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femanthrocat9.dds" }
+	cat_F_10 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femanthrocat10.dds" }
+	cat_F_11 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femanthrocat11.dds" }
+	cat_F_12 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femanthrocat12.dds" }
+	cat_F_13= { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femcat13.dds" }
+	cat_F_14 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femcat14.dds" }
+	cat_F_15 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femcat15.dds" }
+	cat_F_16 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femcat16.dds" }
+	cat_F_17 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femcat17.dds" }
+	cat_F_18 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femcat18.dds" }
+	cat_F_19 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femcat19.dds" }
+	cat_F_20 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femcat20.dds" }
+	cat_F_21 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femcat21.dds" }
+	cat_F_22 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femcat22.dds" }
+	cat_F_23 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femcat23.dds" }
+	cat_F_24 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femcat24.dds" }
+	cat_F_25 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/female/femcat25.dds" }
+
+	#male
+	cat_M_1 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/maleanthrocat1.dds" }
+	cat_M_2 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/maleanthrocat2.dds" }
+	cat_M_3 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/maleanthrocat3.dds" }
+	cat_M_4 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/maleanthrocat4.dds" }
+	cat_M_5 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/maleanthrocat5.dds" }
+	cat_M_6 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/maleanthrocat6.dds" }
+	cat_M_7 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/maleanthrocat7.dds" }
+	cat_M_8 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/maleanthrocat8.dds" }
+	cat_M_9 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/maleanthrocat9.dds" }
+	cat_M_10 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/maleanthrocat10.dds"}
+	cat_M_11 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/maleanthrocat11.dds" }
+	cat_M_12 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/maleanthrocat12.dds" }
+	cat_M_13 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/malecat13.dds" }
+	cat_M_14 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/malecat14.dds" }
+	cat_M_15 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/malecat15.dds" }
+	cat_M_16 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/malecat16.dds" }
+	cat_M_17 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/malecat17.dds" }
+	cat_M_18 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/malecat18.dds" }
+	cat_M_19 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/malecat19.dds" }
+	cat_M_20 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/malecat20.dds" }
+	cat_M_21 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/malecat21.dds" }
+	cat_M_22 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/malecat22.dds"}
+	cat_M_23 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/malecat23.dds" }
+	cat_M_24 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/malecat24.dds" }
+	cat_M_25 = { greeting_sound = "mammalian_01_greetings" texturefile = "gfx/models/portraits/cats/male/malecat25.dds" }
+}
+
+portrait_groups = {
+	cats = {
+		default = cat_F_1
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = male
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+
+cat_M_1
+cat_M_2
+cat_M_3
+cat_M_4
+cat_M_5
+cat_M_6
+cat_M_7
+cat_M_8
+cat_M_9
+cat_M_10
+cat_M_11
+cat_M_12
+cat_M_13
+cat_M_14
+cat_M_15
+cat_M_16
+cat_M_17
+cat_M_18
+cat_M_19
+cat_M_20
+cat_M_21
+cat_M_22
+cat_M_23
+cat_M_24
+cat_M_25
+				}
+			}
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = female
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+
+cat_F_1
+cat_F_2
+cat_F_3
+cat_F_4
+cat_F_5
+cat_F_6
+cat_F_7
+cat_F_8
+cat_F_9
+cat_F_10
+cat_F_11
+cat_F_12
+cat_F_13
+cat_F_14
+cat_F_15
+cat_F_16
+cat_F_17
+cat_F_18
+cat_F_19
+cat_F_20
+cat_F_21
+cat_F_22
+cat_F_23
+cat_F_24
+cat_F_25
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+cat_M_1
+cat_M_2
+cat_M_3
+cat_M_4
+cat_M_5
+cat_M_6
+cat_M_7
+cat_M_8
+cat_M_9
+cat_M_10
+cat_M_11
+cat_M_12
+cat_M_13
+cat_M_14
+cat_M_15
+cat_M_16
+cat_M_17
+cat_M_18
+cat_M_19
+cat_M_20
+cat_M_21
+cat_M_22
+cat_M_23
+cat_M_24
+cat_M_25
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+cat_F_1
+cat_F_2
+cat_F_3
+cat_F_4
+cat_F_5
+cat_F_6
+cat_F_7
+cat_F_8
+cat_F_9
+cat_F_10
+cat_F_11
+cat_F_12
+cat_F_13
+cat_F_14
+cat_F_15
+cat_F_16
+cat_F_17
+cat_F_18
+cat_F_19
+cat_F_20
+cat_F_21
+cat_F_22
+cat_F_23
+cat_F_24
+cat_F_25
+
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+cat_M_1
+cat_M_2
+cat_M_3
+cat_M_4
+cat_M_5
+cat_M_6
+cat_M_7
+cat_M_8
+cat_M_9
+cat_M_10
+cat_M_11
+cat_M_12
+cat_M_13
+cat_M_14
+cat_M_15
+cat_M_16
+cat_M_17
+cat_M_18
+cat_M_19
+cat_M_20
+cat_M_21
+cat_M_22
+cat_M_23
+cat_M_24
+cat_M_25
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+
+cat_F_1
+cat_F_2
+cat_F_3
+cat_F_4
+cat_F_5
+cat_F_6
+cat_F_7
+cat_F_8
+cat_F_9
+cat_F_10
+cat_F_11
+cat_F_12
+cat_F_13
+cat_F_14
+cat_F_15
+cat_F_16
+cat_F_17
+cat_F_18
+cat_F_19
+cat_F_20
+cat_F_21
+cat_F_22
+cat_F_23
+cat_F_24
+cat_F_25
+				}
+			}
+		}
+
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+
+cat_F_1
+cat_F_2
+cat_F_3
+cat_F_4
+cat_F_5
+cat_F_6
+cat_F_7
+cat_F_8
+cat_F_9
+cat_F_10
+cat_F_11
+cat_F_12
+cat_F_13
+cat_F_14
+cat_F_15
+cat_F_16
+cat_F_17
+cat_F_18
+cat_F_19
+cat_F_20
+cat_F_21
+cat_F_22
+cat_F_23
+cat_F_24
+cat_F_25
+				}
+			}
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+
+cat_M_1
+cat_M_2
+cat_M_3
+cat_M_4
+cat_M_5
+cat_M_6
+cat_M_7
+cat_M_8
+cat_M_9
+cat_M_10
+cat_M_11
+cat_M_12
+cat_M_13
+cat_M_14
+cat_M_15
+cat_M_16
+cat_M_17
+cat_M_18
+cat_M_19
+cat_M_20
+cat_M_21
+cat_M_22
+cat_M_23
+cat_M_24
+cat_M_25
+				}
+			}
+		}
+
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+
+cat_F_1
+cat_F_2
+cat_F_3
+cat_F_4
+cat_F_5
+cat_F_6
+cat_F_7
+cat_F_8
+cat_F_9
+cat_F_10
+cat_F_11
+cat_F_12
+cat_F_13
+cat_F_14
+cat_F_15
+cat_F_16
+cat_F_17
+cat_F_18
+cat_F_19
+cat_F_20
+cat_F_21
+cat_F_22
+cat_F_23
+cat_F_24
+cat_F_25
+				}
+			}
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+
+cat_M_1
+cat_M_2
+cat_M_3
+cat_M_4
+cat_M_5
+cat_M_6
+cat_M_7
+cat_M_8
+cat_M_9
+cat_M_10
+cat_M_11
+cat_M_12
+cat_M_13
+cat_M_14
+cat_M_15
+cat_M_16
+cat_M_17
+cat_M_18
+cat_M_19
+cat_M_20
+cat_M_21
+cat_M_22
+cat_M_23
+cat_M_24
+cat_M_25
+				}
+			}
+		}
+	}
+}
