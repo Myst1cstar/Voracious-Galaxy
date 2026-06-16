@@ -1,0 +1,26 @@
+
+is_vore_empire = {
+	OR = {
+		owner_species = { has_trait = trait_vore_lethal } 
+		owner_species = { has_trait = trait_vore_safe } 
+	}
+	NOT = {
+		owner_species = { has_trait = trait_vore_prey }
+	}
+	
+}
+
+is_robo_vore_empire = {
+	OR = {
+		owner_species = { has_trait = trait_vore_emergency_biofuel_generators }
+		owner_species = { has_trait = trait_vore_internal_containment_units }
+	}
+}
+
+is_lethal_vore_empire = {
+	owner_species = {has_trait = trait_vore_lethal }
+}
+
+is_lethal_robo_vore_empire = {
+	owner_species = { has_trait = trait_vore_emergency_biofuel_generators }
+}

@@ -1,0 +1,79 @@
+#Vorish Darwinism
+civic_vore_darwinism = {
+	description = "civic_tooltip_vore_darwinism_effects"
+    icon = "gfx/interface/icons/traits/lethal_predator.dds"
+	potential = { 
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+		authority = { NOT = { value = auth_corporate } }
+		}
+		
+       possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_militarist
+				value = ethic_militarist
+				value = ethic_fanatic_militarist
+				}
+			NOR = {
+				text = civic_tooltip_not_xenophile
+				value = ethic_xenophile
+				value = ethic_fanatic_xenophile
+				}
+			}	
+		}
+
+		traits = {
+			trait = trait_vore_lethal
+		}
+
+	random_weight = { base = 5 }
+
+	modifier = {
+		country_naval_cap_mult = 0.15
+		ship_fire_rate_mult = 0.15
+		army_damage_mult = 0.15
+		species_leader_exp_gain = 0.25
+		leader_skill_levels = 2
+		planet_immigration_pull_mult = -0.25
+		country_admin_cap_add = -10
+		pop_growth_speed = -0.10
+		
+	}
+	
+}
+
+
+civic_utopian_prey = {
+	description = "civic_tooltip_utopian_prey_effects"
+	icon = "gfx/interface/icons/traits/prey.dds"
+	potential = { 
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+		authority = { NOT = { value = auth_corporate } }
+		}
+
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_pacifist
+				value = ethic_pacifist
+				value = ethic_fanatic_pacifist
+				
+			}
+		}
+	}
+
+	traits = {
+		trait = trait_vore_prey
+	}
+
+	random_weight = { base = 5 }
+	modifier = {
+	country_naval_cap_mult = -0.20
+	ship_fire_rate_mult = -0.10
+	ship_home_territory_fire_rate_mult = 0.40
+	species_leader_exp_gain = -0.15
+	country_unity_produces_mult = 0.25
+	pop_government_ethic_attraction = 0.15
+	}
+
+}

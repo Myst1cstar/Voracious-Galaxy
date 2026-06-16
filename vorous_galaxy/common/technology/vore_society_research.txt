@@ -1,0 +1,133 @@
+
+tech_vore_acid_resistance = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { new_worlds }
+
+	weight = 5
+
+	modifier = {
+		pop_environment_tolerance = 0.01
+		planet_orbital_bombardment_damage = -0.1
+	}
+	
+
+	potential = {
+		species = {
+			NOT = {
+				has_trait = trait_vore_lethal
+			}
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			add = 30
+			species = {
+				has_trait = trait_vore_prey
+			}
+		}
+		modifier = {
+			add = 90
+			any_neighbor_country = {
+				species = {
+					has_trait = trait_vore_lethal
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				species = {
+					has_trait = trait_vore_safe
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @ai_society_tech_speed_factor
+	}
+}
+
+tech_vore_bioscience_catalyst = {
+	cost = @tier2cost2
+	area = society
+	tier = 2
+	category = { new_worlds }
+	prerequisites = {
+		"tech_vore_acid_resistance"
+	}
+
+	weight = 40
+
+	modifier = {
+		planet_researchers_produces_mult = 0.1
+	}
+
+	potential = {
+		species = {
+			NOT = {
+				has_trait = trait_vore_lethal
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @ai_society_tech_speed_factor
+	}
+}
+
+tech_vore_refined_biocatalysts = {
+	cost = @tier3cost1
+	area = society
+	tier = 3 
+	category = { new_worlds }
+	prerequisites = { "tech_vore_bioscience_catalyst" }
+
+	weight = 20
+
+	modifier = {
+		planet_researchers_produces_mult = 0.15
+	}
+
+	potential = {
+		species = {
+			NOT = {
+				has_trait = trait_vore_lethal
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @ai_society_tech_speed_factor
+	}
+}
+
+tech_vore_advanced_ecoconstruction = {
+	cost = @tier3cost2
+	area = society
+	tier = 3
+	category = { statecraft }
+	prerequisites = { tech_vore_refined_biocatalysts }
+
+	gateway = infrastructure
+	weight = 55
+
+	modifier = {
+		planet_max_districts_add = 1
+	}
+
+	potential = {
+		species = {
+			NOT = {
+				has_trait = trait_vore_lethal
+			}
+		}
+	}	
+
+	ai_weight = {
+		weight = 50
+	}
+}

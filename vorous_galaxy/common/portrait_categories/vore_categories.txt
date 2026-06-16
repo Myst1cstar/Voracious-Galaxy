@@ -1,0 +1,21 @@
+#used in empire editor to create its own category/tab
+
+vore_species= {
+	name = Anthro
+
+	
+	sets = {
+		vore_species
+		vore_machine_species
+	}
+}
+
+vore_species_feral = {
+	name = Feral
+
+
+	sets = {
+		vore_species_feral
+		vore_machine_species_feral
+	}
+}

@@ -1,0 +1,4 @@
+﻿l_english:
+ 
+ vore_vorny_colonists.1.debug_ok: "TESTc"
+ vore_test: "[FromFrom.GetName]\n[Root.From.GetName]\n[From.GetName]\n[Root.GetName]"

@@ -1,0 +1,42 @@
+vore_prey_slavery = {
+	potential = {
+		is_country_type = default
+		OR = {
+			has_valid_civic = civic_vore_darwinism
+			has_origin = civic_voredeity
+			has_trait = trait_vore_lethal
+		}
+	}
+
+	option = {
+		name = "prey_slavery_forbidden"
+
+		valid = { OR = {
+				NOR = {
+					has_valid_civic = civic_slaver_guilds
+					has_valid_civic = civic_indentured_assets
+				}
+				has_policy_flag = slavery_not_allowed
+			}
+		}
+
+		modifier = {
+		}
+	}
+
+	option = {
+		name = "prey_slavery_active"
+
+		valid = {
+			has_policy_flag = slavery_allowed
+		}
+
+		policy_flags = {
+			prey_slavery_allowed
+		}
+
+		modifier = {
+			
+		}
+	}
+}

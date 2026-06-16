@@ -1,0 +1,461 @@
+﻿l_english:
+
+ ##########
+ # TRAITS #
+ ##########
+
+ #SPECIES TRAITS
+ trait_lethal_vore_predator: "Lethal Vore Predator"
+ trait_lethal_vore_predator_desc: "§LThis species has evolved to eat other creatures of similar size whole.§!\n"
+ trait_nonlethal_vore_predator: "Non-lethal Vore Predator"
+ trait_nonlethal_vore_predator_desc: "§LThis species has evolved to eat other creatures of similar size, without killing them§!\n"
+ trait_vore_prey: "Prey"
+ trait_vore_prey_desc: "§LThis species is naturally docile and tasty§!\n"
+ trait_unbirth: "Unbirthing"
+ trait_unbirth_desc: "§LThis species has evolved to be able to shrink and capture creatures in their wombs.§!\n"
+
+ #LEADER TRAITS
+
+ #Ruler traits
+ trait_ruler_novice_predator: "Novice Predator"
+ trait_ruler_novice_predator_desc: "§LThis ruler has hardly any familiarity with eating others, making them a target of many throughout the empire§!\n"
+ trait_ruler_apprentice_predator: "Apprentice Predator"
+ trait_ruler_apprentice_predator_desc: "§LThis ruler has managed to survive long enough to gain some experience as a predator.§!\n"
+ trait_ruler_adept_predator: "Adept Predator"
+ trait_ruler_adept_predator_desc: "§LThis ruler has devoured their fair share of challengers.§!\n"
+ trait_ruler_expert_predator: "Expert Predator"
+ trait_ruler_expert_predator_desc: "§LThis ruler is known as a frightening predator of prolific skill.§!\n"
+ trait_ruler_master_predator: "Master Predator"
+ trait_ruler_master_predator_desc: "§LThis ruler is unquestionably the most powerful predator in the empire, deserving of their title.§!\n"
+ trait_ruler_prey: "Prey"
+ trait_ruler_prey_desc: "§LThis ruler harbors fantasies of being prey.§!\n"
+ trait_ruler_motherly: "Motherly"
+ trait_ruler_motherly_desc: "§LThis ruler cares for their subjects as a mother would her own children, the happiness and needs of their people always first and foremost in their mind.§!\n"
+ trait_ruler_voredeity: "Divine Predator"
+ trait_ruler_voredeity_desc: "§LThis ruler is a predator of an entirely different caliber, having achieved immortality through the many individuals they have devoured and absorbed, and revered by their people as a manifestation of the divine. Their word is law within their borders, but other civilizations find the fanatical devotion they enjoy threatening.§!\n"
+
+ #Governor traits
+ trait_governor_novice_predator: "Novice Predator"
+ trait_governor_novice_predator_desc: "§LThis leader is known to be a weak predator, they may not live long...§!\n"
+ trait_governor_apprentice_predator: "Apprentice Predator"
+ trait_governor_apprentice_predator_desc: "§LThis leader has managed to gain some familiarity with eating others.§!\n"
+ trait_governor_adept_predator: "Adept Predator"
+ trait_governor_adept_predator_desc: "§LThis leader has a degree of familiarity with eating others, suriving this long has started to show in their abilities§!\n"
+ trait_governor_expert_predator: "Expert Predator"
+ trait_governor_expert_predator_desc: "§LThe struggle against others competing for position their has left this leader with lots of experience§!\n"
+ trait_governor_master_predator: "Master Predator"
+ trait_governor_master_predator_desc: "§LFew are even willing to attempt eating this experienced predator, as most would be a free meal for this leader§!\n"
+ trait_governor_prey: "Prey"
+ trait_governor_prey_desc: "§LThis leader harbors fantasies of being prey.§!\n"
+
+ #Scientist traits
+ trait_scientist_prey: "Prey"
+ trait_scientist_prey_desc: "§LThis scientist is seen by the more voracious members of society as prey, and they know it. This has made them very cautious and methodical in their actions.§!\n"
+ trait_scientist_novice_predator: "Novice Predator"
+ trait_scientist_novice_predator_desc: "§LThis scientist is known to be a weak predator, it's a wonder they've lived this long...§!\n"
+ trait_scientist_apprentice_predator: "Apprentice Predator"
+ trait_scientist_apprentice_predator_desc: "§LThis leader was lucky enough to survive their first few encounters with power-hungry predators.§!\n"
+ trait_scientist_adept_predator: "Adept Predator"
+ trait_scientist_adept_predator_desc: "§LThis leader is better than the average predator of their species§!\n"
+ trait_scientist_expert_predator: "Expert Predator"
+ trait_scientist_expert_predator_desc: "§LThe struggle against others competing for their position has left this leader with lots of experience§!\n"
+ trait_scientist_master_predator: "Master Predator"
+ trait_scientist_master_predator_desc: "§LThis leader is a peak specimen of their species, and their skills reflect that§!\n"
+
+ #Admiral traits
+ trait_admiral_prey: "Prey"
+ trait_admiral_prey_desc: "§LThis admiral is seen by the more voracious members of society as prey, and they know it. This has made them very cautious and methodical in their actions.§!\n"
+ trait_admiral_novice_predator: "Novice Predator"
+ trait_admiral_novice_predator_desc: "§LThe crew of their ship watches them hungrily...§!\n"
+ trait_admiral_apprentice_predator: "Apprentice Predator"
+ trait_admiral_apprentice_predator_desc: "§LA few unlucky attempts at eating this leader have left them with a general understanding of eating others.§!\n"
+ trait_admiral_adept_predator: "Adept Predator"
+ trait_admiral_adept_predator_desc: "§LThis leader is known to be a capable predator, so attacking them carries some risk.§!\n"
+ trait_admiral_expert_predator: "Expert Predator"
+ trait_admiral_expert_predator_desc: "§LThis predator is quite renowned among the military, frequently sampling the crew of defeated starships§!\n"
+ trait_admiral_master_predator: "Master Predator"
+ trait_admiral_master_predator_desc: "§LThis leader is feared by their prey and respected by their soldiers§!\n"
+
+ #General traits
+ trait_general_novice_predator: "Novice Predator"
+ trait_general_novice_predator_desc: "§LThis leader might've seen someone get eaten once...?§!\n"
+ trait_general_apprentice_predator: "Apprentice Predator"
+ trait_general_apprentice_predator_desc: "§LTheir soldiers frequently crack jokes about eating their commader, at least they're probably joking§!\n"
+ trait_general_adept_predator: "Adept Predator"
+ trait_general_adept_predator_desc: "§LThis leader has swallowed several foes both on the battlefield and mess hall.§!\n"
+ trait_general_expert_predator: "Expert Predator"
+ trait_general_expert_predator_desc: "§LTales of this general have spread well beyond our borders, xeno prey know to fear their coming.§!\n"
+ trait_general_master_predator: "Master Predator"
+ trait_general_master_predator_desc: "§LThis general fights on the front lines, devouring their foes with ravenous hunger§!\n"
+
+ ##########
+ # EDICTS #
+ ##########
+ edict_edict_galactic_darwinism: "Galactic Darwinism"
+ edict_edict_galactic_darwinism_desc: "Survival of the fittest extends beyond our borders. The xenos of the galaxy will soon come to know that we are the apex predators."
+
+
+ #####################
+ # OPINION MODIFIERS #
+ #####################
+
+ Opinion_vore_lethal_predator: "Offputting hunger"
+ Opinion_vore_prey: "Amiable prey"
+ Opinion_unbirth_our_species: "Unbirthed our Species"
+
+ ##########
+ # EVENTS #
+ ##########
+ darwinism_start: "The Greatest Challenge"
+ darwinism_start.desc: "Our people face the a great turning point in history. Where the story of our civilization goes is heavily dependent on the capabilities of those who will lead us across the stars. A radical new system has been created to facilitate the culling of the weak and incapable, by allowing anyone to lay claim to a position if they are strong enough to take it."
+ darwinism_start.2.tooltip: "This will lead our people to greatness... and snacks."
+ 
+ ####################
+ # STATIC MODIFIERS #
+ ####################
+ vore_frenzy: "Vore Frenzy"
+ vore_frenzy_desc: "This planet is currently in a state of chaos, as a voracious population runs rampant and greatly disrupts daily life."
+ vore_frenzy_put_down: "Vore Frenzy Put Down"
+ vore_frenzy_put_down_desc: "A voracious frenzy among this planet's population has been violently crushed, and the colony is currently ruled with an iron fist."
+ rogue_predators: "Rogue Predators"
+ rogue_predators_desc: "This planet is experiencing a surge in criminal activity among the vore-capable populace."
+ mod_job_livestock_add: "Livestock Jobs"
+ mod_planet_pops_food_upkeep_mult: "Pop Food Upkeep"
+ mod_planet_jobs_influence_produces_mult: "Influence from Jobs"
+ mod_job_rogue_predator_per_crime: "§Y+1§! $job_rogue_predator$ Jobs per §Y10§! Crime"
+ mod_job_rogue_predator_add: "$job_rogue_predator$ Jobs"
+ mod_job_rogue_predator_per_pop: "§Y+1§! $job_rogue_predator$ Jobs per §Y10§! Pops"
+
+ ################
+ # TECHNOLOGIES #
+ ################
+
+ predator_army: "Predator Army"
+ predator_army_desc: "Bottomless predator hunger meets military focus. Predator armies lack advanced equipment, but they make up for it with shock factor and the natural toughness of an apex predator."
+ predator_army_plural: "Predator Armies"
+
+
+ ##########
+ #POLICIES#
+ ##########
+
+ slavery_vore: "Prey Slavery"
+ slavery_vore_tooltip: "§HPrey slaves§! have only one purpose in life: being £food£ §HFood§! for their betters."
+ slavery_vore_tooltip_delayed: "§LPutting lesser species where they belong: in a gurgling gut.§!"
+ cannot_vore_machines: "$TRIGGER_FAIL$Machines cannot be eaten."
+ empire_not_voracious: "$TRIGGER_FAIL$Our people are not cruel enough to devour others on such a scale."
+ job_prey_slave: "Prey Slave"
+ job_prey_slave_plural: "Prey Slaves"
+ job_prey_slave_desc: "This Pop is serving as food for vore-capable Pops."
+ job_rogue_predator: "Rogue Predator"
+ job_rogue_predator_plural: "Rogue Predators"
+ job_rogue_predator_desc: "These individuals have abandoned all pretense of being productive citizens, living as criminals and devouring innocents to take their assets... and 'assets'."
+ job_unbirth_apprentice: "Natophyte"
+ job_unbirth_apprentice_plural: "Natophytes"
+ job_unbirth_apprentice_desc: "Through years of hard work culminating in a lavish Rebirth Ritual, those unfortunate enough not to be born as [This.Owner.GetSpeciesNamePlural] can be subsumed into the ruling caste."
+ job_unbirth_apprentice_effect_desc: "£job_unbirth_apprentice£ $job_unbirth_apprentice_plural$ turn £consumer_goods£ §Y$consumer_goods$§! and £food£ §Y$food$§! into £unity£ §Y$unity$§! and £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!.\nOnce every §Y10§! years, £job_unbirth_apprentice£ $job_unbirth_apprentice_plural$ are transformed into §Y[This.Owner.GetSpeciesNamePlural]§! in a §YRebirth Ritual§!."
+ job_unbirth_apprentice_effect_lithoid_desc: "£job_unbirth_apprentice£ $job_unbirth_apprentice_plural$ turn £consumer_goods£ §Y$consumer_goods$§! and £minerals£ §Y$minerals$§! into £unity£ §Y$unity$§! and £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!.\nOnce every §Y10§! years, £job_unbirth_apprentice£ $job_unbirth_apprentice_plural$ are transformed into §Y[This.Owner.GetSpeciesNamePlural]§! in a §YRebirth Ritual§!."
+ mod_job_unbirth_apprentice_add: "$job_unbirth_apprentice$ Jobs"
+ mod_job_unbirth_apprentice_per_pop: "§G+1§! $job_unbirth_apprentice$ Job per $VALUE$ Pops"
+ mod_job_unbirth_apprentice_per_pop_short: "\n§G+1§! £mod_job_apprentice_add£ per $VALUE$ £pop£"
+ planet_unbirth_apprentices: "Natophyte Jobs"
+ civic_unbirth_secondary_species: "Unbirth Species"
+ policy_vore_prey_slavery: "Prey Slavery"
+ policy_vore_prey_slavery_desc: "We can decide whether slaves should serve as food for the vore-capable members of our society."
+ prey_slavery_active: "Allowed"
+ prey_slavery_active_name: "Prey Slavery Allowed"
+ prey_slavery_active_desc: "It's only natural that a slave's place should be in the mouths (or other orifices) of their betters."
+ prey_slavery_forbidden: "Forbidden"
+ prey_slavery_forbidden_name: "Prey Slavery Forbidden"
+ prey_slavery_forbidden_desc: "Tasty as they may be, we need our slaves to perform tasks which are difficult - if not impossible - to accomplish while being digested."
+ prey_slavery_allowed_name: "Prey Slavery Allowed"
+ policy_gender_superiority: "Gender Superiority"
+ policy_gender_superiority_desc: "We can make decisions as to whether one gender is better suited than another in regards to leading our people."
+ gender_equality: "Equal"
+ gender_equality_name: "Gender Equality"
+ gender_equality_desc: "No gender is better suited than any other to lead.\n\n§EMale and Female Leaders§!"
+ male_superiority: "Male"
+ male_superiority_name: "Male Dominated"
+ male_superiority_desc: "Clearly, men are the only ones capable of rightly guiding our people.\n\n§EMale Leaders only§!"
+ male_dominated_name: "Male Dominated"
+ female_superiority: "Female"
+ female_superiority: "Female Dominated"
+ female_superiority_desc: "It's obvious that only women have the necessary qualities to lead our empire.\n\n§EFemale Leaders only§!"
+ female_dominated_name: "Female Dominated"
+ 
+ ##############
+ # GOVERNMENT #
+ ##############
+ gov_apex_dictatorship: "Apex Monarchy"
+ gov_apex_dictatorship_desc: "This government is headed by the most powerful predator in the empire."
+ gov_motherly_matriarchy: "Motherly Matriarchy"
+ gov_motherly_matriarchy_desc: "This government is headed by a hereditary matriarch, whose job it is to care for the citizens of the empire."
+ gov_peaceful_prey: "Peaceful Prey"
+ gov_peaceful_prey_desc: "This government is headed by an elected official who manages the external affairs of state, as the internal affairs are almost entirely self-regulating."
+
+ 
+ # Personalities
+ personality_type_vore: "Predator"
+ personality_vore_warriors: "Apex Predators"
+ personality_vore_warriors_desc: "This government is headed by the most powerful predator in the empire."
+ personality_type_motherly: "Motherly"
+ personality_motherly_matriarchy: "Motherly Matriarchy"
+ personality_motherly_matriarchy_desc: "This government is headed by a hereditary matriarch, whose job it is to care for the citizens of the empire."
+ personality_type_prey: "Prey"
+ personality_peaceful_prey: "Peaceful Prey"
+ personality_peaceful_prey_desc: "This government is headed by an elected official who manages the external affairs of state, as the internal affairs are almost entirely self-regulating."
+
+ ############
+ #  Edicts  #
+ ############
+ edict_edict_galactic_hunt: "The Galactic Hunt"
+ edict_edict_galactic_hunt_desc: "Why must our hunters be confined to our borders? Let us begin a new hunt, the scale of which shall dwarf all others and leave it's mark in galactic history for all time."
+ decision_planet_pred_promotion: "Encourage Devouring"
+ decision_planet_pred_promotion_desc: "The planetary government will encourage our more voracious citizens to indulge themselves, leading to greater productivity and happiness among the vore-capable population, at the expense of our more delicious citizens."
+ pred_promotion_pred: "Excited Predator"
+ pred_promotion_prey: "Meal-to-be"
+
+ ##########
+ # CIVICS #
+ ##########
+ civic_vore_darwinism: "Vore-based Darwinism"
+ civic_vore_darwinism_desc: "This society believes in their destiny as the apex predators of the galaxy, always seeking to expand their herds of livestock."
+ civic_tooltip_vore_darwinism_effects: "Grants powerful combat bonuses however the competitve nature of this society gives it higher mortality rates and is less desirable for immigrants. \n§Y$MOD_COUNTRY_NAVAL_CAP_MULT$§! increased by §G15%§!\n§Y$MOD_SHIP_FIRE_RATE_MULT$§! increased by §G15%§!\n§Y$MOD_ARMY_DAMAGE_MULT$§! increased by §G15%§!\n§YLeader experience gain§! increased by §G25%§!\n§Y$MOD_LEADER_SKILL_LEVELS$§! increased by §G2§!\n§Y$MOD_COUNTRY_IMMIGRATION_PULL_MULT$§! decreased by §R-25%§!\n§Y$MOD_COUNTRY_ADMIN_CAP_ADD$§! decreased by §R-10§!\n§Y$MOD_POP_GROWTH_SPEED$§! decreased by §R-10%§!"
+ #civic_vore_strength: "Rule Through Strength"
+ #civic_vore_strength_desc: "This society is dominated by the strongest predators, with people attaining rank and status by eating the competition, with the most powerful predator ruling the empire until a more powerful predator comes along."
+ #civic_tooltip_vore_strength_effects: "This society's leaders can gain powerful traits by improving their vore ability, but are always at risk of being eaten by their rivals or underlings."
+ civic_unbirth_absorption: "Unbirth absorption"
+ civic_unbirth_absorption_desc: "This species uses its unbirthing ability to drain the experience and knowledge from their victims, who are reverted to an infantile state of the 'mother' species. \n§YLeader experience gain§! increased by §G25%§!\n§Y$MOD_LEADER_SKILL_LEVELS$§! increased by §G2§!\n§YUnity§! increased by §G15%§!\n§Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§! increased by §G15%§!"
+ civic_tooltip_unbirth_absorption_effects: "Leaders grow much more quickly and can reach higher levels of proficiency by absorbing the knowledge of their peers." 
+ civic_utopian_prey: "Utopian Prey"
+ civic_utopian_prey_desc: "This society did away with petty squabbles early in their history, and as such is well behind other spacefaring civilizations in the art of waging war. Those who would take this as a sign of weakness, however, will find that their unified identity inspires them to fight with an unmatched ferocity against invaders.\n§Y$MOD_COUNTRY_NAVAL_CAP_MULT$§! decreased by §R-20%§!\n§Y$MOD_SHIP_FIRE_RATE_MULT$§! decreased by §R-10%§!\n§Y$MOD_SHIP_HOME_TERRITORY_FIRE_RATE_MULT$§! increased by §G30%§!\n§YLeader experience gain§! decreased by §R-15%§!\n §YUnity§! increased by §G25%§!\n§Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§! increased by §G15%§!"
+ civic_tooltip_utopian_prey_effects: "Trade away combat bonuses in favor of strong unity and governing ethics bonuses."
+ civic_voredeity: "Divine Predator"
+ civic_voredeity_desc: "This species is ruled by an immortal predator revered as a deity, who grows in power by devouring the most powerful, intelligent and beautiful members of their society."
+ civic_tooltip_voredeity_effects: "This species' ruler gains the Divine Predator trait, making them immortal and conferring many bonuses on their civilization, in exchange for a §R-10%§! penalty to their empire's population growth speed, and greater friction with neighboring empires."
+
+ #############
+ # BUILDINGS #
+ #############
+
+ building_unbirth_chamber_of_rebirth: "Chamber of Rebirth"
+ building_unbirth_chamber_of_rebirth_desc: "Those awaiting unbirthing spend their days being pampered and pleased motherly [This.Owner.GetSpeciesNamePlural] in the comfort of the Chamber of Rebirth."
+ building_unbirth_temple_of_motherhood: "Temple of Motherhood"
+ building_unbirth_temple_of_motherhood_desc: "A glorious temple of hedonism and fecundity where lesser species await their inevitable rebirth as [This.Owner.GetSpeciesNamePlural]."
+
+ ####################################
+ # Diplomacy text
+ ####################################
+ 
+ 
+ # Vore Warriors
+ VD_HOSTILE_GREETING_01:0 "Speak quickly prey, or you'll leave this room in my stomach."
+ VD_HOSTILE_GREETING_02:0 "Have you ever thought about how it might feel to get eaten? You and the rest of the [From.GetSpeciesNamePlural] will know soon enough."
+ VD_HOSTILE_GREETING_03:0 "It's a wonder you [From.GetSpeciesNamePlural] ever made spaceflight, but we're glad you did. The [Root.GetSpeciesName] would be sad to miss out on such tasty snacks."
+ VD_HOSTILE_GREETING_04:0 "The galaxy will know who the apex predators are once the [From.GetSpeciesName] are bellyfat."
+ VD_HOSTILE_GREETING_05:0 "The [From.GetSpeciesName] are so delicious, we'll surely be having a taste soon enough... willing or not."
+ VD_HOSTILE_GREETING_06:0 "Have you come to beg for a stay in my stomach?"
+ VD_HOSTILE_GREETING_07:0 "You should know that you [From.GetSpeciesNamePlural] are a real delicacy, our people are eager to get more..."
+ VD_HOSTILE_GREETING_08:0 "You should know that some cattle tried to escape back to [From.GetName]. I had the privilege of eating one of them myself, they were quite tasty."
+ VD_HOSTILE_GREETING_08:0 "Unless you are here to discuss how to best prepare your pitiful empire for our dominion, leave."
+ VD_HOSTILE_GREETING_09:0 "I hope you know I eagerly await the day you slide down my gullet."
+ 
+ VD_DOMINEERING_GREETING_01:0 "Why continue this farce? You'll be very content to your place in [Root.GetSpeciesName] society."
+ VD_DOMINEERING_GREETING_02:0 "You should submit to your betters already, this pretending at independence shames the [From.GetSpeciesName]."
+ VD_DOMINEERING_GREETING_03:0 "Have you finally come to realize your place in the galaxy?"
+ VD_DOMINEERING_GREETING_04:0 "Wouldn't you rather live in comfort under the [Root.GetSpeciesName] than get enslaved by some tyrannical despot?"
+ 
+ VD_NEUTRAL_GREETING_01:0 "So long as you steer clear of hunting grounds, you may do as you please."
+ VD_NEUTRAL_GREETING_02:0 "The [Root.GetSpeciesName] have yet to decide on whether or not you are prey, so enjoy this this time of peace while you can."
+ VD_NEUTRAL_GREETING_03:0 "While I know not to eat the foreign emissaries, not all of my personnel have the same self-control."
+ VD_NEUTRAL_GREETING_04:0 "You look quite tasty... If only you weren't so important to the [From.GetSpeciesName] I'd eat you up right here."
+ VD_NEUTRAL_GREETING_05:0 "*Urrp!* Oh, sorry, just finished taking care of an annoying secretary. Now, what did you want to talk about?"
+ VD_NEUTRAL_GREETING_06:0 "Our scientists have theorized that getting eaten by a [Root.GetSpeciesName] would be quite pleasurable for a [FROM.GetSpeciesName]."
+ VD_NEUTRAL_GREETING_07:0 "You shouldn't visit here so often, my stomach is always growling by the time we're done and next time I might not wait till after the meeting to get a snack..."
+ VD_NEUTRAL_GREETING_08:0 "I'm told the [From.GetSpeciesName] have a taste unlike anything found [Root.Capital.GetName]..."
+ VD_NEUTRAL_GREETING_09:0 "Make this quick, the [Root.GetSpeciesName] have hunting to do."
+ 
+ VD_THREATENED_GREETING_01:0 "You will not make meals out of our predators, [From.GetSpeciesName]!"
+ VD_THREATENED_GREETING_02:0 "Blind luck and flukes will only carry you so far, [From.GetSpeciesName]. You will will our bellies one day too."
+ VD_THREATENED_GREETING_03:0 "You may be on top now but time will show the [Root.GetSpeciesName] are the galaxy's apex predators - you are nothing but prey!"
+ 
+ VD_FRIENDLY_GREETING_01:0 "Ah, my favorite snack returns! Just kidding, I won't eat you... yet."
+ VD_FRIENDLY_GREETING_02:0 "Our alliance has opened many new hunting grounds for us and for that, we thank you."
+ VD_FRIENDLY_GREETING_03:0 "Sorry about the attendant you lost on your last visit, I have personally eaten the [Root.GetSpeciesName] responsible."
+ VD_FRIENDLY_GREETING_04:0 "The [Root.GetSpeciesName] people are glad to know there are other worthy hunters among the stars."
+ VD_FRIENDLY_GREETING_05:0 "Some [Root.GetSpeciesName] wonder if the [From.GetSpeciesName] have considered becoming apex hunters like ourselves?"
+ VD_FRIENDLY_GREETING_06:0 "[Root.GetRulerTitle] [Root.GetRulerName] has decreed that the [from.GetSpeciesName] are to be exempt from being targets of our hunters. We hope you appreciate this declaration of friendship."
+ 
+ VD_WAR_GREETING_01:0 "Your warriors are being devoured even as we speak, it will be not be long now..."
+ VD_WAR_GREETING_02:0 "[Root.GetRulerTitle] [Root.GetRulerName] has marked you as my prey, I look forward having you round out these curves!"
+ VD_WAR_GREETING_03:0 "This war was decided before it began. We are the hunters, you are the prey, and you will be consumed."
+ VD_WAR_GREETING_04:0 "Our warriors are getting fat off the sacrifices of your people."
+ VD_WAR_GREETING_05:0 "Whether it's on the battlefield or off it, the [From.GetSpeciesName] are destined for [Root.GetSpeciesName] bellies."
+ VD_WAR_GREETING_08:0 "Bring as many troops as you like, we'll eat them all and still have room for seconds."
+ VD_WAR_GREETING_06:0 "I've been told that [Root.GetRulerTitle] [Root.GetRulerName] plans to eat [From.GetRulerTitle] [From.GetRulerName] personally, with the whole empire watching!"
+ VD_WAR_GREETING_07:0 "Our hunters really appreciate the chance to hone their skills. You will be a valuable stepping stone on our path to galactic domination."
+ 
+ # Vassal greetings
+ VD_VASSAL_GREETING_01:0 "[Root.GetRulerTitle] [Root.GetRulerName] has acknowledged you as our superiors, we hope to go on many great hunts with our masters."
+ VD_VASSAL_GREETING_02:0 "[Root.GetRulerTitle] [Root.GetRulerName] wishes you many successful hunts, and many delicious meals."
+ VD_VASSAL_GREETING_03:0 "[Root.GetSpeciesName] bellies will be filled with the enemies of your empire. You will find us the greatest hunters in the galaxy."
+ VD_VASSAL_GREETING_DISLOYAL_01:0 "The [Root.GetSpeciesName] will not suffer this shame for long..."
+ VD_VASSAL_GREETING_DISLOYAL_02:0 "When we break these chains, we will devour you. [Root.GetRulerTitle] [Root.GetRulerName] will enjoy [From.GetRulerTitle] [From.GetRulerName] sliding into [ROOT.ruler.GetHerHis] stomach."
+ VD_VASSAL_GREETING_DISLOYAL_03:0 "We will stop eating your ambassadors when you release us from these chains. And then will will eat your entire race."
+ 
+ # Declaration of War
+ VD_DOW_PROPOSE_01:0 "Pitiful prey, you will consumed by the might of the [Root.GetSpeciesName]!"
+ 
+ VD_OVERLORD_GREETING_01:0 "What do you want, food? Are you here to fill [Root.GetRulerTitle] [Root.GetRulerName]'s belly?"
+ VD_OVERLORD_GREETING_02:0 "Ah, [From.GetSpeciesName]! What do you need from your overlord, delicious?"
+ VD_OVERLORD_GREETING_03:0 "You should feel honoured, [From.GetSpeciesName], your kind have become the favourite species in the galaxy to fill [Root.GetSpeciesName] bellies."
+
+ # Motherly_Matriarchs
+ UB_HOSTILE_GREETING_01:0 "You hurt everyone around you with your foolish actions, the [Root.GetSpeciesNamePlural] will have nothing to do with you."
+ UB_HOSTILE_GREETING_02:0 "All the [From.GetSpeciesName] should be snuggled up in [Root.GetRulerTitle] [Root.GetRulerName]'s womb and converted to [Root.GetSpeciesName]! The galaxy would be better for it."
+ UB_HOSTILE_GREETING_03:0 "Your poor attitudes are a dissappointment to the [Root.GetSpeciesName]."
+ UB_HOSTILE_GREETING_04:0 "We might've been able to coexsist if not for the poor judgement of [From.GetRulerName]."
+ UB_HOSTILE_GREETING_05:0 "Despite your past transgressions, we still hold out hope that the [From.GetSpeciesName] can be taught how to live peacefully with their Xeno neighbors."
+ UB_HOSTILE_GREETING_06:0 "We simply wish to live peaceful lives, why must you bother us so?"
+ UB_HOSTILE_GREETING_07:0 "I don't suppose [Root.GetRulerTitle] [Root.GetRulerName] would care for a stay in my womb? They might come to see things our way then..."
+ UB_HOSTILE_GREETING_08:0 "[From.GetRulerTitle] [From.GetRulerName] has established a sanctuary for [From.GetSpeciesName] eager to escape [Root.GetRulerTitle] [Root.GetRulerName]'s foolish rule."
+ UB_HOSTILE_GREETING_08:0 "The wombs of our diplomats are wet and ready to convince you the errors of your ways."
+ UB_HOSTILE_GREETING_09:0 "Although [From.GetRulerTitle] [From.GetRulerName] has proven themselves irredeemable, we still hold out hope for the rest of your species."
+ 
+ UB_DOMINEERING_GREETING_01:0 "You seem very innocent and naive. Perhaps you need our guidance..."
+ UB_DOMINEERING_GREETING_02:0 "It's dangerous to go it alone in the galaxy, you'd be much safer under our protection"
+ UB_DOMINEERING_GREETING_03:0 "The [From.GetSpeciesName] have strayed from the path, but we believe their is still hope."
+ UB_DOMINEERING_GREETING_04:0 "Can't you see that you're unable to care for yourselves? You'll be much happier under the rule of [Root.GetRulerTitle] [Root.GetRulerName]."
+ 
+ UB_NEUTRAL_GREETING_01:0 "Hello, have you come to seek our wisdom?"
+ UB_NEUTRAL_GREETING_02:0 "You look pretty cute, but I bet you'd be better as a [Root.GetSpeciesName]!"
+ UB_NEUTRAL_GREETING_03:0 "If you wish to spend some time in my womb, you need only ask. Don't stay too long though or you may not make it out again..."
+ UB_NEUTRAL_GREETING_04:0 "I've never had a [From.GetSpeciesName] in my womb before, I wonder how it would feel..."
+ UB_NEUTRAL_GREETING_05:0 "Don't mind the belly bulge, she was just proposing some rather radical ideas."
+ UB_NEUTRAL_GREETING_06:0 "Oh, hello! I'm a new diplomat but I unbirthed the last one so I have all her knowledge! Everything should be go smoothly from here on out."
+ UB_NEUTRAL_GREETING_07:0 "I can't imagine living life without a full womb, xenos are so strange."
+ UB_NEUTRAL_GREETING_08:0 "[From.GetRulerTitle] [From.GetRulerName] is always looking to build up better relations with Xenos."
+ UB_NEUTRAL_GREETING_09:0 "Are you curious about the [Root.GetSpeciesName] unbirthing technique? Apparently it's a rare trait among Xenos."
+ 
+ UB_THREATENED_GREETING_01:0 "Depriving the galaxy of our guidance is a greater crime than anything else you have done!"
+ UB_THREATENED_GREETING_02:0 "Many will weep for the death of the [Root.GetSpeciesName] but they will celebrate your end."
+ UB_THREATENED_GREETING_03:0 "Have you come to take more from the innocent [Root.GetSpeciesName]?"
+ 
+ UB_FRIENDLY_GREETING_01:0 "I would happily accept you into my womb friend. Your knowledge would make both our empires stronger."
+ UB_FRIENDLY_GREETING_02:0 "Together we can protect and guide the helpless xenos of the galaxy."
+ UB_FRIENDLY_GREETING_03:0 "We are happy to provide our guidance to such good friends of the [Root.GetSpeciesName]."
+ UB_FRIENDLY_GREETING_04:0 "Our scientists say the [From.GetSpeciesName] would become [Root.GetSpeciesName] after being unbirthed. If you ever want to make the switch, you know where to find me."
+ UB_FRIENDLY_GREETING_05:0 "I just gave birth recently so my womb is ready for another occupant if you'd like..."
+ UB_FRIENDLY_GREETING_06:0 "See my belly? A [From.GetSpeciesName] actually asked to get unbirthed! I'm so excited!"
+ 
+ UB_WAR_GREETING_01:0 "We do not like fighting, but don't think that means we'll wait to be conquered."
+ UB_WAR_GREETING_02:0 "The [Root.GetSpeciesName] are saddened by every death in this war that you continue to wage."
+ UB_WAR_GREETING_03:0 "The [Root.GetSpeciesName] know to catch and unbirth your soldiers whenever possible, they will have much more pleasent lives in our empire than they could ever have had in yours."
+ UB_WAR_GREETING_04:0 "We hold no malice against the [From.GetSpeciesName] for the actions of [From.GetRulerTitle] [From.GetRulerName]. After you are defeated, they will be treated as equals in the empire."
+ UB_WAR_GREETING_05:0 "Our soldiers learn more of your tactics with every foe they unbirth. You cannot hope to stand against us for long."
+ UB_WAR_GREETING_08:0 "The galaxy will be a much safer place once the [From.GetSpeciesName] threat has been defeated."
+ UB_WAR_GREETING_06:0 "We fight for survival, and you fight for greed. That is why you will fail."
+ UB_WAR_GREETING_07:0 "Once this war is over, you'll be squirming in my womb just like every other misguided leader in your empire."
+ 
+ # Vassal greetings
+ UB_VASSAL_GREETING_01:0 "We hope you will continue to protect and guide the weak, as we have done."
+ UB_VASSAL_GREETING_DISLOYAL_01:0 "The suffering you have inflicted upon the [Root.GetSpeciesName] has only postponed your inevitable demise."
+ 
+ # Declaration of War
+ UB_DOW_PROPOSE_01:0 "If you can not take care of your selves, we will bear that responsibility..."
+ 
+ UB_OVERLORD_GREETING_01:0 "Yes young one, do you have something for me?"
+
+   # Peaceful_Prey
+ PY_HOSTILE_GREETING_01:0 "The [Root.GetSpeciesName] have no interest in cooperating with your kind."
+ PY_HOSTILE_GREETING_02:0 "We [Root.GetSpeciesName] have spent our entire exsistence being hunted, and we have yet to fall. We will survive this too."
+ PY_HOSTILE_GREETING_03:0 "It's a shame we couldn't befriend the [From.GetSpeciesName], we always treat violence as a last resort."
+ PY_HOSTILE_GREETING_04:0 "The [Root.GetSpeciesName] will not be pushed around by the likes of you."
+ PY_HOSTILE_GREETING_05:0 "Ah, our least favorite xenos have come to visit once more..."
+ PY_HOSTILE_GREETING_06:0 "The creation of the [From.GetSpeciesName] was a cruel joke to play on the galaxy."
+ PY_HOSTILE_GREETING_07:0 "Come to spout more of [Root.GetRulerTitle] [Root.GetRulerName]'s lies? Thank you, but we've had our fill."
+ PY_HOSTILE_GREETING_08:0 "The time for talking is over, unless of course you've come to apologize for your transgressions."
+ PY_HOSTILE_GREETING_08:0 "Your greed knows no bounds, but your dominion will if we have anything to say about it."
+ PY_HOSTILE_GREETING_09:0 "So the [From.GetSpeciesName] think they have cornered their prey? Good..."
+ 
+ PY_DOMINEERING_GREETING_01:0 "It looks like we'll get our turn as the predators soon..."
+ PY_DOMINEERING_GREETING_02:0 "If you're too weak to defend yourself from us, of all things, then you really have no cause to complain when we add your strength to ours."
+ PY_DOMINEERING_GREETING_03:0 "You should consider yourself lucky to be put under our protection, others might just eat you outright."
+ PY_DOMINEERING_GREETING_04:0 "This will lead to a better future for both our peoples."
+ 
+ PY_NEUTRAL_GREETING_01:0 "It's always a pleasure to interact with new cultures."
+ PY_NEUTRAL_GREETING_02:0 "The [From.GetSpeciesName] form is truly a delight to the eyes."
+ PY_NEUTRAL_GREETING_03:0 "The [Root.GetSpeciesName] hope this to be the start of a great friendship between our people."
+ PY_NEUTRAL_GREETING_04:0 "Our traders our eager find new markets among the [From.GetSpeciesName]."
+ PY_NEUTRAL_GREETING_05:0 "There are rumors that some xenos can actually eat others whole! You don't think that's true... Right?"
+ PY_NEUTRAL_GREETING_06:0 "[Root.GetRulerTitle] [Root.GetRulerName] has expressed in interest in meeting [From.GetRulerTitle] [From.GetRulerName] to better understand xeno culture."
+ PY_NEUTRAL_GREETING_07:0 "We hope to one day stand united against the foes of galactic peace."
+ PY_NEUTRAL_GREETING_08:0 "You can trust the [Root.GetSpeciesName] to be [Root.GetAdj] of their word."
+ PY_NEUTRAL_GREETING_09:0 "The sooner we decide to work together, the sooner we can build a better future for both our people."
+ 
+ PY_THREATENED_GREETING_01:0 "What have we done to draw the ire of the [From.GetSpeciesName]?"
+ PY_THREATENED_GREETING_02:0 "Fight us if you must, but know we will not be quietly herded into slavery."
+ PY_THREATENED_GREETING_03:0 "The [Root.GetSpeciesName] have spent their whole history being hunted, it appears the age of spaceflight will be no different..."
+ 
+ PY_FRIENDLY_GREETING_01:0 "Your people are always welcome among the [Root.GetSpeciesName]."
+ PY_FRIENDLY_GREETING_02:0 "We're glad to see [From.GetRulerTitle] [From.GetRulerName] has the  desire for a better galaxy at heart."
+ PY_FRIENDLY_GREETING_03:0 "Just off the record, I wouldn't mind being eaten by you..."
+ PY_FRIENDLY_GREETING_04:0 "We are glad to have found such good friends among the stars."
+ PY_FRIENDLY_GREETING_05:0 "A more perfect world is within reach now that we can work at it together."
+ PY_FRIENDLY_GREETING_06:0 "You should know [From.GetSpeciesName] culture is very popular among the [Root.GetSpeciesName]."
+ 
+ PY_WAR_GREETING_01:0 "The persucutions of the [From.GetSpeciesName] stop here."
+ PY_WAR_GREETING_02:0 "[Root.GetRulerTitle] [Root.GetRulerName] will never let the [Root.GetSpeciesNamePlural] fall into your incompetent hands."
+ PY_WAR_GREETING_03:0 "Our people stands united in their resistance to your misguided regime."
+ PY_WAR_GREETING_04:0 "The evil that xenos do lives on and on, throughout history."
+ PY_WAR_GREETING_05:0 "This slaughter of the innocent has surely gone on long enough?"
+ PY_WAR_GREETING_06:0 "The [From.GetSpeciesName] will soon be free of the yoke of [From.GetRulerTitle] [From.GetRulerName]."
+ PY_WAR_GREETING_07:0 "What we lack in physical strength, we make up for in guile."
+ PY_WAR_GREETING_08:0 "This conflict may sow seeds of mistrust between the [Root.GetSpeciesNamePlural] and the [From.GetSpeciesNamePlural] for generations. What could possibly be worth that loss?"
+ 
+ # Vassal greetings
+ PY_VASSAL_GREETING_01:0 "We hope to learn much uner the guidance of [From.GetRulerTitle] [From.GetRulerName]."
+ PY_VASSAL_GREETING_DISLOYAL_01:0 "We may serve you now, but the time will come when the [Root.GetSpeciesName] will have suffered too much."
+ 
+ # Declaration of War
+ PY_DOW_PROPOSE_01:0 "War should always be a last resort. But if you will not accept reason then we are left with no choice."
+ 
+ PY_OVERLORD_GREETING_01:0 "Do the [From.GetSpeciesName] require something of us?"
+ 
+
+ ###############
+ # Vore Events #
+ ###############
+
+ unbirther.2.name: "Rebirth Ceremony on [Root.Capital.GetName]"
+ unbirther.2.desc: "Ever since the [Root.GetAdj] takeover of [Root.Capital.GetName], the transformation of [unbirth_species.GetNamePlural] into [Root.GetSpeciesNamePlural] has been shrouded in ritual. Once every ten years - a date which is rapidly approaching - the "Natophytes" gather in the Chamber of Rebirth for a special ceremony. What exactly happens to them is a closely-guarded secret known only to a select few, but when they emerge, they do so as [Root.GetSpeciesNamePlural]."
+ unbirther.2.A: "Let the preparations commence!"
+ unbirther.2.A.tooltip: "At the end of the year, all §H$job_unbirth_apprentice_plural$§! on §H[Root.Capital.GetName]§! will be converted into §H[Root.GetSpeciesNamePlural]§!.\n\nThis ceremony will take place every §H10 years§! on each [Root.GetAdj] planet with a §HChamber of Rebirth§!."
+ MESSAGE_UNBIRTH_POPS_UNBIRTHED_TITLE: "Pops Unbirthed"
+ MESSAGE_UNBIRTH_POPS_UNBIRTHED: "We have converted $VALUE|Y$ £pops£ Pops to our species in a Rebirth Ceremony on $PLANET|Y$."
+
+ vore.2.title: "Voracious [vore_species.GetAdj] Frenzy on [Root.GetName]!"
+ vore.2.desc: "Predatory [vore_species.GetNamePlural] on [Root.GetName] have gone into a voracious frenzy, causing chaos in settlements as they indiscriminately devour members of the planet's [prey_species.GetName] population! Our intelligence officers predict the initial frenzy will abate soon, but the planet's [vore_species.GetNamePlural] are sure to continue casually devouring [prey_species.GetNamePlural] for some time to come."
+ vore.2.c: "No better than beasts. Put them down."
+ vore.2.d: "Surely if we can just talk things out with them..."
+
+ vore.6.title: "Rogue Predators on [Root.GetName]!"
+ vore.6.desc: "[Root.GetName] is currently experiencing a surge in criminal activity among certain vore-capable populations. While their devouring of the planet's more upstanding citizens isn't projected to cause any long-term damage, their hedonistic indulgence using their prey's former assets is expected to cause significant disruption to the civilian economy for the near future."
+
+ #################
+ # ENVOY EVENTS
+ #################
+
+ vore.3.name: "Predatory [envoy_source.GetSpeciesAdj] Envoy"
+ vore.3.desc: "Our diplomats have discovered that [event_envoy.GetName], the [envoy_source.GetSpeciesAdj] envoy to [Root.Capital.GetName], has been eating several individuals! Our local officials working with [event_envoy.GetName] walked in on the [event_envoy.GetSpeciesName] mid-meal, with one of our worker's very clearly sliding down their gullet. Although [event_envoy.GetName] did apologise to our staff for the shocking scene, [event_envoy.GetHerHim] unfortunate meal was very much digested, and now contributes greatly to [event_envoy.GetName]'s assets."
+ vore.3.A: "Unacceptable! We deserve compensation for our digested staff!"
+ vore.3.B: "[event_envoy.GetFirstName] is a fine predator. [event_envoy.GetSheHeCap] deserves [event_envoy.GetHerHis] meal!"
+
+ vore.4.name: "Predatory Envoy"
+ vore.4.desc.base: "Our envoy to the [From.GetSpeciesName], [event_envoy.GetName], has been discovered eating local [From.GetSpeciesNamePlural] during [event_envoy.GetHerHis] free time. [From.GetSpeciesName] diplomats working with [event_envoy.GetFirstName] happened to walk in on [event_envoy.GetHerHim] mid-meal with a [From.GetSpeciesName] sliding down [event_envoy.GetHerHis] gullet! Although [event_envoy.GetFirstName] did apologise to their staff for the shocking scene, [event_envoy.GetHerHis] unfortunate meal was very much digested, and now contributes greatly to [event_envoy.GetFirstName]'s assets."
+ vore.4.desc.pos: "$vore.4.desc.base$\n\nDespite the digestion of one of their own by [event_envoy.GetName] the [From.GetSpeciesNamePlural] appear to have taken the incident well. We've received a lot of compliments regarding the voracious skills of [event_envoy.GetFirstName], despite the [From.GetSpeciesNamePlural] fattening [event_envoy.GetHerHis] assets."
+ vore.4.desc.neg: "$vore.4.desc.base$\n\nThe [From.GetSpeciesNamePlural] are rather upset at this incident, with many demanding an apology from [event_envoy.GetName] for digesting one of them. That [event_envoy.GetFirstName] has supposedly been doing this for some time has become poorly-digested news - unlike their now well-digested people fattening [event_envoy.GetFirstName]'s assets."
+ vore.4.B: "Did they taste good?"
+ 
+ opinion_envoy_predator_offence: "Predatory Envoy"
+ opinion_envoy_predator_respect: "Predatory Respect"

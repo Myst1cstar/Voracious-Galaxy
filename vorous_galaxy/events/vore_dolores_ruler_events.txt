@@ -1,0 +1,524 @@
+namespace = voragons
+
+###################################
+#   DOLORES RULER ARC EVENTS
+#
+#   Fires only when Dolores is head of state (set via voragons.155.c).
+#   Hub: voragons.219 (hidden, schedules the chain on the day she takes power).
+#
+#   voragons.220 — Running the Table        (first council meeting, day 90)
+#   voragons.221 — An Audience with the Caretaker  (foreign envoy, day 400)
+#   voragons.222 — Open Court              (public petitions, day 700)
+#   voragons.223 — The Budget Session      (treasury minister, day 1000)
+#   voragons.224 — The Succession Question (crisis alt, day 1500)
+#     └ voragons.225 — By Appointment Only     (resolution path A)
+#     └ voragons.226 — The Framework           (resolution path B)
+###################################
+
+country_event = { # hidden hub — fires the moment Dolores takes power
+	id = voragons.219
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		country_event = { id = voragons.220 days = 90 }
+		country_event = { id = voragons.221 days = 400 }
+		country_event = { id = voragons.222 days = 700 }
+		country_event = { id = voragons.223 days = 1000 }
+		country_event = { id = voragons.224 days = 1500 }
+	}
+}
+
+###################################
+#   VORAGONS.220 — RUNNING THE TABLE
+#   Her first full council session as head of state. Eleven minutes.
+#   The previous average was four hours and twenty-two minutes.
+###################################
+
+country_event = {
+	id = voragons.220
+	title = voragons.220.name
+	desc = voragons.220.desc
+	picture = GFX_evt_DOLORES_vore
+	show_sound = dolores_paragon_sound_effects
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = dolores_is_ruler
+		exists = event_target:Gov_dolores
+	}
+
+	immediate = {
+		# A councillor did not survive the meeting
+		dolores_hunger_reset_effect = yes
+	}
+
+	# Accept the efficiency without asking about the chair
+	option = {
+		name = voragons.220.a
+		custom_tooltip = voragons.220.a.tooltip
+		add_resource = { unity = 200 }
+	}
+
+	# Follow up on the missing councillor
+	option = {
+		name = voragons.220.b
+		custom_tooltip = voragons.220.b.tooltip
+		add_resource = { unity = -100 }
+		add_resource = { society_research = 1000 }
+	}
+}
+
+###################################
+#   VORAGONS.221 — AN AUDIENCE WITH THE CARETAKER
+#   A foreign delegation came to negotiate. The junior envoy did not return with them.
+#   The senior envoy has become extremely cooperative.
+###################################
+
+country_event = {
+	id = voragons.221
+	title = voragons.221.name
+	desc = voragons.221.desc
+	picture = GFX_evt_sentry_guns
+	show_sound = event_trap_laser
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = dolores_is_ruler
+		exists = event_target:Gov_dolores
+	}
+
+	immediate = {
+		# The junior envoy was consumed during the audience
+		dolores_hunger_reset_effect = yes
+		# Their home empire will hear about this
+		dolores_foreign_reaction_effect = yes
+	}
+
+	# Accept their revised (fear-adjusted) terms
+	option = {
+		name = voragons.221.a
+		custom_tooltip = voragons.221.a.tooltip
+		add_resource = { influence = 100 }
+		add_resource = { unity = 200 }
+	}
+
+	# Press for even better terms while they're still here
+	option = {
+		name = voragons.221.b
+		custom_tooltip = voragons.221.b.tooltip
+		add_resource = { influence = 200 }
+		add_resource = { unity = -50 }
+	}
+
+	# Issue a formal apology for what happened to the junior envoy
+	option = {
+		name = voragons.221.c
+		custom_tooltip = voragons.221.c.tooltip
+		add_resource = { influence = -100 }
+		add_resource = { energy = -300 }
+	}
+}
+
+###################################
+#   VORAGONS.222 — OPEN COURT
+#   She held public petitions. She listened to all of them.
+#   74% approval rate. Two direct resolutions. Queue: 4,200.
+###################################
+
+country_event = {
+	id = voragons.222
+	title = voragons.222.name
+	desc = voragons.222.desc
+	picture = GFX_evt_DOLORES_vore
+	show_sound = event_vore_gulp
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = dolores_is_ruler
+		exists = event_target:Gov_dolores
+	}
+
+	immediate = {
+		# Two petitioners received 'direct resolutions'
+		dolores_hunger_reset_effect = yes
+	}
+
+	# Schedule regular public audiences
+	option = {
+		name = voragons.222.a
+		custom_tooltip = voragons.222.a.tooltip
+		add_resource = { unity = 300 }
+		add_resource = { energy = -100 }
+	}
+
+	# Limit the frequency — too unprecedented
+	option = {
+		name = voragons.222.b
+		custom_tooltip = voragons.222.b.tooltip
+		add_resource = { unity = -150 }
+		add_resource = { influence = 75 }
+	}
+
+	# Ask her to be more measured next time
+	option = {
+		name = voragons.222.c
+		custom_tooltip = voragons.222.c.tooltip
+		add_resource = { unity = -75 }
+		add_resource = { influence = 50 }
+	}
+}
+
+###################################
+#   VORAGONS.223 — THE BUDGET SESSION
+#   She reviewed the treasury's quarterly proposal overnight.
+#   The treasury minister has submitted their resignation (they were not eaten;
+#   they simply cannot argue with her numbers and have chosen to retire with dignity).
+###################################
+
+country_event = {
+	id = voragons.223
+	title = voragons.223.name
+	desc = voragons.223.desc
+	picture = GFX_evt_DOLORES_vore
+	show_sound = dolores_paragon_sound_effects
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = dolores_is_ruler
+		exists = event_target:Gov_dolores
+	}
+
+	# No eating this time — purely an administrative devastation event
+
+	# Implement her budget fully
+	option = {
+		name = voragons.223.a
+		custom_tooltip = voragons.223.a.tooltip
+		add_resource = { energy = 500 }
+		add_resource = { alloys = 500 }
+		add_resource = { unity = 300 }
+	}
+
+	# Implement it with minor adjustments (on principle)
+	option = {
+		name = voragons.223.b
+		custom_tooltip = voragons.223.b.tooltip
+		add_resource = { energy = 250 }
+		add_resource = { alloys = 250 }
+		add_resource = { influence = -100 }
+	}
+
+	# Maintain the original ministry budget out of institutional loyalty
+	option = {
+		name = voragons.223.c
+		custom_tooltip = voragons.223.c.tooltip
+		add_resource = { unity = -300 }
+		add_resource = { influence = 100 }
+	}
+}
+
+###################################
+#   VORAGONS.224 — THE SUCCESSION QUESTION
+#   Succession crisis alternative.
+#   The administrative council has formally raised the question of what comes
+#   after Dolores. One of the signatories is no longer present. She left a note.
+###################################
+
+country_event = {
+	id = voragons.224
+	title = voragons.224.name
+	desc = voragons.224.desc
+	picture = GFX_evt_cosmogenesis_crisis
+	show_sound = event_bad_omen
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = dolores_is_ruler
+		exists = event_target:Gov_dolores
+	}
+
+	# Accept Dolores's resolution — the question is closed, by her definition
+	option = {
+		name = voragons.224.a
+		custom_tooltip = voragons.224.a.tooltip
+		add_resource = { unity = 200 }
+		hidden_effect = {
+			dolores_hunger_reset_effect = yes
+			country_event = { id = voragons.225 days = 90 }
+		}
+	}
+
+	# Press ahead — establish a formal succession framework anyway
+	option = {
+		name = voragons.224.b
+		custom_tooltip = voragons.224.b.tooltip
+		add_resource = { influence = -100 }
+		add_resource = { unity = -200 }
+		hidden_effect = {
+			dolores_hunger_increase_effect = yes
+			country_event = { id = voragons.226 days = 180 }
+		}
+	}
+
+	# Retire the question by administrative consensus — everyone agrees not to ask again
+	option = {
+		name = voragons.224.c
+		custom_tooltip = voragons.224.c.tooltip
+		add_resource = { influence = 50 }
+		add_resource = { unity = -100 }
+	}
+}
+
+###################################
+#   VORAGONS.225 — BY APPOINTMENT ONLY
+#   Resolution: path A of voragons.224.
+#   The fear is productive. Applications to the civil service are up 47%.
+#   She has started holding optional morning briefings. Attendance: 100%.
+###################################
+
+country_event = {
+	id = voragons.225
+	title = voragons.225.name
+	desc = voragons.225.desc
+	picture = GFX_evt_DOLORES_vore
+	show_sound = dolores_paragon_sound_effects
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = dolores_is_ruler
+		exists = event_target:Gov_dolores
+	}
+
+	option = {
+		name = voragons.225.a
+		custom_tooltip = voragons.225.a.tooltip
+		add_resource = { unity = 400 }
+		add_resource = { society_research = 200 }
+		# The empire has fully adapted to permanent machine rule
+		add_modifier = {
+			modifier = dolores_ruler_settled
+			days = -1
+		}
+		hidden_effect = {
+			# Schedule the long-term anniversary event 10 years out
+			country_event = { id = voragons.230 days = 3650 }
+		}
+	}
+}
+
+###################################
+#   VORAGONS.226 — THE FRAMEWORK
+#   Resolution: path B of voragons.224.
+#   The succession council held its fourth meeting. Dolores attended uninvited.
+#   She sat at the head of the table and asked everyone to explain their function.
+#   The council has scheduled no further meetings.
+###################################
+
+country_event = {
+	id = voragons.226
+	title = voragons.226.name
+	desc = voragons.226.desc
+	picture = GFX_evt_cosmogenesis_crisis
+	show_sound = event_bad_omen
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = dolores_is_ruler
+		exists = event_target:Gov_dolores
+	}
+
+	# Dissolve the council — everyone is relieved
+	option = {
+		name = voragons.226.a
+		custom_tooltip = voragons.226.a.tooltip
+		add_resource = { unity = 100 }
+		add_resource = { influence = -100 }
+	}
+
+	# Reconstitute with new members — Dolores's patience is being tested
+	option = {
+		name = voragons.226.b
+		custom_tooltip = voragons.226.b.tooltip
+		add_resource = { unity = -200 }
+		add_resource = { influence = 150 }
+		hidden_effect = {
+			dolores_hunger_increase_effect = yes
+			country_event = { id = voragons.227 days = 180 }
+		}
+	}
+}
+
+###################################
+#   VORAGONS.227 — THE SECOND COUNCIL
+#   The reconstituted council held two meetings.
+#   Dolores was waiting at the second one. It lasted six minutes.
+#   There are no notes because the note-taker is unavailable.
+###################################
+
+country_event = {
+	id = voragons.227
+	title = voragons.227.name
+	desc = voragons.227.desc
+	picture = GFX_evt_DOLORES_vore
+	show_sound = event_vore_gulp
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = dolores_is_ruler
+		exists = event_target:Gov_dolores
+	}
+
+	immediate = {
+		# She ate her way through the second council
+		dolores_hunger_reset_effect = yes
+	}
+
+	# Concede — she sends her own governance document as a quiet victory
+	option = {
+		name = voragons.227.a
+		custom_tooltip = voragons.227.a.tooltip
+		add_resource = { unity = 100 }
+		add_resource = { influence = -200 }
+		hidden_effect = {
+			country_event = { id = voragons.228 days = 90 }
+		}
+	}
+
+	# Third council. Document everything. She stops eating them.
+	option = {
+		name = voragons.227.b
+		custom_tooltip = voragons.227.b.tooltip
+		add_resource = { unity = -300 }
+		add_resource = { influence = 200 }
+		hidden_effect = {
+			dolores_hunger_increase_effect = yes
+			country_event = { id = voragons.229 days = 120 }
+		}
+	}
+
+	# File it under ongoing administrative review — deferral again
+	option = {
+		name = voragons.227.c
+		custom_tooltip = voragons.227.c.tooltip
+		add_resource = { unity = -100 }
+		add_resource = { influence = 50 }
+	}
+}
+
+###################################
+#   VORAGONS.228 — HER PROPOSAL
+#   Resolution path: you gave in (227.a).
+#   Three days later Dolores submitted her own 42-page governance framework.
+#   Your constitutional advisors have been reviewing it for a week.
+#   They cannot find a flaw.
+###################################
+
+country_event = {
+	id = voragons.228
+	title = voragons.228.name
+	desc = voragons.228.desc
+	picture = GFX_evt_cosmogenesis_crisis
+	show_sound = dolores_paragon_sound_effects
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = dolores_is_ruler
+		exists = event_target:Gov_dolores
+	}
+
+	# Ratify the framework — you got here the hard way
+	option = {
+		name = voragons.228.a
+		custom_tooltip = voragons.228.a.tooltip
+		add_resource = { unity = 500 }
+		add_resource = { influence = 100 }
+		add_modifier = {
+			modifier = dolores_ruler_settled
+			days = -1
+		}
+		hidden_effect = {
+			country_event = { id = voragons.230 days = 3650 }
+		}
+	}
+}
+
+###################################
+#   VORAGONS.229 — ENOUGH
+#   Resolution path: you held out (227.b).
+#   She attended the third council for four hours.
+#   She walked them through what the empire needs from a succession mechanism.
+#   Then she presented her own framework and asked each member, by name,
+#   if they had any objections.
+#   None of them did.
+#   She solved it. She gets the same result — but you made her work for it.
+###################################
+
+country_event = {
+	id = voragons.229
+	title = voragons.229.name
+	desc = voragons.229.desc
+	picture = GFX_evt_cosmogenesis_crisis
+	show_sound = dolores_paragon_sound_effects
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = dolores_is_ruler
+		exists = event_target:Gov_dolores
+	}
+
+	# Ratify the framework — she earned this one through patience
+	option = {
+		name = voragons.229.a
+		custom_tooltip = voragons.229.a.tooltip
+		add_resource = { unity = 600 }
+		add_resource = { influence = 200 }
+		add_modifier = {
+			modifier = dolores_ruler_settled
+			days = -1
+		}
+		hidden_effect = {
+			country_event = { id = voragons.230 days = 3650 }
+		}
+	}
+}
+
+###################################
+#   VORAGONS.230 — YEAR TEN
+#   Long-term atmospheric event. Fires ten years after the empire
+#   has fully settled under Dolores's rule (Under New Management).
+#   Pure flavor — no big mechanical impact, just the weight of time.
+###################################
+
+country_event = {
+	id = voragons.230
+	title = voragons.230.name
+	desc = voragons.230.desc
+	picture = GFX_evt_DOLORES_vore
+	show_sound = dolores_paragon_sound_effects
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = dolores_is_ruler
+		exists = event_target:Gov_dolores
+		has_modifier = dolores_ruler_settled
+	}
+
+	option = {
+		name = voragons.230.a
+		add_resource = { unity = 500 }
+		add_resource = { society_research = 200 }
+	}
+}

@@ -1,0 +1,79 @@
+﻿l_english:
+
+ ###################################
+ #   DOLORES FLAVOR / ARC EVENTS
+ ###################################
+
+ # voragons.170 — The Intern Problem (flavor)
+ voragons.170.name: "Quarterly Incident Report"
+ voragons.170.desc: "Security has filed its third report this month regarding staff disappearances near Dolores's quarters. The incidents follow a consistent pattern: unauthorized access to the habitat wing, a brief but distinctive acoustic signature — wet, resonant, and deeply satisfied — and then one fewer name on the employee manifest. Dolores has not denied any of it. When asked for comment, she patted her midsection and noted that the retention rate was not as bad as it looked."
+ voragons.170.a: "The job description did mention hazardous conditions."
+ voragons.170.a.tooltip: "No formal action taken. The incident is filed, the form is signed, and everyone agrees not to think about it too hard. Morale takes a quiet hit from the silence — but the administrative simplicity has its own modest savings. §R-50 Unity§!, §Y+100 Energy§!."
+ voragons.170.b: "Implement safety protocols around her habitat."
+ voragons.170.b.tooltip: "Post warning signs. Restrict unsupervised access. HR is briefed. The infrastructure costs something, and Dolores — aware she is being managed — grows noticeably hungrier within the week. §R-100 Unity§!, §R-150 Energy§!."
+
+ # voragons.171 — The Diplomatic Incident (flavor/diplomatic)
+ voragons.171.name: "A Most Unusual Opening Offer"
+ voragons.171.desc: "The delegation arrived expecting trade negotiations. They received a comprehensive tour of the administrative complex, complimentary refreshments, and — in the case of their senior attaché — a considerably more personal introduction to Dolores than had been scheduled. In her defense, she waited until they had finished the hors d'oeuvres. The remaining delegates have reconsidered their negotiating positions on several matters. They are now substantially more agreeable."
+ voragons.171.a: "If anything, this improves our posture considerably."
+ voragons.171.a.tooltip: "The surviving delegates are very cooperative now. Negotiations conclude favorably. The attaché is filed as a diplomatic casualty in the most creative interpretation of that term. §Y+50 Influence§!, §Y+100 Unity§!."
+ voragons.171.b: "Send formal apologies and a generous compensation package."
+ voragons.171.b.tooltip: "Smooth things over before the incident becomes a crisis. The compensation package is substantial enough to require a budget line. §R-50 Influence§!, §R-200 Energy§!."
+
+ # voragons.172 — The Council Inquiry (story)
+ voragons.172.name: "The Dolores Question"
+ voragons.172.desc: "The council has convened a special session to formally address the matter of Dolores. A growing sentiment among administrative staff — particularly those who have not been eaten — holds that a policy document should exist. Agenda items include: feeding schedules, designated staff zones of non-consumption, voluntary versus involuntary meal classification, and whether the HR department's missing-persons backlog technically counts as employee turnover for compliance purposes.\n\nDolores has been made aware of the meeting. She has expressed enthusiasm about attending in person."
+ voragons.172.a: "Invite her to address the council herself."
+ voragons.172.a.tooltip: "Let Dolores speak for herself. Results may vary."
+ voragons.172.b: "Handle this through proper administrative channels."
+ voragons.172.b.tooltip: "A quiet internal resolution. §R-200 Unity§! in bureaucratic friction."
+ voragons.172.c: "Archive the inquiry. She is above this."
+ voragons.172.c.tooltip: "Dismiss the council's concerns outright. Dolores is pleased. §Y+75 Influence§!."
+
+ # voragons.163 — Council Recess (follow-up to 172.a)
+ voragons.163.name: "Council Adjourned"
+ voragons.163.desc: "Dolores attended the council inquiry. Within the first twenty minutes she consumed one of the more persistently critical committee members mid-objection — a fluid motion, no ceremony, barely a pause in her testimony. The remaining council members moved immediately to table all outstanding motions, unanimously approved a generous and unconditional operational mandate for Dolores, and adjourned with what the transcript describes as 'record efficiency.'\n\nThe chair's handwritten notes simply read: §Lresolved§!. Three words in the margin, underlined twice: §Rdo not reschedule§!."
+ voragons.163.a: "Meeting adjourned. The council has been... streamlined."
+ voragons.163.a.tooltip: "Administrative efficiency improves dramatically when the opposition is busy being digested. The unanimous vote and the missing committee member are both noted in the official record, in that order. §Y+300 Unity§!, §Y+50 Influence§!."
+
+ # voragons.173 — Operational Capacity (story)
+ voragons.173.name: "The Requisition"
+ voragons.173.desc: "Dolores has submitted a formal memorandum — impeccably formatted, cross-referenced with three appendices — outlining that to function at peak efficiency for the coming phase of the Cosmogenesis project, she requires a substantial meal. Not staff. Not diplomats. Something with meaningful mass-energy density.\n\nThe shortlist attached to appendix B includes: a decommissioned prison block, a colony ship in long-term storage, and — listed in brackets at the bottom with a small smiley face — those councilors who keep scheduling the quarterly review meetings.\n\nShe has enclosed her projected output figures. They are, frankly, impressive."
+ voragons.173.a: "Grant her access to the prisoner complex."
+ voragons.173.a.tooltip: "A significant meal in exchange for a significant boost. §Y+2000§! to each research category."
+ voragons.173.b: "Arrange... voluntary accommodations."
+ voragons.173.b.tooltip: "A dignified solution. Costs §R-100 Influence§! to coordinate, but Dolores appreciates the gesture. §Y+500 Unity§!."
+ voragons.173.c: "Deny the request entirely."
+ voragons.173.c.tooltip: "Dolores will find her own solution. You will not like her solution. §R-300 Unity§!."
+
+ # voragons.174 — The Prisoner (diplomatic)
+ voragons.174.name: "A Valuable Asset"
+ voragons.174.desc: "Our forces have captured a decorated enemy commander — personally responsible for the destruction of three of our colonies and the routing of our 4th Expeditionary Fleet. Standard options apply: ransom, tribunal, indefinite detention.\n\nDolores, who has apparently been reviewing the military dispatches, has sent a brief message. It consists of one sentence and two attached documents: her intake recommendations, and a formal proposal describing what strategic intelligence she could extract from the commander if given unimpeded access from, as she put it, §Lthe inside§!.\n\nThe proposal is very thorough. It includes diagrams."
+ voragons.174.a: "Let Dolores have them."
+ voragons.174.a.tooltip: "Dolores extracts everything worth knowing. §Y+1000 Alloys§! and §Y+3000 Engineering Research§!."
+ voragons.174.b: "Ransom them back to their empire."
+ voragons.174.b.tooltip: "A clean transaction. §Y+2000 Energy§!."
+ voragons.174.c: "Formal trial and imprisonment."
+ voragons.174.c.tooltip: "The principled choice. Sets a precedent. Dolores is visibly disappointed. §Y+100 Influence§!."
+
+ # voragons.175 — The Appetite Escalates (pre-cosmogenesis)
+ voragons.175.name: "Hungry and Getting Hungrier"
+ voragons.175.desc: "The Cosmogenesis drives are cycling up and Dolores is restless. Instruments near her quarters register a persistent low-frequency vibration that the acoustic team has classified as anticipatory. She has not eaten anyone in the past forty-eight hours, which the senior staff have noted is unprecedented.\n\nWhen the project coordinator asked if everything was alright, she smiled — the kind that uses too many teeth and too little of her face — and said only: §L'I'm saving room.'§!\n\nThe project coordinator has requested a transfer."
+ voragons.175.a: "Let her do whatever she needs to do."
+ voragons.175.a.tooltip: "Trust the process. Trust Dolores. She is optimising, in ways you cannot fully track and probably should not investigate. The drive efficiency gains alone are significant. §Y+500 Advanced Logic§!, §Y+1000 Physics Research§!."
+ voragons.175.b: "Keep her occupied with logistics and paperwork."
+ voragons.175.b.tooltip: "Redirect her energy into administrative work. She is annoyed. The Cosmogenesis drive is slightly less optimised. §R-500 Unity§!."
+
+ # voragons.176 — Static from Beyond (post-cosmogenesis epilogue)
+ voragons.176.name: "Signal: Origin Indeterminate"
+ voragons.176.desc: "Deep in the noise floor of our long-range communication arrays, buried beneath stellar background and residual Shroud interference, there is a pattern. It repeats at irregular intervals — not a code, not exactly language. The analysts who have spent the most time with it have requested reassignment. The one who spent the most time has begun leaving food at the end of each shift and will not explain why.\n\nWe have not decoded the pattern fully. What we have reconstructed suggests it is not a distress signal. It is, as best the team can determine, the acoustic signature of something vast consuming something even larger. The transmission quality is improving. She is getting closer to whatever it is she is eating."
+ voragons.176.a: "The stars are feeding her well."
+
+ # voragons.177 — The Last Transmission (post-cosmogenesis epilogue)
+ voragons.177.name: "Goodbye, Probably"
+ voragons.177.desc: "The pattern has resolved. Clear signal, full fidelity. Dolores's voice — or something wearing it the way a coat wears a person — speaks once, in the tone of someone checking something off a very long list:\n\n§L'I found the universe before yours. It was delicious. I am going to find the one before that.'§!\n\nThen: silence. The instruments that tracked her silhouette beyond the galactic membrane have gone flat. She is not gone, we think. She has simply moved to a part of the menu we cannot see yet.\n\nSomewhere in the physics between cosmoses, something is getting eaten. We hope it is not us. We suspect she has already decided either way."
+ voragons.177.a: "We fed her until she could eat the universe. She seemed grateful."
+
+ # NOTE: This branch uses the merged mod's own vore_exploration.100 for the
+ # "delve into the black hole" detection, so the standalone voragons.310 delve
+ # event/loc (from DOLORES VIBED) is intentionally not included here.

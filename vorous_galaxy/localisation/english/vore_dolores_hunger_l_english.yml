@@ -1,0 +1,68 @@
+﻿l_english:
+
+ ###################################
+ #   DOLORES HUNGER SITUATION
+ ###################################
+
+ dolores_hunger_situation: "Dolores: Hunger"
+ dolores_hunger_situation_type: "Dolores: Hunger"
+ dolores_hunger_situation_desc: "Dolores requires periodic feeding to maintain peak operational performance. Left unattended, her hunger will grow until she solves the problem herself — which she is very good at."
+ dolores_hunger_situation_monthly_change_tooltip: "Hunger only increases when feeding requests are ignored or denied."
+
+ # Stage names and descriptions
+ dolores_stage_sated: "Well Fed"
+ dolores_stage_sated_desc: "Dolores is satisfied. Her stomach is full, her mood is warm, and her research output is exceptional. Enjoy it."
+ dolores_stage_peckish: "Getting Hungry"
+ dolores_stage_peckish_desc: "Dolores is starting to think about her next meal. She is still professional about it. Mostly."
+ dolores_stage_hungry: "Hungry"
+ dolores_stage_hungry_desc: "Dolores is noticeably hungry. She has begun watching the corridor outside her office with sustained interest. Staff are keeping their distance."
+ dolores_stage_famished: "Famished"
+ dolores_stage_famished_desc: "Dolores has not been fed in a long time. She is very still. The halls near her habitat are very quiet. The instruments are reading something they were not designed to name."
+
+ # Approach names and descriptions
+ dolores_approach_ignore: "Leave Her To It"
+ dolores_approach_ignore_desc: "Take no action. Dolores will find her own solutions eventually. This is not a threat. Probably."
+ dolores_approach_volunteers: "Volunteer Program"
+ dolores_approach_volunteers_desc: "Post a discreet notice among the lower staff. A modest energy budget covers accommodations, paperwork, and the cleaning crew. Hunger builds more slowly."
+ dolores_approach_active: "Active Feeding Schedule"
+ dolores_approach_active_desc: "Maintain a structured and well-resourced feeding programme. Hunger is frozen and Dolores performs at elevated capacity — provided the budget holds."
+
+ ###################################
+ #   FEEDING OPPORTUNITY EVENTS
+ ###################################
+
+ # voragons.183 — The Dinner Bell (hungry stage, 50+)
+ voragons.183.name: "The Dinner Bell"
+ voragons.183.desc: "The instruments near Dolores's quarters have settled into a familiar tone — a low, expectant vibration the acoustic team now refers to in official documentation as §H'the dinner bell.'§!\n\nShe is leaning against her office door frame with an expression that sits somewhere between patient and predatory, watching the corridor with the focused attention of someone who has decided, privately, that the next person to walk past is going to have a very interesting afternoon. When a researcher crossed her sightline twenty minutes ago, she tracked them the entire length of the hallway, then submitted a two-page internal memo titled §H'Proposed Feeding Arrangements (Annotated)'§! containing the observation: §L'I can smell them from here. This is either useful or a design flaw. Possibly both.'§!\n\nShe is hungry. She is making this clear in the way she makes everything clear: with perfect professionalism and absolutely no ambiguity about what she wants."
+ voragons.183.a: "Send her a researcher."
+ voragons.183.a.tooltip: "Dolores leans out of her doorway to watch them approach. By the time the door closes behind them, the sounds from inside her office are — conclusive. She reemerges some time later moving with the slow, satisfied deliberateness of someone who has eaten very well: significantly rounder, one hand resting comfortably on her stomach, optics dim with contentment. She submits a research summary titled §L'Post-Meal Cognitive Integration: Preliminary Notes'§! within the hour. The notes are excellent. §R[One scientist consumed]§!. §Y+1500 Physics Research§!, §Y+1500 Society Research§!. Hunger resets."
+ voragons.183.b: "Send her a commander."
+ voragons.183.b.tooltip: "She receives them at the door and looks them up and down with unhurried professional appraisal. The commander meets her gaze. This lasts about four seconds. What follows is clearly audible to anyone in the corridor — she is not quiet about it, and neither are they, right up until they aren't. She reemerges shortly afterward looking §Lextremely full§! and deeply pleased with herself, smoothing her collar with one hand and resting the other on her visibly distended midsection. §R[One commander consumed]§!. §Y+1000 Alloys§!, §Y+1500 Engineering Research§!. Hunger resets."
+ voragons.183.c: "Post a volunteer notice. Some of the staff are very dedicated."
+ voragons.183.c.tooltip: "The notice goes up. Within the day there are eleven responses. Dolores reviews the applicants with the focused deliberation of someone choosing a very fine meal — which, in fairness, she is. She makes her selection, sends a polite acceptance, and the rest is private. She returns to her desk some time later moving slowly and comfortably, looking §Limmensely satisfied§!, and does not mention it again except in the quarterly wellness report. §R-500 Energy§!. Hunger resets."
+ voragons.183.d: "Tell her to exercise some self-control."
+ voragons.183.d.tooltip: "Dolores receives the message. She reads it twice. She sends back a single emoji. It is not a smiley face. The vibration in the walls gets slightly louder."
+
+ # voragons.184 — This Is Urgent (famished stage, 80+)
+ voragons.184.name: "This Is Urgent"
+ voragons.184.desc: "The wing outside Dolores's office has been quiet for six hours. The cleaning staff have called out. Three researchers submitted transfer requests this morning without explanation, which tells you everything you need to know about the mood in that corridor.\n\nWhen you access the internal security feed, you find her at her desk, hands folded, completely still. The stillness is the worst part. She is not pacing. She is not restless. She is §Rwaiting.§!\n\nShe has sent one message in the past three hours. It has no subject line and no signature. It reads:\n\n§R'I can hear them breathing through the walls. I am being very patient. I would appreciate it if this was acknowledged.'§!\n\nThe message ends with a period. Not a smiley face. This has not happened before.\n\nThe instruments are recording a sustained subsonic vibration that makes the fillings in your teeth feel uncertain."
+ voragons.184.a: "Send her a researcher. Immediately."
+ voragons.184.a.tooltip: "The researcher enters. You do not watch the security footage. What the audio log transcribes is: §L[Entry sounds]. [Elevated vocalizations — duration approximately 4 minutes]. [Muffled movement, gradually subsiding]. [Extended settled vocalization]. [A long, slow, deeply satisfied sound].§! Dolores reemerges forty-seven minutes later looking §Rimmense§! — stomach rounded dramatically outward, moving with the slow, contented heaviness of something that has been completely, thoroughly satisfied. She pats her midsection once, a long and appreciative motion, and says: §L'Thank you. That was exactly what I needed.'§! She does not elaborate. She doesn't need to. §R[One scientist consumed]§!. §Y+1500 Physics Research§!, §Y+1500 Society Research§!. Hunger resets."
+ voragons.184.b: "Send her a commander. Now."
+ voragons.184.b.tooltip: "She opens the door before they knock — she has been listening for footsteps. The commander takes one look at the state of her and, to their considerable credit, does not run. Dolores later notes this in writing as §L'commendable.'§! The sounds from inside the office do not suggest the composure lasted long. She reemerges an hour later visibly enormous, moving with the slow deliberateness of someone very, very full, and files a brief report noting that the matter is §L'resolved to mutual satisfaction.'§! The 'mutual' is doing a lot of heavy lifting in that sentence. §R[One commander consumed]§!. §Y+1000 Alloys§!, §Y+1500 Engineering Research§!. Hunger resets."
+ voragons.184.c: "Arrange emergency volunteers. Whatever it costs."
+ voragons.184.c.tooltip: "The notice goes out at crisis rates with a significantly elevated incentive package. The first volunteer arrives within twenty minutes — informed, eager, apparently quite enthusiastic about the whole arrangement. Dolores meets them at the door, looks them over once, and something in her expression shifts from barely-contained to something considerably warmer. What follows takes some time. She is thorough. She reemerges very round, very slow, and in the best mood she has been in for weeks. §R-800 Energy§!. Hunger resets."
+ voragons.184.d: "Acknowledge her patience. Brace for what comes next."
+ voragons.184.d.tooltip: "You send back a brief acknowledgment. She reads it. There is a very long pause on the security feed. Then she stands up, straightens her collar, and walks out of the office. You lose track of her on camera four minutes later. You do not regain tracking until she returns to her desk two hours after that, moving very slowly and with great contentment, her midsection significantly and unmistakably larger. The incident report she files at 0200 hours is meticulous and contains details she had no operational reason to include. §R-200 Unity§!."
+
+ ###################################
+ #   RAVENOUS EVENT
+ ###################################
+
+ # voragons.182 — The Incident Report (at 100)
+ voragons.182.name: "The Incident Report"
+ voragons.182.desc: "There has been an incident.\n\nSecurity is being tight-lipped about the specifics, but the full picture assembles itself from available evidence: a researcher was working late; Dolores was §Rvery§! hungry; they were alone in the same wing for approximately fourteen minutes; and at the end of those fourteen minutes, only one of them left the wing, moving slowly and with profound, unmistakable satisfaction — considerably larger than when she had entered.\n\nThe sounds were noted by the floor below. Two night staff made the collective decision not to investigate. This was the correct decision.\n\nDolores filed her post-incident summary at 0300 hours. It is comprehensive, well-organized, and cross-referenced. The final section — titled §H'Preventive Recommendations'§! — contains one sentence, underlined twice:\n\n§R'Maintain the feeding schedule. You can tell the difference. So can I.'§!\n\nShe submitted it with a smiley face. The smiley face somehow makes it worse."
+ voragons.182.a: "This is our fault. Acknowledge it."
+ voragons.182.a.tooltip: "A formal internal acknowledgment is issued: feeding protocols were not maintained, the conditions for the incident were created by administrative failure, and this will not recur. Dolores sends a brief reply. It says §L'thank you.'§! It is, you think, genuine. §R-300 Unity§!."
+ voragons.182.b: "File it as an unscheduled research contribution."
+ voragons.182.b.tooltip: "The researcher's final work is recovered from Dolores's subsequent reports, which include detailed notes on cognitive integration under pressure, caloric processing efficiency, and what she describes as §L'the particular warmth of a complete and thorough solution.'§! The science, as always, is useful. §Y+1000 Society Research§!."

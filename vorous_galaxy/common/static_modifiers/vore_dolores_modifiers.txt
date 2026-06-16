@@ -1,0 +1,58 @@
+# Modifiers previously here are now defined inline inside dolores_hunger_situation stages.
+#
+# NOTE: The Warden's Legacy stance modifiers (dolores_warden_contain/study/liberate)
+# were removed from this branch along with the origin that applied them (voragons.300).
+
+###################################
+#   POST-VICTORY LEGACY MODIFIER
+#   Applied permanently by voragons.177 (two years after Dolores ascends).
+#   Marks the civilization that helped a machine intelligence eat the universe.
+###################################
+
+dolores_legacy_modifier = {
+	country_physics_research_produces_mult = 0.15
+	country_society_research_produces_mult = 0.15
+	country_engineering_research_produces_mult = 0.10
+}
+
+###################################
+#   DOLORES RULER SETTLED MODIFIER
+#   Applied permanently (days = -1) by voragons.225 — the succession question
+#   was resolved Dolores's way, and the empire has fully adapted to machine rule.
+###################################
+
+dolores_ruler_settled = {
+	# pop_growth_speed is not a valid modifier in this version.
+	# Replaced with country_unity_produces_mult boost.
+	country_unity_produces_mult = 0.15
+	pop_happiness = 0.05
+}
+
+###################################
+#   DOLORES JUST FED MODIFIER
+#   Applied for 360 days (~1 year) after a significant meal.
+#   Represents her being at peak processing capacity — the surplus
+#   benefits the empire while it lasts.
+#
+#   Triggered by voragons.155 (the ruler), 163 (council member),
+#   173.a (prisoner complex), 174.a (enemy commander), 212.a (willing party).
+###################################
+
+dolores_just_fed = {
+	country_unity_produces_mult = 0.10
+	country_society_research_produces_mult = 0.10
+	country_physics_research_produces_mult = 0.05
+}
+
+###################################
+#   DOLORES LEGEND MODIFIER
+#   Applied permanently by voragons.262 (100 meals milestone).
+#   Folklore status — the empire has fully integrated her appetite
+#   into its self-image, and the resulting cultural unity is substantial.
+###################################
+
+dolores_legend = {
+	country_unity_produces_mult = 0.15
+	country_society_research_produces_mult = 0.10
+	pop_happiness = 0.05
+}

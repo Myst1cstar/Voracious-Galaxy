@@ -1,0 +1,151 @@
+###################################
+#   DOLORES HUNGER SITUATION
+#
+#   Progress only changes through events (monthly_progress base = 0).
+#   Stages fire player-facing events when first entered.
+#   At 100, she eats someone without authorisation.
+###################################
+
+dolores_hunger_situation = {
+	picture = GFX_evt_DOLORES_vore
+	category = negative
+
+	complete_icon_frame = GFX_situation_outcome_frame_red
+	complete_icon = GFX_situation_outcome_negative
+
+	# Start at 10 — just had a meal when the situation begins
+	initial_progress = 10
+
+	# Ends cleanly if Dolores is no longer present (leader flag set on hire)
+	abort_trigger = {
+		owner = {
+			NOT = {
+				any_owned_leader = { has_leader_flag = Dolores }
+			}
+		}
+	}
+
+	on_abort = { }
+
+	# Fires when hunger hits 100 — she acted on her own initiative
+	on_progress_complete = {
+		owner = {
+			country_event = { id = voragons.182 }
+		}
+		destroy_situation = this
+	}
+
+	###################################
+	#   HUNGER STAGES
+	###################################
+
+	stages = {
+
+		# 0–20: She just had a good meal — research bonus while she is content
+		dolores_stage_sated = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_green
+			end = 20
+			on_first_enter = { }
+			modifier = {
+				country_physics_research_produces_mult = 0.05
+				country_society_research_produces_mult = 0.05
+			}
+		}
+
+		# 21–50: Hunger is building but manageable
+		dolores_stage_peckish = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_green
+			end = 50
+			on_first_enter = { }
+		}
+
+		# 51–80: She is noticeably hungry — staff are nervous
+		dolores_stage_hungry = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 80
+			on_first_enter = {
+				owner = { country_event = { id = voragons.183 days = 3 } }
+			}
+			modifier = {
+				planet_stability_add = -3
+			}
+		}
+
+		# 81–100: She is famished — governance suffers
+		dolores_stage_famished = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			end = 100
+			on_first_enter = {
+				owner = { country_event = { id = voragons.184 days = 3 } }
+			}
+			modifier = {
+				planet_stability_add = -6
+				country_unity_produces_mult = -0.05
+			}
+		}
+
+	}
+
+	###################################
+	#   FEEDING APPROACHES
+	###################################
+
+	# Default: take no action — hunger only changes through events
+	approach = {
+		name = dolores_approach_ignore
+		icon = GFX_situation_approach_shrug
+		icon_background = GFX_situation_approach_bg_red
+		on_select = {
+			custom_tooltip = dolores_approach_ignore_desc
+		}
+		default = yes
+		ai_weight = { base = 1 }
+	}
+
+	# Volunteer program: a modest energy budget covers the necessary arrangements
+	approach = {
+		name = dolores_approach_volunteers
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+			custom_tooltip = dolores_approach_volunteers_desc
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				energy = 100
+			}
+		}
+		ai_weight = { base = 1 }
+	}
+
+	# Active feeding schedule: well-resourced programme with research benefits
+	approach = {
+		name = dolores_approach_active
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+			custom_tooltip = dolores_approach_active_desc
+		}
+		modifier = {
+			country_physics_research_produces_mult = 0.03
+			country_society_research_produces_mult = 0.03
+			country_engineering_research_produces_mult = 0.03
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				energy = 200
+			}
+		}
+		ai_weight = { base = 1 }
+	}
+
+	monthly_progress = {
+		base = 0
+	}
+}

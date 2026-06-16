@@ -1,0 +1,176 @@
+namespace = voragons
+
+###################################
+#   DOLORES HUNGER SITUATION EVENTS
+#
+#   voragons.182 — Ravenous (on_progress_complete at 100)
+#   voragons.183 — Feeding opportunity (on_first_enter at hungry stage 50+)
+#   voragons.184 — Urgent feeding (on_first_enter at famished stage 80+)
+###################################
+
+# voragons.183 — Fires when entering the Hungry stage (50+)
+country_event = {
+	id = voragons.183
+	title = voragons.183.name
+	desc = voragons.183.desc
+	picture = GFX_evt_DOLORES_vore
+	show_sound = event_vore_gulp
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:Gov_dolores
+		any_situation = { is_situation_type = dolores_hunger_situation }
+	}
+
+	# Feed her a researcher
+	option = {
+		name = voragons.183.a
+		custom_tooltip = voragons.183.a.tooltip
+		allow = {
+			any_owned_leader = { leader_class = scientist }
+		}
+		hidden_effect = {
+			kill_leader = { class = scientist show_notification = yes }
+			dolores_hunger_reset_effect = yes
+		}
+		add_resource = { physics_research = 1500 }
+		add_resource = { society_research = 1500 }
+	}
+
+	# Feed her a fleet commander
+	option = {
+		name = voragons.183.b
+		custom_tooltip = voragons.183.b.tooltip
+		allow = {
+			any_owned_leader = { leader_class = commander }
+		}
+		hidden_effect = {
+			kill_leader = { class = commander show_notification = yes }
+			dolores_hunger_reset_effect = yes
+		}
+		add_resource = { alloys = 1000 }
+		add_resource = { engineering_research = 1500 }
+	}
+
+	# Post a volunteer notice — unnamed staff only
+	option = {
+		name = voragons.183.c
+		custom_tooltip = voragons.183.c.tooltip
+		allow = {
+			resource_stockpile_compare = { resource = energy value >= 500 }
+		}
+		add_resource = { energy = -500 }
+		hidden_effect = { dolores_hunger_reset_effect = yes }
+	}
+
+	# Deny — hunger climbs
+	option = {
+		name = voragons.183.d
+		custom_tooltip = voragons.183.d.tooltip
+		hidden_effect = { dolores_hunger_increase_effect = yes }
+	}
+}
+
+# voragons.184 — Fires when entering the Famished stage (80+)
+country_event = {
+	id = voragons.184
+	title = voragons.184.name
+	desc = voragons.184.desc
+	picture = GFX_evt_DOLORES_vore
+	show_sound = event_vore_gulp
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:Gov_dolores
+		any_situation = { is_situation_type = dolores_hunger_situation }
+	}
+
+	# Offer a researcher
+	option = {
+		name = voragons.184.a
+		custom_tooltip = voragons.184.a.tooltip
+		allow = {
+			any_owned_leader = { leader_class = scientist }
+		}
+		hidden_effect = {
+			kill_leader = { class = scientist show_notification = yes }
+			dolores_hunger_reset_effect = yes
+		}
+		add_resource = { physics_research = 1500 }
+		add_resource = { society_research = 1500 }
+	}
+
+	# Offer a commander
+	option = {
+		name = voragons.184.b
+		custom_tooltip = voragons.184.b.tooltip
+		allow = {
+			any_owned_leader = { leader_class = commander }
+		}
+		hidden_effect = {
+			kill_leader = { class = commander show_notification = yes }
+			dolores_hunger_reset_effect = yes
+		}
+		add_resource = { alloys = 1000 }
+		add_resource = { engineering_research = 1500 }
+	}
+
+	# Emergency volunteers — higher energy cost
+	option = {
+		name = voragons.184.c
+		custom_tooltip = voragons.184.c.tooltip
+		allow = {
+			resource_stockpile_compare = { resource = energy value >= 800 }
+		}
+		add_resource = { energy = -800 }
+		hidden_effect = { dolores_hunger_reset_effect = yes }
+	}
+
+	# Accept the consequences
+	option = {
+		name = voragons.184.d
+		custom_tooltip = voragons.184.d.tooltip
+		add_resource = { unity = -200 }
+		hidden_effect = { dolores_hunger_increase_effect = yes }
+	}
+}
+
+# voragons.182 — Fires from on_progress_complete (hunger = 100)
+# Dolores ate someone without authorisation. The situation was already destroyed
+# by the on_progress_complete block. This event restarts it fresh.
+country_event = {
+	id = voragons.182
+	title = voragons.182.name
+	desc = voragons.182.desc
+	picture = GFX_evt_DOLORES_vore
+	show_sound = event_vore_gulp
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:Gov_dolores
+	}
+
+	immediate = {
+		# She ate whoever was nearest — try scientist first
+		if = {
+			limit = {
+				any_owned_leader = { leader_class = scientist }
+			}
+			kill_leader = { class = scientist show_notification = yes }
+		}
+		# Restart the situation fresh
+		start_situation = { type = dolores_hunger_situation }
+	}
+
+	option = {
+		name = voragons.182.a
+		custom_tooltip = voragons.182.a.tooltip
+		add_resource = { unity = -300 }
+	}
+
+	option = {
+		name = voragons.182.b
+		custom_tooltip = voragons.182.b.tooltip
+		add_resource = { society_research = 1000 }
+	}
+}

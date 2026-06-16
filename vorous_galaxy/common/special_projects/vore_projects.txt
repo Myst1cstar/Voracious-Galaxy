@@ -1,0 +1,26 @@
+##############################################
+#                COLONIES
+##############################################
+
+#Far, ungoverned, frontier
+special_project = {
+	key = vore_establish_martial_law
+	days_to_research = 240
+	timelimit = 220
+	picture = GFX_evt_federation_fleet
+	event_scope = ship_event
+	location = yes
+	remove_when_completed = yes
+	
+	requirements = {
+		assault_armies = 4
+	}
+
+	on_success = {
+		fromfrom = {planet_event = { id = vore_vorny_colonists.7}}
+	}
+
+	on_fail = {
+		fromfrom = {planet_event = { id = vore_vorny_colonists.10}}
+	}
+}

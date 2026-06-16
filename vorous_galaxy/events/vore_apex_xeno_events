@@ -1,0 +1,501 @@
+namespace = vore
+
+country_event = {
+	id = vore.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_owned_planet = {
+			NOT = {
+				has_planet_flag = recent_vore_frenzy
+			}
+
+			count_species = {
+				count > 1
+			}
+
+			any_owned_species = {
+				species = {
+					NOT = {
+						has_trait = trait_vore_lethal
+					}
+				}
+			}
+			
+			any_owned_species = {
+				species = {
+					has_trait = trait_vore_lethal
+				}
+			}
+		}
+	}
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				NOT = {
+					has_planet_flag = recent_vore_frenzy
+				}
+			}
+			
+			if = {
+				limit = { 
+					count_species = {
+						count > 1
+					}
+	
+					any_owned_species = {
+						species = {
+							NOT = {
+								has_trait = trait_vore_lethal
+							}
+						}
+					}
+					
+					any_owned_species = {
+						species = {
+							has_trait = trait_vore_lethal
+						}
+					}
+				}
+				random = {
+					chance = 60
+					random_owned_species = {
+						limit = {
+							species = {
+								has_trait = trait_vore_lethal
+							}
+						}
+						species = { save_global_event_target_as = vore_species }
+					}
+					random_owned_species = {
+						limit = {
+							species = {
+								NOT = {
+									has_trait = trait_vore_lethal
+								}
+							}
+						}
+						species = { save_global_event_target_as = prey_species }
+					}
+					planet_event = {
+						id = vore.2
+						days = 10
+						random = 30
+					}
+			}
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = vore.2
+	hide_window = no
+	is_triggered_only = yes
+	title = vore.2.title
+	desc = vore.2.desc
+	picture = GFX_evt_burning_settlement
+	show_sound = event_air_raid_siren
+
+	pre_triggers = {
+		has_ground_combat = no
+		is_occupied_flag = no
+	}
+
+	immediate = {
+			add_planet_devastation = 5
+
+			add_modifier = {
+				modifier = vore_frenzy
+				years = 5
+			}
+
+			set_timed_planet_flag = {
+				flag = recent_vore_frenzy
+				years = 10
+			}
+
+			random_owned_pop = {
+				limit = {
+					NOT = {
+						has_trait = trait_vore_lethal
+					}
+				}
+
+				kill_pop = yes
+			}
+	}
+
+	option = {
+		name = SPLENDID
+
+		trigger = {
+			owner_species = {
+				has_trait = trait_vore_lethal
+			}
+		}
+	}
+
+	option = {
+		name = WORRYING
+
+		trigger = {
+			always = yes
+		}
+	}
+
+	option = {
+		name = vore.2.c
+
+		trigger = {
+			owner_species = {
+				NOT = {
+					has_trait = trait_vore_lethal
+				}
+			}
+			owner = {
+				OR = {
+					has_ethic = ethic_xenophobe
+					has_ethic = ethic_fanatic_xenophobe
+				}
+			}
+		}
+
+		random_owned_pop = {
+			limit = {
+				is_same_species = event_target:vore_species
+			}
+
+			kill_pop = yes
+		}
+
+		random_owned_pop = {
+			limit = {
+				is_same_species = event_target:vore_species
+			}
+
+			kill_pop = yes
+		}
+
+		add_planet_devastation = 10
+
+		add_modifier = {
+			modifier = vore_frenzy_put_down
+			years = 2
+		}
+
+		remove_modifier = vore_frenzy
+	}
+
+	option = {
+		name = vore.2.d
+
+		trigger = {
+			owner_species = {
+				has_trait = trait_vore_prey
+			}
+		}
+
+		owner = {
+			kill_leader = {
+				type = ruler
+				show_notification = yes
+				heir = no
+			}
+		}
+	}
+
+	after = {
+		clear_global_event_target = vore_species
+		clear_global_event_target = prey_species
+	}
+}
+
+########
+# Envoy events by TaurenDevourer
+########
+
+#Envoy Predator Event
+country_event = {
+	id = vore.3
+	title = vore.3.name
+	desc = vore.3.desc
+	picture = GFX_evt_assembly_fight
+	show_sound = event_assembly_fight
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_country_type = default
+		from = {
+			species = { has_trait = trait_vore_lethal }
+			any_relation = {
+				is_improving_relations_with = root
+				NOT = { has_country_flag = recent_envoy_event }
+				NOT = { is_same_species = root }
+				NOT = { is_same_species = root.ruler }
+				any_envoy = {
+					has_envoy_task = {
+					task = improve_relations
+					target = root
+					}
+				NOT = { is_same_species = root }
+				NOT = { is_same_species = root.ruler }
+			}
+		}
+		NOT = { has_country_flag = recent_envoy_event }
+		}
+	}
+
+	immediate = {
+		set_timed_country_flag = {
+			flag = recent_envoy_event
+			days = 5400
+		}
+		random_relation = {
+			limit = {
+				is_improving_relations_with = root
+				NOT = { has_country_flag = recent_envoy_event }
+				NOT = { is_same_species = root }
+				NOT = { is_same_species = root.ruler }
+				any_envoy = {
+					has_envoy_task = {
+						task = improve_relations
+						target = root
+					}
+					NOT = { is_same_species = root }
+					NOT = { is_same_species = root.ruler }
+				}
+			}
+			set_timed_country_flag = {
+				flag = recent_envoy_event
+				days = 5400
+			}
+			save_event_target_as = envoy_source
+			random_envoy = {
+				limit = {
+					has_envoy_task = {
+						task = improve_relations
+						target = root
+					}
+					NOT = { is_same_species = root }
+					NOT = { is_same_species = root.ruler }
+				}
+				save_event_target_as = event_envoy
+			}
+		}
+		ruler.species = {
+			save_event_target_as = ruler_species
+		}
+	}
+
+	option = {
+		name = vore.3.A
+		add_resource = {
+			influence = 30
+		}
+		tooltip = {
+			add_opinion_modifier = {
+				who = event_target:envoy_source
+				modifier = opinion_envoy_predator_offence
+			}
+		}
+		hidden_effect = { set_country_flag = envoy_predator_offence }
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0.25
+				OR = {
+					has_defensive_pact = event_target:envoy_source
+					is_in_federation_with = event_target:envoy_source
+				}
+			}
+			modifier = {
+				factor = 0.5
+				opinion_level = {
+					who = event_target:envoy_source
+					level >= good
+				}
+			}
+			modifier = {
+				factor = 2
+				opinion_level = {
+					who = event_target:envoy_source
+					level <= poor
+				}
+			}
+			modifier = {
+				factor = 2
+				is_rival = event_target:envoy_source
+			}
+		}
+	}
+	option = {
+		name = vore.3.B
+
+		add_opinion_modifier = {
+			who = event_target:envoy_source
+			modifier = opinion_envoy_predator_respect
+		}
+
+		tooltip = {
+			add_opinion_modifier = {
+				who = event_target:envoy_source
+				modifier = opinion_envoy_predator_respect
+			}
+		}
+		hidden_effect = { set_country_flag = envoy_predator_respect }
+	}
+
+	after = {
+		hidden_effect = {
+			event_target:envoy_source = {
+				country_event = { id = vore.4 }
+			}
+		}
+	}
+}
+
+#insulting envoy software event
+country_event = {
+	id = vore.4
+	title = vore.4.name
+	desc = {
+		text = vore.4.desc.neg
+		trigger = {
+			from = { has_country_flag = envoy_predator_offence }
+		}
+	}
+	desc = {
+		text = vore.4.desc.pos
+		trigger = {
+			from = { has_country_flag = envoy_predator_respect }
+		}
+	}
+	picture = GFX_evt_assembly_fight
+	show_sound = event_assembly_fight
+
+	is_triggered_only = yes
+
+	option = {
+		name = UNFORTUNATE
+		trigger = {
+			from = { has_country_flag = envoy_predator_offence }
+		}
+		from = {
+			add_opinion_modifier = {
+				who = root
+				modifier = opinion_envoy_predator_offence
+			}
+		}
+	}
+	option = {
+		name = vore.4.B
+		trigger = {
+			from = { has_country_flag = envoy_predator_respect }
+		}
+		from = {
+			add_opinion_modifier = {
+				who = root
+				modifier = opinion_envoy_predator_respect
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			from = {
+				remove_country_flag = envoy_predator_offence
+				remove_country_flag = envoy_predator_respect
+			}
+		}
+	}
+}
+
+country_event = {
+	id = vore.5
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		any_owned_planet = {
+			NOT = {
+				has_planet_flag = recent_pred_surge
+			}
+			
+			any_owned_species = {
+				species = {
+					has_trait = trait_vore_lethal
+				}
+			}
+
+		}
+	}
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				NOT = {
+					has_planet_flag = recent_pred_surge
+				}
+				any_owned_species = {
+					has_trait = trait_vore_lethal
+				}
+			}
+
+			random = {
+				chance = 40
+				planet_event = {
+					id = vore.6
+					days = 10
+					random = 30
+				}
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = vore.6
+	is_triggered_only = yes
+	title = vore.6.title
+	desc = vore.6.desc
+	picture = GFX_evt_dark_alley
+	show_sound = event_cityscape
+
+	pre_triggers = {
+		is_occupied_flag = no
+		has_ground_combat = no
+	}
+
+	immediate = {
+		add_modifier = {
+			modifier = rogue_predators
+			years = 5
+		}
+
+		set_timed_planet_flag = {
+			flag = recent_pred_surge
+			years = 10
+		}
+	}
+
+	option = {
+		name = INTERESTING
+
+		trigger = {
+			always = yes
+		}
+	}
+
+	option = {
+		name = WORRYING
+
+		trigger = {
+			always = yes
+		}
+	}
+}

@@ -1,0 +1,5 @@
+﻿l_english:
+
+ #Martial law (Far Ungoverned Frontier)
+ vore_establish_martial_law: "Establish martial law on §K[Root.GetName]§!"
+ vore_establish_martial_law_DESC: "§TA swift and harsh action must be taken to ensure the planet doesn't devolve into a lair of crime. We have to uphold our laws by any means necessary!"

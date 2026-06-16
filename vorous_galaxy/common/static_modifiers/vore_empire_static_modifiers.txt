@@ -1,0 +1,125 @@
+##############################
+#		EVENT MODIFIERS
+##############################
+
+# missing scientist
+vored_scientist_found = {
+	pop_happiness = -0.10
+}
+
+# military academy modifiers
+
+vore_military_academy_boost = {
+	country_physics_tech_research_speed = 0.02
+	country_society_tech_research_speed = 0.02
+	ship_evasion_add = 0.05
+}
+vore_military_academy_boost_military = {
+	pop_ethic_militarist_attraction_mult = 0.25
+}
+vore_military_academy_boost_pacifist = {
+	pop_ethic_pacifist_attraction_mult = 0.25
+}
+
+##############################
+#		PLANET MODIFIERS
+##############################
+
+# far, ungoverned, frontier
+war_against_vore = {
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_crime.dds"
+	icon_frame = 1
+	
+	pop_happiness = -0.05
+	planet_enforcers_energy_produces_add = -2
+	show_only_custom_tooltip = yes
+	custom_tooltip = war_against_vore_name
+}
+
+vore_loosey_goosey_vore_1_safe = {
+
+	icon = gfx/interface/planet_modifiers/vore_jaws.dds
+	icon_frame = 0
+
+	pop_happiness = 0.05
+	planet_jobs_produces_mult = -0.05
+
+	show_only_custom_tooltip = yes
+	custom_tooltip = vore_loosey_goosey_vore_1_safe_DESC
+}
+vore_loosey_goosey_vore_2_safe = {
+
+	icon = gfx/interface/planet_modifiers/vore_jaws.dds
+	icon_frame = 0
+
+	pop_happiness = 0.15
+	planet_jobs_produces_mult = -0.10
+	planet_jobs_unity_produces_mult = 0.15
+
+	show_only_custom_tooltip = yes
+	custom_tooltip = vore_loosey_goosey_vore_2_safe_DESC
+}
+vore_loosey_goosey_vore_3_safe = {
+
+	icon = gfx/interface/planet_modifiers/vore_jaws.dds
+	icon_frame = 0
+
+	pop_happiness = 0.25
+	planet_jobs_produces_mult = -0.15
+	planet_jobs_unity_produces_mult = 0.3
+
+	show_only_custom_tooltip = yes
+	custom_tooltip = vore_loosey_goosey_vore_3_safe_DESC
+}
+
+vore_loosey_goosey_vore_1_lethal = {
+
+	icon = gfx/interface/planet_modifiers/vore_jaws.dds
+	icon_frame = 3
+
+	pop_happiness = 0.05
+	job_soldier_add = 1
+	
+	logistic_growth_mult = -0.1
+
+	show_only_custom_tooltip = yes
+	custom_tooltip = vore_loosey_goosey_vore_1_lethal_DESC
+}
+vore_loosey_goosey_vore_2_lethal = {
+
+	icon = gfx/interface/planet_modifiers/vore_jaws.dds
+	icon_frame = 3
+
+	pop_happiness = 0.15
+	planet_jobs_unity_produces_mult = 0.5
+	job_soldier_add = 2
+	job_criminal_add = 2
+
+	logistic_growth_mult = -0.2
+
+	show_only_custom_tooltip = yes
+	custom_tooltip = vore_loosey_goosey_vore_2_lethal_DESC
+}
+vore_loosey_goosey_vore_3_lethal = {
+
+	icon = gfx/interface/planet_modifiers/vore_jaws.dds
+	icon_frame = 3
+
+	pop_happiness = 0.25
+	planet_jobs_unity_produces_mult = 1
+	job_soldier_add = 5
+	job_criminal_add = 3
+
+	logistic_growth_mult = -0.3
+
+	show_only_custom_tooltip = yes
+	custom_tooltip = vore_loosey_goosey_vore_3_lethal_DESC
+}
+vore_at_horizon_gate = {
+	icon = gfx/interface/planet_modifiers/vore_jaws.dds
+	icon_frame = 0
+	pop_happiness = 0.10
+	show_only_custom_tooltip = no
+	custom_tooltip = vore_at_horizon_gate_DESC
+} 

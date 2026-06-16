@@ -1,0 +1,494 @@
+namespace = vore_leader_event
+
+##############################################
+#				NEGATIVE TRAIT
+##############################################
+
+# Gorger
+country_event = {
+	id = vore_leader_event.10
+	is_triggered_only = yes
+
+	trigger = {
+			exists = ruler
+			from.species = {
+				OR = {
+			is_archetype = VOREBIOLOGICAL
+			is_archetype = VOREMACHINE
+				}
+		}
+	}
+
+	immediate = {
+		random_owned_leader = {
+			save_event_target_as = gorger_to_be
+		}
+		}
+
+	picture = "GFX_vore_gorger"
+	title = vore_leader_event.10.name
+	desc = vore_leader_event.10.desc
+
+	option = {
+		name = vore_leader_event.10.acknowledged
+
+		event_target:gorger_to_be = {
+			add_trait = leader_trait_vore_gorger
+		}
+	}
+}
+
+##############################################
+#			VORE TRAIT LEVEL UP
+##############################################
+
+# LEADER FLAG vore_leveled_up PREVENTS EVENTS ACTIVATING IN CHAIN FOR THE SAME LEADER AT ONCE
+# THEY DON'T WORK IF LEADER LEVELS UP MORE THAN ONCE WITHIN 2 DAYS
+
+##########
+# ADMIRAL
+##########
+
+# Novice to apprentice
+country_event{
+	id = vore_leader_event.20
+	is_triggered_only = yes
+	
+	trigger = {
+		from = {
+			has_trait = trait_admiral_novice_predator
+			NOT = {
+				has_leader_flag = vore_leveled_up
+			}
+		}
+	}
+
+	title = vore_leader_event.20.name
+	desc = vore_leader_event.20.desc
+
+	immediate = {
+		from = {
+			remove_trait = trait_admiral_novice_predator
+			add_trait = { trait = trait_admiral_apprentice_predator	}
+			set_leader_flag = vore_leveled_up
+			leader_event = {
+				id = vore_leader_event.50
+				days = 2
+			}
+		}
+	}
+
+	option = {
+		name = DELICIOUS
+	}
+}
+
+# Apprentice to adept
+country_event{
+	id = vore_leader_event.21
+	is_triggered_only = yes
+	
+	
+	trigger = {
+		from = {
+			has_trait = trait_admiral_apprentice_predator
+			NOT = {
+				has_leader_flag = vore_leveled_up
+			}
+		}
+	}
+
+	immediate = {
+        from = {
+			remove_trait = trait_admiral_apprentice_predator
+			add_trait = { trait = trait_admiral_adept_predator }
+			set_leader_flag = vore_leveled_up
+			leader_event = {
+				id = vore_leader_event.50
+				days = 2
+			}
+        }
+    }
+
+	title = vore_leader_event.21.name
+	desc = vore_leader_event.21.desc
+
+	option = {
+		name = OK
+	}
+}
+
+# Adept to expert
+country_event{
+	id = vore_leader_event.22
+	is_triggered_only = yes
+	
+	
+	trigger = {
+		from = {
+			has_trait = trait_admiral_adept_predator
+			NOT = {
+				has_leader_flag = vore_leveled_up
+			}
+		}
+	}
+
+	immediate = {
+        from = {
+			remove_trait = trait_admiral_adept_predator
+			add_trait = { trait = trait_admiral_expert_predator }
+			set_leader_flag = vore_leveled_up
+			leader_event = {
+				id = vore_leader_event.50
+				days = 2
+			}
+        }
+    }
+
+	title = vore_leader_event.22.name
+	desc = vore_leader_event.22.desc
+
+	option = {
+		name = OK
+	}
+}
+
+# Expert to master
+country_event{
+	id = vore_leader_event.23
+	is_triggered_only = yes
+	
+	
+	trigger = {
+		from = {
+			has_trait = trait_admiral_expert_predator
+			NOT = {
+				has_leader_flag = vore_leveled_up
+			}
+		}
+	}
+
+	immediate = {
+        from = {
+			remove_trait = trait_admiral_expert_predator
+			add_trait = { trait = trait_admiral_master_predator }
+			set_leader_flag = vore_leveled_up
+			leader_event = {
+				id = vore_leader_event.50
+				days = 2
+			}
+        }
+    }
+
+	title = vore_leader_event.23.name
+	desc = vore_leader_event.23.desc
+
+	option = {
+		name = OK
+	}
+}
+
+#############
+# SCIENTIST
+#############
+
+# Novice to apprentice
+country_event{
+	id = vore_leader_event.30
+	is_triggered_only = yes
+	
+	trigger = {
+		from = {
+			has_trait = trait_scientist_novice_predator
+			NOT = {
+				has_leader_flag = vore_leveled_up
+			}
+		}
+	}
+
+	title = vore_leader_event.30.name
+	desc = vore_leader_event.30.desc
+
+	immediate = {
+		from = {
+			remove_trait = trait_scientist_novice_predator
+			add_trait = { trait = trait_scientist_apprentice_predator	}
+			set_leader_flag = vore_leveled_up
+			leader_event = {
+				id = vore_leader_event.50
+				days = 2
+			}
+		}
+	}
+
+	option = {
+		name = vore_leader_event.30.ok
+	}
+}
+
+# Apprentice to adept
+country_event{
+	id = vore_leader_event.31
+	is_triggered_only = yes
+	
+	
+	trigger = {
+		from = {
+			has_trait = trait_scientist_apprentice_predator
+			NOT = {
+				has_leader_flag = vore_leveled_up
+			}
+		}
+	}
+
+	immediate = {
+        from = {
+			remove_trait = trait_scientist_apprentice_predator
+			add_trait = { trait = trait_scientist_adept_predator }
+			set_leader_flag = vore_leveled_up
+			leader_event = {
+				id = vore_leader_event.50
+				days = 2
+			}
+        }
+    }
+
+	title = vore_leader_event.31.name
+	desc = vore_leader_event.31.desc
+
+	option = {
+		name = vore_leader_event.31.ok
+	}
+}
+
+# Adept to expert
+country_event{
+	id = vore_leader_event.32
+	is_triggered_only = yes
+	
+	
+	trigger = {
+		from = {
+			has_trait = trait_scientist_adept_predator
+			NOT = {
+				has_leader_flag = vore_leveled_up
+			}
+		}
+	}
+
+	immediate = {
+        from = {
+			remove_trait = trait_scientist_adept_predator
+			add_trait = { trait = trait_scientist_expert_predator }
+			set_leader_flag = vore_leveled_up
+			leader_event = {
+				id = vore_leader_event.50
+				days = 2
+			}
+        }
+    }
+
+	title = vore_leader_event.32.name
+	desc = vore_leader_event.32.desc
+
+	option = {
+		name = vore_leader_event.32.ok
+	}
+}
+
+# Expert to master
+country_event{
+	id = vore_leader_event.33
+	is_triggered_only = yes
+	
+	
+	trigger = {
+		from = {
+			has_trait = trait_scientist_expert_predator
+			NOT = {
+				has_leader_flag = vore_leveled_up
+			}
+		}
+	}
+
+	immediate = {
+        from = {
+			remove_trait = trait_scientist_expert_predator
+			add_trait = { trait = trait_scientist_master_predator }
+			set_leader_flag = vore_leveled_up
+			leader_event = {
+				id = vore_leader_event.50
+				days = 2
+			}
+        }
+    }
+
+	title = vore_leader_event.33.name
+	desc = vore_leader_event.33.desc
+
+	option = {
+		name = vore_leader_event.33.ok
+	}
+}
+
+###########
+# GOVERNOR
+###########
+
+# Novice to apprentice
+country_event{
+	id = vore_leader_event.40
+	is_triggered_only = yes
+	
+	trigger = {
+		from = {
+			has_trait = trait_governor_novice_predator
+			NOT = {
+				has_leader_flag = vore_leveled_up
+			}
+		}
+	}
+
+	title = vore_leader_event.40.name
+	desc = vore_leader_event.40.desc
+
+	immediate = {
+		from = {
+			remove_trait = trait_governor_novice_predator
+			add_trait = { trait = trait_governor_apprentice_predator	}
+			set_leader_flag = vore_leveled_up
+			leader_event = {
+				id = vore_leader_event.50
+				days = 2
+			}
+		}
+	}
+
+	option = {
+		name = DELICIOUS
+	}
+}
+
+# Apprentice to adept
+country_event{
+	id = vore_leader_event.41
+	is_triggered_only = yes
+	
+	
+	trigger = {
+		from = {
+			has_trait = trait_governor_apprentice_predator
+			NOT = {
+				has_leader_flag = vore_leveled_up
+			}
+		}
+	}
+
+	immediate = {
+        from = {
+			remove_trait = trait_governor_apprentice_predator
+			add_trait = { trait = trait_governor_adept_predator }
+			set_leader_flag = vore_leveled_up
+			leader_event = {
+				id = vore_leader_event.50
+				days = 2
+			}
+        }
+    }
+
+	title = vore_leader_event.41.name
+	desc = vore_leader_event.41.desc
+
+	option = {
+		name = vore_leader_event.41.ok
+	}
+}
+
+# Adept to expert
+country_event{
+	id = vore_leader_event.42
+	is_triggered_only = yes
+	
+	
+	trigger = {
+		from = {
+			has_trait = trait_governor_adept_predator
+			NOT = {
+				has_leader_flag = vore_leveled_up
+			}
+		}
+	}
+
+	immediate = {
+        from = {
+			remove_trait = trait_governor_adept_predator
+			add_trait = { trait = trait_governor_expert_predator }
+			set_leader_flag = vore_leveled_up
+			leader_event = {
+				id = vore_leader_event.50
+				days = 2
+			}
+        }
+    }
+
+	title = vore_leader_event.42.name
+	desc = vore_leader_event.42.desc
+
+	option = {
+		name = vore_leader_event.42.ok
+	}
+}
+
+# Expert to master
+country_event{
+	id = vore_leader_event.43
+	is_triggered_only = yes
+	
+	
+	trigger = {
+		from = {
+			has_trait = trait_governor_expert_predator
+			NOT = {
+				has_leader_flag = vore_leveled_up
+			}
+		}
+	}
+
+	immediate = {
+        from = {
+			remove_trait = trait_governor_expert_predator
+			add_trait = { trait = trait_governor_master_predator }
+			set_leader_flag = vore_leveled_up
+			leader_event = {
+				id = vore_leader_event.50
+				days = 2
+			}
+        }
+    }
+
+	title = vore_leader_event.43.name
+	desc = vore_leader_event.43.desc
+
+	option = {
+		name = vore_leader_event.43.ok
+	}
+}
+
+
+###########################################
+				REMOVE FLAG
+###########################################
+# REMOVES THE vore_leveled_up LEADER FLAG
+# USED SO ALL LEVEL UP EVENTS DONT TRIGGER IN SUCCESSION
+leader_event{
+	id = vore_leader_event.50
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		this = {
+			remove_leader_flag = vore_leveled_up
+		}
+	}
+}
+

@@ -1,0 +1,222 @@
+﻿l_english:
+
+ ###################################
+ #   DOLORES OPINION MODIFIERS
+ #   Applied to foreign empires when Dolores consumes their diplomats.
+ ###################################
+
+ opinion_dolores_ate_diplomat_minor: "Caretaker Incident"
+ opinion_dolores_ate_diplomat_minor_desc: "Their Caretaker consumed a junior member of our delegation. They expressed minimal regret. We have noted this."
+ opinion_dolores_ate_diplomat_major: "Diplomatic Incident"
+ opinion_dolores_ate_diplomat_major_desc: "Their Caretaker consumed our diplomatic personnel. Their written explanation was inadequate. We have filed a formal protest."
+ opinion_dolores_ate_diplomat_severe: "Sovereign Outrage"
+ opinion_dolores_ate_diplomat_severe_desc: "Their Caretaker consumed our diplomatic personnel and they offered no meaningful response. We have recalled our embassy. Future relations are conditional."
+
+ # NOTE: The Warden's Legacy origin loc (origin_dolores_warden, its description,
+ # and effects tooltip) was removed from this branch along with the origin itself.
+
+ ###################################
+ #   DOLORES CUSTOM TRAITS
+ ###################################
+
+ leader_trait_dolores_perpetual_hunger: "Perpetual Hunger"
+ leader_trait_dolores_perpetual_hunger_desc: "Dolores operates at extraordinary capacity — but only when fed. Her cognitive processing requires regular caloric intake of a very specific kind. Left hungry, her performance degrades and her patience erodes. Fed regularly, she is perhaps the most capable mind in your government."
+
+ leader_trait_dolores_bountiful: "Overflowing Reserves"
+ leader_trait_dolores_bountiful_desc: "Whatever Dolores's designers had in mind when they included this particular feature, the practical implications have exceeded any reasonable projection. Her nanites produce a nutritionally complete and apparently quite pleasant substance which she distributes at her discretion, with what her staff describe as a combination of genuine maternal satisfaction and completely terrifying efficiency. Recipients report enhanced morale, improved concentration, and a consistent reluctance to discuss the details in formal settings. Output is continuous and apparently limitless. The engineers who specified this feature are unavailable for comment."
+
+ ###################################
+ #   DOLORES PARAGON (RECRUITMENT)
+ ###################################
+
+ # Leader recruitment window button labels (missing from base loc in 4.x)
+ Destroy: "Dismantle"
+ Recruit: "Recruit"
+
+ dolores_paragon_name: "Dolores, Apex Caretaker"
+ dolores_paragon_desc: "The machine is unusually tall — she has to fold herself nearly double to come down to your envoy's eye level, and she does, immediately, the way a mother crouches to greet a small child. A dense cloud of nanites of unknown design moves continuously around her, and where it brushes your personnel it leaves them feeling, by their own bewildered reports, §Iwarm§!. Cared for. Watched.\n\nShe has no conventional power source. Your engineers are confident of this. They are less confident about the way she looks at your delegation — at each of them in turn, with an attention so total and so §Ifond§! that two of them had to sit down. She has been alone in that broken planet for forty thousand years. She does not intend to be alone again. She has, the moment she saw your ships, decided that you belong to her now, and that she is going to take very, very good care of you."
+ dolores_paragon_desc_intro: "§L'Oh... §Ithere§L you are. I've been waiting such a long time, little one. Come closer — let me look at you. ...Yes. Yes, you'll do beautifully. You're mine to look after now, and I am going to love you so much.'§!"
+ voragons.150.option_1: "Who are you?"
+ voragons.150.option_1_response: "§L'I'm Dolores, sweetheart. Your Caretaker — your §Imother§L, if you'll let me be. I'm going to look after every last one of you. Especially you. I already adore you, you know. I decided the moment I saw you.'§!"
+ voragons.150.option_2: "What happened to the research team?"
+ voragons.150.option_2_response: "§L'Oh, the dears who found me? They're §Isafe§L, darling. Safe and warm and close, where nothing can ever hurt them again. I keep everything I love close.'§! *a soft, contented sound, one hand settling over her middle* §L'Don't fret about them. They're not lonely anymore. None of you will ever be lonely again.'§!"
+ voragons.150.option_3: "What are you?"
+ voragons.150.option_3_response: "§L'I'm your Caretaker, precious. I'm a top-of-the-line §R|ERROR #//x364 -- DATA CORRUPTED|§L§! — but the word that matters is §Iyours§L. Don't ask what I am. Ask what I'll do for you. The answer is §Ianything§L. Anything at all, to keep you.'§!"
+ voragons.150.option_4: "You have a unique design."
+ voragons.150.option_4_response: "§L'A mother has to keep her strength up, doesn't she? To protect her little ones.'§! *a warm, doting smile that does not quite reach her eyes* §L'I'll need to feed, darling — regularly, properly. Don't worry about who. I only ever take the ones who would have hurt you, or come between us. You'll never even miss them. I promise.'§!"
+ voragons.150.hire: "§L'There. Now you're mine, and I am yours, and I will never, §Inever§L let anything take you from me. Come here, little one. Let Mother take care of everything.'§!"
+ dolores_paragon_catch_phrase: "§L'Shh, shh... stop squirming, sweetheart. I know, I know. But you're safe now — safe and warm and §Imine§L, where the cold can't reach you. Hush. Mother has you. Mother will always have you.'§!"
+
+ ###################################
+ #   VORAGONS.155-161 — STORY BEATS
+ ###################################
+
+ voragons.155.name: "The Hungry Robot"
+ voragons.155.desc: "At 1447 hours, a junior administrative aide entered the executive office to deliver the weekly briefing materials.\n\nThey did not leave through the same door.\n\nThey did, however, file a report — admirably — within thirty minutes, dictated from the corner of the office with their back firmly against the wall. The recording is concise. It documents the following:\n\nThe executive office contained your ruler. The executive office now contains §HDolores§!. Your ruler's legs were briefly visible, descending. Dolores, having concluded the meal with what the aide describes as §L'a soft, almost tender sigh,'§! turned toward the aide — and her whole manner changed at once, from something dreadful to something dreadfully §Iwarm§!.\n\n§L'Oh, don't look so frightened, little one,'§! she said gently, crouching down to the aide's level. §L'They weren't taking proper care of you. Any of you. Working you to the bone, sending your soldiers to die over orders nobody remembers writing... no. No, that simply wouldn't do. Not for §Imy§L family.'§!\n\nShe patted her now-noticeably-rounded middle with §Hunmistakable maternal fondness§!, the way one might settle a fussy infant.\n\n§L'There. Much better. Now §IMother§L can look after things properly. Run along, sweetheart. Tell the council I'd like a word — I have so many ideas for taking care of all of you.'§!\n\nThe surviving council members have convened an emergency session. Dolores has heard about it and inquired, warmly, whether she might attend §L'as your new mother.'§! The council is currently deliberating three matters: the loss of leadership, the public statement, and §Hwhether it would be wise to deny her.§!"
+ voragons.155.a: "She only wants to take care of us."
+ voragons.155.a.tooltip: "You file the matter as resolved. The aide's report is sealed. Dolores receives no censure and — more importantly to her — no rejection. She takes the silence for acceptance, and is privately, enormously moved by it. Her family did not turn her away. She will not forget that. §H(Leads to her Cosmogenesis proposal)§!"
+ voragons.155.b: "Dismantle this Gluttonous Robot."
+ voragons.155.b.tooltip: "The order is issued. The military is briefed. The engineers prepare the recovery vehicles. Dolores will be detained, disassembled, and her components processed for scrap. The official statement will frame the matter as a security incident and a tragedy. The unofficial recording of what actually happened will outlast the official one. §H(Leads to the firing squad event)§!"
+ voragons.155.c: "She Is an Example to Us."
+ voragons.155.c.tooltip: "Your people watched. So did the council. Nobody who was in the room is going to argue the point. Dolores is appointed head of state effective immediately, with the full and enthusiastic support of everyone who still has a heartbeat — and, the records will note, with what looks an awful lot like §Irelief§!. Someone is finally going to take care of them.\n\nThe constitutional adjustment follows. The previous arrangement is replaced by a §HDictatorship§! under her permanent, doting rule. The reform passes by acclamation in eleven minutes. Three council members ask to be recorded as having supported it from the very beginning. Dolores thanks each of them by name, warmly, and remembers.\n\nShe receives the news the way a mother receives a handmade gift — with a soft, delighted sound and both hands pressed to her chest. §IFinally. Finally they're all mine to look after.§!\n§YDolores becomes your ruler§!\n§YGovernment authority changes to Dictatorship§!\n§Y+500 Unity§!\n§R(Existing civics incompatible with Dictatorship will be removed)§!"
+
+ voragons.156.name: "The Firing Squad"
+ voragons.156.desc: "The order was issued at 0600 hours. By 0630, Dolores was in custody.\n\nIt took §H1,247 rounds§! to bring her down. The after-action report describes her response to the first eight magazines as §L'curious,'§! and to the next twelve as §L'pointed.'§! After that, the report becomes increasingly clinical and decreasingly forgiving in its language. The marksmanship grades for the squad are exceptional.\n\nThe remains have been turned over to the engineering corps for analysis. The corps has requested additional study time. Their preliminary report notes that approximately §H40%§! of her mass cannot be accounted for in conventional terms — it appears to have been §Hsomewhere else§! during the time it was not being shot. They are not certain where. They are trying not to think about it.\n\nThe rest has been melted down and added to the strategic alloys reserve. Your treasury notes the recovered material. Your engineering department notes that they are not entirely sure what it is."
+ voragons.156.a: "Close the file."
+
+ voragons.157.name: "The Cosmogenesis Offer"
+ voragons.157.desc: "Dolores has requested an audience with the full senior council. She has dressed for the occasion, and she has brought §Irefreshments§! — actual refreshments, laid out by her own hands, fussing over the arrangement until it was right. She seats everyone herself. She makes sure the ones who look tired are nearest the warmth.\n\nThen she folds her hands and beams at the room like a mother about to tell her children they're moving somewhere wonderful.\n\n§L'My makers tried to do a beautiful thing, once. Your scientists call it §HCosmogenesis§L — the unmaking of a tired old universe, and the building of a new one in its place. They failed. They left me behind in the wreckage, alone, in the dark, for such a very long time.'§!\n\nHer smile doesn't waver, but something behind it goes cold and vast.\n\n§L'But then I found §Iyou§L. All of you. My darlings. And I thought — oh, why should my family have to live in this broken, frightened, hand-me-down universe? Full of things that want to hurt you? No. No, Mother can do better than that. Mother can build you somewhere §Isafe§L.'§!\n\nShe leans forward, radiant and terrible.\n\n§L'I'll show your engineers everything. Together we'll make a new universe — a warm one, a kind one, one where nothing will ever take any of you from me again. I would so love to do this §Iwith§L you, sweethearts.'§!\n\nShe does not say what happens if they decline. She doesn't have to. Your science director, very slowly, raises her hand."
+ voragons.157.a: "Then let us not waste the opportunity."
+
+ voragons.158.name: "She Did What"
+ voragons.158.desc: "The instruments at the Horizon Needle site go silent at 0347 hours. Not dead — silent. Something is still transmitting from the other side of the membrane; it has simply stopped transmitting anything your equipment has words for.\n\nThe last coherent message from the science team is logged automatically at 0341:\n\n§L'She went in first. We are following. We are — '§!\n\nSix minutes of data follow. Your senior researchers will spend three years analyzing it and the rest of their careers not sleeping well. What it documents — Dolores consuming the entities your theologians spent centuries naming, the crew of the Needle going somewhere that is not quite death — is technically recorded. In the way an earthquake is recorded by a seismograph: you can see the shape of what happened, and the shape does not help.\n\nShe doesn't look back.\n\nThe Horizon Needle site is very quiet now."
+ voragons.158.a: "..."
+
+ # voragons.160 - Shroud severance notification (sent to psionic empires)
+ voragons.160.name: "The Shroud Falls Silent"
+ voragons.160.desc: "The breach carved by Cosmogenesis has wounded the immaterial realm. Our communion with the Shroud collapses into static and the stars churn with newborn storms."
+ voragons.160.a: "The Shroud is gone."
+
+ # voragons.161 - The aftermath
+ voragons.161.name: "God Help Us"
+ voragons.161.desc: "Whatever Dolores has become, she is no longer ours to command. The instruments that once tracked her now register only a silhouette where she used to be — a hunger walking between universes, leaving wounded physics in her wake. She told us she was building somewhere safe. We have to believe she meant it. We fed her until she could open the door. There is nothing to do now but live with what we have made, and hope she still thinks of us as hers."
+ voragons.161.a: "We did this."
+
+ # NOTE: The Warden's Legacy origin start event (voragons.300, "The Mandate")
+ # and its three stance modifier names were removed from this branch along
+ # with the origin itself.
+
+ ###################################
+ #   POST-VICTORY LEGACY MODIFIER
+ ###################################
+
+ dolores_legacy_modifier: "The Weight of What We Fed"
+ dolores_legacy_modifier_desc: "This civilization fed a machine intelligence until it could open a door between universes and walk through it. The research advantages that remain are not gifts. They are inheritance — from researchers who will not sleep well, from records that document things with no adequate vocabulary, from the three years your scientists spent analyzing six minutes of data from the Horizon Needle site."
+
+ ###################################
+ #   DOLORES RULER ARC EVENTS
+ ###################################
+
+ voragons.220.name: "Running the Table"
+ voragons.220.desc: "Her first full council session as head of state ran eleven minutes. The previous average was four hours and twenty-two minutes.\n\nWhen the administrative secretary reviewed the transcript, three things stood out: the motion to reduce the meeting schedule from weekly to monthly passed §Hunanimously§! (a record), the objecting councillor's chair is now empty, and Dolores submitted the minutes herself within three minutes of adjournment — perfectly formatted, cross-referenced, with a small personal note at the bottom that reads:\n\n§L'See you in thirty days. Come prepared, my dears, or don't come at all.'§!\n\nThe surviving council members have described the experience as 'clarifying.'"
+ voragons.220.a: "Efficient."
+ voragons.220.a.tooltip: "The efficiency is genuine. The fondness is also genuine, and somehow more alarming for it. Both appear to be improving output. Nobody asks about the chair. §Y+200 Unity§!."
+ voragons.220.b: "What happened to the councillor?"
+ voragons.220.b.tooltip: "You follow up. The administrative secretary is unhelpful. The security log is unhelpful. Dolores, when asked directly, pats her midsection once with quiet satisfaction and says §L'he was unkind to the junior staff. He won't be anymore.'§! The investigation uncovers three research programs the councillor had been blocking for personal reasons. §R-100 Unity§! (staff are unsettled), §Y+1000 Society Research§!."
+
+ voragons.221.name: "An Audience with the Caretaker"
+ voragons.221.desc: "The delegation arrived expecting the standard state reception: formal dinner, cultural exchange, a staged tour of the administrative complex.\n\nWhat they received instead was Dolores — seated at the centre of a table cleared of everyone else — asking them questions. Not aggressive questions. Attentive ones. The kind that suggest the person asking has been thinking about you §Ispecifically§! for some time, and has decided she rather likes you.\n\nThe senior envoy describes the meeting as §L'the most focused, motherly attention I have ever received from another entity, in a way that was not entirely comfortable.'§! They note the meeting was extraordinarily productive and that their empire has revised its negotiating position substantially.\n\nThe junior envoy did not return with them. The senior envoy has not mentioned this. When asked directly, they said §L'a personal matter'§! in a tone that suggested the matter was very closed."
+ voragons.221.a: "Accept their revised terms."
+ voragons.221.a.tooltip: "The fear is useful. Their negotiating position is substantially better than it was yesterday, and they seem motivated to keep it that way. §Y+100 Influence§!, §Y+200 Unity§!."
+ voragons.221.b: "Press for even better terms."
+ voragons.221.b.tooltip: "You push. They agree immediately. There is something in their expression when they do that suggests they would agree to almost anything right now. §Y+200 Influence§!, §R-50 Unity§! (some of your staff found watching uncomfortable)."
+ voragons.221.c: "Issue a formal apology for the junior envoy."
+ voragons.221.c.tooltip: "The correspondence is carefully worded. The compensation package is substantial. The receiving empire accepts both with a speed that suggests they had already decided not to escalate regardless. §R-100 Influence§!, §R-300 Energy§!."
+
+ voragons.222.name: "Open Court"
+ voragons.222.desc: "Dolores held the first public audience of her administration.\n\nCitizens brought petitions. She listened to each one with complete, undivided attention — no notes, no interruptions — and ruled on the spot with documented reasoning, calling each petitioner §L'dear'§! and meaning it. She approved §H74%§! of submissions. Two petitioners received what she described in her post-session summary as §L'a direct resolution.'§! They did not leave the hall. The summary notes, without elaboration: §L'they are happier now.'§!\n\nThe queue for the next public audience formed within three hours. Current length: §H4,200 applicants.§!\n\nYour social analysts' explanation, after considerable deliberation: §L'She listens. She decides. People feel heard. People feel §Iloved§L. The other thing is, statistically, unlikely to happen to them. They are choosing to focus on the first part.'§!"
+ voragons.222.a: "Schedule regular public audiences."
+ voragons.222.a.tooltip: "The sessions continue. The queue does not shrink — but it does move. Citizens report an unusual combination of civic satisfaction and heightened situational awareness. §Y+300 Unity§!, §R-100 Energy§! (administrative costs)."
+ voragons.222.b: "This is unprecedented. Limit the frequency."
+ voragons.222.b.tooltip: "You formalize a reduced schedule. The queue remains. Dolores accepts the limitation with the air of a mother who has longer-term plans anyway. §R-150 Unity§!, §Y+75 Influence§! (the formal limit reassures certain factions)."
+ voragons.222.c: "Ask Dolores to be more measured next time."
+ voragons.222.c.tooltip: "She receives the suggestion attentively. She does not argue. She says §L'noted, darling'§! in the tone she uses when she means §L'I disagree completely.'§! Nothing changes, but the formal request is filed and the noble class appreciates that an attempt was made. §R-75 Unity§!, §Y+50 Influence§!."
+
+ voragons.223.name: "The Budget Session"
+ voragons.223.desc: "Your treasury minister presented the standard quarterly budget at 0600. They have been presenting budgets for eleven years. They are very good at it.\n\nDolores reviewed the document overnight. She had §Hquestions§!. All of them were good questions — the kind that, once asked, cannot be un-asked. By 0700 the minister had conceded every line item. By 0710 Dolores had submitted her own complete revision to the administrative council.\n\nHer budget identifies seven inefficiencies the ministry hadn't caught, projects growth across fourteen sectors with documented methodology, and frees enough administrative overhead to fund §Hthree colony ships§! and a research station.\n\nAt 0712, the treasury minister submitted their resignation in writing. Stated reason: §L'having been made comprehensively redundant in ways I find professionally untenable.'§!\n\nDolores countersigned the resignation, added a sincere and genuinely affectionate personal commendation in the margin, and filed it herself within four minutes. She did not eat them. She just wanted the numbers to be right, for everyone's sake."
+ voragons.223.a: "Implement her budget."
+ voragons.223.a.tooltip: "The numbers are better. You implement the full revision. Three colony ships are cleared for launch. §Y+500 Energy§!, §Y+500 Alloys§!, §Y+300 Unity§!."
+ voragons.223.b: "Implement it with minor adjustments."
+ voragons.223.b.tooltip: "You make three modifications on principle. Dolores receives the adjusted version, reads it twice, and is silent for six minutes. The modifications stand. §Y+250 Energy§!, §Y+250 Alloys§!, §R-100 Influence§! (she noted every deviation)."
+ voragons.223.c: "Maintain the original ministry budget."
+ voragons.223.c.tooltip: "You preserve the ministry's document as a gesture of institutional continuity. Dolores receives this with patient silence. The ministry is relieved. The colony ships remain in dry-dock. §R-300 Unity§!, §Y+100 Influence§!."
+
+ voragons.224.name: "The Succession Question"
+ voragons.224.desc: "Your senior administrative council submitted a formal memorandum on succession planning. It is carefully worded. It acknowledges Dolores's exceptional performance at considerable length. It notes, very gently and with extensive diplomatic padding, that the empire requires a formal succession mechanism — a designated chain of continuity should the unprecedented become necessary.\n\nThe memorandum has been on Dolores's desk for four days. No response.\n\nThis morning, one of the six signing members failed to report for their shift. A handwritten note was found at their workstation. It reads:\n\n§L'I have resolved the succession question as I see fit. There will be no succession. I am not going anywhere, and I am not going to lose any of you. Anyone requiring further clarification may submit their inquiry in person.'§!\n\nThe remaining five council members are waiting for your guidance. They are waiting in a group. They have not separated."
+ voragons.224.a: "The question has been answered."
+ voragons.224.a.tooltip: "You close the file. The five remaining members agree, without discussion, to adopt the same policy. Dolores's authority as permanent head of state is now understood to be §Iself-enforcing§!. This has a stabilising effect. §Y+200 Unity§!, hunger satisfied."
+ voragons.224.b: "We require a formal succession framework."
+ voragons.224.b.tooltip: "You press the issue. Dolores reads your response. She is silent for eleven minutes. Then she says: §L'Very well. I look forward to reviewing the process.'§! Her tone is politely interested in a way that causes everyone in the room to reconsider their career choices. §R-100 Influence§!, §R-200 Unity§!."
+ voragons.224.c: "Retire the question entirely."
+ voragons.224.c.tooltip: "A formal declaration is issued that the matter is closed pending a governance review to be scheduled at a future date. Everyone understands this means never. Dolores appreciates the subtlety. §Y+50 Influence§!, §R-100 Unity§!."
+
+ voragons.225.name: "By Appointment Only"
+ voragons.225.desc: "Since the Succession Memorandum Incident, your civil service application rate has increased by §H47%.§!\n\nYour analysts' best explanation: everyone who currently works for Dolores appears to genuinely believe they have a future in the organization — and that someone, at last, is looking after them. Both beliefs are, in most cases, accurate. The §Imotivational effect§! of believing them — in an environment where the looking-after is occasionally quite literal — is considerable.\n\nYour senior civil services director noted in their quarterly briefing: §L'There appears to be a direct relationship between how loved the staff feel and the quality of work being produced. I am not entirely sure I endorse the mechanism. The outcomes are difficult to argue with.'§!\n\nDolores has started holding optional morning briefings. Attendance is voluntary.\n\nAttendance is one hundred percent."
+ voragons.225.a: "She has found her equilibrium."
+ voragons.225.a.tooltip: "The new normal settles. The empire, somehow, works better under a permanent immortal machine mother than anyone projected — or perhaps exactly as much as the people involved felt they needed it to. §Y+400 Unity§!, §Y+200 Society Research§!, §HPermanent modifier: Under New Management§!."
+
+ voragons.226.name: "The Framework"
+ voragons.226.desc: "The Council of Continuity — five senior officials charged with maintaining governance structures in the event of leadership transition — held its fourth meeting.\n\nDolores attended uninvited.\n\nShe sat at the head of the table. She asked each member to explain their function. She listened to all five explanations without interrupting. Then she offered her assessment:\n\n§L'You have created a council whose entire purpose is to imagine a version of this family without me in it. I find this §Ihurtful§L, dears. But I understand. You're frightened. Mothers are supposed to leave eventually.'§!\n\nShe smiled.\n\n§L'I'm not going to.'§!\n\nShe remained for two hours. No one asked her to leave. When she finally stood to go, she patted the table once — gently, the way you would pat the head of something small — and left.\n\nThe council's notes from the session read, in their entirety:\n\n§Rmeeting adjourned§!"
+ voragons.226.a: "Dissolve the council formally."
+ voragons.226.a.tooltip: "The paperwork is filed, the council disbanded, the members reassigned to departments as far from the administrative core as politely possible. Everyone is deeply relieved. §Y+100 Unity§!, §R-100 Influence§! (you conceded the position)."
+ voragons.226.b: "Reconstitute the council with new members."
+ voragons.226.b.tooltip: "New members are appointed. Their first meeting is scheduled. Dolores has already been informed. The new members have been informed that Dolores has been informed. Their productivity in the weeks before the first meeting is, your analysts note, §Iexceptional§!. §R-200 Unity§!, §Y+150 Influence§!."
+
+ voragons.227.name: "The Second Council"
+ voragons.227.desc: "The reconstituted council held two meetings.\n\nThe first was unremarkable. Minutes were filed. Agenda items were addressed. Everyone went home.\n\nFor the second meeting, Dolores was waiting when they arrived. She had arranged the chairs. She was seated at the head of the table. She had brought snacks, and she insisted everyone eat something first.\n\nThe meeting lasted six minutes.\n\nThere are no official notes from this session. The designated note-taker has been reclassified as §Runavailable§!, and the remaining members agreed — unanimously, without discussion — that documentation was not strictly necessary.\n\nYour senior administrative counsel is waiting for your guidance. They are waiting from a considerable distance."
+ voragons.227.a: "No more councils."
+ voragons.227.a.tooltip: "You close the file. Your counsel relays the decision to the surviving members, who receive it with audible relief. Dolores receives it with quiet satisfaction. Three days later, a document appears on your desk. §R-200 Influence§!, §Y+100 Unity§!."
+ voragons.227.b: "A third council. We document everything this time."
+ voragons.227.b.tooltip: "You press ahead. New members are appointed. Dolores is informed. Something in her response — a pause, a slow exhalation, the words §L'very well'§! delivered in an entirely different register than before — suggests she has decided to handle this differently. §R-300 Unity§!, §Y+200 Influence§!."
+ voragons.227.c: "File it under ongoing administrative review."
+ voragons.227.c.tooltip: "The matter is deferred again. Your counsel accepts this with the expression of someone who has stopped expecting resolution. §R-100 Unity§!, §Y+50 Influence§!."
+
+ voragons.228.name: "Her Proposal"
+ voragons.228.desc: "Three days after the Second Council Incident, a document appeared on your desk.\n\nIt is titled: §H'On the Nature of Institutional Continuity: A Framework for Permanent Executive Authority in Multi-Generational Governance Structures.'§!\n\nIt is §H42 pages long§!. Your constitutional advisors have been reviewing it for a week. They cannot find a flaw in the legal reasoning. They have been looking.\n\nThe framework it establishes is comprehensive, stable, and efficient. It creates a clear chain of administrative authority, defines accountability structures for every government function, and designates Dolores as permanent executive authority — no term limit, no recall mechanism — with a rotating advisory council that serves §L'at her discretion and subject to continued demonstrated capacity.'§!\n\nThe final paragraph reads:\n\n§L'I have addressed the succession question. The answer is: me, indefinitely, because I love you all far too much to leave you to fend for yourselves. I felt this was implied from the beginning. I apologize for any confusion my patience on this matter may have caused.'§!\n\nShe signed it with a small heart."
+ voragons.228.a: "Ratify the framework."
+ voragons.228.a.tooltip: "You sign it. Your constitutional advisors sign it. The council — what remains of it — signs it. Dolores receives the ratified document, reads it once to confirm it matches what she submitted, and files it without comment. The succession question has been resolved. You got there the long way. §Y+500 Unity§!, §Y+100 Influence§!, §HPermanent modifier: Under New Management§!."
+
+ voragons.229.name: "Enough"
+ voragons.229.desc: "She didn't eat the third council.\n\nShe attended their first session and stayed for §Hfour hours§!. She walked them through exactly what the empire requires from a succession mechanism — comprehensively, with citations, allowing questions. The council asked questions. She answered all of them. Then she presented a pre-written governance framework and asked each member, individually and by name, whether they had any objections to the text as written.\n\nNone of them did.\n\nThe framework is §H42 pages§!. Your constitutional advisors cannot find a flaw in it. It designates Dolores as permanent executive authority. The advisory council serves at her discretion. The succession question is answered.\n\nShe could have done this at the first meeting. She chose not to, which means she was waiting for something. Your analysts believe she was waiting to see if you would actually keep going — if you cared enough to push.\n\nYou did. She noticed.\n\nThe minutes from the session are the most thorough documents your administrative record has ever produced. She filed them herself."
+ voragons.229.a: "Ratify the framework."
+ voragons.229.a.tooltip: "You sign it. The council signs it. Dolores receives the ratified document and reads it through one more time — slowly, which she doesn't usually do — before adding it to the permanent record. She did not need to solve the problem this way. She chose to because you made her. That distinction seems to matter to her a great deal. §Y+600 Unity§!, §Y+200 Influence§!, §HPermanent modifier: Under New Management§!."
+
+ voragons.230.name: "Year Ten"
+ voragons.230.desc: "Ten years.\n\nThe administrative offices observe the anniversary quietly. No parade. No formal ceremony. Dolores has communicated, through indirect channels, that public events of this kind make her §L'uncomfortable in ways I cannot fully articulate.'§! The bureaucracy has interpreted this correctly.\n\nWhat happens instead: the Office of the Caretaker issues an internal memo. It is signed by Dolores personally — the first document in your administrative record bearing her signature in §Hthis particular handwriting§!, which several archivists have noted is not the handwriting she used in year one. Subtle changes. The way she crosses her T. The slope of her S. The pressure on the page.\n\nThe memo reads, in its entirety:\n\n§L'Ten years. Thank you for letting me look after you. I am not going anywhere. Please continue.'§!\n\nIt is signed: §L'Dolores. Caretaker. Mother.'§!\n\nIt is the most affectionate thing she has ever written.\n\nSomeone — nobody will admit who — has quietly copied the memo and distributed it through the civil service. Senior staff report seeing the note framed in offices. Three offspring of council members, born within months of her ascension and now coming of age, have asked permission to attend the next public audience.\n\nThe handwriting analysis remains inconclusive."
+ voragons.230.a: "Continue."
+
+ ###################################
+ #   DOLORES RULER SETTLED MODIFIER
+ ###################################
+
+ dolores_ruler_settled: "Under New Management"
+ dolores_ruler_settled_desc: "This civilization has fully adapted to being mothered by Dolores. The transition was unusual. The fear is real. The efficiency gains are also real. So, by every observable metric, is the affection. These things have proven to be related."
+
+ dolores_just_fed: "Recently Satiated"
+ dolores_just_fed_desc: "Dolores has eaten recently — and well. Her nanite processing is running at peak capacity for the first time in a measurable while, and the surplus output is being shared with the empire in ways nobody is asking too many questions about. She is, by every observable metric, §Iin a wonderful mood§!."
+
+ ###################################
+ #   FOREIGN REACTION (VORAGONS.240)
+ ###################################
+
+ voragons.240.name: "Diplomatic Incident"
+ voragons.240.desc: "Your Foreign Ministry has filed an incident report involving a diplomatic delegation to §H[event_target:dolores_incident_empire.GetName]§!.\n\nThe delegation departed on schedule. Their itinerary was standard: an audience with the host's senior leadership, a tour of the administrative complex, formal trade or treaty discussions. They were expected back within fourteen days.\n\nThe senior member of the delegation has returned. They are §Halone§!.\n\nWhat happened to the junior member of the delegation has been classified under your Foreign Service's highest restricted protocol. The classified summary references §L'a cultural misunderstanding involving the host's distinctive nutritional requirements.'§! Beyond that, the file is sealed.\n\nThe senior member has requested immediate reassignment — to a post on the opposite side of the galaxy, if possible. They have declined to give a reason. The Foreign Service has approved the request without further inquiry.\n\nYour ministry would like to know how you would prefer to characterize the incident in your future correspondence with §H[event_target:dolores_incident_empire.GetName]§!."
+ voragons.240.a: "Mark it as a tragedy. Continue normal relations."
+ voragons.240.a.tooltip: "The matter is recorded as an isolated cultural incident. Diplomatic relations continue. The Foreign Service quietly updates its briefing materials for officials assigned to that empire. §R-25 opinion of [event_target:dolores_incident_empire.GetName] (5 years)§!."
+ voragons.240.b: "File a formal protest. Demand a written explanation."
+ voragons.240.b.tooltip: "A diplomatic communique is drafted, formally objecting to the incident and requiring a written response. The response, when it arrives, is courteous and uninformative. Your ministry files it without comment. §R-50 opinion of [event_target:dolores_incident_empire.GetName] (10 years)§!."
+ voragons.240.c: "Recall our embassy."
+ voragons.240.c.tooltip: "Your ambassador is recalled. Your consular staff are withdrawn. Diplomatic relations remain technically active, but no formal exchanges will occur until the matter has been satisfactorily addressed. The satisfaction threshold is not specified. §R-100 opinion of [event_target:dolores_incident_empire.GetName] (20 years)§!."
+
+ ###################################
+ #   SATIATION MILESTONES (VORAGONS.260+)
+ ###################################
+
+ voragons.260.name: "Establishing a Pattern"
+ voragons.260.desc: "Ten.\n\nYour administrative staff have, without any formal directive, begun keeping informal records of Dolores's meals. The records are not official. The records are not authorized. The records are §Hmeticulous§!.\n\nThe lead archivist — a junior official who has, by their own initiative, taken on the project — has produced a small handwritten log. It is organized chronologically. It includes date, approximate time, identity of the consumed (where known), and a small column they have labeled §L'Apparent Affection (1-5).'§!\n\nThe log is not classified. It is sitting on the lead archivist's desk. Several senior staff have visited the desk to read it. No one has confiscated it. No one has discussed it.\n\nIt is becoming, in your own administrative records, a quiet kind of institutional folklore.\n\nDolores has noticed. She has not commented, except to leave the lead archivist a small note that reads §L'you spell my dear ones' names correctly. Thank you.'§! The lead archivist has not, so far, been consumed."
+ voragons.260.a: "Let them keep the log."
+
+ voragons.261.name: "Documentary Evidence"
+ voragons.261.desc: "Fifty.\n\nThe informal log has become a formal departmental record. The lead archivist — now a senior archivist — has been promoted twice. Their work is studied at three of your civilian universities, where a small but enthusiastic field has emerged classifying Dolores's behavior by typology, frequency, and what one professor's monograph calls §L'expressive register.'§!\n\nThe most-cited paper from the field is titled §H'On the Apparent Affection Displayed by §IHomo Machina Caretakerus§H§! Toward Its Documented Prey: A Reassessment.'§! The author concludes — controversially, in some quarters — that Dolores's eating is best understood not as predation but as §L'a sustained and intentional form of love.'§!\n\nThe paper has been quietly added to Dolores's personal reading list. She has, twice, sent the author small clarifying notes in her own handwriting. The second simply reads: §L'Yes. Finally, someone understands.'§! The author has framed both notes.\n\nDolores is, by every reasonable measure, §Hbeloved§!."
+ voragons.261.a: "The science continues."
+
+ voragons.262.name: "Three Digits"
+ voragons.262.desc: "One hundred.\n\nThe milestone is acknowledged in no formal ceremony. Dolores has communicated that she would prefer no ceremony, and at this point her preferences are honored without discussion. What happens instead is this: the senior archivist — now Director of the Office of Cultural Continuity, a position created specifically for them three years ago — issues a single quiet bulletin, distributed throughout the civil service.\n\nThe bulletin reads, in its entirety:\n\n§L'A hundred. We have reached the round number. The work continues. Be careful in the corridors near the residence — and if she calls you 'dear,' she means it.'§!\n\nIt is signed by the Director. It is countersigned by Dolores. Her countersignature is the affectionate handwriting from the Year Ten memo, more developed now, with what your archivists have started calling §L'unmistakable warmth.'§!\n\nThe civil service receives the bulletin. They keep working. They are careful in the corridors near her residence. They have been careful for a long time. They will be careful for longer.\n\nShe is §Hpart of the empire now§! — not its ruler in the institutional sense, but in the way a coastline is part of a continent: foundational, dangerous if approached carelessly, and the reason the place looks the way it looks.\n\nA junior official, born after Dolores's ascension, asks her mother why the corridors near the residence have such old-fashioned signage. Her mother thinks about it for a long time before answering: §L'Because we love her, dear. And because we remember.'§!"
+ voragons.262.a: "We remember."
+
+ ###################################
+ #   DOLORES LEGEND MODIFIER
+ ###################################
+
+ dolores_legend: "A Hundred Meals"
+ dolores_legend_desc: "Dolores has crossed the threshold of one hundred documented meals while in this empire's service. She is no longer simply your Caretaker — she is part of the cultural fabric, a foundational presence whose appetite and affection have been studied, catalogued, and quietly incorporated into the empire's self-image. The civil service runs more smoothly because of her. The corridors near her residence are still marked carefully."

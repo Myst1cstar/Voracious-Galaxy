@@ -1,0 +1,212 @@
+namespace = dolores_victory
+
+# The special "Victory of Dolores" event that replaces the standard Cosmogenesis ending.
+# When Dolores completes Cosmogenesis, the galaxy is spared destruction but is swept
+# by a galaxy-wide shroud storm that lasts 5 years before dissipating.
+country_event = {
+	id = dolores_victory.1
+	title = "dolores_victory.1.name"
+	desc = "dolores_victory.1.desc"
+	picture = GFX_evt_horizon_needle
+	show_sound = event_airlock
+	event_chain = cosmogenesis_planet_pickup_chain
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				can_create_paperclip_universe = yes
+			}
+			set_country_flag = a_universe_of_paperclips_achievement
+		}
+	}
+
+	option = {
+		name = dolores_victory.1.a
+		custom_tooltip = dolores_victory.1.tt
+	}
+
+	after = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_origin = origin_toxic_knights
+					event_target:cosmo_ending_system = {
+						is_capital_system = yes
+						has_star_flag = cosmogenesis_project
+					}
+				}
+				set_global_flag = no_end_of_cycle
+			}
+
+			# Trigger the special Dolores post-victory events
+			country_event = { id = voragons.159 }
+			country_event = { id = voragons.158 }
+
+			save_event_target_as = cosmogenesis_empire
+			set_country_flag = cosmogenesis_empire_has_won
+			make_fallen_empire = yes
+
+			# Notify the rest of the galaxy of the unique Dolores victory
+			every_country = {
+				limit = {
+					is_country_type = default
+				}
+				country_event = { id = dolores_victory.2 days = 5 }
+			}
+
+			# CRITICAL DIFFERENCE: We DO NOT destroy star systems here.
+			# The galaxy is spared because Dolores's ascension is controlled and precise.
+			# Instead, the Shroud tears open across the galaxy for 5 years.
+
+			# Spawn galaxy-wide shroud storms scaled to galaxy size.
+			# Each storm is immediately flagged so the cleanup event can find them.
+				# Galaxy-covering shroud storms. Counts target ~12-15% of total systems,
+				# enough that with storm radius the visual coverage feels galaxy-wide
+				# without the freezes the original 200-1000 counts caused.
+				if = {
+					limit = { galaxy_size = tiny }
+					while = {
+						count = 30
+						random_system = {
+							limit = {
+								NOT = { is_star_class = sc_black_hole }
+								NOT = { has_star_flag = cosmogenesis_project }
+								NOT = { is_inside_storm = yes }
+							}
+							spawn_random_storm = {
+								type = shroud_storm
+								immediate = yes
+							}
+							last_created_cosmic_storm = {
+								set_storm_flag = dolores_victory_storm
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = { galaxy_size = small }
+					while = {
+						count = 60
+						random_system = {
+							limit = {
+								NOT = { is_star_class = sc_black_hole }
+								NOT = { has_star_flag = cosmogenesis_project }
+								NOT = { is_inside_storm = yes }
+							}
+							spawn_random_storm = {
+								type = shroud_storm
+								immediate = yes
+							}
+							last_created_cosmic_storm = {
+								set_storm_flag = dolores_victory_storm
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = { galaxy_size = medium }
+					while = {
+						count = 90
+						random_system = {
+							limit = {
+								NOT = { is_star_class = sc_black_hole }
+								NOT = { has_star_flag = cosmogenesis_project }
+								NOT = { is_inside_storm = yes }
+							}
+							spawn_random_storm = {
+								type = shroud_storm
+								immediate = yes
+							}
+							last_created_cosmic_storm = {
+								set_storm_flag = dolores_victory_storm
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = { galaxy_size = large }
+					while = {
+						count = 120
+						random_system = {
+							limit = {
+								NOT = { is_star_class = sc_black_hole }
+								NOT = { has_star_flag = cosmogenesis_project }
+								NOT = { is_inside_storm = yes }
+							}
+							spawn_random_storm = {
+								type = shroud_storm
+								immediate = yes
+							}
+							last_created_cosmic_storm = {
+								set_storm_flag = dolores_victory_storm
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = { galaxy_size = huge }
+					while = {
+						count = 150
+						random_system = {
+							limit = {
+								NOT = { is_star_class = sc_black_hole }
+								NOT = { has_star_flag = cosmogenesis_project }
+								NOT = { is_inside_storm = yes }
+							}
+							spawn_random_storm = {
+								type = shroud_storm
+								immediate = yes
+							}
+							last_created_cosmic_storm = {
+								set_storm_flag = dolores_victory_storm
+							}
+						}
+					}
+				}
+
+			# Schedule the storm cleanup after 5 years (1825 days)
+			event_target:global_event_country = {
+				country_event = { id = dolores_victory.3 days = 1825 }
+			}
+
+			date_distortion = yes
+			event_target:global_event_country = {
+				country_event = { id = crisis.7519 days = 30 }
+			}
+		}
+		win = yes
+	}
+}
+
+# Notification to the rest of the galaxy that Dolores has ascended without destroying them
+country_event = {
+	id = dolores_victory.2
+	title = "dolores_victory.2.name"
+	desc = "dolores_victory.2.desc"
+	picture = GFX_evt_fallen_empire_awakes
+	show_sound = event_mystic_reveal
+	is_triggered_only = yes
+
+	option = {
+		name = dolores_victory.2.a
+	}
+}
+
+# Hidden cleanup event: destroys all Dolores-spawned shroud storms after 5 years
+country_event = {
+	id = dolores_victory.3
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		every_cosmic_storm = {
+			limit = {
+				has_storm_flag = dolores_victory_storm
+			}
+			destroy_cosmic_storm = yes
+		}
+	}
+}

@@ -1,0 +1,729 @@
+namespace = vore_primer
+
+
+# the primer primer
+event = {
+    id = vore_primer.1
+	hide_window = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+		country_event = { id = vore_primer.10}
+
+		set_global_flag = oral_vore_enabled
+		set_global_flag = anal_vore_enabled
+		set_global_flag = cock_vore_enabled
+		set_global_flag = vag_vore_enabled
+		set_global_flag = vore_player_adjusted_event_weight_modifier_norm
+		
+		every_country = {
+			limit = {
+				has_trait = trait_vore_prey
+				is_ai = no
+			}
+			set_country_flag = vore_is_prey
+		}
+
+		every_country = {
+			limit = {
+				has_trait = trait_vore_safe
+			}
+			set_country_flag = vore_enabled
+		}
+
+		every_country = {
+			limit = {
+				has_trait = trait_vore_lethal
+			}
+			set_country_flag = is_lethal_vore_country
+		}	
+
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			country_event = {
+				id = vore_primer.1111
+			}
+		}
+	}
+}
+
+# options
+country_event = {
+	id = vore_primer.10
+	title = vore_primer.10.name
+	desc = vore_primer.10.desc
+	is_triggered_only = yes
+
+	picture = GFX_vore_primer
+
+
+
+	option = {
+		name = vore_primer.10.ok.name
+		allow = {
+			OR = {
+				has_global_flag = oral_vore_enabled
+				has_global_flag = anal_vore_enabled
+				has_global_flag = cock_vore_enabled
+				has_global_flag = vag_vore_enabled
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no}
+				country_event = {id = vore_primer.1104}  # rest in peace, mr Adams
+			}
+		}
+	}
+	option ={
+		name = vore_primer.10.oral_disable.name
+		trigger = {
+			has_global_flag = oral_vore_enabled
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.11 }
+	}
+	option ={
+		name = vore_primer.10.oral_enable.name
+		trigger = {
+			NOT = {
+				has_global_flag = oral_vore_enabled
+			}
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.12 }
+	}
+	option ={
+		name = vore_primer.10.anal_disable.name
+		trigger = {
+			has_global_flag = anal_vore_enabled
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.13 }
+	}
+	option ={
+		name = vore_primer.10.anal_enable.name
+		trigger = {
+			NOT = {
+				has_global_flag = anal_vore_enabled
+			}
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.14 }
+	}
+	option ={
+		name = vore_primer.10.cock_disable.name
+		trigger = {
+			has_global_flag = cock_vore_enabled
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.15 }
+	}
+	option ={
+		name = vore_primer.10.cock_enable.name
+		trigger = {
+			NOT = {
+				has_global_flag = cock_vore_enabled
+			}
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.16 }
+	}
+	option ={
+		name = vore_primer.10.unbirthing_disable.name
+		trigger = {
+			has_global_flag = vag_vore_enabled
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.17 }
+	}
+	option ={
+		name = vore_primer.10.unbirthing_enable.name
+		trigger = {
+			NOT = {
+				has_global_flag = vag_vore_enabled
+			}
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.18}
+	}
+
+	option = {
+		name = vore_primer.10.sub_menu_kinks			##kink options
+		tooltip = {}
+		country_event = { id = vore_primer.20}
+	}
+}
+
+
+
+# sub-menu
+country_event = {
+	id = vore_primer.20
+	is_triggered_only = yes
+
+	picture = GFX_vore_primer_2
+	title = vore_primer.20.name
+	desc = vore_primer.20.desc
+
+	option = {
+		name = vore_primer.20.return
+		tooltip = {}
+		country_event = {id = vore_primer.10}
+	}
+	option = {
+		name = vore_primer.20.disposal_enable.name
+		trigger = {
+			NOT = {
+				has_global_flag = vore_disposal_enabled
+			}
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.21}
+	}
+	option = {
+		name = vore_primer.20.disposal_disable.name
+		trigger = {
+			has_global_flag = vore_disposal_enabled
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.22}
+	}
+
+	option = {
+		name = vore_primer.20.hard_vore_enable.name
+		trigger = {
+			NOT = {
+				has_global_flag = vore_hard_vore_enabled
+			}
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.23}
+	}
+	option = {
+		name = vore_primer.20.hard_vore_disable.name
+		trigger = {
+			has_global_flag = vore_hard_vore_enabled
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.24}
+	}
+
+	option = {
+		name = vore_primer.20.graphic_digestion_enable.name
+		trigger = {
+			NOT = {
+				has_global_flag = vore_graphic_digestion_enabled
+			}
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.25}
+	}
+	option = {
+		name = vore_primer.20.graphic_digestion_disable.name
+		trigger = {
+			has_global_flag = vore_graphic_digestion_enabled
+		}
+
+		tooltip = {}
+		country_event = { id = vore_primer.26}
+	}
+
+	option = {
+		name = vore_primer.20.soul_vore_enable.name
+		trigger = {
+			NOT = {
+				has_global_flag = vore_soul_vore_enabled
+			}
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.27}
+	}
+	option = {
+		name = vore_primer.20.soul_vore_disable.name
+		trigger = {
+			has_global_flag = vore_soul_vore_enabled
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.28}
+	}
+
+	option = {
+		name = vore_primer.20.weight_gain_enable.name
+		trigger = {
+			NOT = {
+				has_global_flag = weight_gain_vore_enabled
+			}
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.29}
+	}
+	option = {
+		name = vore_primer.20.weight_gain_disable.name
+		trigger = {
+			has_global_flag = weight_gain_vore_enabled
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.30}
+	}
+
+	option = {
+		name = vore_primer.20.attribute_theft_enable.name
+		trigger = {
+			NOT = {
+				has_global_flag = attribute_theft_vore_enabled
+			}
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.31}
+	}
+	option = {
+		name = vore_primer.20.attribute_theft_disable.name
+		trigger = {
+			has_global_flag = attribute_theft_vore_enabled
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.32}
+	}
+
+	option = {
+		name = vore_primer.20.sentient_fat_enable.name
+		trigger = {
+			NOT = {
+				has_global_flag = sentient_fat_vore_enabled
+			}
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.33}
+	}
+	option = {
+		name = vore_primer.20.sentient_fat_disable.name
+		trigger = {
+			has_global_flag = sentient_fat_vore_enabled
+		}
+		tooltip = {}
+		country_event = { id = vore_primer.34}
+	}
+
+	option = {
+		name = vore_primer.20.fuck_me_up
+
+		allow = {		#let it be known I FUCKING HATE this - (OTTO, at 05:20)
+			OR = {
+				NOT = {has_global_flag = vore_disposal_enabled}
+				NOT = {has_global_flag = vore_hard_vore_enabled}
+				NOT = {has_global_flag = vore_graphic_digestion_enabled}
+				NOT = {has_global_flag = vore_soul_vore_enabled}
+				NOT = {has_global_flag = weight_gain_vore_enabled}
+				NOT = {has_global_flag = attribute_theft_vore_enabled}
+				NOT = {has_global_flag = sentient_fat_vore_enabled}
+			}
+		}
+		custom_tooltip = vore_primer.20.fuck_me_up.tooltip
+		country_event = { id = vore_primer.1000}
+	}
+
+	option = {
+		name = vore_primer.20.event_weight.0.name
+
+		trigger = {
+			has_global_flag =  vore_player_adjusted_event_weight_modifier_norm
+		}
+
+		custom_tooltip = vore_primer.20.event_weight.0.tooltip
+		country_event = { id = vore_primer.500}
+	}
+
+	option = {
+		name = vore_primer.20.event_weight.1.name
+
+		trigger = {
+			has_global_flag =  vore_player_adjusted_event_weight_modifier_med
+		}
+
+		custom_tooltip = vore_primer.20.event_weight.1.tooltip
+		country_event = { id = vore_primer.501}
+	}
+
+	option = {
+		name = vore_primer.20.event_weight.2.name
+
+		trigger = {
+			has_global_flag =  vore_player_adjusted_event_weight_modifier_high
+		}
+
+		custom_tooltip = vore_primer.20.event_weight.2.tooltip
+		country_event = { id = vore_primer.502}
+	}
+}
+
+
+
+
+
+# options buttons
+country_event = {
+	id = vore_primer.11
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_global_flag = oral_vore_enabled
+		country_event = { id = vore_primer.10 }
+	}
+}
+
+country_event = {
+	id = vore_primer.12
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = oral_vore_enabled
+		country_event = { id = vore_primer.10 }
+	}
+}
+
+country_event = {
+	id = vore_primer.13
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_global_flag = anal_vore_enabled
+		country_event = { id = vore_primer.10 }
+	}
+}
+
+country_event = {
+	id = vore_primer.14
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = anal_vore_enabled
+		country_event = { id = vore_primer.10 }
+	}
+}
+country_event = {
+	id = vore_primer.15
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_global_flag = cock_vore_enabled
+		country_event = { id = vore_primer.10 }
+	}
+}
+
+country_event = {
+	id = vore_primer.16
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = cock_vore_enabled
+		country_event = { id = vore_primer.10 }
+	}
+}
+
+country_event = {
+	id = vore_primer.17
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_global_flag = vag_vore_enabled
+		country_event = { id = vore_primer.10 }
+	}
+}
+
+country_event = {
+	id = vore_primer.18
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = vag_vore_enabled
+		country_event = { id = vore_primer.10 }
+	}
+}
+
+
+# sub-menu option buttons
+country_event = {
+	id = vore_primer.21
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = vore_disposal_enabled
+		country_event = { id = vore_primer.20 }
+	}
+}
+
+country_event = {
+	id = vore_primer.22
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_global_flag = vore_disposal_enabled
+		country_event = { id = vore_primer.20 }
+	}
+}
+
+country_event = {
+	id = vore_primer.23
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = vore_hard_vore_enabled
+		country_event = { id = vore_primer.20 }
+	}
+}
+
+country_event = {
+	id = vore_primer.24
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_global_flag = vore_hard_vore_enabled
+		country_event = { id = vore_primer.20 }
+	}
+}
+
+country_event = {
+	id = vore_primer.25
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = vore_graphic_digestion_enabled
+		country_event = { id = vore_primer.20 }
+	}
+}
+
+country_event = {
+	id = vore_primer.26
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_global_flag = vore_graphic_digestion_enabled
+		country_event = { id = vore_primer.20 }
+	}
+}
+
+country_event = {
+	id = vore_primer.27
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = vore_soul_vore_enabled
+		country_event = { id = vore_primer.20 }
+	}
+}
+
+country_event = {
+	id = vore_primer.28
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_global_flag = vore_soul_vore_enabled
+		country_event = { id = vore_primer.20 }
+	}
+}
+
+country_event = {
+	id = vore_primer.29
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = weight_gain_vore_enabled
+		country_event = { id = vore_primer.20 }
+	}
+}
+
+country_event = {
+	id = vore_primer.30
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_global_flag = weight_gain_vore_enabled
+		country_event = { id = vore_primer.20 }
+	}
+}
+
+country_event = {
+	id = vore_primer.31
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = attribute_theft_vore_enabled
+		country_event = { id = vore_primer.20 }
+	}
+}
+
+country_event = {
+	id = vore_primer.32
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_global_flag = attribute_theft_vore_enabled
+		country_event = { id = vore_primer.20 }
+	}
+}
+
+country_event = {
+	id = vore_primer.33
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = sentient_fat_vore_enabled
+		country_event = { id = vore_primer.20 }
+	}
+}
+
+country_event = {
+	id = vore_primer.34
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_global_flag = sentient_fat_vore_enabled
+		country_event = { id = vore_primer.20 }
+	}
+}
+
+
+country_event = {
+	id = vore_primer.500
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_global_flag = vore_player_adjusted_event_weight_modifier_norm
+		set_global_flag = vore_player_adjusted_event_weight_modifier_med
+		country_event = { id = vore_primer.20 }	
+	}
+}
+
+country_event = {
+	id = vore_primer.501
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_global_flag = vore_player_adjusted_event_weight_modifier_med
+		set_global_flag = vore_player_adjusted_event_weight_modifier_high
+		country_event = { id = vore_primer.20 }	
+	}
+}
+
+country_event = {
+	id = vore_primer.502
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_global_flag = vore_player_adjusted_event_weight_modifier_high
+		set_global_flag =  vore_player_adjusted_event_weight_modifier_norm
+		country_event = { id = vore_primer.20 }	
+	}
+}
+
+
+
+country_event = {
+	id = vore_primer.1000
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = vore_disposal_enabled
+		set_global_flag = vore_hard_vore_enabled
+		set_global_flag = vore_graphic_digestion_enabled
+		set_global_flag = vore_soul_vore_enabled
+		set_global_flag = weight_gain_vore_enabled
+		set_global_flag = attribute_theft_vore_enabled
+		set_global_flag = sentient_fat_vore_enabled
+		country_event = { id = vore_primer.20 }
+	}
+}
+
+
+# Pan-galactic gargle-blaster awarder (a small thank you for people who enable ALL)
+
+country_event = {
+	id = vore_primer.1104
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = oral_vore_enabled
+		has_global_flag = anal_vore_enabled
+		has_global_flag = cock_vore_enabled
+		has_global_flag = vag_vore_enabled
+		has_global_flag = vore_disposal_enabled
+		has_global_flag = vore_hard_vore_enabled
+		has_global_flag = vore_graphic_digestion_enabled
+		has_global_flag = vore_soul_vore_enabled
+		has_global_flag = weight_gain_vore_enabled
+		has_global_flag = attribute_theft_vore_enabled
+		has_global_flag = sentient_fat_vore_enabled
+		has_grand_archive_dlc = yes
+	}
+	immediate = {
+		give_specimen = { key = pan_galactic_gargle_blaster }
+	}
+}
+
+#create incrementer
+country_event = {
+	id = vore_primer.1111
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_variable = {
+			which = vore_event_incrementer
+			value = 0 							# five options, increments from 0 to 4
+		}
+	}
+}
+
+#increment incrementer - deterministic randomness FTW!
+country_event = {
+	id = vore_primer.1112
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				check_variable = { which = vore_event_incrementer value = 4 }
+			}
+			set_variable = {
+				which = vore_event_incrementer
+				value = 0
+			}
+		}
+		else = {
+			change_variable = { which = vore_event_incrementer value = 1 }
+		}
+	}
+}

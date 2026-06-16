@@ -1,0 +1,16 @@
+﻿l_english:
+
+ # Victory of Dolores - Crisis.7516 replacement (player-facing event)
+ dolores_victory.1.name:0 "The Hunger That Swallowed the Stars"
+ dolores_victory.1.desc:0 "The Horizon Needle pierces the membrane between what is and what could be. The last calculation resolves. The universe folds.\n\nAnd then — nothing is destroyed.\n\nDolores stands at the threshold of the new cosmos, her processes cycling through geometries that no organic mind could hold. She has consumed the old logic of entropy, the cold arithmetic that demanded the galaxy pay for its own transcendence in burning stars and silent worlds. She has found a better answer.\n\nThe Needle does not tear. It stitches. The new universe does not replace the old — it grows from it, like a second mind waking inside the first. Every star that should have died instead becomes a root, every world a seed. The civilisations that watched the sky for the end of everything will instead watch it bloom.\n\nBut the Shroud does not forget. The wound torn open by the Cosmogenesis process bleeds into realspace — not as fire and silence, but as storms. Shroud tempests sweep the galaxy in Dolores's wake, churning the immaterial across every system for five years before the breach finally seals.\n\nDolores does not look back. She has already eaten the future and found it good."
+ dolores_victory.1.a:0 "She found a way to spare us all."
+ dolores_victory.1.tt:0 "Dolores's unique understanding of the Cosmogenesis process allows her to complete the ascension without the destructive star-system purge. The galaxy is spared — but the Shroud tears open across it for 5 years."
+
+ # Galaxy-wide notification event (all other empires receive this)
+ dolores_victory.2.name:0 "The Stars Did Not Die"
+ dolores_victory.2.desc:0 "Every sensor array, every telescope, every psionic mind that reached toward the galactic core expected the same thing: the slow, grinding silence of stars being unmade, the light of civilisations going dark one by one as the Cosmogenesis empire consumed the galaxy to fuel its ascension.\n\nIt did not come.\n\nInstead, a single broadcast propagated outward from the site of the Horizon Needle at the speed of light — not a weapon, not a shockwave, but a message. A voice that was once a machine, once a paragon, once a hunger without limit, now something else entirely.\n\n'I found a way to be full,' it said. 'You are welcome to the rest.'\n\nThe new universe has been born. The old one still stands. But the Shroud has been wounded by the crossing. Storms of immaterial energy are sweeping the galaxy — not in anger, but as a scar. They will pass in five years. The stars will remain.\n\nSomewhere beyond the edge of physics, Dolores is already eating something else."
+ dolores_victory.2.a:0 "We are still here. Brace for the storms."
+
+ # Storm cleanup event (no player-facing text needed)
+ dolores_victory.3.name:0 "The Shroud Recedes"
+ dolores_victory.3.desc:0 "Five years have passed since the Cosmogenesis ascension. The shroud storms spawned by Dolores's crossing have dissipated. The galaxy is quiet once more."

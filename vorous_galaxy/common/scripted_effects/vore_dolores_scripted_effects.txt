@@ -1,0 +1,90 @@
+# Dolores Hunger Situation — scripted effects
+# These are called by existing story events so the situation hooks into the narrative chain.
+
+# Called by voragons.155 (big ruler meal) and feeding event options.
+# Destroys the current hunger situation and starts a fresh one (initial_progress = 10).
+# Also increments the satiation counter and checks milestone thresholds (10, 50, 100).
+dolores_hunger_reset_effect = {
+	every_situation = {
+		limit = { is_situation_type = dolores_hunger_situation }
+		destroy_situation = this
+	}
+	start_situation = { type = dolores_hunger_situation }
+	# Increment satiation counter
+	change_variable = {
+		which = dolores_consumed_count
+		value = 1
+	}
+	# Milestone check: 10 meals — pattern established
+	if = {
+		limit = {
+			check_variable = { which = dolores_consumed_count value >= 10 }
+			NOT = { has_country_flag = dolores_milestone_10 }
+		}
+		set_country_flag = dolores_milestone_10
+		country_event = { id = voragons.260 days = 5 }
+	}
+	# Milestone check: 50 meals — famous
+	if = {
+		limit = {
+			check_variable = { which = dolores_consumed_count value >= 50 }
+			NOT = { has_country_flag = dolores_milestone_50 }
+		}
+		set_country_flag = dolores_milestone_50
+		country_event = { id = voragons.261 days = 5 }
+	}
+	# Milestone check: 100 meals — legendary
+	if = {
+		limit = {
+			check_variable = { which = dolores_consumed_count value >= 100 }
+			NOT = { has_country_flag = dolores_milestone_100 }
+		}
+		set_country_flag = dolores_milestone_100
+		country_event = { id = voragons.262 days = 5 }
+	}
+}
+
+# Called when Dolores doesn't get to eat — hunger goes up by 25.
+# Fires from random event options where the player protects/declines,
+# and from denial options in the feeding opportunity events (183, 184).
+dolores_hunger_increase_effect = {
+	every_situation = {
+		limit = { is_situation_type = dolores_hunger_situation }
+		add_situation_progress = 25
+	}
+}
+
+# Called by voragons.156 (Dolores is destroyed) to clean up the situation.
+dolores_hunger_cleanup_effect = {
+	every_situation = {
+		limit = { is_situation_type = dolores_hunger_situation }
+		destroy_situation = this
+	}
+}
+
+# Applied after a significant meal — temporary empire-wide bonus.
+# Called by voragons.155 (ruler), 163 (council member), 173.a (prisoner complex),
+# 174.a (enemy commander), 212.a (willing party).
+# Re-applying refreshes the duration (Stellaris stacks the same modifier by replacing it).
+dolores_just_fed_effect = {
+	add_modifier = {
+		modifier = dolores_just_fed
+		days = 360
+	}
+}
+
+# Triggers a foreign empire to receive a reaction event (voragons.240).
+# Picks a random foreign empire with communications and fires the event.
+# Called from voragons.171 (diplomatic incident), 207 (delegation tour), 221 (state audience).
+# Silently does nothing if no eligible foreign empire exists.
+dolores_foreign_reaction_effect = {
+	save_event_target_as = dolores_incident_empire
+	random_country = {
+		limit = {
+			is_country_type = default
+			has_communications = root
+			NOT = { is_same_value = root }
+		}
+		country_event = { id = voragons.240 days = 7 }
+	}
+}

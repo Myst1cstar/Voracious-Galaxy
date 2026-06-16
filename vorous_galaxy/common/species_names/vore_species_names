@@ -1,0 +1,439 @@
+VORE = {
+    1 = {
+        name = vore_species_name_1
+        plural = vore_species_name_plural_1
+        home_planet = vore_species_planet_1
+        home_system = vore_species_system_1
+        name_list = "HUM1"
+    }
+    2 = {
+        name = vore_species_name_2
+        plural = vore_species_name_plural_2
+        home_planet = vore_species_planet_2
+        home_system = vore_species_system_2
+        name_list = "HUM1"
+    }
+    3 = {
+        name = vore_species_name_3
+        plural = vore_species_name_plural_3
+        home_planet = vore_species_planet_3
+        home_system = vore_species_system_3
+        name_list = "HUM1"
+    }
+    4 = {
+        name = vore_species_name_4
+        plural = vore_species_name_plural_4
+        home_planet = vore_species_planet_4
+        home_system = vore_species_system_4
+        name_list = "HUM1"
+    }
+    5 = {
+        name = vore_species_name_5
+        plural = vore_species_name_plural_5
+        home_planet = vore_species_planet_5
+        home_system = vore_species_system_5
+        name_list = "HUM1"
+    }
+    6 = {
+        name = vore_species_name_6
+        plural = vore_species_name_plural_6
+        home_planet = vore_species_planet_6
+        home_system = vore_species_system_6
+        name_list = "HUM1"
+    }
+    7 = {
+        name = vore_species_name_7
+        plural = vore_species_name_plural_7
+        home_planet = vore_species_planet_7
+        home_system = vore_species_system_7
+        name_list = "HUM1"
+    }
+    8 = {
+        name = vore_species_name_8
+        plural = vore_species_name_plural_8
+        home_planet = vore_species_planet_8
+        home_system = vore_species_system_8
+        name_list = "HUM1"
+    }
+    9 = {
+        name = vore_species_name_9
+        plural = vore_species_name_plural_9
+        home_planet = vore_species_planet_9
+        home_system = vore_species_system_9
+        name_list = "HUM1"
+    }
+    10 = {
+        name = vore_species_name_10
+        plural = vore_species_name_plural_10
+        home_planet = vore_species_planet_10
+        home_system = vore_species_system_10
+        name_list = "HUM1"
+    }
+    11 = {
+        name = vore_species_name_11
+        plural = vore_species_name_plural_11
+        home_planet = vore_species_planet_11
+        home_system = vore_species_system_11
+        name_list = "HUM1"
+    }
+    12 = {
+        name = vore_species_name_12
+        plural = vore_species_name_plural_12
+        home_planet = vore_species_planet_12
+        home_system = vore_species_system_12
+        name_list = "HUM1"
+    }
+    13 = {
+        name = vore_species_name_13
+        plural = vore_species_name_plural_13
+        home_planet = vore_species_planet_13
+        home_system = vore_species_system_13
+        name_list = "HUM1"
+    }
+    14 = {
+        name = vore_species_name_14
+        plural = vore_species_name_plural_14
+        home_planet = vore_species_planet_14
+        home_system = vore_species_system_14
+        name_list = "HUM1"
+    }
+    15 = {
+        name = vore_species_name_15
+        plural = vore_species_name_plural_15
+        home_planet = vore_species_planet_15
+        home_system = vore_species_system_15
+        name_list = "HUM1"
+    }
+}
+
+
+# FERAL
+
+VORE_FERAL = {
+    1 = {
+        name = vore_species_name_feral_1
+        plural = vore_species_name_feral_plural_1
+        home_planet = vore_species_feral_planet_1
+        home_system = vore_species_feral_system_1
+        name_list = "HUM1"
+    }
+    2 = {
+        name = vore_species_name_feral_2
+        plural = vore_species_name_feral_plural_2
+        home_planet = vore_species_feral_planet_2
+        home_system = vore_species_feral_system_2
+        name_list = "HUM1"
+    }
+    3 = {
+        name = vore_species_name_feral_3
+        plural = vore_species_name_feral_plural_3
+        home_planet = vore_species_feral_planet_3
+        home_system = vore_species_feral_system_3
+        name_list = "HUM1"
+    }
+    4 = {
+        name = vore_species_name_feral_4
+        plural = vore_species_name_feral_plural_4
+        home_planet = vore_species_feral_planet_4
+        home_system = vore_species_feral_system_4
+        name_list = "HUM1"
+    }
+    5 = {
+        name = vore_species_name_feral_5
+        plural = vore_species_name_feral_plural_5
+        home_planet = vore_species_feral_planet_5
+        home_system = vore_species_feral_system_5
+        name_list = "HUM1"
+    }
+    6 = {
+        name = vore_species_name_feral_6
+        plural = vore_species_name_feral_plural_6
+        home_planet = vore_species_feral_planet_6
+        home_system = vore_species_feral_system_6
+        name_list = "HUM1"
+    }
+    7 = {
+        name = vore_species_name_feral_7
+        plural = vore_species_name_feral_plural_7
+        home_planet = vore_species_feral_planet_7
+        home_system = vore_species_feral_system_7
+        name_list = "HUM1"
+    }
+    8 = {
+        name = vore_species_name_feral_8
+        plural = vore_species_name_feral_plural_8
+        home_planet = vore_species_feral_planet_8
+        home_system = vore_species_feral_system_8
+        name_list = "HUM1"
+    }
+    9 = {
+        name = vore_species_name_feral_9
+        plural = vore_species_name_feral_plural_9
+        home_planet = vore_species_feral_planet_9
+        home_system = vore_species_feral_system_9
+        name_list = "HUM1"
+    }
+    10 = {
+        name = vore_species_name_feral_10
+        plural = vore_species_name_feral_plural_10
+        home_planet = vore_species_feral_planet_10
+        home_system = vore_species_feral_system_10
+        name_list = "HUM1"
+    }
+    11 = {
+        name = vore_species_name_feral_11
+        plural = vore_species_name_feral_plural_11
+        home_planet = vore_species_feral_planet_11
+        home_system = vore_species_feral_system_11
+        name_list = "HUM1"
+    }
+    12 = {
+        name = vore_species_name_feral_12
+        plural = vore_species_name_feral_plural_12
+        home_planet = vore_species_feral_planet_12
+        home_system = vore_species_feral_system_12
+        name_list = "HUM1"
+    }
+    13 = {
+        name = vore_species_name_feral_13
+        plural = vore_species_name_feral_plural_13
+        home_planet = vore_species_feral_planet_13
+        home_system = vore_species_feral_system_13
+        name_list = "HUM1"
+    }
+    14 = {
+        name = vore_species_name_feral_14
+        plural = vore_species_name_feral_plural_14
+        home_planet = vore_species_feral_planet_14
+        home_system = vore_species_feral_system_14
+        name_list = "HUM1"
+    }
+    15 = {
+        name = vore_species_name_feral_15
+        plural = vore_species_name_feral_plural_15
+        home_planet = vore_species_feral_planet_15
+        home_system = vore_species_feral_system_15
+        name_list = "HUM1"
+    }
+}
+
+    # ROBO
+
+VORE_MACHINE = {
+    1 = {
+        name = vore_species_robot_name_1
+        plural = vore_species_robot_name_plural_1
+        home_planet = vore_species_robot_planet_1
+        home_system = vore_species_robot_system_1
+        name_list = "HUM1"
+    }
+    2 = {
+        name = vore_species_robot_name_2
+        plural = vore_species_robot_name_plural_2
+        home_planet = vore_species_robot_planet_2
+        home_system = vore_species_robot_system_2
+        name_list = "HUM1"
+    }
+    3 = {
+        name = vore_species_robot_name_3
+        plural = vore_species_robot_name_plural_3
+        home_planet = vore_species_robot_planet_3
+        home_system = vore_species_robot_system_3
+        name_list = "HUM1"
+    }
+    4 = {
+        name = vore_species_robot_name_4
+        plural = vore_species_robot_name_plural_4
+        home_planet = vore_species_robot_planet_4
+        home_system = vore_species_robot_system_4
+        name_list = "HUM1"
+    }
+    5 = {
+        name = vore_species_robot_name_5
+        plural = vore_species_robot_name_plural_5
+        home_planet = vore_species_robot_planet_5
+        home_system = vore_species_robot_system_5
+        name_list = "HUM1"
+    }
+    6 = {
+        name = vore_species_robot_name_6
+        plural = vore_species_robot_name_plural_6
+        home_planet = vore_species_robot_planet_6
+        home_system = vore_species_robot_system_6
+        name_list = "HUM1"
+    }
+    7 = {
+        name = vore_species_robot_name_7
+        plural = vore_species_robot_name_plural_7
+        home_planet = vore_species_robot_planet_7
+        home_system = vore_species_robot_system_7
+        name_list = "HUM1"
+    }
+    8 = {
+        name = vore_species_robot_name_8
+        plural = vore_species_robot_name_plural_8
+        home_planet = vore_species_robot_planet_8
+        home_system = vore_species_robot_system_8
+        name_list = "HUM1"
+    }
+    9 = {
+        name = vore_species_robot_name_9
+        plural = vore_species_robot_name_plural_9
+        home_planet = vore_species_robot_planet_9
+        home_system = vore_species_robot_system_9
+        name_list = "HUM1"
+    }
+    10 = {
+        name = vore_species_robot_name_10
+        plural = vore_species_robot_name_plural_10
+        home_planet = vore_species_robot_planet_10
+        home_system = vore_species_robot_system_10
+        name_list = "HUM1"
+    }
+    11 = {
+        name = vore_species_robot_name_11
+        plural = vore_species_robot_name_plural_11
+        home_planet = vore_species_robot_planet_11
+        home_system = vore_species_robot_system_11
+        name_list = "HUM1"
+    }
+    12 = {
+        name = vore_species_robot_name_12
+        plural = vore_species_robot_name_plural_12
+        home_planet = vore_species_robot_planet_12
+        home_system = vore_species_robot_system_12
+        name_list = "HUM1"
+    }
+    13 = {
+        name = vore_species_robot_name_13
+        plural = vore_species_robot_name_plural_13
+        home_planet = vore_species_robot_planet_13
+        home_system = vore_species_robot_system_13
+        name_list = "HUM1"
+    }
+    14 = {
+        name = vore_species_robot_name_14
+        plural = vore_species_robot_name_plural_14
+        home_planet = vore_species_robot_planet_14
+        home_system = vore_species_robot_system_14
+        name_list = "HUM1"
+    }
+    15 = {
+        name = vore_species_robot_name_15
+        plural = vore_species_robot_name_plural_15
+        home_planet = vore_species_robot_planet_15
+        home_system = vore_species_robot_system_15
+        name_list = "HUM1"
+    }
+}
+
+
+    # ROBO FERAL
+
+VORE_MACHINE_FERAL = {
+    1 = {
+        name = vore_species_robot_feral_name_1
+        plural = vore_species_robot_feral_name_plural_1
+        home_planet = vore_species_robot_feral_planet_1
+        home_system = vore_species_robot_feral_system_1
+        name_list = "HUM1"
+    }
+    2 = {
+        name = vore_species_robot_feral_name_2
+        plural = vore_species_robot_feral_name_plural_2
+        home_planet = vore_species_robot_feral_planet_2
+        home_system = vore_species_robot_feral_system_2
+        name_list = "HUM1"
+    }
+    3 = {
+        name = vore_species_robot_feral_name_3
+        plural = vore_species_robot_feral_name_plural_3
+        home_planet = vore_species_robot_feral_planet_3
+        home_system = vore_species_robot_feral_system_3
+        name_list = "HUM1"
+    }
+    4 = {
+        name = vore_species_robot_feral_name_4
+        plural = vore_species_robot_feral_name_plural_4
+        home_planet = vore_species_robot_feral_planet_4
+        home_system = vore_species_robot_feral_system_4
+        name_list = "HUM1"
+    }
+    5 = {
+        name = vore_species_robot_feral_name_5
+        plural = vore_species_robot_feral_name_plural_5
+        home_planet = vore_species_robot_feral_planet_5
+        home_system = vore_species_robot_feral_system_5
+        name_list = "HUM1"
+    }
+    6 = {
+        name = vore_species_robot_feral_name_6
+        plural = vore_species_robot_feral_name_plural_6
+        home_planet = vore_species_robot_feral_planet_6
+        home_system = vore_species_robot_feral_system_6
+        name_list = "HUM1"
+    }
+    7 = {
+        name = vore_species_robot_feral_name_7
+        plural = vore_species_robot_feral_name_plural_7
+        home_planet = vore_species_robot_feral_planet_7
+        home_system = vore_species_robot_feral_system_7
+        name_list = "HUM1"
+    }
+    8 = {
+        name = vore_species_robot_feral_name_8
+        plural = vore_species_robot_feral_name_plural_8
+        home_planet = vore_species_robot_feral_planet_8
+        home_system = vore_species_robot_feral_system_8
+        name_list = "HUM1"
+    }
+    9 = {
+        name = vore_species_robot_feral_name_9
+        plural = vore_species_robot_feral_name_plural_9
+        home_planet = vore_species_robot_feral_planet_9
+        home_system = vore_species_robot_feral_system_9
+        name_list = "HUM1"
+    }
+    10 = {
+        name = vore_species_robot_feral_name_10
+        plural = vore_species_robot_feral_name_plural_10
+        home_planet = vore_species_feral_robot_planet_10
+        home_system = vore_species_feral_robot_system_10
+        name_list = "HUM1"
+    }
+    11 = {
+        name = vore_species_robot_feral_name_11
+        plural = vore_species_robot_feral_name_plural_11
+        home_planet = vore_species_robot_feral_planet_11
+        home_system = vore_species_robot_feral_system_11
+        name_list = "HUM1"
+    }
+    12 = {
+        name = vore_species_robot_feral_name_12
+        plural = vore_species_robot_feral_name_plural_12
+        home_planet = vore_species_robot_feral_planet_12
+        home_system = vore_species_robot_feral_system_12
+        name_list = "HUM1"
+    }
+    13 = {
+        name = vore_species_robot_feral_name_13
+        plural = vore_species_robot_feral_name_plural_13
+        home_planet = vore_species_robot_feral_planet_13
+        home_system = vore_species_robot_feral_system_13
+        name_list = "HUM1"
+    }
+    14 = {
+        name = vore_species_robot_feral_name_14
+        plural = vore_species_robot_feral_name_plural_14
+        home_planet = vore_species_robot_feral_planet_14
+        home_system = vore_species_robot_feral_system_14
+        name_list = "HUM1"
+    }
+    15 = {
+        name = vore_species_robot_feral_name_15
+        plural = vore_species_robot_feral_name_plural_15
+        home_planet = vore_species_robot_feral_planet_15
+        home_system = vore_species_robot_feral_system_15
+        name_list = "HUM1"
+    }
+}

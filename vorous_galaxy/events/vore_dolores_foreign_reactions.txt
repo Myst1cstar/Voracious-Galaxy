@@ -1,0 +1,58 @@
+namespace = voragons
+
+###################################
+#   DOLORES FOREIGN REACTION EVENTS
+#
+#   Fires to a random foreign empire (with communications) when Dolores
+#   consumes one of their diplomats. Triggered from voragons.171, 207, 221.
+#
+#   The receiving empire scopes the event — ROOT is the foreign empire,
+#   event_target:dolores_incident_empire is the empire with Dolores.
+#
+#   Player choice determines opinion severity (minor / major / severe).
+###################################
+
+country_event = {
+	id = voragons.240
+	title = voragons.240.name
+	desc = voragons.240.desc
+	picture = GFX_evt_DOLORES_vore
+	show_sound = event_alien_signal
+	is_triggered_only = yes
+
+	trigger = {
+		# Don't fire to the player's own empire (it shouldn't, but defensive)
+		exists = event_target:dolores_incident_empire
+		NOT = { is_same_value = event_target:dolores_incident_empire }
+	}
+
+	# Mark as a tragedy. Continue normal relations.
+	option = {
+		name = voragons.240.a
+		custom_tooltip = voragons.240.a.tooltip
+		add_opinion_modifier = {
+			modifier = opinion_dolores_ate_diplomat_minor
+			who = event_target:dolores_incident_empire
+		}
+	}
+
+	# File a formal protest. Demand a written explanation.
+	option = {
+		name = voragons.240.b
+		custom_tooltip = voragons.240.b.tooltip
+		add_opinion_modifier = {
+			modifier = opinion_dolores_ate_diplomat_major
+			who = event_target:dolores_incident_empire
+		}
+	}
+
+	# Recall our embassy.
+	option = {
+		name = voragons.240.c
+		custom_tooltip = voragons.240.c.tooltip
+		add_opinion_modifier = {
+			modifier = opinion_dolores_ate_diplomat_severe
+			who = event_target:dolores_incident_empire
+		}
+	}
+}

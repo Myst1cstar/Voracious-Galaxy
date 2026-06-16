@@ -1,0 +1,96 @@
+vore_species = {
+	species_class = VORE
+
+#this will add the portrait group to Vore category in the editor (as in, the portrait_group within x_portraits.txt in gfx/portraits/portraits/)
+
+   portraits = {
+       "dogs"
+       "foxes"
+       "cats"
+       "avali"
+       "dragons"
+       "kobolds"
+       "ponies"
+       "mice"
+   }
+}
+
+vore_species_feral = {
+    species_class = VORE_FERAL
+
+
+    portraits = {
+        "dogs_feral"
+        "foxes_feral"
+        "cats_feral"
+        # "avali_feral"
+        "dragons_feral"
+    }
+}
+
+vore_machine_species = {
+    species_class = VORE_MACHINE
+
+    
+    portraits = {
+        "protogen"
+        "synth"
+    }
+}
+
+vore_machine_species_feral = {
+    species_class = VORE_MACHINE
+
+
+    portraits = {
+        # "protogen_feral"
+        "synth_feral"
+    }
+}
+
+
+pre_vore_species = {
+	species_class = PRE_VORE
+
+	portraits = {
+        "dogs"
+        "foxes"
+        "cats"
+        "avali"
+        "dragons"
+        "kobolds"
+        "ponies"
+    }
+
+	uplifted_portraits = {
+        "dogs"
+        "foxes"
+        "cats"
+        "avali"
+        "dragons"
+        "kobolds"
+        "ponies"
+    }
+}
+
+
+pre_vore_species_feral = {
+	species_class = PRE_VORE_FERAL
+
+
+	portraits = {
+        "dogs_feral"
+        "foxes_feral"
+        "cats_feral"
+        # "avali_feral"
+        "dragons_feral"
+    }
+
+	portraits = {
+        "dogs_feral"
+        "foxes_feral"
+        "cats_feral"
+        # "avali_feral"
+        "dragons_feral"
+    }
+}

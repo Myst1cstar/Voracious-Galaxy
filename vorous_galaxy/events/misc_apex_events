@@ -1,0 +1,41 @@
+namespace = gender
+
+country_event = {
+	id = gender.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			owner = { has_policy_flag = female_dominated }
+			gender = male
+		}
+	}
+
+	immediate = {
+		from = {
+			set_is_female = yes
+			set_name = random
+		}
+	}
+}
+
+country_event = {
+	id = gender.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			owner = { has_policy_flag = male_dominated }
+			gender = female
+		}
+	}
+
+	immediate = {
+		from = {
+			set_is_female = no
+			set_name = random
+		}
+	}
+}

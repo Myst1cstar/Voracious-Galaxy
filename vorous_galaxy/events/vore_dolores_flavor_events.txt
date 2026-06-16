@@ -1,0 +1,381 @@
+namespace = voragons
+
+###################################
+#   DOLORES FLAVOR / ARC EVENTS
+###################################
+
+country_event = { # hidden hub — schedules flavor chain after Dolores is hired
+	id = voragons.162
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		country_event = { id = voragons.170 days = 300 }
+		country_event = { id = voragons.171 days = 720 }
+		country_event = { id = voragons.172 days = 1200 }
+		country_event = { id = voragons.173 days = 2000 }
+		country_event = { id = voragons.174 days = 1600 }
+	}
+}
+
+###################################
+#   RANDOM FLAVOR EVENTS
+###################################
+
+# voragons.170 — The Intern Problem
+# Security has filed its third incident report this month. She has been actively feeding.
+# Hunger resets in immediate — the eating has already been happening.
+country_event = {
+	id = voragons.170
+	title = voragons.170.name
+	desc = voragons.170.desc
+	picture = GFX_evt_DOLORES_vore
+	show_sound = event_vore_gulp
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:Gov_dolores
+	}
+
+	immediate = {
+		# She's been actively feeding all quarter — hunger resets regardless of player response
+		dolores_hunger_reset_effect = yes
+	}
+
+	# No action: morale erodes quietly, but the administrative simplicity saves something
+	option = {
+		name = voragons.170.a
+		custom_tooltip = voragons.170.a.tooltip
+		add_resource = { unity = -50 }
+		add_resource = { energy = 100 }
+	}
+
+	# Implement safety protocols: costs unity + energy; restricting her access
+	# means hunger builds faster going forward
+	option = {
+		name = voragons.170.b
+		custom_tooltip = voragons.170.b.tooltip
+		add_resource = { unity = -100 }
+		add_resource = { energy = -150 }
+		hidden_effect = {
+			set_country_flag = dolores_safety_protocols
+			dolores_hunger_increase_effect = yes
+		}
+	}
+}
+
+# voragons.171 — The Diplomatic Incident
+# The attaché is already gone. This is an aftermath event — player handles the fallout.
+# Hunger resets in immediate since eating already occurred.
+country_event = {
+	id = voragons.171
+	title = voragons.171.name
+	desc = voragons.171.desc
+	picture = GFX_evt_DOLORES_vore
+	show_sound = event_vore_gulp
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:Gov_dolores
+	}
+
+	immediate = {
+		# She ate the attaché before the player even heard about it
+		dolores_hunger_reset_effect = yes
+		# A foreign empire will hear about this
+		dolores_foreign_reaction_effect = yes
+	}
+
+	# Treat it as a tactical advantage — the surviving delegates are cooperative
+	option = {
+		name = voragons.171.a
+		custom_tooltip = voragons.171.a.tooltip
+		add_resource = { influence = 50 }
+		add_resource = { unity = 100 }
+	}
+
+	# Send formal apologies and a generous compensation package
+	option = {
+		name = voragons.171.b
+		custom_tooltip = voragons.171.b.tooltip
+		add_resource = { influence = -50 }
+		add_resource = { energy = -200 }
+	}
+}
+
+###################################
+#   STORY CONTINUATION EVENTS
+###################################
+
+# voragons.172 — The Council Inquiry
+# No eating occurs here — this is a policy discussion event.
+# Options route through administrative channels; only option A leads to an eating event (voragons.163).
+country_event = {
+	id = voragons.172
+	title = voragons.172.name
+	desc = voragons.172.desc
+	picture = GFX_evt_DOLORES_vore
+	show_sound = dolores_paragon_sound_effects
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		exists = event_target:Gov_dolores
+	}
+
+	# Invite her to speak — leads to voragons.163 where she eats a council member
+	option = {
+		name = voragons.172.a
+		custom_tooltip = voragons.172.a.tooltip
+		hidden_effect = {
+			country_event = { id = voragons.163 days = 10 }
+		}
+	}
+
+	# Handle through proper channels — bureaucratic friction, Dolores goes unfed
+	option = {
+		name = voragons.172.b
+		custom_tooltip = voragons.172.b.tooltip
+		add_resource = { unity = -200 }
+		hidden_effect = {
+			dolores_hunger_increase_effect = yes
+		}
+	}
+
+	# Archive the inquiry entirely — Dolores is pleased but still unfed
+	option = {
+		name = voragons.172.c
+		custom_tooltip = voragons.172.c.tooltip
+		add_resource = { influence = 75 }
+		hidden_effect = {
+			dolores_hunger_increase_effect = yes
+		}
+	}
+}
+
+# voragons.163 — Council Adjourned (follow-up to voragons.172.a)
+# She ate the committee member mid-objection. The council voted unanimously in her favour.
+country_event = {
+	id = voragons.163
+	title = voragons.163.name
+	desc = voragons.163.desc
+	picture = GFX_evt_DOLORES_vore
+	show_sound = event_vore_gulp
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		exists = event_target:Gov_dolores
+	}
+
+	immediate = {
+		# She ate the committee member — hunger resets
+		dolores_hunger_reset_effect = yes
+		# A council member is a meaningful meal
+		dolores_just_fed_effect = yes
+		# The council was so impressed (or terrified) they approved everything.
+		# Kill a random non-Dolores, non-ruler leader to represent the consumed member.
+		random_owned_leader = {
+			limit = {
+				NOT = { has_leader_flag = Dolores }
+				NOT = { is_ruler = yes }
+			}
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = voragons.163.a
+		custom_tooltip = voragons.163.a.tooltip
+		add_resource = { unity = 300 }
+		add_resource = { influence = 50 }
+	}
+}
+
+# voragons.173 — The Requisition
+# Dolores has formally submitted a request for a substantial meal. Appendix B has a shortlist.
+country_event = {
+	id = voragons.173
+	title = voragons.173.name
+	desc = voragons.173.desc
+	picture = GFX_evt_cosmogenesis_crisis
+	show_sound = event_bad_omen
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		exists = event_target:Gov_dolores
+	}
+
+	# Grant her access to the prisoner complex — biggest meal in the mod
+	option = {
+		name = voragons.173.a
+		custom_tooltip = voragons.173.a.tooltip
+		add_resource = { physics_research = 2000 }
+		add_resource = { society_research = 2000 }
+		add_resource = { engineering_research = 2000 }
+		hidden_effect = {
+			dolores_hunger_reset_effect = yes
+			dolores_just_fed_effect = yes
+		}
+	}
+
+	# Arrange voluntary accommodations — diplomatic solution, still feeds her
+	option = {
+		name = voragons.173.b
+		custom_tooltip = voragons.173.b.tooltip
+		add_resource = { influence = -100 }
+		add_resource = { unity = 500 }
+		hidden_effect = { dolores_hunger_reset_effect = yes }
+	}
+
+	# Deny the request — she finds her own solution; hunger and desperation build
+	option = {
+		name = voragons.173.c
+		custom_tooltip = voragons.173.c.tooltip
+		add_resource = { unity = -300 }
+		hidden_effect = { dolores_hunger_increase_effect = yes }
+	}
+}
+
+###################################
+#   DIPLOMATIC EVENT
+###################################
+
+# voragons.174 — A Valuable Asset
+# Your forces captured an enemy commander. Dolores has sent a memo with diagrams.
+country_event = {
+	id = voragons.174
+	title = voragons.174.name
+	desc = voragons.174.desc
+	picture = GFX_evt_sentry_guns
+	show_sound = event_trap_laser
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		exists = event_target:Gov_dolores
+	}
+
+	# Let Dolores have the commander — everything she knows, extracted from the inside
+	option = {
+		name = voragons.174.a
+		custom_tooltip = voragons.174.a.tooltip
+		add_resource = { alloys = 1000 }
+		add_resource = { engineering_research = 3000 }
+		hidden_effect = {
+			dolores_hunger_reset_effect = yes
+			dolores_just_fed_effect = yes
+		}
+	}
+
+	# Ransom them back — clean transaction, Dolores gets nothing
+	option = {
+		name = voragons.174.b
+		custom_tooltip = voragons.174.b.tooltip
+		add_resource = { energy = 2000 }
+	}
+
+	# Formal trial and imprisonment — principled; Dolores is visibly disappointed
+	option = {
+		name = voragons.174.c
+		custom_tooltip = voragons.174.c.tooltip
+		add_resource = { influence = 100 }
+		hidden_effect = { dolores_hunger_increase_effect = yes }
+	}
+}
+
+###################################
+#   PRE-COSMOGENESIS ARC
+#   (scheduled from voragons.157)
+###################################
+
+# voragons.175 — Hungry and Getting Hungrier
+# The Cosmogenesis drives are cycling up and Dolores is 'saving room.'
+country_event = {
+	id = voragons.175
+	title = voragons.175.name
+	desc = voragons.175.desc
+	picture = GFX_evt_cosmogenesis_crisis
+	show_sound = event_bad_omen
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		exists = event_target:Gov_dolores
+		has_ascension_perk = ap_cosmogenesis
+	}
+
+	# Let her do what she needs — she knows what she's preparing for
+	option = {
+		name = voragons.175.a
+		custom_tooltip = voragons.175.a.tooltip
+		add_resource = { advanced_logic = 500 }
+		add_resource = { physics_research = 1000 }
+		# She said "saving room" — this is anticipation, not deprivation;
+		# hunger stays as-is; the real meal is the Shroud itself
+	}
+
+	# Keep her occupied with logistics — frustrates her, delays her preparations
+	option = {
+		name = voragons.175.b
+		custom_tooltip = voragons.175.b.tooltip
+		add_resource = { unity = -500 }
+		hidden_effect = { dolores_hunger_increase_effect = yes }
+	}
+}
+
+###################################
+#   POST-COSMOGENESIS EPILOGUE
+#   (scheduled from voragons.158)
+###################################
+
+country_event = {
+	id = voragons.176
+	title = voragons.176.name
+	desc = voragons.176.desc
+	picture = GFX_evt_astral_rift_entangled_dark_matter
+	show_sound = event_alien_signal
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = DoloresCosmo
+	}
+
+	# You started building again — the physical act of rebuilding, shown mechanically
+	option = {
+		name = voragons.176.a
+		add_resource = { energy = 1000 }
+		add_resource = { unity = 500 }
+		add_resource = { alloys = 500 }
+	}
+}
+
+country_event = {
+	id = voragons.177
+	title = voragons.177.name
+	desc = voragons.177.desc
+	picture = GFX_evt_astral_rift_entangled_dark_matter
+	show_sound = event_alien_signal
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = DoloresCosmo
+	}
+
+	option = {
+		name = voragons.177.a
+		# Permanent mark: the civilization that made a god and watched it leave.
+		add_modifier = {
+			modifier = dolores_legacy_modifier
+			days = -1
+		}
+		add_resource = { unity = 1000 }
+	}
+}
+
+# NOTE: voragons.300 (The Mandate — the Warden's Legacy origin start event)
+# was removed from this branch along with the rest of the origin content.

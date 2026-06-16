@@ -1,0 +1,29 @@
+﻿l_english:
+
+ #WARDEN SYSTEM
+ vore_warden_system: "R-475"
+ vore_warden_homeworld: "Bastion 3"
+ vore_warden_homeworld_moon: "Custodes"
+
+ #Siigismund and Saarti
+ vore_system_siigismund: "Siigismund"
+ vore_star_name_siigismund: "Siigismund"
+ vore_asteroid_1_name_siigismund: "KPR-195"
+ vore_asteroid_2_name_siigismund: "RR-37k"
+ vore_asteroid_3_name_siigismund: "SR-0004-C"
+
+ vore_system_saarti: "Saarti"
+ vore_star_name_saarti: "Saarti"
+ vore_planet_1_name_saarti: "Pivi"
+ vore_planet_2_name_saarti: "Pivvi"
+ vore_planet_3_name_saarti: "Ppti"
+ vore_planet_3_moon_name_saarti: "Ppti 1"
+
+ #Dolores paragon system
+ vore_paragon_dolores_system: "Broken Heart"
+ vore_paragon_dolores_star: "Broken Heart"
+ vore_paragon_dolores_planet: "Guardian Complex"
+ vore_paragon_dolores_planet_moon_1: "Protective Sanctuary 01"
+ vore_paragon_dolores_planet_moon_2: "Protective Sanctuary 02"
+ vore_paragon_dolores_planet_moon_3: "Protective Sanctuary 03"
+ vore_paragon_dolores_planet_moon_4: "Protective Sanctuary 04"
