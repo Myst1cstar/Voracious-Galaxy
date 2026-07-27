@@ -1,0 +1,55 @@
+mammalians = {
+	species_class = VORE
+
+#this will add the portrait group to Vore category in the editor (as in, the portrait_group within x_portraits.txt in gfx/portraits/portraits/)
+
+   portraits = {
+       "dogs"
+       "foxes"
+       "cats"
+       "ponies"
+       "mice"
+	   "dogs_feral"
+       "foxes_feral"
+       "cats_feral"
+   }
+}
+
+reptilians = {
+    species_class = VORE
+
+
+    portraits = {
+		"dragons"
+        "dragons_feral"
+		"kobolds"
+    }
+}
+
+avians = {
+    species_class = VORE
+
+
+    portraits = {
+		"avali"
+    }
+}
+
+cybernetic_mammalians = {
+    species_class = VORE_MACHINE
+
+    
+    portraits = {
+        "protogen"
+    }
+}
+
+machines = {
+    species_class = VORE_MACHINE
+
+
+    portraits = {
+        "synth"
+        "synth_feral"
+    }
+}
