@@ -1,5 +1,5 @@
 mammalians = {
-	species_class = VORE
+	species_class = MAM
 
 #this will add the portrait group to Vore category in the editor (as in, the portrait_group within x_portraits.txt in gfx/portraits/portraits/)
 
@@ -16,7 +16,7 @@ mammalians = {
 }
 
 reptilians = {
-    species_class = VORE
+    species_class = REP
 
 
     portraits = {
@@ -27,7 +27,7 @@ reptilians = {
 }
 
 avians = {
-    species_class = VORE
+    species_class = AVI
 
 
     portraits = {
@@ -36,7 +36,7 @@ avians = {
 }
 
 cybernetic_mammalians = {
-    species_class = VORE_MACHINE
+    species_class = MAM
 
     
     portraits = {
@@ -45,7 +45,7 @@ cybernetic_mammalians = {
 }
 
 machines = {
-    species_class = VORE_MACHINE
+    species_class = MACHINE
 
 
     portraits = {
