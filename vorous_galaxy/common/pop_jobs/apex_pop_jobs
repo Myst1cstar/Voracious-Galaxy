@@ -10,19 +10,12 @@ prey_slave = {
 	}
 
 	possible_pre_triggers = {
-		has_owner = yes
 		is_enslaved = yes
-		is_sapient = yes
-		is_being_purged = no
-		is_being_assimilated = no
-		is_robotic = no
 	}
 
 	possible = {
-		has_citizenship_type = {
-				type = citizenship_slavery
-				country = owner
-			}
+		has_citizenship_type = { type = citizenship_slavery }
+		pop.owner = { has_policy_flag = prey_slavery_allowed }
 	}
 	
 	resources = {
