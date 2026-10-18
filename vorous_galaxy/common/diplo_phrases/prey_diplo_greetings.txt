@@ -1,0 +1,223 @@
+##############################
+#		DIPLOMATIC OPITONS
+##############################
+
+greetings = {
+
+	##############################
+	#		HOSTILE GREETINGS
+	##############################
+		
+	VORE_PREY_HOSTILE_GREETING_01{
+		trigger = {
+			vore_is_prey = yes
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_same_species = FROM
+				is_at_war_with = FROM
+				is_megacorp = yes
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+		weight = {
+			weight = 50
+		}
+	}
+	
+		VORE_PREY_HOSTILE_GREETING_02{
+		trigger = {
+			vore_is_prey = yes
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_same_species = FROM
+				is_at_war_with = FROM
+				is_megacorp = yes
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+		weight = {
+			weight = 50
+		}
+	}
+	
+		VORE_PREY_HOSTILE_GREETING_03{
+		trigger = {
+			vore_is_prey = yes
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_same_species = FROM
+				is_at_war_with = FROM
+				is_megacorp = yes
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+		weight = {
+			weight = 50
+		}
+	}
+	
+		VORE_PREY_HOSTILE_GREETING_04{
+		trigger = {
+			vore_is_prey = yes
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_same_species = FROM
+				is_at_war_with = FROM
+				is_megacorp = yes
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+		weight = {
+			weight = 50
+		}
+	}
+		VORE_PREY_HOSTILE_GREETING_05{
+		trigger = {
+			vore_is_prey = yes
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_same_species = FROM
+				is_at_war_with = FROM
+				is_megacorp = yes
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+		weight = {
+			weight = 50
+		}
+	}
+		VORE_PREY_HOSTILE_GREETING_06{
+		trigger = {
+			vore_is_prey = yes
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_same_species = FROM
+				is_at_war_with = FROM
+				is_megacorp = yes
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+		weight = {
+			weight = 50
+		}
+	}
+	##############################
+	#		NEUTRAL GREETINGS
+	##############################
+	
+	VORE_PREY_NEUTRAL_GREETING_01{
+		trigger = {
+			vore_is_prey = yes
+			NOT = { is_same_species = FROM }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+			}
+		}
+		weight = {
+			weight = 50
+		}
+	}
+	VORE_PREY_NEUTRAL_GREETING_02{
+		trigger = {
+			vore_is_prey = yes
+			NOT = { is_same_species = FROM }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+			}
+		}
+		weight = {
+			weight = 50
+		}
+	}
+	VORE_PREY_NEUTRAL_GREETING_03{
+		trigger = {
+			vore_is_prey = yes
+			NOT = { is_same_species = FROM }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+			}
+		}
+		weight = {
+			weight = 50
+		}
+	}
+	VORE_PREY_NEUTRAL_GREETING_04{
+		trigger = {
+			vore_is_prey = yes
+			NOT = { is_same_species = FROM }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+			}
+		}
+		weight = {
+			weight = 50
+		}
+	}
+	##############################
+	#		FRIENDLY GREETINGS
+	##############################
+	VORE_PREY_FRIENDLY_GREETING_01{
+		trigger = {
+			vore_is_prey = yes
+			NOT = { has_ethic = ethic_gestalt_consciousness }
+			NOT = { is_same_species = FROM }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+		weight = {
+			weight = 50
+		}
+	}
+	VORE_PREY_FRIENDLY_GREETING_02{
+		trigger = {
+			vore_is_prey = yes
+			NOT = { has_ethic = ethic_gestalt_consciousness }
+			NOT = { is_same_species = FROM }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+		weight = {
+			weight = 50
+		}
+	}
+	
